@@ -64,6 +64,10 @@ body {
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 	background: #fffb00;
 	text-align: center;
