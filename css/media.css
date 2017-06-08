@@ -567,15 +567,13 @@
 
 
  }
- @media only screen and (max-width: 655px) {
-     
-      
+ 
 
- }
- @media only screen and (max-width: 655px) {
+ @media only screen and (max-width: 654px) {
       .header_top {
       	display: none;
       }
+     
 
  }
 
@@ -620,6 +618,11 @@
 	      margin-right: 40px;
       }
 }
+@media only screen and (max-width: 656px) {
+  .top_nav_li a {
+    	font-size: 18px;
+    }
+ }
 
 @media only screen and (max-width: 580px) {
       .second_block_price_ {
