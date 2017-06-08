@@ -221,8 +221,6 @@ body {
      display: flex; 
      justify-content: center; 
      align-items: center;
-
-
      background: #000;         
    
     
@@ -234,8 +232,9 @@ body {
 	background: #ffffff;
 	position: fixed;
 	z-index: 100;
-	top: 17%;
-	margin: auto;
+	top: 50%;
+
+	
 	-webkit-box-shadow: 10px 10px 0 0 #b7b636;
 	-moz-box-shadow: 10px 10px 0 0 #b7b636;
 	max-width: 400px;

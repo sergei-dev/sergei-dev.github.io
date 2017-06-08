@@ -908,6 +908,14 @@
 }
 
 }
+@media only screen and (max-width: 380px) {
+    .head_one_screen  h1 {
+	font-size: 35px;
+}
+.head_one_screen  h2 {
+	font-size: 20px;
+}
+}
 @media only screen and (max-width: 355px) { 
 .order_form {
      align-self: center;
@@ -941,12 +949,7 @@
 
 }
 @media only screen and (max-width: 360px) { 
-     .head_one_screen h1 {
-     	font-size: 45px;
-     }
-     .head_one_screen h2 {
-     	font-size: 35px;
-     }
+    
      .head_second {
      	font-size: 30px;
      }
@@ -958,15 +961,24 @@
 
 
 }
+
 @media only screen and (max-width: 330px) {
 .modal_content {
 		max-width: 220px;
+		margin:0 auto;
 	}
 	.modal_content h2 {
     font-size: 20px;
 	margin-bottom: 13px;
 	margin-top: 36px;
 }
+.container_modal {
+	justify-content: center;
+}
+.tel_info_xs span {
+	font-size: 21px;
+}
+
 }
 
 
