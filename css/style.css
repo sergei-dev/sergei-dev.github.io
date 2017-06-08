@@ -242,91 +242,24 @@ body {
 	width: 100%;
 	text-align: center;
 	font-family: 'Opan Sans',sans-serif;
-	/*-ms-transform: scale(0);
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition:  .4s;
+	-ms-transform: scale(0);
 	-o-transform: scale(0);
 	transform: scale(0);
-	*/
-    transform: translate(-2000px);
-	-webkit-transition:.4s;
-	-o-transition:.4s;
-	transition:.4s;
 	
-}
-@keyframes modal_animation {
-     0% {
-    transform: translateY(-2000px);
-}
-
-70% {
-    transform: translateY(30px);
-}
-
-90% {
-    transform: translateY(-10px);
-}
-
-95% {
-    transform: translateY(0);
-}
-100% {
-    transform: translateY(0);
-    
-
-}
-}
-@keyframes modal_animation_two {
-     0% {
-    transform: translateY(0);
-}
-
-70% {
-    transform: translateY(0);
-}
-
-90% {
-    transform: translateY(-10px);
-}
-
-95% {
-    transform: translateY(30px);
-}
-100% {
-    transform: translateY(-2000px);
-    
-
-}
+   
+	
 }
 
 
 .active {
-	-webkit-transform: translate(0px);
-	-ms-transform: translate(0px);
-	-o-transform: translate(0px);
-	transform: translate(0px);}
-	/*-webkit-animation-name:modal_animation;
-	animation-name:modal_animation;
-	animation-duration: 1s;
-	-webkit-animation-duration: 1s;
-	animation-timing-function: ease-in;
-	-webkit-animation-timing-function: ease-in;
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);
+	transform: scale(1)}
 	
-	
-	
-
-	
-}
-/*
-.remove_active {
-	-webkit-animation-name:modal_animation_two;
-	animation-name:modal_animation_two;
-	animation-duration: 1ms;
-	-webkit-animation-duration: 1s;
-	animation-timing-function: ease-in;
-	-webkit-animation-timing-function: ease-in;
-	transform: translateY(-2000px);
-}
-*/
-
 .modal_content h2 {
     font-size: 30px;
 	margin-bottom: 13px;
