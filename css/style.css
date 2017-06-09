@@ -257,7 +257,9 @@ body {
 	background: #ffffff;
 	position: fixed;
 	z-index: 100;
-	top: 50%;
+	top: 17%;
+	left: 50%;
+	margin-left: -15%;
 
 	
 	-webkit-box-shadow: 10px 10px 0 0 #b7b636;
