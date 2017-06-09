@@ -238,14 +238,7 @@ body {
 .container_modal { 
      width: 100%; 
      height: 100%; 
-     display: -webkit-flex; 
-     display: -moz-flex; 
-     display: -ms-flex; 
-     display: -o-flex; 
-     display: flex; 
-     justify-content: center; 
-     -ms-align-items: center;
-     align-items: center;
+     
      background: #000;         
    
     
@@ -260,8 +253,6 @@ body {
 	top: 17%;
 	left: 50%;
 	margin-left: -15%;
-
-	
 	-webkit-box-shadow: 10px 10px 0 0 #b7b636;
 	-moz-box-shadow: 10px 10px 0 0 #b7b636;
 	max-width: 400px;
