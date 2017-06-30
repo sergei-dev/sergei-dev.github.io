@@ -88,10 +88,12 @@ ul, a, span {
 	display: block;
 	margin-bottom: 20px;
 	font-family: "MyriadProRegular";
+	font-size: 14px;
 }
 .about_me_info b {
 	display: block;
 	margin-bottom: 25px;
+	font-size: 18px;
 }
 .one_block_info {
     padding-top: 50px;
@@ -123,6 +125,19 @@ ul, a, span {
 .three_block_info span {
 	display: block;
 	margin-left: 30px;
+}
+.four_block_info a {
+	color: #0056d3;
+	margin-left: 30px;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.four_block_info a:hover {
+	text-decoration: underline;
+}
+.five_block_info {
+	font-family: "Myriad Pro";
 }
 @media only screen and (max-width: 505px) {
 	  .about_me_info {
