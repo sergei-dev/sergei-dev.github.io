@@ -1,10 +1,10 @@
 body {
-	font-family: 'Arial', sans-serif;
+	font-family: Arial;
 }
 .about_me {
 	width: 100%;
 	background: #f1f0f3;
-	min-height: 1024px;
+	height: 100vh;
 }
 .container {
     max-width: 980px;
@@ -12,7 +12,7 @@ body {
     margin: auto;
 }  
 .about_me_info {
-	max-width: 500px;
+	max-width: 700px;
 	margin: auto;
 }
 .one_block_info,
@@ -21,7 +21,8 @@ body {
 .four_block_info {           
 	border-bottom: 1px solid #c6c5c4;
     margin-bottom: 20px;
-    max-width: 500px;
+    max-width: 700px;
+    font-family: "Myriad Pro", sans-serif;
 }
 ul, a, span {
 	display: block;
@@ -40,6 +41,7 @@ ul, a, span {
 	text-transform: uppercase;
 	font-size: 36px;
 	margin-bottom: 30px;
+	
 }
 .one_block_info img {
 	max-width: 200px;
