@@ -7,7 +7,6 @@
 			font-style: normal;
 			font-weight: normal;
 	}
-
 	@font-face {
 			font-family: "MyriadProBold";
 			src: url("../fonts/MyriadProBold/MyriadProBold.eot");
@@ -17,7 +16,6 @@
 			font-style: normal;
 			font-weight: normal;
 	}
-
 	@font-face {
 			font-family: "MyriadProItalic";
 			src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
@@ -27,7 +25,6 @@
 			font-style: normal;
 			font-weight: normal;
 	}
-
 	@font-face {
 			font-family: "MyriadProSemiBold";
 			src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
@@ -37,7 +34,6 @@
 			font-style: normal;
 			font-weight: normal;
 	}
-
 	@font-face {
 			font-family: "MyriadProBoldItalic";
 			src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
@@ -47,7 +43,6 @@
 			font-style: normal;
 			font-weight: normal;
 	}
-
 	@font-face {
 			font-family: "MyriadProSemiBoldItalic";
 			src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
@@ -60,7 +55,6 @@
 	body {
 		font-family: Arial;
 	}
-
 .about_me {
 	width: 100%;
 	background: #f1f0f3;
@@ -105,7 +99,6 @@ ul, a, span {
 	text-transform: uppercase;
 	font-size: 36px;
 	margin-bottom: 30px;
-	
 }
 .one_block_info img {
 	max-width: 200px;
@@ -116,7 +109,6 @@ ul, a, span {
 .one_block_info p {
 	text-align: left;
 	margin-bottom: 20px;
-
 }
 .two_block_info ul {
 	list-style: inherit;
@@ -146,9 +138,7 @@ ul, a, span {
 	  .one_block_info h2 {
 	  	font-size: 25px;
 	  }
-
 	  .one_block_info p {
 	  	text-align: center;
 	  }
-
 }
