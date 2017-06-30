@@ -131,6 +131,9 @@ ul, a, span {
 .five_block_info {
 	font-family: "Myriad Pro";
 }
+.five_block_info span {
+	margin-left: 30px;
+}
 @media only screen and (max-width: 505px) {
 	  .about_me_info {
 	  	text-align: center;
