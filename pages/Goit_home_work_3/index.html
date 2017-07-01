@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Fitness</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper clearfix">
 	<header class="header_top">
 		<div class="container">
 			<div class="header_top_line clearfix">
@@ -29,19 +30,46 @@
 	<section class="section_one_screen">
 	<div class="container">
 	<div class="one_screen clearfix">
+	<div class="product clearfix">
+		<div class="photo_product">
+			<img src="img/image1.png" alt="product">
+		</div>
+		<div class="text_product">
+			<p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
+		</div>
+	</div>
 	<div class="sidebar">
 		<ul>
-			<li><a href="#">Ноутбуки</a></li>
-			<li><a href="#">Планшеты</a></li>
-			<li><a href="#">Телефоны</a></li>
-			<li><a href="#">Телевизоры</a></li>
-			<li><a href="#">Бытовая техника</a></li>
-			<li><a href="#">Автотовары</a></li>
+			<li  class="li_sidebar"><a href="#">Ноутбуки</a></li>
+			<li class="li_sidebar"><a href="#">Планшеты</a></li>
+			<li class="li_sidebar active_sidebar"><a href="#">Телефоны</a></li>
+			<li class="li_sidebar"><a href="#">Телевизоры</a></li>
+			<li class="li_sidebar"><a href="#">Бытовая техника</a></li>
+			<li class="li_sidebar"><a href="#">Автотовары</a></li>
 		</ul>
 	</div>
+	
  </div>
 </div>
 </section>
+
+<footer>
+<div class="container">
+	<div class="footer_line clearfix">
+	<div class="footer_menu">
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a class="active_footer" href="#">Товары</a></li>
+			<li><a href="#">О_нас</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	  </div>
+	  <div class="footer_info">
+	  	<span>2014 © All rights reserved</span>
+	  </div>
+	</div>
+   </div>
+</footer>
 </div>
 </body>
 </html>

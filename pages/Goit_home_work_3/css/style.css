@@ -34,7 +34,7 @@ body {
 }
 .navbar {
 	max-width: 966px;
-	width: 100%;
+	
 	background: linear-gradient(to top, #464545 20%, #5c5c5c 100%);
 	margin-left: 15px;
 
@@ -63,21 +63,128 @@ body {
 .active {
   padding-left: 20px;
   padding-right: 20px;
-  border-left: 2px solid #838383;
-  border-right: 2px solid #838383;
-   background: linear-gradient(to top, #464545 140%, #5c5c5c 40%)
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
+  background: linear-gradient(to top, #464545 140%, #5c5c5c 40%);
 }
 .section_one_screen {
 	width: 100%;
+	margin-bottom: 60px;
 }
 .one_screen {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
+	max-width: 966px;
+	
+
 }
 .sidebar {
 	max-width: 240px;
-	float: left;
 	
+	
+}
+.li_sidebar {
 
+	padding-top: 15px;
+	padding-bottom: 12px;
+	padding-right: 155px;
+	padding-left: 25px;
+	border: 1px solid #c8c8c8;
+	border-bottom: 0;
+}
+.sidebar li a {
+
+	color: #656363;
+	font-size: 13.33px;
+
+}
+.sidebar li:last-child {
+	border-bottom: 1px solid #c8c8c8;
+}
+.active_sidebar {
+	background: #f9f9f9;
+	padding-right: 135px;
+	padding-left: 35px;
+}
+.product {
+	max-width: 680px;
+	float: right;
+	margin-left: 20px;
+
+
+
+}
+.photo_product {
+	max-width: 680px;
+	width: 100%;
+	border: 1px solid #c8c8c8;
+	padding-bottom: 50px;
+	padding-left: 85px;
+	padding-right: 85px;
+	padding-top: 50px;
+	float: right;
+	margin-bottom: 40px;
+
+}
+.text_product {
+	
+	max-width: 680px;
+	margin-left: 20px;
+	float: right;
+
+
+
+}
+.text_product  p{
+	line-height: 1.8;
+	font-size: 13.33px;
+	color: #2c2c2c;
+
+
+}
+footer {
+	margin-bottom: 60px;
+}
+.footer_line {
+	background: #e1e1e1;
+	max-width: 966px;
+	width: 100%;
+}
+.footer_menu {
+	max-width: 650px;
+	width: 100%;
+	float: left;
+}
+.footer_menu ul {
+	max-width: 650px;
+}
+.footer_menu li {
+	display: inline-block;
+	padding-left: 25px;
+	padding-right: 75px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.footer_menu li:last-child {
+	padding-right: 0;
+}
+.footer_menu li a {
+	color: #2c2c2c;
+	font-size: 13.33px;
+}
+.active_footer {
+	text-decoration: underline;
+}
+.footer_info {
+	float: right;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 21px;
+	
+}
+.footer_info span {
+     color: #2c2c2c;
+	font-size: 13.33px;
 }
