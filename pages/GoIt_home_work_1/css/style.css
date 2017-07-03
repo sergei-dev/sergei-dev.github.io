@@ -54,26 +54,33 @@
 	}
 	body {
 		font-family: Arial;
+		background: #f1f0f3;
 	}
 .about_me {
 	width: 100%;
-	background: #f1f0f3;
-	height: 100vh;
+	
+	
 }
 .container {
-    max-width: 980px;
+    max-width: 490px;
     width: 100%;
     margin: auto;
 }  
 .about_me_info {
-	max-width: 700px;
+	max-width: 490px;
 	margin: auto;
+}
+hr {
+	background:#c3c4c5;
+	margin-bottom: 20px;
+	border: none;
+	height: 1px;
 }
 .one_block_info,
 .two_block_info,
 .three_block_info,
 .four_block_info {           
-	border-bottom: 1px solid #c6c5c4;
+	
     margin-bottom: 20px;
     max-width: 700px;
     font-family: "Myriad Pro";
@@ -101,10 +108,11 @@ ul, a, span {
 	margin-bottom: 30px;
 }
 .one_block_info img {
-	max-width: 200px;
-	height: auto;
+	width: 200px;
+	height: 200px;
 	margin: auto;
 	margin-bottom: 20px;
+	border: 1px solid #8f8f8f;
 }
 .one_block_info p {
 	text-align: left;
@@ -124,24 +132,13 @@ ul, a, span {
 	-webkit-transition: all .5s;
 	-o-transition: all .5s;
 	transition: all .5s;
-}
-.four_block_info a:hover {
 	text-decoration: underline;
 }
+
 .five_block_info {
 	font-family: "Myriad Pro";
 }
 .five_block_info span {
 	margin-left: 30px;
 }
-@media only screen and (max-width: 505px) {
-	  .about_me_info {
-	  	text-align: center;
-	  }
-	  .one_block_info h2 {
-	  	font-size: 25px;
-	  }
-	  .one_block_info p {
-	  	text-align: center;
-	  }
-}
+
