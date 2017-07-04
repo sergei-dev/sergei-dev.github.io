@@ -345,15 +345,15 @@
 	text-align: center;
 	width: 100%;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 120px;
 }
 .modal_menu ul li a  {
      display: block;
      font-weight: 150;
      letter-spacing: 4px;
     color: #ffffff;
-    font-size: 25px;
-    line-height: 4;
+    font-size: 23px;
+    line-height: 3;
     width: 100%;
     -webkit-transition:all 7ms;
     -o-transition:all 7ms;

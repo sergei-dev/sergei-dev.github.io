@@ -324,10 +324,10 @@
 }
 @media only screen and (max-width: 620px) {
    .header_top {
-          min-height: 850px;
+          min-height: 600px;
         }
         .head_one_screen h1 {
-          font-size: 40px;
+          font-size: 35px;
         }
 }
 @media only screen and (max-width: 580px) {
@@ -372,23 +372,57 @@
       font-size: 16px;
      }
 }
+@media only screen and (max-width: 450px) {
+   .header_top {
+          min-height: 600px;
+        }
+        .head_one_screen h1 {
+          font-size: 25px;
+           padding-right: 10px;
+           padding-left: 10px;
+        }
+        .about_us h2 {
+          font-size: 30px;
+        }
+        #team h3 {
+  
+         font-size: 30px;
+  
+}
+.info_progects h2 {
+  color: #222222;
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+.info_progects p {
+  font-size: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.cont_block-price h2 {
+
+  font-size: 30px;
+}
+.cont_block-price p {
+  font-size: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.one_block_info h3 {
+  font-size: 30px;
+ 
+}
+.one_block_info p {
+  color: #dfdfdf;
+  font-size: 16px;
+}
+
+}
 @media only screen and (max-width: 408px) {
    .footer_contacts {
     max-width: 210px;
     width: 150%;
-   }
-}
-@media only screen and (max-width: 400px) {
-.one_block_info h3 {
-    font-size: 30px;
-   }
-   .one_block_info p {
-    font-size: 16px;
-   }
-   .head_one_screen h1 {
-    font-size: 35px;
-    padding-right: 10px;
-    padding-left: 10px;
    }
 }
 @media only screen and (max-width: 390px) {
