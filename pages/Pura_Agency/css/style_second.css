@@ -332,7 +332,7 @@
 .modal_menu {
 	width: 100%;
 	background: rgba(81,10,118,0.9);
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	-webkit-transition: all 900ms;
 	-o-transition: all 900ms;
