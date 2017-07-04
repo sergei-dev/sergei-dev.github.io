@@ -959,6 +959,15 @@
 .head_one_screen  h2 {
 	font-size: 20px;
 }
+.adwantages_container {
+	width: 100%;
+	min-height: 600px;
+	background-image: url('../img/480px_mobile_empty.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: 80% 30%;
+	background-size: 100% 100%;
+	background-position: center 240%;
+}
 }
 @media only screen and (max-width: 355px) { 
 .order_form {
