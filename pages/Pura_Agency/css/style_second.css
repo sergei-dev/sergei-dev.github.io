@@ -338,7 +338,7 @@
 	-o-transition: all 900ms;
 	transition: all 1000ms;
 	top: -500vw;
-	font-family: sans-serif;
+	font-family: 'Poppins', sans-serif;
 	z-index: 1001;
 }
 .modal_menu ul {
