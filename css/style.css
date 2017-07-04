@@ -250,33 +250,21 @@ body {
 	background: #ffffff;
 	position: fixed;
 	z-index: 100;
-	top: 17%;
-	left: 50%;
-	margin-left: -15%;
+	top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 	-webkit-box-shadow: 10px 10px 0 0 #b7b636;
 	-moz-box-shadow: 10px 10px 0 0 #b7b636;
 	max-width: 400px;
-	
+	width: 100%;
 	text-align: center;
 	font-family: 'Opan Sans',sans-serif;
 	-webkit-transition: .4s;
 	-o-transition: .4s;
 	transition:  .4s;
-	-ms-transform: scale(0);
-	-o-transform: scale(0);
-	transform: scale(0);
+	display: none;
 	
-   
-	
-}
-
-
-.active {
-	-webkit-transform:scale(1);
-	-ms-transform:scale(1);
-	-o-transform:scale(1);
-	transform: scale(1)}
-	
+}		
 .modal_content h2 {
     font-size: 30px;
 	margin-bottom: 13px;

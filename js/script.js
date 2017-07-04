@@ -132,8 +132,7 @@ function modal_window(buttons) {
 buttons.click(function(event){ 
 event.preventDefault();
 modal.fadeIn();
-$('.container_modal').fadeIn();
-$('.modal_content').addClass('active');
+$('.modal_content').fadeIn();
 
 
  
@@ -143,7 +142,7 @@ $('.modal_content').addClass('active');
 span.click(function(event){ 
 event.preventDefault();
 modal.fadeOut();
-$('.modal_content').removeClass('active');
+$('.modal_content').fadeOut();
 }); 
 
 modal.click(function(){ 
