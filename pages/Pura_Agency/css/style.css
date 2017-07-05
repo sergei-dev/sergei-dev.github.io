@@ -18,7 +18,7 @@ body {
 	min-height: 681px;
 	padding-top: 30px;
 	font-family: 'Poppins', sans-serif;
-	overflow: hidden;
+	
 
 }
 .header_top_line {
@@ -89,6 +89,7 @@ body {
 .social_buttons {
 	max-width: 100px;
 	width: 100%;
+	margin-right: 15px;
 	
 }
 .icon-facebook {
