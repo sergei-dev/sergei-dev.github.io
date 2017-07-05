@@ -48,7 +48,7 @@
     max-width: 840px;
 	min-height: 990px;
 	position: absolute;
-  
+   
     transform:translate(-27%, -10%);
 	
 
@@ -332,14 +332,15 @@
 .modal_menu {
 	width: 100%;
 	background: rgba(81,10,118,0.9);
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	-webkit-transition: all 1000ms;
 	-o-transition: all 1000ms;
 	transition: all 1000ms;
-	top: -100vw;
+	top: -500vw;
 	font-family: 'Poppins', sans-serif;
 	z-index: 1001;
+	overflow: auto;
 }
 .modal_menu ul {
 	text-align: center;
