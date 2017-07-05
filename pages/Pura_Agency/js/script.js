@@ -5,14 +5,8 @@ $('.menu_link_button').on('click',function(event){
        $('.span_link').toggleClass('span_link_active');
        $('.span_link_two').toggleClass('one_link_active');
           $('.span_link_three').toggleClass('two_link_active');
-         
-
-         
-
-      
-       
-
-
       });
+
+ new WOW().init();
 
 });
