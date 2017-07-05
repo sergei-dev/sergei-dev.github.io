@@ -96,14 +96,34 @@ body, html {
 .icon-facebook {
 	font-size: 20px;
 	color: #ffffff;
+	-webkit-transition: all 1000ms;
+	-o-transition: all 1000ms;
+	transition: all 1000ms;
+} 
+.icon-facebook:hover {
+	border-radius:40%;
+    color:#ff33cc;
 }
+
 .icon-twitter {
 	font-size: 20px;
 	color: #ffffff;
+	-webkit-transition: all 1000ms;
+	-o-transition: all 1000ms;
+	transition: all 1000ms;
+}
+.icon-twitter:hover {
+    color:#ff33cc;
 }
 .icon-gplus-1 {
 	font-size: 20px;
 	color: #ffffff;
+	-webkit-transition: all 700ms;
+	-o-transition: all 7000ms;
+	transition: all 700ms;
+}
+.icon-gplus-1:hover {
+    color:#ff33cc;
 }
 .one_screen {
 	width: 100%;
@@ -141,6 +161,16 @@ body, html {
 	color: #ffffff;
 	font-weight: bold;
 	background: linear-gradient( to  right , #ff33cc 2%, #fd3e4f 50%);
+	-webkit-transition: all 1000ms;
+	-o-transition: all 1000ms;
+	transition: all 1000ms;
+}
+.header_top_button:hover {
+      background: linear-gradient( to  top left , #ff33cc -40%, #fd3e4f 90%);
+}
+.header_top_button:active {
+      background: linear-gradient( to  top left , #ff33cc -40%, #fd3e4f 90%);
+      border: 1px solid gold;
 }
 #about {
 	width: 100%;
@@ -186,7 +216,14 @@ body, html {
 	padding-left: 35px;
 	font-size: 20px;
 	font-weight: bold;
+	-webkit-transition: all 1000ms;
+	-o-transition: all 1000ms;
+	transition: all 1000ms;
 
+}
+.about_us_button a:hover {
+	background: #ff33cc;
+	color: #ffffff;
 }
 .about_us_button a::after {
 	font-family: "fontello";
@@ -339,6 +376,9 @@ body, html {
 	width: 100%;
 	text-align: center;
 	position: relative;
+	-webkit-transition: all 1000ms;
+	-o-transition: all 1000ms;
+	transition: all 1000ms;
 
 	
 
@@ -354,6 +394,9 @@ body, html {
 	min-height: 455px;
 	cursor: pointer;
 	border-radius: 5px;
+	-webkit-transition: all 1000ms;
+	-o-transition: all 1000ms;
+	transition: all 1000ms;
 	
     
 

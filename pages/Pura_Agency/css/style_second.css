@@ -340,7 +340,7 @@
 	top: -500vw;
 	font-family: 'Poppins', sans-serif;
 	z-index: 1001;
-	overflow: auto;
+	overflow: scroll;
 }
 .modal_menu ul {
 	text-align: center;
