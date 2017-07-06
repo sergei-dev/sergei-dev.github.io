@@ -265,6 +265,7 @@
 }
 .menu_link {
 	 max-width: 100px;
+	 display: none;
 }
 .menu_link_button {
 	display: block;

@@ -17,6 +17,14 @@ $('body').animate({
 scrollTop: h.offset().top 
 }, 600); 
 });
+$('.menu_header a').on('click', function(e) { 
+e.preventDefault(); 
+var selector = $(this).attr('href'); 
+var h = $(selector); 
+$('body').animate({ 
+scrollTop: h.offset().top 
+}, 600); 
+});
 
 
 
