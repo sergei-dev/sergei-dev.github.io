@@ -36,7 +36,19 @@ body, html {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	z-index: 10002;
+	-ms-align-items: center;
+	align-items: center;
 
+}
+.scroll_header_top_line {
+	padding-top: 20px;
+    padding-bottom: 20px;
+    -ms-align-items: center;
+    align-items: center;
+	position: fixed;
+	top: 0;
+	background: linear-gradient( to  top  ,rgba(222, 60, 159, 0.9) 20%,   rgba(222, 58, 72, 0.9) 70%);
 }
 .logo {
 	max-width: 135px;
@@ -44,8 +56,11 @@ body, html {
 	
 
 }
+.logo a {
+	display: block;
+}
 .logo img {
-	margin-left: 35px;
+	padding-left: 35px;
 
 }
 .navbar {

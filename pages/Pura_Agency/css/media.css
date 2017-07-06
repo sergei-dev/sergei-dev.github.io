@@ -212,16 +212,14 @@
 	 .navbar {
 	 	display: none;
 	 }
-   .header_top_line {
+   .social_buttons {
+    margin: 0;
+   }
+  
     
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -ms-align-items: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background: linear-gradient( to  top  ,rgba(222, 60, 159, 0.9) 20%,   rgba(222, 58, 72, 0.9) 70%);
-    z-index: 10002;
+    
+   
+    
 }
 .menu_link {
   -webkit-order: 1;
