@@ -8,6 +8,15 @@ $('.header_top_line').removeClass('scroll_header_top_line');
 } 
 });
 
+$('.modal_menu a').on('click', function(e) { 
+e.preventDefault(); 
+var selector = $(this).attr('href'); 
+var h = $(selector); 
+$('body').animate({ 
+scrollTop: h.offset().top 
+}, 800); 
+});
+
 
 
 $('.menu_link_button').on('click',function(event){

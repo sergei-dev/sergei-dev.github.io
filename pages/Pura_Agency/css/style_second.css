@@ -272,6 +272,7 @@
 	height: 50px;
 	background: transparent;
 	position: relative;
+	z-index: 1005;
 }
 .span_link_two {
 	 display: block;
