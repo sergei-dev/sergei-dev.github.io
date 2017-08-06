@@ -1,0 +1,49 @@
+* {
+	outline: none;
+}
+
+.p1 {
+	color: green;
+}
+.p1:hover {
+	color: yellow;
+}
+.p1:active {
+	color: red;
+}
+
+.p2 {
+	color: purple;
+}
+
+.p2:hover {
+	color: brown;
+}
+.p2:active {
+	color: gold;
+}
+input:focus {
+	border: 2px solid green;
+}
+.p_nth:nth-child(even) {
+       color: gray;
+}
+.one_letter {
+	p
+}
+.one_letter:first-letter {
+     font-size: 2em;
+     color: red;
+     font-family: Georgia;
+}
+.one_letter::after {
+	content: '*';
+
+}
+
+.one_letter::before {
+	content: '\2602'; 
+	position: absolute;
+	top: 50%;
+
+}

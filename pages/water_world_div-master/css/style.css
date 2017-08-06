@@ -7,39 +7,48 @@ body {
     overflow: hidden;
 }
 .water_wirld_div {
+    width: 560px;
+   height: 445px;
     position: relative;
+    margin: auto;
 }
 img {
     position: absolute;
 }
 .clouds {
-    top: 0;
-    width: 45%;
-    right: 10%;
+    top: -7px;
+    left: 150px;
+  width: 350px;
+  height: 260px;
     -webkit-animation: clouds-animate 9s ease-in infinite;
     -o-animation: clouds-animate 9s ease-in infinite;
     animation: clouds-animate 9s ease-in  infinite;
+    z-index: 1;
     
 }
 .ship {
-    width: 20%;
+    width: 115px;
+    height: 115px;
     height: auto;
-    top: 590px;
-    left: 3%;
+    bottom: 40px;
+    left: 14px;
     -webkit-animation: ship-animate 15s ease infinite;
     -o-animation: ship-animate 15s ease infinite;
     animation: ship-animate 15s ease infinite;
+    z-index: 3;
 }
 .water {
 
-    width: 100%;
-    top: 830px;
+    bottom: -5px;
+    left: -13%;
+    width: 130%;
+    height: 55px;
 
 }
 .world {
-    top: 100px;
+    top: 98px;
     width: 100%;
-    height: 90vh;
+    height: 350px;
     left: 1%;
 }
 @keyframes clouds-animate {

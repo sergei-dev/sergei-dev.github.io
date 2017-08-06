@@ -29,14 +29,14 @@ header {
 }
 
 main {
-    width: 55%;
+    width: 700px;
     border: 1px solid black;
     float: left;
     height: 200px;
 }
 
 aside {
-    width: 40%;
+    width: 400px;
     border: 1px solid black;
     float: right;
     height: 200px;
