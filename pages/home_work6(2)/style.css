@@ -1,0 +1,89 @@
+body {
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+}
+.one_table {
+	width: 700px;
+	border-collapse: collapse;
+	margin-left: 30px;
+}
+.one_table th {
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+
+
+}
+.one_table td {
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+.one_table .left {
+	text-align: left;
+}
+.two_table   {
+	width: 900px;
+	margin-left: 30px;
+}
+.two_table tr {
+	border-bottom: 1px solid #ccc;
+}
+.two_table th {
+	text-align: left;
+	padding: 15px 0;
+	border-bottom: 1px solid #ccc;
+}
+.two_table td {
+	
+	padding: 15px 0;
+
+}
+.three_table   {
+	width: 900px;
+	margin-left: 30px;
+}
+.three_table tr {
+	
+}
+.three_table th {
+	text-align: left;
+	padding: 15px 0;
+	border-bottom: 1px solid #ccc;
+}
+.three_table td {
+	
+	padding: 15px 0;
+	border-bottom: 1px solid #ccc;
+}
+.four_table {
+	width: 800px;
+	background: #FFE7E5;
+	-webkit-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
+	-moz-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
+	box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
+	position: relative;
+	margin-left: 30px;
+	padding: 20px;
+}
+.four_table th {
+	text-align: left;
+	padding: 15px 0;
+	border-bottom: 1px solid #ccc;
+}
+.close {
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	padding: 15px;
+}
+.close::after {
+	content: '';
+	width: 5px;
+	height: 2px;
+	position: absolute;
+	background:white;
+}
