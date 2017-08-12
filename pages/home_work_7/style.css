@@ -28,6 +28,21 @@ body {
 .bold {
 	font-weight: bold;
 }
+.h3_list {
+	margin-top: 40px;
+}
+.prop {
+	display: block;
+	margin: auto;
+	width: 300px;
+}
+.center {
+	text-align: center;
+	margin: auto;
+}
+.patent_img {
+	width: 600px;
+}
 
 header {
     height: 120px;
