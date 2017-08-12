@@ -27,6 +27,7 @@ body {
 .two_table   {
 	width: 900px;
 	margin-left: 30px;
+	border-collapse: collapse;
 }
 .two_table tr {
 	border-bottom: 1px solid #ccc;
@@ -34,7 +35,7 @@ body {
 .two_table th {
 	text-align: left;
 	padding: 15px 0;
-	border-bottom: 1px solid #ccc;
+	
 }
 .two_table td {
 	
@@ -44,6 +45,7 @@ body {
 .three_table   {
 	width: 900px;
 	margin-left: 30px;
+	border-collapse: collapse;
 }
 .three_table tr {
 	
@@ -58,32 +60,136 @@ body {
 	padding: 15px 0;
 	border-bottom: 1px solid #ccc;
 }
-.four_table {
-	width: 800px;
-	background: #FFE7E5;
+
+.foure_table_cont {
+	width: 750px;
+	background: #FFF5FA;
 	-webkit-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
 	-moz-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
 	box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
 	position: relative;
-	margin-left: 30px;
-	padding: 20px;
+	margin: auto;
+	border-radius: 5px;
+	padding: 20px 15px;
+	margin-bottom: 30px;
+}
+.four_table {
+	width: 750px;
+	margin: auto;
+	border-collapse: collapse;
+
 }
 .four_table th {
 	text-align: left;
-	padding: 15px 0;
 	border-bottom: 1px solid #ccc;
+	padding:5px 10px;
+	padding-bottom: 15px;
+}
+.four_table tr {
+
+	border-bottom: 1px solid #ccc;
+	
+}
+.four_table tr:last-child {
+	border: 0;
+}
+.four_table td {
+	
+	padding: 15px 10px;
+	padding-top: 5px;
+	
+
 }
 .close {
 	display: block;
 	position: absolute;
-	width: 50px;
-	height: 30px;
-	padding: 15px;
+	width: 25px;
+	height: 25px;
+	right: -2%;
+	top: -5%;
+	background: #000;
+	border: 2px solid white;
+	border-radius: 50%;
+	z-index: 100;
+	-webkit-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
+	-moz-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
+	box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
 }
 .close::after {
 	content: '';
-	width: 5px;
-	height: 2px;
+	width: 13px;
+	height: 3px;
+	display: block;
 	position: absolute;
 	background:white;
+	top: 44%;
+	left: 25%;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
+	
 }
+.close::before {
+	content: '';
+	display: block;
+	width: 13px;
+	height: 3px;
+	position: absolute;
+	top: 44%;
+	left: 25%;
+	background:white;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+	
+}
+
+
+.plus,
+.minus,
+.remove {
+	display: block;
+	color: #fff;
+	background: red;
+	padding: 15px;
+	font-weight: bold;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	
+}
+.remove {
+	background: #E4535F;
+}
+.one_td {
+	color: red;
+}
+.total_amount {
+	text-align: right;
+	margin-bottom: 20px;
+}
+.total_amount p {
+	color: gray;
+
+}
+.total_amount span {
+	display: block;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 5px;
+	
+}
+.in_cart a {
+	display: block;
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
