@@ -1,195 +1,227 @@
 body {
-	font-family: Arial;
-	margin: 0;
-	padding: 0;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
+
 .one_table {
-	width: 700px;
-	border-collapse: collapse;
-	margin-left: 30px;
+    width: 700px;
+    border-collapse: collapse;
+    margin-left: 30px;
 }
+
 .one_table th {
-	border: 1px solid black;
-	padding: 10px;
-	text-align: center;
-
-
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
 }
+
 .one_table td {
-	border: 1px solid black;
-	padding: 10px;
-	text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
 }
 
 .one_table .left {
-	text-align: left;
+    text-align: left;
 }
-.two_table   {
-	width: 900px;
-	margin-left: 30px;
-	border-collapse: collapse;
-}
-.two_table tr {
-	border-bottom: 1px solid #ccc;
-}
-.two_table th {
-	text-align: left;
-	padding: 15px 0;
-	
-}
-.two_table td {
-	
-	padding: 15px 0;
 
+.two_table {
+    width: 900px;
+    margin-left: 30px;
+    border-collapse: collapse;
 }
-.three_table   {
-	width: 900px;
-	margin-left: 30px;
-	border-collapse: collapse;
+
+.two_table tr {
+    border-bottom: 1px solid #ccc;
 }
-.three_table tr {
-	
+
+.two_table th {
+    text-align: left;
+    padding: 15px 0;
 }
+
+.two_table td {
+
+    padding: 15px 0;
+}
+
+.three_table {
+    width: 900px;
+    margin-left: 30px;
+    border-collapse: collapse;
+}
+
+.three_table tr {}
+
 .three_table th {
-	text-align: left;
-	padding: 15px 0;
-	border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-size: 13px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
+
 .three_table td {
-	
-	padding: 15px 0;
-	border-bottom: 1px solid #ccc;
+
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .foure_table_cont {
-	width: 750px;
-	background: #FFF5FA;
-	-webkit-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
-	-moz-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
-	box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
-	position: relative;
-	margin: auto;
-	border-radius: 5px;
-	padding: 20px 15px;
-	margin-bottom: 30px;
+    width: 640px;
+    background: #FFF5FA;
+    -webkit-box-shadow: -1px 1px 9px 4px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: -1px 1px 9px 4px rgba(0, 0, 0, 0.55);
+    box-shadow: -1px 1px 9px 4px rgba(0, 0, 0, 0.55);
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    padding: 25px 15px;
+    padding-top: 23px;
+    margin-bottom: 30px;
 }
-.four_table {
-	width: 750px;
-	margin: auto;
-	border-collapse: collapse;
 
+.four_table {
+
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 34px;
 }
+
 .four_table th {
-	text-align: left;
-	border-bottom: 1px solid #ccc;
-	padding:5px 10px;
-	padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    font-size: 13px;
 }
+
 .four_table tr {
 
-	border-bottom: 1px solid #ccc;
-	
+    border-bottom: 1px solid #ccc;
 }
+
 .four_table tr:last-child {
-	border: 0;
+    border: 0;
 }
+
 .four_table td {
-	
-	padding: 15px 10px;
-	padding-top: 5px;
-	
 
+    font-size: 13px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 16px;
 }
+
 .close {
-	display: block;
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	right: -2%;
-	top: -5%;
-	background: #000;
-	border: 2px solid white;
-	border-radius: 50%;
-	z-index: 100;
-	-webkit-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
-	-moz-box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
-	box-shadow: -1px 1px 9px 4px rgba(0,0,0,0.55);
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -2%;
+    top: -4%;
+    background: #000;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 100;
+    -webkit-box-shadow: -1px 1px 9px 4px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: -1px 1px 9px 4px rgba(0, 0, 0, 0.55);
+    box-shadow: -1px 1px 9px 4px rgba(0, 0, 0, 0.55);
 }
-.close::after {
-	content: '';
-	width: 13px;
-	height: 3px;
-	display: block;
-	position: absolute;
-	background:white;
-	top: 44%;
-	left: 25%;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	
-	
-}
-.close::before {
-	content: '';
-	display: block;
-	width: 13px;
-	height: 3px;
-	position: absolute;
-	top: 44%;
-	left: 25%;
-	background:white;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
 
-	
+.close::after {
+    content: '';
+    width: 13px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    background: white;
+    top: 44%;
+    left: 24%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close::before {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 3px;
+    position: absolute;
+    top: 44%;
+    left: 24%;
+    background: white;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 
 .plus,
 .minus,
 .remove {
-	display: block;
-	color: #fff;
-	background: red;
-	padding: 15px;
-	font-weight: bold;
-	border: none;
-	font-size: 16px;
-	cursor: pointer;
-	
+    display: block;
+    color: #fff;
+    background: red;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
 }
+
 .remove {
-	background: #E4535F;
+    background: #E4535F;
+    font-size: 11px;
+    width: 70px;
+    height: 30px;
 }
+
 .one_td {
-	color: red;
+    color: red;
 }
+
+.four_table .center {
+    padding: 8px 3px;
+    text-align: center;
+    margin: auto;
+}
+
+.four_table .first {
+    padding-left: 30px;
+}
+
+.four_table .end {
+    padding-right: 30px;
+}
+
 .total_amount {
-	text-align: right;
-	margin-bottom: 20px;
+    text-align: right;
+    margin-bottom: 34px;
+    margin-right: 25px;
 }
+
 .total_amount p {
-	color: gray;
-
+    color: gray;
 }
+
 .total_amount span {
-	display: block;
-	color: #000;
-	font-weight: bold;
-	margin-bottom: 5px;
-	
-}
-.in_cart a {
-	display: block;
-	color: red;
-	text-align: center;
-	font-weight: bold;
-	font-style: italic;
-	text-decoration: none;
-	margin-bottom: 10px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
+.in_cart a {
+    display: block;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    margin-bottom: 1px;
+}
