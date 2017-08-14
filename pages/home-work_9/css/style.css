@@ -1,3 +1,6 @@
+body {
+	background: #000;
+}
 .grid_container {
 	border: 5px solid white;
 }
