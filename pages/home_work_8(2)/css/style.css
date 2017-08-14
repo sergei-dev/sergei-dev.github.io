@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+main {
+    max-width: 800px;
+    padding: 5px;
+    margin: auto;
+}
+
+header {
+    background: #f1f1f1;
+    border: 1px solid #e9e9e9;
+    padding: 25px 10px;
+    
+}
+
+.logo h2 {
+	font-weight: lighter;
+    color: #000;
+    font-size: 28px;
+}
+section {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+aside:first-child {
+	max-width: 100px;
+	width: 100%;
+	margin-right: 110px;
+}
+aside ul li {
+	max-width: 300px;
+	list-style: none;
+	border-bottom: 1px solid #e9e9e9;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+article {
+	margin-top: 30px;
+}
+.aside_right  {
+	background: #cdf0f6;
+	padding: 15px;
+}
