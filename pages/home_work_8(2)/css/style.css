@@ -27,7 +27,7 @@ header {
     color: #000;
     font-size: 28px;
 }
-section {
+.container_item {
 	width: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
