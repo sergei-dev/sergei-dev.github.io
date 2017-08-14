@@ -1,21 +1,25 @@
 @media only screen and (max-width: 750px) {
-	section {
-		-webkit-flex-direction: column;
-		-moz-flex-direction: column;
-		-ms-flex-direction: column;
-		-o-flex-direction: column;
-		flex-direction: column;
-	}
-	.aside_left {
-		max-width: none;
-		width: 100%;
-	}
-	.aside_left  ul li {
-		max-width: none;
-		width: 100%;
-	}
-.aside_right {
-	max-width: none;
-	width: 100%;
-}
+    section {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .aside_left {
+        max-width: none;
+        width: 100%;
+    }
+    .aside_left ul li {
+        max-width: none;
+        width: 100%;
+    }
+    .aside_right {
+        max-width: none;
+        width: 100%;
+    }
+    article {
+    	margin-right: 0;
+    	margin-left: 0;
+    }
 }
