@@ -6,11 +6,11 @@
 		-o-flex-direction: column;
 		flex-direction: column;
 	}
-	aside:first-child {
+	.aside_left {
 		max-width: none;
 		width: 100%;
 	}
-	aside ul li {
+	.aside_left  ul li {
 		max-width: none;
 		width: 100%;
 	}

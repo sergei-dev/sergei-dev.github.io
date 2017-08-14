@@ -65,6 +65,8 @@ aside ul li:hover {
 }
 article {
 	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
 	
 }
 article h2 {
