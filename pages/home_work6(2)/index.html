@@ -9,17 +9,19 @@
 
 <body>
     <table class="one_table">
-        <tr>
-            <th rowspan="2">Напиток</th>
-            <th colspan="5">Человечек</th>
-        </tr>
-        <tr>
-            <td>Незнайка</td>
-            <td>Пончик</td>
-            <td>Торопыжка</td>
-            <td>Пилюлюкин</td>
-            <td>Всего</td>
-        </tr>
+        <thead>
+            <tr>
+                <th rowspan="2">Напиток</th>
+                <th colspan="5">Человечек</th>
+            </tr>
+            <tr>
+                <td>Незнайка</td>
+                <td>Пончик</td>
+                <td>Торопыжка</td>
+                <td>Пилюлюкин</td>
+                <td>Всего</td>
+            </tr>
+        </thead>
         <tr>
             <td class="left">Квас, л</td>
             <td>2</td>
@@ -61,14 +63,14 @@
             <td>13</td>
         </tr>
     </table>
-    <br>
-    <br>
     <table class="two_table">
-        <tr>
-            <th>Name</th>
-            <th>Item Name</th>
-            <th>Item Price</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </thead>
         <tr>
             <td>Alvin</td>
             <td>Eclair</td>
@@ -90,13 +92,14 @@
             <td>$9.99</td>
         </tr>
     </table>
-    <br>
     <table class="three_table">
-        <tr>
-            <th>Name</th>
-            <th>Item Name</th>
-            <th>Item Price</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </thead>
         <tr>
             <td>Alvin</td>
             <td>Eclair</td>
@@ -118,17 +121,17 @@
             <td>$9.99</td>
         </tr>
     </table>
-    <br>
-    <br>
     <div class="foure_table_cont">
         <table class="four_table">
-            <tr>
-                <th>Название</th>
-                <th>Кол-во</th>
-                <th>Цена</th>
-                <th colspan="4">Скидка</th>
-                <th>Итого</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Кол-во</th>
+                    <th>Цена</th>
+                    <th colspan="4">Скидка</th>
+                    <th>Итого</th>
+                </tr>
+            </thead>
             <tr>
                 <td class="one_td">Медведь девочка</td>
                 <td>1 шт.</td>
@@ -193,11 +196,15 @@
                 </td>
                 <td>300р.</td>
             </tr>
+            <tfoot class="price_footer">
+                <td colspan="8">
+                    <div class="total_amount">
+                        <p><span>4 шт. на сумму 10 700р.</span>Сумма без скидки: 11 000р. &#8212;</p>
+                    </div>
+                </td>
+            </tfoot>
         </table>
-         <a href="#" class="close"></a>
-        <div class="total_amount">
-            <p><span>4 шт. на сумму 10 700р.</span>Сумма без скидки: 11 000р. &#8212;</p>
-        </div>
+        <a href="#" class="close"></a>
         <div class="in_cart">
             <a href="#">перейти в корзину &#8594;</a>
         </div>
