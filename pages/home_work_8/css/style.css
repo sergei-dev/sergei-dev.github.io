@@ -54,6 +54,7 @@ header {
 }
 .city_items {
 	width: 30%;
+
 	
 }
 .city_items h2 {
@@ -63,4 +64,25 @@ header {
 }
 .city_items .first {
 	margin-bottom: 15px;
+}
+.cont_city_img {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: start;
+	align-items: start;
+	
+}
+.cont_city_img img {
+
+	max-width: 50%;
+	
+
+}
+.cont_city_img img:first-child {
+margin-right: 10px;
 }
