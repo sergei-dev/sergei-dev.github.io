@@ -204,7 +204,8 @@ table {
 
 .total_amount {
     text-align: right;
-    margin-right: 25px;
+    border-right: 5px solid #e0dddd;
+    padding-right: 15px;
 }
 
 .total_amount p {

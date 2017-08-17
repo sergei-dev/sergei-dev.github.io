@@ -1,5 +1,5 @@
 body {
-	background: #bfdcf4;
+	
 }
 .grid_item {
 	background: #404850;
@@ -76,7 +76,7 @@ body {
 .img {
 	
 	box-sizing: border-box;
-	background: skyblue;
+	
 	border: 1px solid white;
 	
 }
