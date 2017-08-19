@@ -1,6 +1,9 @@
 #portfolio {
         border-bottom: 1px solid #e5e5e5;
+        padding-left: 70px;
+        padding-right: 70px;
 }
+
 .item {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -26,7 +29,7 @@
 	font-weight: bold;
 }
 .portfolio_list {
-	margin-right: 90px;
+	margin-right: 70px;
 }
 .ul_portfolio li {
 	margin-bottom: 15px;
@@ -74,7 +77,7 @@
 	
 }
 
-.grid-item {
+.grid .grid-item {
   float: left;
 	max-width: 250px;
   overflow: hidden;
@@ -97,6 +100,7 @@
     text-transform: uppercase;
     color: #000;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 .info_portfolio span {
   text-transform: uppercase;
@@ -119,6 +123,9 @@
 }
 .grid-item:hover .info_portfolio {
       display: block;
+}
+.grid-item a {
+  cursor: url('../img/cursor_port.png') 4 12, auto;
 }
 #recent_blog {
   border-bottom: 1px solid #e5e5e5

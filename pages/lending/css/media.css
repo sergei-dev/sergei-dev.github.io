@@ -4,6 +4,69 @@
         padding-left: 20px;
     }
 }
+@media only screen and (max-width: 1101px) {
+   
+   .port_cont {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+   }
+   .portfolio_list {
+    margin: 0;
+   }
+   .ul_portfolio  {
+    width: 70%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+      margin-bottom: 20px;
+   }
+   .link_portfolio {
+    font-size: 13px;
+   
+
+   }
+  
+   .grid {
+    width: 100%;
+   }
+   .grid .grid-item {
+    max-width: none;
+    width: 45%;
+    float: right;
+    margin: auto;
+   }
+   #portfolio {
+    padding-left: 0;
+    padding-right: 0;
+   }
+   #portfolio .head_after {
+    padding: 0 15px;
+   }
+   #portfolio .head_after::before {
+            left: 0.1%;
+   }
+   #recent_blog {
+    padding-right: 0;
+    padding-left: 0;
+   }
+    #recent_blog .head_after {
+        padding: 0 15px;
+    }
+     #recent_blog .head_after::before {
+            left: 0.1%;
+   }
+    .blog_item {
+        width: 50%;
+    }
+
+}
 
 @media only screen and (max-width: 991px) {
     .sidebar_nav {
@@ -96,6 +159,42 @@
         display: block;
         padding-right: 15px;
     }
+    .blog_item {
+        width: 50%;
+    }
+    #recent_blog {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #recent_blog .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #recent_blog .head_after {
+        padding: 0 15px;
+    }
+    .head_block {
+        width: 80%;
+    }
+    .blog_border {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 35px;
+
+    }
+    .adress_block {
+        width: 75%;
+    }
+    .contact_form {
+        max-width: none;
+        width: 100%;
+    }
+    .contact_form form {
+        width: 100%;
+    }
+   .contact_form form input, #text_form {
+    width: 100%;
+   }
 }
 
 @media only screen and (min-width: 991px) {
@@ -243,12 +342,98 @@
     .info_employments p {
     	text-align: center;
     }
-
+    .blog_container {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .blog_item {
+        width: 100%;
+    }
+    .adress_block {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        margin: auto;
+    }
+    .adress_item {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .adress_block .fa-map-marker,
+    .adress_block .fa-envelope-o {
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+    .footer_container_block {
+        max-width: none;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .soc_buttons {
+        margin-bottom: 80px;
+        width: 60%;
+        justify-content: space-between;
+       
+       
+    }
+    .soc_buttons a i {
+        padding: 0;
+    }
+    .ul_portfolio {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+   
+   .link_portfolio_offset {
+    margin: 0;
+   }
+   #portfolio .head_after {
+    text-align: center;
+   }
+   #contact .head_after {
+    text-align: center;
+    margin-bottom: 90px;
+   }
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width: 450px) {
     .employment_item {
         width: 100%;
         margin-bottom: 40px;
+    }
+    .soc_buttons {
+        width: 90%;
+    }
+    .contact_form form .button_send {
+        min-width: 20%;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .ul_about li span {
+        min-width: 120px;
     }
 }
