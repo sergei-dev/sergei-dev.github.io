@@ -26,13 +26,13 @@
                 </div>
                 <div class="nav_menu">
                     <ul class="menu_aside">
-                        <li><a class="nav_line_one" href="#about">ABOUT ME</a></li>
-                        <li><a class="nav_line_one" href="#skills">SKILLS</a></li>
-                        <li><a class="nav_line_one" href="#education">EDUCATION</a></li>
-                        <li><a class="nav_line_one" href="#emploment">EMPLOYMENT</a></li>
-                        <li><a class="nav_line_one" href="#portfolio">PORTFOLIO</a></li>
-                        <li><a class="nav_line_one" href="#recent_blog">BLOG</a></li>
-                        <li><a class="nav_line_one" href="#contact">CONTACT</a></li>
+                        <li><a class="nav_line_one nav_active" href="#about">ABOUT ME</a></li>
+                        <li><a class="nav_line_one nav_active" href="#skills">SKILLS</a></li>
+                        <li><a class="nav_line_one nav_active" href="#education">EDUCATION</a></li>
+                        <li><a class="nav_line_one nav_active" href="#emploment">EMPLOYMENT</a></li>
+                        <li><a class="nav_line_one nav_active" href="#portfolio">PORTFOLIO</a></li>
+                        <li><a class="nav_line_one nav_active" href="#recent_blog">BLOG</a></li>
+                        <li><a class="nav_line_one nav_active" href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -546,10 +546,10 @@ function onScroll(){
         var hash = $(this).attr("href");
         var target = $(hash);
         if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
-            $(menu_selector + " a.active").removeClass("active");
-            $(this).addClass("active");
+            $(menu_selector + " a.nav_active_line").removeClass("nav_active_line");
+            $(this).addClass("nav_active_line");
         } else {
-            $(this).removeClass("active");
+            $(this).removeClass("nav_active_line");
         }
     });
 }
