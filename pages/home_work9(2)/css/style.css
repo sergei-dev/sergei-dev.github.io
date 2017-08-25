@@ -24,7 +24,7 @@ body {
 .nav_cont .top_nav {
 	
 	background: #404850;
-	width: 100%;
+	width: calc(100% / 7);
     box-sizing: border-box;
     
 
@@ -34,9 +34,12 @@ body {
 
 .nav_cont .top_nav a {
 	
-	display: inline-block;
+	display: block;
+	width: calc(100% / 7);
+	float: left;
 	border: 1px solid white;
 	padding: 0 21px;
+	text-align: center;
 
 	
 }
