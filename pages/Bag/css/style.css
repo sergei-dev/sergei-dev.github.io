@@ -46,12 +46,13 @@ a:focus {
     width: 100%;
     display: none;
     position: fixed;
-    top: 21.8%;
+    bottom: 40%;
     left: 0;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
     z-index: 101;
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     
 }
@@ -153,8 +154,8 @@ a:focus {
 .modal_form .close_form .fa-times {
 	display: block;
 	position: absolute;
-	top: 47%;
-	left: 48%;
+	top: 49%;
+	left: 50.7%;
 	font-size: 20px;
 	color: #fff;
 	-webkit-transform: translate(-50%,-50%);
@@ -407,7 +408,9 @@ header {
 	text-decoration: none;
 	
 }
-.head_price:hover {
+.head_price:hover,
+ .head_price:active,
+ .head_price:focus{
 	
 	color: #fff;
 	background: transparent;
