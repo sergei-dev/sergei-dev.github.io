@@ -37,6 +37,7 @@ a:hover,
 a:active,
 a:focus {
 	text-decoration: none;
+	outline: none;
 }
 
 
@@ -46,7 +47,7 @@ a:focus {
     width: 100%;
     display: none;
     position: fixed;
-    bottom: 40%;
+    top: 18%;
     left: 0;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -86,10 +87,11 @@ a:focus {
 	.nav_mobile {
 		display: none;
 	}
+	
 }
 .nav_link {
 	padding-top: 50px;
-	float: right;
+	
 }
 .nav_link .fa-bars {
 	color: #6b1200;
