@@ -105,10 +105,8 @@ body {
     font-size: 13px;
     position: relative;
 }
-
-
 .nav_active {
-    background: transparent; 
+    background: transparent;
 
 }
 .nav_active:before {
@@ -122,15 +120,17 @@ body {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    
+
 }
 .nav_active:hover:before {
     width: 70%;
     height: 1px;
 }
-.nav_active_line {
-    border-bottom: 1px solid #ef106e;
+.nav_active_line.nav_active:before {
+  width: 70%;
+  height: 1px;
 }
+
 
 .section_right {
     width: 80%;
@@ -161,7 +161,6 @@ body {
 .slider {
 
     width: 100%;
-    display: table;
     position: relative;
     overflow: hidden;
     -webkit-user-select: none;
@@ -169,6 +168,26 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    position: relative;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 35px;
+  height: 3px;
+  border-radius: 0;
+  margin-right: 3px;
+  background: silver;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: white;
 }
 .ul_slider {
 
@@ -302,7 +321,7 @@ body {
 }
 .ul_about li span {
        display: inline-block;
-       min-width: 100px; 
+       min-width: 100px;
        text-align: left;
 }
 
@@ -429,7 +448,7 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     padding-bottom: 40px;
     margin-bottom: 40px;
-  
+
 }
 .p_education p {
  	font-size: 17px;
@@ -524,7 +543,7 @@ body {
 .employment_item span:first-child {
 	color: #000;
 
-} 
+}
 .employment_item span:nth-child(2) {
 	margin-bottom: 20px;
 }
@@ -550,7 +569,7 @@ body {
 	font-size: 13px;
 }
 .bag_employments {
-	
+
 	width: 100%;
 	min-height: 500px;
 	background: url(http://wpdemos.themezaa.com/brando/personal/wp-content/uploads/2016/04/personal-img4.jpg) no-repeat;
@@ -594,12 +613,3 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-
-
-
-
-
-
-
-
- 
