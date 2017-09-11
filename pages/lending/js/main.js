@@ -34,7 +34,16 @@ $(document).ready(function() {
 
   });
 
-
+  var selector = $(this).attr('data-filter');
+  $('.grid').isotope({
+    filter: selector,
+    itemSelector: '.grid-item',
+    masonry: {
+      itemSelector: '.grid-item',
+      columnWidth: 250,
+      gutter: 20
+    }
+  });
 
   $('.grid').masonry({
     itemSelector: '.grid-item',
@@ -60,6 +69,7 @@ $(document).ready(function() {
 
 
   });
+
   $('.select_form').selectric();
 
   $('.menu_link_button').on('click', function(e) {
