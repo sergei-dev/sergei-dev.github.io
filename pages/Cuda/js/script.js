@@ -13,11 +13,7 @@
      }
 
    });
-   $(".dial").knob({
-      'inputColor': '#3c4761',
-      'fontWeight': 'ligth',
-      'fontSize': '50'
-    });
+  
 
     function dial_animate(initvalone, selector) {
       $({value: 0}).animate({value: initvalone}, {
@@ -32,6 +28,12 @@
     }
 
     */
+
+     $(".dial").knob({
+      'inputColor': '#3c4761',
+      'fontWeight': 'ligth',
+      'fontSize': '50'
+    });
 
 
 
