@@ -1,9 +1,40 @@
  $(function() {
-   $(".dial").knob({
-     'inputColor': '#3c4761',
-     'fontWeight': 'ligth',
-     'fontSize': '50'
+
+   $(window).scroll(function() {
+     if ( $(this).scrollTop() > 40  ) {
+
+        dial_animate(90, $('.one_dial'));
+        dial_animate(75, $('.two_dial'));
+        dial_animate(70, $('.three_dial'));
+        dial_animate(85, $('.four_dial'));
+     }
+     else {
+
+     }
+
    });
+   $(".dial").knob({
+      'inputColor': '#3c4761',
+      'fontWeight': 'ligth',
+      'fontSize': '50'
+    });
+
+    function dial_animate(initvalone, selector) {
+      $({value: 0}).animate({value: initvalone}, {
+        duration: 2000,
+        easing:'swing',
+        step: function()
+        {
+          selector.val(this.value).trigger('change');
+          selector.val(initvalone);
+        }
+      });
+    }
+
+
+
+
+
 
    $(".tabs_item").not(":first").hide();
    $(".controlls").click(function() {

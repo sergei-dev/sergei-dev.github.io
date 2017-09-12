@@ -74,7 +74,7 @@ $(document).ready(function() {
 
   $('.menu_link_button').on('click', function(e) {
     e.preventDefault();
-    $('.modal_menu').toggleClass('active_menu');
+    $('.modal_menu').slideToggle();
   });
 
 
