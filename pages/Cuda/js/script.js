@@ -1,6 +1,6 @@
  $(function() {
 
-   $(window).scroll(function() {
+    /* $(window).scroll(function() {
      if ( $(this).scrollTop() > 40  ) {
 
         dial_animate(90, $('.one_dial'));
@@ -31,7 +31,7 @@
       });
     }
 
-
+    */
 
 
 
