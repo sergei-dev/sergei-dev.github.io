@@ -1,0 +1,83 @@
+@media only screen and (max-width: 1199px) {
+  .serv_info_items, .skills_items {
+    margin-bottom: 70px;
+  }
+  .team_items {
+    margin-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about_us_items {
+    text-align: center;
+  }
+  .about_us_items .post p {
+    padding: 0;
+  }
+  .avtor .name_avtor, .avtor .proffesion {
+    padding-left: 0;
+  }
+  #blog .about_us_items {
+    margin-bottom: 100px;
+  }
+
+  .footer_item {
+    width: 100%;
+  }
+  .logo img {
+    float: left;
+    padding-left: 15px;
+  }
+  .mob_nav .bars .fa-bars {
+    padding: 0;
+    padding-right: 15px;
+  }
+  .mob_nav .bars {
+    float: right;
+  }
+  .header_top_line.header_fixed .logo img {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .serv_info_items, .skills_items {
+    margin-bottom: 90px;
+  }
+  .footer_item {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .footer_anchor_items {
+    margin-bottom: 30px;
+  }
+  .footer_anchor_items:last-child {
+    margin: 0;
+  }
+  .input_form_item {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .input_form:first-child,
+  .input_form:nth-child(2) {
+    max-width: none;
+  }
+  .message {
+    margin: 0;
+  }
+  .head_section {
+    font-size: 25px;
+  }
+  .one_screen .head_one_screen h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about_us_items .post p br {
+    display: none;
+  }
+}

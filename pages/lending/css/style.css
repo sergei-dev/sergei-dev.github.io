@@ -156,6 +156,7 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    cursor: url('../img/arrow.png') 4 12, auto;
 }
 .slider {
 
@@ -168,6 +169,7 @@ body {
     -o-user-select: none;
     user-select: none;
     position: relative;
+
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 0;
