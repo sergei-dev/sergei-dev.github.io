@@ -517,13 +517,6 @@ footer {
   left: 0;
   background: #fff;
   z-index: 100;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 15px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .header_mob_nav .logo {
   margin-bottom: 0;
@@ -532,7 +525,6 @@ footer {
 }
 .header_mob_nav .container {
   width: 100%;
-  max-width: 991px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;

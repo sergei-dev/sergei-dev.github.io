@@ -289,7 +289,7 @@
     min-width: 90px;
   }
   .his_info {
-    
+
   }
   .education_quote {
     width: 80%;
@@ -456,6 +456,9 @@
   }
   .contact_form form .button_send {
     width:40%;
+  }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    width: 100%;
   }
 
 }

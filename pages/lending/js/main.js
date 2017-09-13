@@ -160,20 +160,29 @@ $(document).ready(function() {
         required: true,
         minlength: 6,
         maxlength: 30
+      },
+      message: {
+        required: true,
+        minlength: 60,
+        maxlength: 200
       }
     },
     messages: {
       name: {
         required: "Поле 'Имя' обязательно к заполнению",
-        minlength: "Введите не менее 6-х символов в поле 'Имя'"
+        minlength: "Введите не менее 6-х символов в поле 'Имя'",
+        maxlength: "Превышена длина символов"
       },
       email: {
         required: "Поле 'Email' обязательно к заполнению",
         email: "Необходим формат адреса email",
-        minlength: "Введите не менее 6-х символов в поле 'Email'"
+        minlength: "Введите не менее 6-х символов в поле 'Email'",
+        maxlength: "Превышена длина символов"
       },
       message: {
-        required: "Поле 'Сообщение' обязательно к заполнению"
+        required: "Поле 'Сообщение' обязательно к заполнению",
+        minlength: "Введите не менее 60-х символов в поле 'Сообщение'",
+        maxlength: "Превышена длина символов"
       }
     }
   });
