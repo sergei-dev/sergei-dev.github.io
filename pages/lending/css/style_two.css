@@ -382,7 +382,7 @@
 .contact_form form .selectric {
     border: 2px solid #dfdfdf;
  background: #fff;
- 
+
 }
 
 .contact_form form .selectric .label {
@@ -520,6 +520,11 @@ footer {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+.header_mob_nav .logo {
+  margin-bottom: 0;
 }
 .header_mob_nav .container {
   width: 100%;
