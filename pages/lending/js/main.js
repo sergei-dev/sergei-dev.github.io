@@ -153,17 +153,19 @@ $(document).ready(function() {
     rules: {
       name: {
         required: true,
-        minlength: 2
+        minlength: 6,
+        maxlength: 30
       },
       email: {
         required: true,
-        minlength: 6
+        minlength: 6,
+        maxlength: 30
       }
     },
     messages: {
       name: {
         required: "Поле 'Имя' обязательно к заполнению",
-        minlength: "Введите не менее 2-х символов в поле 'Имя'"
+        minlength: "Введите не менее 6-х символов в поле 'Имя'"
       },
       email: {
         required: "Поле 'Email' обязательно к заполнению",
