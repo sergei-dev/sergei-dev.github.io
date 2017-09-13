@@ -53,11 +53,14 @@ body {
   float: left;
   height: 100vh;
   position: fixed;
-  max-width: 1280px;
   width: 20%;
+  max-width: 1280px;
+
 }
 
 .navigation_menu {
+  width: 100%;
+  max-width: 1280px;
   padding: 60px 40px;
 }
 
@@ -109,9 +112,13 @@ body {
   top: 50%;
   right: 90%;
 }
+.nav_menu {
+  width: 100%;
+  max-width: 1280px;
+}
 
 .nav_menu li {
-  padding: 20px 0;
+
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -123,6 +130,8 @@ body {
   padding-right: 25px;
   font-size: 13px;
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav_active {
@@ -430,6 +439,9 @@ body {
   justify-content: space-around;
   -ms-align-items: center;
   align-items: center;
+}
+.skills_number .container {
+  
 }
 
 .js-counter {
