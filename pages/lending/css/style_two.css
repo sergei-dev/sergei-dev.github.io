@@ -522,9 +522,13 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .header_mob_nav .logo {
   margin-bottom: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .header_mob_nav .container {
   width: 100%;
@@ -545,9 +549,13 @@ footer {
 .header_mob_nav .container .logo {
   margin: 0;
   width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .mob_menu {
   width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .menu_link_button {
   display: block;
@@ -555,10 +563,14 @@ footer {
   padding: 5px 10px;
   text-align: center;
   float: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .menu_link_button .fa-bars {
   color: #fff;
   font-size: 17px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .modal_menu {
   width: 100%;
