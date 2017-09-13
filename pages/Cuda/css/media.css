@@ -75,6 +75,11 @@
     font-size: 30px;
   }
 }
+@media only screen and (max-width: 433px) {
+  .logo a {
+    padding-left: 0;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   .about_us_items .post p br {
