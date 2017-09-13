@@ -94,7 +94,7 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: h.offset().top
     }, 600);
-    $('.modal_menu').removeClass('active_menu');
+    $('.modal_menu').fadeOut();
   });
 
   var menu_selector = ".menu_aside"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
@@ -147,6 +147,33 @@ $(document).ready(function() {
 
     });
 
+  });
+
+  $('#form').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      email: {
+        required: true,
+        minlength: 6
+      }
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению",
+        minlength: "Введите не менее 2-х символов в поле 'Имя'"
+      },
+      email: {
+        required: "Поле 'Email' обязательно к заполнению",
+        email: "Необходим формат адреса email",
+        minlength: "Введите не менее 6-х символов в поле 'Email'"
+      },
+      message: {
+        required: "Поле 'Сообщение' обязательно к заполнению"
+      }
+    }
   });
 
 

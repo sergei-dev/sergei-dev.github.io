@@ -79,6 +79,12 @@
   .logo a {
     padding-left: 0;
   }
+  .buttons_controlls .controlls {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

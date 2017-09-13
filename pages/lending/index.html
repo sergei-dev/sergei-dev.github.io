@@ -415,17 +415,25 @@
             </div>
           </div>
           <div class="contact_form">
-            <form action="">
-              <input name="name" type="text" placeholder="*YOUR NAME">
-              <input name="emal" type="email" placeholder="*YOUR EMAIL" maxlength="35">
-              <select name="select" id="" class="select_form">
-                                <option class="option">WHAT ARE YOU INTERESTED IN</option>
-                                <option class="option">Web Development</option>
-                                <option class="option">Mobile Application</option>
-                                <option class="option">Graphics Design</option>
-                                <option class="option">Other</option>
-                            </select>
-              <textarea name="message" id="text_form" placeholder="YOUR MESSAGE"></textarea>
+            <form id="form" action="">
+              <div class="input_form">
+                <input name="name" type="text" placeholder="*YOUR NAME" required>
+              </div>
+              <div class="input_form">
+                <input name="email" type="email" placeholder="*YOUR EMAIL" required>
+              </div>
+              <div class="input_form">
+                <select required name="select" id="" class="select_form">
+                  <option class="option">WHAT ARE YOU INTERESTED IN</option>
+                  <option class="option">Web Development</option>
+                  <option class="option">Mobile Application</option>
+                  <option class="option">Graphics Design</option>
+                  <option class="option">Other</option>
+              </select>
+              </div>
+              <div class="input_form">
+                <textarea name="message" id="text_form" placeholder="YOUR MESSAGE" required></textarea>
+              </div>
               <button class="button_send" type="submit">SUBMIT</button>
             </form>
           </div>
@@ -461,6 +469,7 @@
   <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
   <script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
   <script src="libs/jquery_selectric/public/jquery.selectric.min.js"></script>
+  <script src="libs/jquery_validate/jquery.validate.js"></script>
   <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
   <script src="bower_components/Counter-Up/jquery.counterup.min.js"></script>
   <script src="js/main.js"></script>

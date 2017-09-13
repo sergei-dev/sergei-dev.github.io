@@ -455,8 +455,9 @@
     width: 90%;
   }
   .contact_form form .button_send {
-    min-width: 20%;
+    width:40%;
   }
+
 }
 
 @media only screen and (max-width: 340px) {

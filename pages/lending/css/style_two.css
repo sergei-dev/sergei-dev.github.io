@@ -328,10 +328,12 @@
     -o-flex-direction: column;
     flex-direction: column;
 }
+.contact_form .input_form {
+  margin-bottom: 20px;
+}
 .contact_form form input {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
     border: 2px solid #dfdfdf;
     padding: 20px 20px;
     -webkit-transition: all  0.3s;
@@ -342,7 +344,6 @@
 #text_form {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
     border: 2px solid #dfdfdf;
     padding: 20px 20px;
     -webkit-transition: all  0.3s;
@@ -381,7 +382,7 @@
 .contact_form form .selectric {
     border: 2px solid #dfdfdf;
  background: #fff;
- margin-bottom: 20px;
+ 
 }
 
 .contact_form form .selectric .label {
@@ -522,6 +523,7 @@ footer {
 }
 .header_mob_nav .container {
   width: 100%;
+  max-width: 991px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -543,7 +545,6 @@ footer {
   width: 50%;
 }
 .menu_link_button {
-  
   display: block;
   background: #000;
   padding: 5px 10px;
@@ -588,4 +589,11 @@ footer {
 }
 .active_menu {
   display: block;
+}
+input.error {
+ border: 1px solid #ff0000;
+}
+label.error {
+ color: #ff0000;
+ font-weight: normal;
 }
