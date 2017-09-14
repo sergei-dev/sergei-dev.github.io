@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	 $('.nav_link').on('click', function(e) {
             e.preventDefault();
-            $('.nav_mobile').toggleClass('active_menu');
+            $('.nav_mobile').slideToggle();
         });
 
 	 $('.nav_menu a').on('click', function(e) {
@@ -19,21 +19,21 @@ $(document).ready(function() {
             $('html, body').animate({
                 scrollTop: h.offset().top
             }, 600);
-            $('.nav_mobile').removeClass('active_menu');
+            $('.nav_mobile').slideUp();
         });
 
-		
-	
-	
+
+
+
 
 	$('.button_order').on('click', function(e) {
 		e.preventDefault();
 		$('.modal_bg').fadeIn();
 		$('.modal_form').fadeIn();
 	});
-	
 
-	
+
+
 
 	$('.modal_bg, .close_form').on('click', function(e) {
 		e.preventDefault();
@@ -41,12 +41,12 @@ $(document).ready(function() {
 		$('.modal_bg').fadeOut();
 
 	});
-	
+
 
 		$('.owl-carousel').owlCarousel({
 			loop: true,
 			autoplay: true,
-			autoplayTimeout: 1000, 
+			autoplayTimeout: 1000,
 			autoplayHoverPause: true,
 			margin:30,
 			nav: true,
@@ -70,5 +70,5 @@ $(document).ready(function() {
     	});
 
     	$('.tel_form').mask("+7 (999)-999-99-99");
-		
+
 });
