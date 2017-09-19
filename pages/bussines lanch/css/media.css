@@ -1,0 +1,157 @@
+@media only screen and (max-width: 1300px) {
+  .home_head::before {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home_head::before {
+    width: 90%;
+  }
+  .img_block img {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .home_head::before {
+    left: 0;
+    width: 100%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .head_section {
+    font-size: 30px;
+  }
+  .business_breakfast {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .business_breakfast .registration {
+    width: 100%;
+    margin: auto;
+    max-width: none;
+  }
+  .head_two {
+    margin-bottom: 20px;
+  }
+  .head_three {
+    margin-bottom: 30px;
+  }
+  .adwantages h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .img_block {
+    margin-bottom: 90px;
+  }
+  .img_block img {
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .img_block::before {
+    width: 70%;
+    left: 12%;
+  }
+  .img_avtor img {
+    margin: auto;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .about_me {
+    text-align: center;
+  }
+  .img_avtor {
+    margin-bottom: 60px;
+  }
+  .about_me .orange_button {
+    float: none;
+    margin: auto;
+  }
+  .reg_items {
+    max-width: none;
+    margin: auto;
+    margin: 0;
+  }
+  .reg_items_containers {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .reg_items_containers:nth-child(2) .reg_items {
+    margin: 0;
+  }
+  .reg_container {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .reg_items .orange_button {
+    max-width: none;
+    width: 90%;
+  }
+  .feedback_form {
+    padding-top: 560px;
+  }
+  .form_application {
+    top: 8%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 50%;
+  }
+  .adwantages_items ul li {
+    margin-bottom: 35px;
+  }
+  .img_block::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+    .slick-next {
+      right: 0;
+    }
+    .slick-prev{
+      left: 0;
+    }
+    .slick-arrow {
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+
+    }
+
+}
+@media only screen and (max-width: 550px) {
+  .form_application {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 462px) {
+  .orange_button {
+    font-size: 22px;
+  }
+  .business_breakfast h3 {
+    font-size: 30px;
+  }
+  .business_breakfast h1 {
+    font-size: 40px;
+  }
+  .slick-arrow {
+    -webkit-transform: rotate(180deg) scale(0.5);
+    -ms-transform: rotate(180deg) scale(0.5);
+    transform: rotate(180deg) scale(0.5);
+  }
+  .slick-next {
+    -webkit-transform: rotate(0deg) scale(0.5);
+    -ms-transform: rotate(0deg) scale(0.5);
+    transform: rotate(0deg) scale(0.5);
+  }
+}
