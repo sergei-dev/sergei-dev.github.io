@@ -288,7 +288,7 @@ body {
 
 .about_me {
   width: 100%;
-  background-image: url('../img/fon.png');
+  background-image: url('../img/fon1.jpg');
   background-repeat: no-repeat;
   padding: 100px 0;
   -webkit-background-size: cover;
@@ -438,7 +438,7 @@ body {
 }
 .video_lessons_bussines_section {
   width: 100%;
-  background-image: url('../img/fon2.png');
+  background-image: url('../img/fon2vid.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -492,7 +492,7 @@ body {
 .input_form {
 	color:#010100;
 	font-family: "OpenSansLight";
-	
+
 }
 .input_form::-webkit-input-placeholder {
 }
@@ -569,7 +569,7 @@ body {
 .slick-miniatures-container {
   width: 100%;
   text-align: left;
-  
+
   overflow: hidden;
   cursor: move;
 
