@@ -66,6 +66,7 @@
   }
   .about_me {
     text-align: center;
+    padding-bottom: 60px;
   }
   .img_avtor {
     margin-bottom: 60px;
@@ -127,6 +128,11 @@
 
     }
 
+}
+@media only screen and (max-width: 630px) {
+  .form_application {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 550px) {
   .form_application {
