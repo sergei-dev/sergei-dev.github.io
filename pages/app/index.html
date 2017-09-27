@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="libs/jQuery-Selectric-master/public/selectric.css">
   <link rel="stylesheet" href="libs/jquery-range/nouislider.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -189,15 +187,46 @@
                     <label for="check_filter_five">Недвижимость</label>
 
                   </div>
+
                   <div class="two_line_filter">
-                    <select name="" id="">
-                    <option selected= value="">Выбрать район</option>
-                    <option value="">Москва</option>
-                    <option value="">Москва</option>
-                    <option value="">Москва</option>
-                    <option value="">Москва</option>
-                  </select>
-                    <input type="text" id="slider">
+                    <div class="dropd">
+                      <button type="button" class="drop">
+                            Выбрать район
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </button>
+                    <div class="drop_wrapper">
+                      <div class="drop_menu">
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_six" type="checkbox">
+                          <label for="check_filter_six">Комфорт</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_seven" type="checkbox">
+                          <label for="check_filter_seven">Эконом</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_8" type="checkbox">
+                          <label for="check_filter_8">Бизнес</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_9" type="checkbox">
+                          <label for="check_filter_9">Люкс</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_10" type="checkbox">
+                          <label for="check_filter_10">Недвижимость</label>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div id="example">
+                      <div class="snap_wrapper">
+                        <div id="slider-snap-value-lower"></div>
+                        <div id="slider-snap-value-upper"></div>
+                      </div>
+                      <div id="slider"></div>
+                    </div>
+
                   </div>
                 </div>
                 <div class="button_show">
@@ -212,106 +241,113 @@
                 </a>
                 </div>
               </div>
-              <div class="row filter_result filter_result_active">
-                <div class="image_result">
-                  <img src="img/result.jpg" alt="">
-                </div>
-                <div class="description_result">
-                  <div class="one_description">
-                    <div class="one_description_item">
-                      <h3>ЖК Спортивный парк имени Виктора</h3>
-                      <span>854,000 - 1,877,700 </span>
-                      <address>
-                        <div class="adress_item">
-                          <i class="fa fa-map-o" aria-hidden="true"></i>
-                          <p>Район Кособланковский</p>
-                        </div>
-                        <div class="adress_item">
-                          <i class="fa fa-map-marker" aria-hidden="true"></i>
-                          <p>ул. Войсковая 18, дом 5</p>
-                        </div>
-                        <div class="adress_item">
-                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                          <p>Срок сдачи: 1 полугодие 2018 года</p>
-                        </div>
-                      </address>
-                    </div>
-                    <div class="one_description_item">
-                      <p class="head_price">Эконом класс</p>
-                      <div class="price">
-                        <p>Студия 22 м2 850 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-                      </div>
-                      <div class="price">
-                        <p>1-ком 28м2 1 500 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-                      </div>
-                      <div class="price">
-                        <p>2-ком 32м2 4 600 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-                      </div>
-                    </div>
+
+              <div class="col-xs-12">
+                <div class="row filter_result">
+                  <div class="image_result">
+                    <img src="img/result.jpg" alt="">
                   </div>
-                  <div class="two_description">
-                    <div class="developer">
-                      <img src="" alt="">
-                      <span>Застройщик</span>
-                      <p>СтройДомКрутПром</p>
+                  <div class="description_result">
+                    <div class="one_description">
+                      <div class="one_description_item">
+                        <h3>ЖК Спортивный парк имени Виктора</h3>
+                        <span>854,000 - 1,877,700 </span>
+                        <address>
+                          <div class="adress_item">
+                            <i class="fa fa-map-o" aria-hidden="true"></i>
+                            <p>Район Кособланковский</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>ул. Войсковая 18, дом 5</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <p>Срок сдачи: 1 полугодие 2018 года</p>
+                          </div>
+                        </address>
+                      </div>
+                      <div class="one_description_item">
+                        <p class="head_price">Эконом класс</p>
+                        <div class="price">
+                          <p>Студия 22 м2 850 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>1-ком 28м2 1 500 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>2-ком 32м2 4 600 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="more">
-                      <a href="#">Подробнее<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <div class="two_description">
+                      <div class="developer">
+                        <img src="" alt="">
+                        <span>Застройщик</span>
+                        <p>СтройДомКрутПром</p>
+                      </div>
+                      <div class="more">
+                        <a href="#">Подробнее<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="row filter_result">
-                <div class="image_result">
-                  <img src="img/result.jpg" alt="">
-                </div>
-                <div class="description_result">
-                  <div class="one_description">
-                    <div class="one_description_item">
-                      <h3>ЖК Спортивный парк имени Виктора</h3>
-                      <span>854,000 - 1,877,700 </span>
-                      <address>
-                        <div class="adress_item">
-                          <i class="fa fa-map-o" aria-hidden="true"></i>
-                          <p>Район Кособланковский</p>
-                        </div>
-                        <div class="adress_item">
-                          <i class="fa fa-map-marker" aria-hidden="true"></i>
-                          <p>ул. Войсковая 18, дом 5</p>
-                        </div>
-                        <div class="adress_item">
-                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                          <p>Срок сдачи: 1 полугодие 2018 года</p>
-                        </div>
-                      </address>
-                    </div>
-                    <div class="one_description_item">
-                      <p class="head_price">Эконом класс</p>
-                      <div class="price">
-                        <p>Студия 22 м2 850 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-                      </div>
-                      <div class="price">
-                        <p>1-ком 28м2 1 500 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-                      </div>
-                      <div class="price">
-                        <p>2-ком 32м2 4 600 000<i class="fa fa-rub" aria-hidden="true"></i></p>
-                      </div>
-                    </div>
+              <div class="col-xs-12">
+                <div class="row filter_result">
+                  <div class="image_result">
+                    <img src="img/result.jpg" alt="">
                   </div>
-                  <div class="two_description">
-                    <div class="developer">
-                      <img src="" alt="">
-                      <span>Застройщик</span>
-                      <p>СтройДомКрутПром</p>
+                  <div class="description_result">
+                    <div class="one_description">
+                      <div class="one_description_item">
+                        <h3>ЖК Спортивный парк имени Виктора</h3>
+                        <span>854,000 - 1,877,700 </span>
+                        <address>
+                          <div class="adress_item">
+                            <i class="fa fa-map-o" aria-hidden="true"></i>
+                            <p>Район Кособланковский</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>ул. Войсковая 18, дом 5</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <p>Срок сдачи: 1 полугодие 2018 года</p>
+                          </div>
+                        </address>
+                      </div>
+                      <div class="one_description_item">
+                        <p class="head_price">Эконом класс</p>
+                        <div class="price">
+                          <p>Студия 22 м2 850 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>1-ком 28м2 1 500 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>2-ком 32м2 4 600 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="more">
-                      <a href="#">Подробнее<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <div class="two_description">
+                      <div class="developer">
+                        <img src="" alt="">
+                        <span>Застройщик</span>
+                        <p>СтройДомКрутПром</p>
+                      </div>
+                      <div class="more">
+                        <a href="#">Подробнее<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
+
+
           </div>
         </div>
       </section>
@@ -379,6 +415,7 @@
   <script src="libs/jQuery-Selectric-master/public/jquery.selectric.min.js"></script>
   <script src="libs/jquery-range/nouislider.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -197,7 +197,9 @@
       .two_footer_line .row .about_project p {
         text-align: center; }
   .phone p {
-    text-align: center; } }
+    text-align: center; }
+  .dropd {
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 767px) {
   .menu_catalog_left {
