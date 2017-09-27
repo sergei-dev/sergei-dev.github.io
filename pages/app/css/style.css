@@ -203,6 +203,7 @@ header {
   width: 100%;
   max-width: 215px;
   position: relative;
+  cursor: pointer;
 }
 
 .three_nav_items_container:first-child {
@@ -263,13 +264,13 @@ header {
   transition: 0.6s;
 }
 
-.button_torg a:hover {
+.button_torg:hover a {
   text-decoration: none;
   background: #fff;
   color: #d33222;
   border: 1px solid #d33222;
 }
-.button_torg a:hover .fa-arrow-circle-right {
+.button_torg:hover .fa-arrow-circle-right {
   color: #d33222;
 }
 

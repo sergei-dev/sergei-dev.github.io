@@ -26,7 +26,7 @@ $(function() {
   ];
 
   noUiSlider.create(uiSlider, {
-    start: [3000, 8700],
+    start: [700, 1200],
     connect: true,
     range: {
       'min': [200],
