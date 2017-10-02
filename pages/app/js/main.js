@@ -1,44 +1,51 @@
-$(function() {
-  $('select').selectric();
-  $('.selectric-wrapper').append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
-
-  $('.button_menu_link').click(function(e) {
-    e.preventDefault();
-    $('.mob_nav').slideToggle();
+$(document).ready(function() {
+  $('.menu_link').on('click', function() {
+    $('.nav_mobile').slideToggle();
   });
 
-  $('.drop').on('click', function() {
-    $('.drop_wrapper').slideToggle();
-  });
+  $(".tabs_body").not(":first").hide();
+  $(".button_controlls").click(function() {
+    $(".button_controlls").removeClass("button_controlls_active").eq($(this).index()).addClass("button_controlls_active");
+    $(".tabs_body").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("button_controlls_active");
 
-  $('.made_in .up').on('click', function() {
-    var selector = $(this).attr('href');
-    var h = $(selector);
-    $('html, body').animate({
-      scrollTop: h.offset().top
-    }, 600);
-  });
-
-  var uiSlider = document.getElementById('slider');
-  var snapValues = [
-    document.getElementById('slider-snap-value-lower'),
-    document.getElementById('slider-snap-value-upper')
-  ];
-
-  noUiSlider.create(uiSlider, {
-    start: [700, 1200],
-    connect: true,
-    range: {
-      'min': [200],
-      'max': [2000]
+  $('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 0,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      767: {
+        items: 3
+      },
+      1200: {
+        items: 6
+      }
     }
   });
 
-  uiSlider.noUiSlider.on('update', function(values, handle) {
-    snapValues[handle].innerHTML = values[handle];
+  $('.phone_popup').magnificPopup({
+    items: {
+      src: '.fon'
+    },
+    type: 'inline'
   });
 
-
-
-
+  $('.bron_popup').magnificPopup({
+    items: {
+      src: '.fon_bron'
+    },
+    type: 'inline',
+    midClick: true
+  });
+  $('.slide').magnificPopup({
+    type: 'image'
+  });
+  $('select').selectric();
+  $('.selectric-wrapper').append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
+  $(".date_child").mask("99/99/9999",{placeholder:"ДД/ММ/ГГГГ"});
+  $(".phone_input").mask("+7(999) 999-9999");
 });

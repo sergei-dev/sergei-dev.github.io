@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/jquery-range/nouislider.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="container">
+        <div class="row header_top_line">
+          <div class="hidden-xs hidden-sm col-md-6">
+            <nav>
+              <a href="#">О портале</a>
+              <a href="#">Разместить рекламу</a>
+              <a href="#">Интересное</a>
+              <a href="#">Контакты</a>
+            </nav>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-4 map">
+            <div class="map_cont">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>Краснодар</p>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="hidden-xs col-sm-4  col-md-2 soc_buttons">
+            <div class="soc_buttons_cont">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 menu_link">
+            <a class="button_menu_link" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          </div>
+          <div class="mob_nav">
+            <a href="#">О портале</a>
+            <a href="#">Разместить рекламу</a>
+            <a href="#">Интересное</a>
+            <a href="#">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main_content">
+      <div class="one_screen">
+        <div class="container">
+          <div class="row two_header_line">
+            <div class="col-xs-12 col-md-6 logo">
+              <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="col-xs-12 col-md-6 user_log">
+              <div class="user_cont">
+                <div class="sign-in">
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>
+                  <a href="#">Войти</a>
+                </div>
+                <div class="registration">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                  <a href="#">Регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row three_header_line">
+            <div class="three_nav_items_container">
+              <div class="three_nav_items">
+
+                <a href="#">
+                  <h4>Новостройки</h4>
+                  <p>По доступным ценам</p>
+                </a>
+              </div>
+            </div>
+            <div class="three_nav_items_container">
+              <div class="three_nav_items">
+                <a href="#">
+                  <h4>Коттеджные поселки</h4>
+                  <p>Свой дом по цене квартиры</p>
+                </a>
+              </div>
+            </div>
+            <div class="three_nav_items_container">
+              <div class="three_nav_items">
+                <a href="#">
+                  <h4>Застройщики</h4>
+                  <p>Только проверенные</p>
+                </a>
+              </div>
+            </div>
+            <div class="three_nav_items_container">
+              <div class="three_nav_items">
+
+                <a href="#">
+                  <h4>Недвижимость</h4>
+                  <p>Вторичная недвижимость</p>
+                </a>
+              </div>
+            </div>
+            <div class="three_nav_items_container">
+              <div class="three_nav_items">
+
+                <a href="#">
+                  <h4>Специалисты</h4>
+                  <p>Специалисты на портале</p>
+                </a>
+              </div>
+            </div>
+            <div class="three_nav_items_container">
+              <div class="button_torg">
+                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                <a href="#">Продать недвижимость</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav_pages">
+        <div class="container">
+          <div class="row nav_pages">
+            <div class="col-xs-12">
+              <a class="home_link" href="#">Главная</a> /
+              <a class="this_page" href="#">Недвижимость</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="catalog">
+        <div class="container">
+          <div class="row head_catalog">
+            <div class="col-xs-12">
+              <h1>Новостройки Краснодара - каталог новостроек</h1>
+            </div>
+          </div>
+          <div class="row catalog_container">
+            <div class="menu_catalog_left">
+              <aside class="catalog_menu">
+                <h3>Каталог новостроек</h3>
+                <ul>
+                  <li><a href="#">Недвижимость</a></li>
+                  <li><a href="#">Новостройки эконом класса</a></li>
+                  <li><a href="#">Недвижимость</a></li>
+                  <li><a href="#">Новостройки эконом класса</a></li>
+                  <li><a href="#">Недвижимость</a></li>
+                  <li><a href="#">Новостройки эконом класса</a></li>
+                </ul>
+              </aside>
+            </div>
+            <div class="filter">
+              <div class="filter_catalog">
+                <div class="filter_item">
+                  <div class="one_line_filter">
+                    <span>Комнат</span>
+                    <input class="number_room" type="text" placeholder="От" required>
+                    <input class="number_room" type="text" placeholder="До" required>
+
+
+                    <input class="check_red" id="check_filter" type="checkbox">
+                    <label for="check_filter">Комфорт</label>
+
+
+                    <input class="check_red" id="check_filter_two" type="checkbox">
+                    <label for="check_filter_two">Эконом</label>
+
+
+                    <input class="check_red" id="check_filter_three" type="checkbox">
+                    <label for="check_filter_three">Бизнес</label>
+
+
+                    <input class="check_red" id="check_filter_four" type="checkbox">
+                    <label for="check_filter_four">Люкс</label>
+
+
+                    <input class="check_red" id="check_filter_five" type="checkbox">
+                    <label for="check_filter_five">Недвижимость</label>
+
+                  </div>
+
+                  <div class="two_line_filter">
+                    <div class="dropd">
+                      <button type="button" class="drop">
+                            Выбрать район
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </button>
+                    <div class="drop_wrapper">
+                      <div class="drop_menu">
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_six" type="checkbox">
+                          <label for="check_filter_six">Комфорт</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_seven" type="checkbox">
+                          <label for="check_filter_seven">Эконом</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_8" type="checkbox">
+                          <label for="check_filter_8">Бизнес</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_9" type="checkbox">
+                          <label for="check_filter_9">Люкс</label>
+                        </div>
+                        <div class="drop_items">
+                          <input class="check_red" id="check_filter_10" type="checkbox">
+                          <label for="check_filter_10">Недвижимость</label>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div id="example">
+                      <div class="snap_wrapper">
+                        <div id="slider-snap-value-lower"></div>
+                        <div id="slider-snap-value-upper"></div>
+                      </div>
+                      <div id="slider"></div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="button_show">
+                  <a class="show" href="#">Показать</a>
+                </div>
+              </div>
+              <div class="row show_in_map">
+                <div class="col-xs-12">
+                  <a href="https://yandex.ua/maps/-/CBU8j8dcwA" target="_blank">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <p>Показать на карте</p>
+                </a>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="row filter_result">
+                  <div class="image_result">
+                    <img src="img/result.jpg" alt="">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div class="description_result">
+                    <div class="one_description">
+                      <div class="one_description_item">
+                        <h3>ЖК Спортивный парк имени Виктора</h3>
+                        <span>854,000 - 1,877,700 </span>
+                        <address>
+                          <div class="adress_item">
+                            <i class="fa fa-map-o" aria-hidden="true"></i>
+                            <p>Район Кособланковский</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>ул. Войсковая 18, дом 5</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <p>Срок сдачи: 1 полугодие 2018 года</p>
+                          </div>
+                        </address>
+                      </div>
+                      <div class="one_description_item">
+                        <p class="head_price">Эконом класс</p>
+                        <div class="price">
+                          <p>Студия 22 м2 850 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>1-ком 28м2 1 500 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>2-ком 32м2 4 600 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="two_description">
+                      <div class="developer">
+                        <div class="img_dev">
+                          <img src="img/gray.jpg" alt="dev">
+                        </div>
+                      <div class="dev_descr">
+                        <span>Застройщик</span>
+                        <p>СтройДомКрутПром</p>
+                      </div>
+                      </div>
+                      <div class="more">
+                        <a href="#">Подробнее<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <div class="row filter_result">
+                  <div class="image_result">
+                    <img src="img/result.jpg" alt="">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div class="description_result">
+                    <div class="one_description">
+                      <div class="one_description_item">
+                        <h3>ЖК Спортивный парк имени Виктора</h3>
+                        <span>854,000 - 1,877,700 </span>
+                        <address>
+                          <div class="adress_item">
+                            <i class="fa fa-map-o" aria-hidden="true"></i>
+                            <p>Район Кособланковский</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>ул. Войсковая 18, дом 5</p>
+                          </div>
+                          <div class="adress_item">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <p>Срок сдачи: 1 полугодие 2018 года</p>
+                          </div>
+                        </address>
+                      </div>
+                      <div class="one_description_item">
+                        <p class="head_price">Эконом класс</p>
+                        <div class="price">
+                          <p>Студия 22 м2 850 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>1-ком 28м2 1 500 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="price">
+                          <p>2-ком 32м2 4 600 000<i class="fa fa-rub" aria-hidden="true"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="two_description">
+                      <div class="developer">
+                      <div class="img_dev">
+                          <img src="img/gray.jpg" alt="dev">
+                      </div>
+                      <div class="dev_descr">
+                        <span>Застройщик</span>
+                        <p>СтройДомКрутПром</p>
+                      </div>
+                      </div>
+                      <div class="more">
+                        <a href="#">Подробнее<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="one_footer_line">
+          <div class="container">
+            <div class="row">
+              <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="#">О портале</a></li>
+                  <li><a href="#">Разместить рекламу</a></li>
+                  <li><a href="#">Публикации</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+
+                <ul>
+                  <li><a href="#">Новостройки</a></li>
+                  <li><a href="#">Земельные участки</a></li>
+                  <li><a href="#">Коттеджные посёлки</a></li>
+                  <li><a href="#">Карта новостроек</a></li>
+                  <li><a href="#">Продать недвижмость</a></li>
+                </ul>
+              </div>
+              <div class="soc_buttons_cont">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+              <div class="footer_tel">
+                <div class="phone">
+                  <span>8 (800) 550-20-25</span>
+                  <p>С 9:00 до 21:00 по Москве</p>
+                </div>
+                <div class="button_torg">
+                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  <a href="#">Продать недвижимость</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two_footer_line">
+          <div class="container">
+            <div class="row">
+              <div class="about_project">
+                <p>Пикато – крупный интернет-портал, посвященный рынку новостроек, коттеджных поселков и земельных участков Pikato.ru © 2017. Все права защищены.</p>
+              </div>
+              <div class="made_in">
+                <img src="img/Layer-601.png" alt="">
+                <span>Сделано в<br> Selmak.pro</span>
+                <a class="up" href="#"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    </div>
+  </main>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="libs/jQuery-Selectric-master/public/jquery.selectric.min.js"></script>
+  <script src="libs/jquery-range/nouislider.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
