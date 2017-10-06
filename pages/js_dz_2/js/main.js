@@ -1,9 +1,20 @@
-var inputYears = document.getElementById('input');
+var inputYears = document.querySelector('.year_input');
+var btn = document.querySelector('.btn_year');
+var date = 17;
+
+function getYearNumber() {
+  var val = parseInt(inputYears.value);
+  if (val <= date) {
+    alert('Вам' + (date - val) + 'лет');
+  }
+  else {
+    alert('fuck');
+  }
+}
+btn.addEventListener('click', getYearNumber);
+/*
 var p = document.getElementById('text');
 var btn = document.getElementById('button')
-inputYears.onkeydown = function() {
-  var value = parseInt(inputYears.value);
-}
 btn.onclick = function() {
   if (value >= 1 && value <= 20) {
     p.innerHTML = 'Вы в первом подьезде';
@@ -15,3 +26,4 @@ btn.onclick = function() {
     p.innerHTML = 'Вы ошиблись подьездом';
   }
 }
+*/
