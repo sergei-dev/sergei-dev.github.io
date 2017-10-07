@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('nav').slideAndSwipe();
+  $('.nav_mobile').slideAndSwipe();
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 50) {
@@ -19,14 +19,30 @@ $(document).ready(function() {
       scrollTop: h.offset().top
     }, 800);
   });
-
-
-  $('.slide').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
+  $('.nav_mobile a').on('click', function(e) {
+    e.preventDefault();
+    var selector = $(this).attr('href');
+    var h = $(selector);
+    $('body, html').animate({
+      scrollTop: h.offset().top
+    }, 800);
   });
+
+
+  $('.pop').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+		}
+	});
 
 
   $(".tabs_body").not(":first").hide();

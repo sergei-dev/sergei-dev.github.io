@@ -207,45 +207,20 @@ nav a:hover::after {
 }
 
 .nav_mobile {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  display: none;
-  z-index: 50;
+  background-color: #333599;
 }
 
 .nav_mobile a {
   color: #fff;
   font-size: 14px;
   display: block;
-  text-align: center;
   padding: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+
 }
 
-.nav_mobile a:nth-child(1) {
-  background: #ffb006;
-}
 
-.nav_mobile a:nth-child(2) {
-  background: #fb8507;
-}
-
-.nav_mobile a:nth-child(3) {
-  background: #f94720;
-}
-
-.nav_mobile a:nth-child(4) {
-  background: #333599;
-}
-
-.nav_mobile a:nth-child(5) {
-  background: #078bfb;
-}
-
-.nav_mobile a:nth-child(6) {
-  background: #f46440;
-}
 
 .logo_color a {
   margin-left: 80px;
@@ -1770,7 +1745,7 @@ footer .card img {
   position: absolute;
   top: 0;
 }
-body {
+html, body {
   overflow-x: hidden;
 }
 
