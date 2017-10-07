@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  $('.slick').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrow: true,
+    dots: true
+  });
 
   $('.nav_mobile').slideAndSwipe();
 
@@ -30,19 +38,19 @@ $(document).ready(function() {
 
 
   $('.pop').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-		}
-	});
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    }
+  });
 
 
   $(".tabs_body").not(":first").hide();
@@ -88,23 +96,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.slider_cont > .owl-carousel').owlCarousel({
-    loop: false,
-    margin: 0,
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1
-      },
-      767: {
-        items: 1
-      },
-      1200: {
-        items: 1
-      }
-    }
-  });
+
 
   $('select').selectric();
   $('.selectric-wrapper').append('<i class="fa fa-angle-down" aria-hidden="true"></i>');
