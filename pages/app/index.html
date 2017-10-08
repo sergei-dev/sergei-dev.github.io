@@ -19,6 +19,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="libs/slide-and-swipe/slide-and-swipe-menu.css">
+  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+   <script type="text/javascript">
+        // Создает обработчик события window.onLoad
+        YMaps.jQuery(function () {
+            // Создает экземпляр карты и привязывает его к созданному контейнеру
+            var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+            
+            // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+        })
+    </script>
 </head>
 
 <body>
@@ -459,8 +470,13 @@
     </div>
   </section>
   <section class="map">
-    <div class="map_block" id="map">
-    </div>
+   
+   <div id="YMapsID" style="width:100%; height:450px">
+     
+   </div>
+
+
+
     <div class="contacts_adress">
       <div class="contacts">
         <img src="img/maps.svg" alt="">

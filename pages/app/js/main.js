@@ -1,11 +1,17 @@
 $(document).ready(function() {
+
+
   $('.slick').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    infinite: true,
     fade: true,
-    arrow: true,
-    dots: true
+    speed: 2500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrow: false,
+    dots: false
   });
 
   $('.nav_mobile').slideAndSwipe();

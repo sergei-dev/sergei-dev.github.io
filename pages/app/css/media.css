@@ -51,7 +51,11 @@
   }
 }
 
+
 @media only screen and (max-width: 991px) {
+  .one_screen_bg_cont img {
+    margin-top: 0;
+  }
   nav a:nth-child(1), nav a:nth-child(2), nav a:nth-child(3), nav a:nth-child(4), nav a:nth-child(5), nav a:nth-child(6) {
     background-color: transparent;
     display: block;
@@ -173,6 +177,7 @@
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
+    margin-right: 0;
   }
   .tabs_body .info_list {
     width: 100%;
@@ -304,7 +309,7 @@
   .testimonials .reviews-block {
     margin: 0 0 0 30px;
     width: 86%;
-    min-height: 620px;
+    min-height: 720px;
     background-color: #ff3d10;
     -webkit-box-shadow: 10px 10px 0px -1px rgba(207, 208, 209, 1);
     -moz-box-shadow: 10px 10px 0px -1px rgba(207, 208, 209, 1);
@@ -418,7 +423,6 @@
 
 @media only screen and (max-width: 360px) {
   .testimonials .reviews-block {
-    margin: 0 0 0 24px;
     width: 86%;
     min-height: 800px;
   }
@@ -433,5 +437,8 @@
   }
   .description_items_pink {
     margin-bottom: 380px;
+  }
+  .testimonials .reviews-block {
+    min-height: 1020px;
   }
 }
