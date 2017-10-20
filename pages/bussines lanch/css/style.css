@@ -16,6 +16,9 @@ a,h2,button {
 body {
   font-family: "OpenSansBold", sans-serif;
 }
+html, body {
+	overflow-x: hidden;
+}
 
 .home {
   width: 100%;

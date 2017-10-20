@@ -1,3 +1,10 @@
+/*
+Theme Name: portfolio
+Theme URI: http://portfolio/wordpress/
+Author: SerDev
+Description: portfolio theme
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -441,7 +448,7 @@ body {
   align-items: center;
 }
 .skills_number .container {
-  
+
 }
 
 .js-counter {
