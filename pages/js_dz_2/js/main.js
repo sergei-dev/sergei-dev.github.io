@@ -6,11 +6,14 @@ var twoDigitsCurrentYear = currentYear - 2000;
 function getYear() {
   var inputYears = document.querySelector('.year_input');
   var val = parseInt(inputYears.value);
-  if (val <= twoDigitsCurrentYear) {
+  if (val <= twoDigitsCurrentYear && val > 0) {
     alert(twoDigitsCurrentYear - val);
   }
   else if (val > (twoDigitsCurrentYear + 1) && val <+ currentYear) {
     alert(currentYear - val);
+  }
+  else if (val < 0) {
+    alert('Не корректная дата ввода');
   }
   else {
     alert('Ты нормальный?');
@@ -26,13 +29,13 @@ function comparisonNumber() {
   var val1 = parseInt(input1.value);
   var val2 = parseInt(input2.value);
   if(val1 > val2) {
-    alert(val1 + ' больше за ' + val2);
+    alert(val1 + ' больше чем ' + val2);
   }
   else if (val1 == val2) {
     alert(' числа одинаковы и равны ' + val1);
   }
   else {
-    alert(val1 + ' меньше за '  + val2);
+    alert(val1 + ' меньше чем '  + val2);
   }
 }
 
@@ -197,14 +200,14 @@ document.querySelector('#for_task6 button').addEventListener('click', get_number
 
 function get_special_character() {
   var result = [];
-  for(var x = 1000,i = 0; x <= 2000; x++, i++) {
-    if (x === 2000) {
-      result[i] = '&# ' + x;
-    }
-    else {
-      result[i] = '&# ' + x + ';';
-    }
-  } 
+ for(var i = 0; i <= 1000; i++) {
+  if(i === 1000) {
+    result[i] = '&#' + i+1000;
+  }
+  else {
+    result[i] = '&#' + i+1000 + ';';
+  }
+ }
   document.querySelector('#for_task7 p').innerHTML = result;
 }
 document.querySelector('#for_task7 button').addEventListener('click', get_special_character);
