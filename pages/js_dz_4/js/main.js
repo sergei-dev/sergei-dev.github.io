@@ -129,34 +129,62 @@ window.onload = function () {
 
     /* task 11 */
     let btn_random = document.querySelector('#rand_btn');
+    let btn_new_game = document.querySelector('#btn_new');
+    btn_new_game.style.display = 'none';
     let random_num = Math.floor((Math.random() * 10) + 1);
-    let result_attempts = document.querySelector('#attempts_result');
     let attempts_counter = 3;
-    result_attempts.innerHTML = `Попыток осталось ${attempts_counter}`;
+    let result_attempts = document.querySelector('#attempts_result');
+    result_attempts.innerHTML = `Попыток осталось: ${attempts_counter}`;
     function get_num_random(e) {
+        console.log(result_attempts);
         e = e || event;
         let target = e.target;
         let random_result = document.querySelector('#result_random');
         let user_num = parseInt(document.querySelector('#num_user').value);
+        result_attempts.innerHTML = `Попыток осталось: ${attempts_counter}`;
         if(target.id === 'rand_btn') {
             attempts_counter--;
             if(user_num === random_num) {
                 random_result.innerHTML = 'Поздравляю!Вы угадали число';
                 btn_random.style.display = 'none';
+                result_attempts.innerHTML = '';
+                attempts_counter = null;
+                document.querySelector('#num_user').value = '';
+                document.querySelector('#num_user').style.display = 'none';
             }
             else if(user_num > random_num) {
                 random_result.innerHTML = 'Число больше чем нужно';
             }
+
             else if(user_num < random_num) {
                 random_result.innerHTML = 'Число меньше чем нужно';
             }
+            else if(isNaN(user_num)) {
+                random_result.innerHTML = 'Вы вводите не число';
+            }
         }
+
         if(attempts_counter === 0) {
             btn_random.style.display = 'none';
             random_result.innerHTML = 'У вас кончились попытки,игра окончена';
-        }
+            btn_new_game.style.display = 'block';
+            attempts_counter = '';
+            document.querySelector('#num_user').value = '';
+            document.querySelector('#num_user').style.display = 'none';
+            result_attempts.innerHTML = '';
 
-        result_attempts.innerHTML = attempts_counter;
+
+        }
+        btn_new_game.onclick = function () {
+            document.querySelector('#num_user').style.display = 'block';
+            attempts_counter = 3;
+            random_result.innerHTML = '';
+            result_attempts.innerHTML = `Попыток осталось ${attempts_counter}`;
+            btn_random.style.display = 'block';
+            this.style.display = 'none';
+
+        };
+
 
     }
 
