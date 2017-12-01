@@ -1154,3 +1154,45 @@ footer {
 	display: inline-block;
 	margin-right: 20px;
 }
+.mobile_menu {
+	position: fixed;
+	left: 0;
+	top: -200vw;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	width: 100%;
+	padding: 20px;
+	background-color: rgba(43,59,83,0.8);
+	z-index: 300;
+}
+.mobile_menu .close {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+}
+.mobile_menu .close i {
+	color: #fff;
+	font-size: 35px;
+	position: relative;
+	z-index: 400;
+}
+.mobile_menu ul li a {
+	display: block;
+	color: #fff;
+	padding-bottom: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+.mobile_menu_active {
+	top: 0;
+}
+.open i {
+	padding-top: 55px;
+	color: #505179;
+	font-size: 35px;
+}

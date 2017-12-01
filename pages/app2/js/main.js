@@ -1,4 +1,11 @@
 $(document).ready(function() {
+	$('.open').click(function() {
+		$('.mobile_menu').addClass('mobile_menu_active');
+	});
+	$('.close').click(function() {
+		$('.mobile_menu').removeClass('mobile_menu_active');
+	});
+
 	ymaps.ready(init);
     var myMap,
     myPlacemark;;
