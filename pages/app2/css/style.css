@@ -1041,6 +1041,13 @@ font-size: 18px;
 .appl_form {
 	margin-bottom: 30px;
 }
+.appl_form .inp {
+	margin-right: 35px;
+}
+.appl_form form input::-webkit-input-placeholder {color:#505179;}
+.appl_form form input::-moz-placeholder          {color:#505179;}/* Firefox 19+ */
+.appl_form form input:-moz-placeholder           {color:#505179;}/* Firefox 18- */
+.appl_form form input:-ms-input-placeholder      {color:#505179;}
 .appl_form form button {
 	background-color: #a7cd19;
 	padding: 18px 50px;
@@ -1049,32 +1056,24 @@ font-size: 18px;
 	border: none;
 	font-size: 24px;
 }
+.appl_form form input:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+.appl_form form input:focus::-moz-placeholder {
+	color: transparent;
+}
+.appl_form form input:focus:-moz-placeholder  {
+	color: transparent;
+}
+.appl_form form input:focus:-ms-input-placeholder {
+	color: transparent;
+}
 #appl p {
 	color: #505179;
 	font-size: 24px;
 	text-align: center;
 	font-weight: bold;
 } 
-.appl_form form .inp {
-	position: relative;
-	margin-right: 40px;
-}
-.appl_form form .inp label {
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-	color:#505179;
-	font-size: 24px;
-	text-align: center;
-}
-.appl_form form .inp input:focus label {
-	display: none;
-}
 footer {
 	padding: 35px;
 	background-color: #505179;
