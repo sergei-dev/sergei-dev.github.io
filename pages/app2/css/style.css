@@ -1155,15 +1155,15 @@ footer {
 	margin-right: 20px;
 }
 .mobile_menu {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: -200vw;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+	-webkit-transition: 0.9s;
+	-o-transition: 0.9s;
+	transition: 0.9s;
 	width: 100%;
 	padding: 20px;
-	background-color: rgba(43,59,83,0.8);
+	background-color: rgba(43,59,83,1);
 	z-index: 300;
 }
 .mobile_menu .close {
@@ -1174,8 +1174,9 @@ footer {
 	display: flex;
 	justify-content: flex-end;
 	text-align: right;
+	width: 100%;
 }
-.mobile_menu .close i {
+.mobile_menu .close .fa-times {
 	color: #fff;
 	font-size: 35px;
 	position: relative;
@@ -1192,7 +1193,10 @@ footer {
 	top: 0;
 }
 .open i {
-	padding-top: 55px;
 	color: #505179;
 	font-size: 35px;
+}
+.open {
+	padding-top: 20px;
+	float: right;
 }

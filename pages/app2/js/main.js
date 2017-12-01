@@ -1,8 +1,10 @@
 $(document).ready(function() {
-	$('.open').click(function() {
+	$('.open').click(function(e) {
+		e.preventDefault();
 		$('.mobile_menu').addClass('mobile_menu_active');
 	});
-	$('.close').click(function() {
+	$('.close').click(function(e) {
+		e.preventDefault();
 		$('.mobile_menu').removeClass('mobile_menu_active');
 	});
 
@@ -26,6 +28,16 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: h.offset().top
     }, 600);
+
+  });
+
+	  $('.mobile_menu a').on('click', function(e) {
+    var selector = $(this).attr('href');
+    var h = $(selector);
+    $('html, body').animate({
+      scrollTop: h.offset().top
+    }, 600);
+    $('.mobile_menu').hide();
 
   });
 
