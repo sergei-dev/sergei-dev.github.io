@@ -347,5 +347,37 @@
 	.buh_name {
 		display: none;
 	}
+	.head_items {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.home_white_block {
+		padding: 15px;
+	}
+	.gradi_butt {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.head_info .gradi_butt {
+		font-size: 18px;
+	}
+	.good p {
+		font-size: 20px;
+	}
 
+}
+@media only screen and (max-width: 610px) {
+	.circle_price {
+		width: 100%;	
+	}
+	.circle_price p span {
+		font-size: 30px;
+	}
+	.info_buhg .gradi_butt {
+		font-size: 20px;
+	}
+	.contact_info_items {
+		padding: 0;
+	}
 }
