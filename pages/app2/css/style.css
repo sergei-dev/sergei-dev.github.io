@@ -3,19 +3,37 @@ body {
 }
 header {
 	border-bottom: 3px solid #a7cd19;
-	padding: 10px 0;
+	padding: 20px 0;
+	padding-bottom: 13px;
 }
 header * {
 	color: #000;
 }
 section p {
 	font-size: 18px;
+	color: #000000;
 }
 html body a:hover {
 	text-decoration: none;
 }
 section {
 	padding: 90px 0;
+}
+.succes,
+.error {
+	font-size: 25px;
+	text-align: center;
+	display: none;
+	font-weight: bold;
+}
+.succes {
+	color: #fff;
+}
+.appl_form .succes {
+	color: #505179;
+}
+.error {
+	color: red;
 }
 .logo {
 	margin-right: 10px;
@@ -173,13 +191,13 @@ nav a:hover {
 .home_white_block h4 {
 	display: block;
 	margin-bottom: 20px;
-	font-weight: lighter;
+	font-weight: 400;
 	font-size: 20px;
 }
 .home_white_block h3 {
 	font-size: 30px;
 	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	display: block;
 	margin-bottom: 50px;
 }
@@ -258,23 +276,61 @@ nav a:hover {
 	text-align: center;
 }
 .benefit_items img {
-	display: block;
+	
 	margin: auto;
 	margin-bottom: 15px;
 }
 .benefit_items p {
 	color: #000;
 	font-size: 18px;
+	line-height: 1.4;
+	font-family: 'Tahoma', sans-serif;
+	font-weight: 400;
 }
 #benefit .row:first-child {
 	margin-bottom: 60px;
 }
 #benefit .row:nth-child(2) {
-	margin-bottom: 180px;
+	margin-bottom: 130px;
+}
+.ben_one p {
+	float: left;
+	margin-left: 22px;	
+}
+.ben_one img {
+	text-align: left;
+	float: left;
+	margin-left: 82px;
+}
+.ben_three p {
+	float: right;
+	margin-right: -9px;
+}
+.ben_three img {
+	text-align: right;
+	float: right;
+	margin-right: 47px;
+}
+.ben_four p {
+	margin-left: 134px;
+}
+.ben_four img {
+	float: left;
+	margin-left: 292px;
+}
+.ben_five img {
+	float: left;
+	margin-left: 160px;
+}
+.ben_five p {
+	margin-right: 95px;
+}
+.descr_ben {
+	clear: both;
 }
 .home_info_block {
 	border: 8px solid #a7cd19;
-	padding: 31px 54px;
+	padding: 17px 54px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -301,7 +357,7 @@ nav a:hover {
 	font-size: 24px;
 }
 .write_gen_dir {
-	padding-right: 300px;
+	padding-right: 200px;
 }
 .write_gen_dir * {
 color: #000;
@@ -317,7 +373,7 @@ font-size: 18px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	height: 450px;
+	height: 395px;
 }
 #adwantages {
 	width: 100%;
@@ -328,6 +384,7 @@ font-size: 18px;
 	background-position: center center;
 	position: relative;
 	overflow-x: hidden;
+	padding: 140px 0;
 }
 #adwantages .container {
 	position: relative;
@@ -451,10 +508,10 @@ font-size: 18px;
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 660px;
   min-height: 600px;
   background-image: url('../img/sixte.png');
-  background-size: 95%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   margin: auto;
@@ -484,6 +541,9 @@ font-size: 18px;
 	-ms-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
+	letter-spacing: 2px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
 }
 
 .hex__cell {
@@ -515,43 +575,45 @@ font-size: 18px;
   color: #000;
   font-weight: 400;
   position: absolute;
+  line-height: 1.1;
 
 }
 .one {
 	position: absolute;
 	left: -70%;
 	text-align: right;
-	top: 65%;
+	top: 56.6%;
 }
 
 .hex__text:after {
-  content: '';
-  position: absolute;
-  left: 113%;
-  top: calc(50% - 8px - 5px);
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  background-color: #a7cd19;
+    content: '';
+    position: absolute;
+    left: 115%;
+    top: calc(50% - 8px - 5px);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    background-color: #a7cd19;
 }
 .two {
-	top: -9%;
-	text-align: center;
-	left: -40%;
+	top: -36%;
+    text-align: center;
+    left: -40%;
 }
 .three {
-	bottom: -20%;
+	bottom: -35%;
 	text-align: right;
 	left: -65%;
 }
 .four {
 	text-align: center;
 	right: -260%;
-	top: -32%;
+	top: -41%;
+	text-align: left;
 }
 .five {
-	bottom: -20%;
+	bottom: -31%;
 	right: -60%;
 }
 .hex__cell:last-child {
@@ -559,34 +621,34 @@ font-size: 18px;
 	text-align: center;
 }
 .six {
-	bottom: 0;
+	bottom: -44px;
 }
 .two:after {
-  left: 38%;
-  top: 140%;
+  	left: 38%;
+    top: 151%;
 }
 
 .three:after {
-  right: -26%;
-  left: initial;
-  top: calc(50% - 8px - 5px);
+  right: -38%;
+    left: initial;
+    top: calc(40% - 8px - 5px);
 }
 
 .four:after {
-	left: -25%;
+	left: -31%;
 	bottom: 0;
 }
 
 .five:after {
-  left: -31%;
+  left: -41%;
   top: -3%;
   bottom: 100%;
 }
 
 .six:after {
-  right: 45%;
-  left: initial;
-  top: -255%;
+    right: 41%;
+    left: initial;
+    top: -310%;
 } 
 #this_price_aut {
 	width: 100%;
@@ -632,15 +694,15 @@ font-size: 18px;
 	color: #000;
 	font-weight: 400;
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 55px;
 	position: relative;
-	padding-left: 45px;
+	padding-left: 60px;
 }
 .price_big_info .list_info ul li::before {
 	content: '';
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 45px;
+	height: 45px;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -803,15 +865,15 @@ font-size: 18px;
 	height: 79px;
 }
 .guarantees_cont {
-	padding-right: 160px;
-	padding-left: 160px;
+	padding-right: 130px;
+	padding-left: 130px;
 	padding-top: 150px;
 	padding-bottom: 210px;
 	background-image: url('../img/Layer-51.png');
 	background-repeat: no-repeat;
 	background-position: center center;
-	-webkit-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 }
 #why_we .head {
 	max-width: 450px;
@@ -839,6 +901,9 @@ font-size: 18px;
 	display: flex;
 	justify-content: space-between;
 }
+.guarantees_cont .head {
+	margin-bottom: 72px;
+}
 .guarantees_cont .head * {
 	font-size: 35px;
 }
@@ -852,9 +917,13 @@ font-size: 18px;
 	text-align: center;
 	margin-bottom: 70px;
 }
+.guarent_buh {
+	padding-bottom: 90px;
+}
 .guarent_buh img {
 	display: inline-block;
 	vertical-align: bottom;
+	height: 590px;
 }
 .guarent img {
 	text-align: center;
@@ -871,6 +940,7 @@ font-size: 18px;
 .good p {
 	font-weight: 400;
 	font-size: 30px;
+	color: #fff;
 }
 .good p span {
 	font-weight: bold;
@@ -890,7 +960,7 @@ font-size: 18px;
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	justify-content: flex-end
+	justify-content: flex-end;
 }
 .buh_name span {
 	text-align: right;
@@ -1121,7 +1191,7 @@ footer {
 	justify-content: space-between;
 }
 .contact_info_items {
-	width: 33.33333333%;
+	
 	border-right: 3px solid #fff;
 	padding: 0 75px;
 	display: -webkit-flex;
@@ -1198,4 +1268,8 @@ footer {
 .open {
 	padding-top: 20px;
 	float: right;
+}
+.copy_one p,
+.copy_two p {
+	margin-top: 8px;
 }
