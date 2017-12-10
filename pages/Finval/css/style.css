@@ -3,8 +3,6 @@ body {
 }
 header {
 	border-bottom: 3px solid #a7cd19;
-	padding: 20px 0;
-	padding-bottom: 13px;
 }
 header * {
 	color: #000;
@@ -37,6 +35,8 @@ section {
 }
 .logo {
 	margin-right: 10px;
+	padding-left: 10px;
+	padding-top: 9px;
 }
 .head_tel {
 	float: right;
@@ -47,12 +47,13 @@ section {
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
+	padding-top: 22px;
 }
 .tel_num {
-	margin-right: 10px;
+	margin-right: 9px;
 }
 .numb {
-	margin-right: 55px;
+	margin-right: 79px;
 }
 .numb a {
 	font-weight: bold;
@@ -64,16 +65,26 @@ nav a {
 	font-size: 18px;
 	display: inline-block;
 	margin-right: 50px;
+	letter-spacing: 0.9px;
 }
 nav a:hover {
 	color: #a7cd19;
 }
+nav a:last-child {
+	margin-right: 0;
+}
+.link {
+	margin-right: 10px;
+}
 .link a {
 	display: block;
 	border: 3px solid #a7cd19;
-	font-weight: lighter;
-	padding: 15px 9px;
+	font-weight: 400;
+	padding: 12px 10px;
 	border-radius: 5px;
+	color: #000000;
+	letter-spacing: 0.7px;
+	font-size: 14px;
 }
 .link a:hover {
 	background-color: #a7cd19;
@@ -81,8 +92,8 @@ nav a:hover {
 }
 .nav {
 	clear: both;
-	padding-top: 42px;
-	padding-left: 25px;
+	padding-top: 26px;
+	padding-left: 26px;
 }
 #one_screen {
 	padding: 70px 0;
@@ -143,6 +154,7 @@ nav a:hover {
 .head h3 {
 	font-size: 35px;
 	color: #000;
+	letter-spacing: 1.75px;
 }
 .head h2 {
 	font-weight: bold;
@@ -162,12 +174,18 @@ nav a:hover {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 	margin-bottom: 15px;
+	letter-spacing: 2.4px;
 }
 #one_screen .head h2 {
 	font-size: 38px;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 500;
 	color: #a7cd19;
+	letter-spacing: 1.5px;
+}
+#prices .head h2,
+#prices .head h3 {
+	text-transform: uppercase;
 }
 .home_wrap {
 	margin-bottom: 40px;
@@ -207,7 +225,7 @@ nav a:hover {
 	padding: 25px 50px;
 	border-radius: 5px;
 	font-weight: bold;
-	background: linear-gradient(to bottom, #b7cb41, #84a527);
+	background-image: linear-gradient(to top, #81a325 0%, #bacd42 100%);
 }
 .gradi_butt:hover {
 	color: #fff;
@@ -402,6 +420,9 @@ font-size: 18px;
 }
 #prices .head h2 {
 	font-weight: 400;
+}
+#prices .head {
+	max-width: 750px;
 }
 #prices .row {
 	margin-bottom: 30px;

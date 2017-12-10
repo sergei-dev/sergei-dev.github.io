@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/magnific_popup/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   
+  </head>
+  <body>
+
+    <main class="wrapper">
+      <header>
+        <div class="mobile_menu">
+          <a class="close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+          <ul>
+              	  <li><a href="http://www.finval.biz/spb/index.html#preimysheshtva">Преимущества</a></li>
+              	  <li><a href="http://www.finval.biz/spb/index.html#etapi">Схема работы</a></li>
+              	  <li><a href="#this_price_aut">Стоимость</a></li>
+              	  <li><a href="http://www.finval.biz/spb/index.html#pochemy_mi">Почему мы</a></li>
+              	  <li><a href="http://www.finval.biz/outsourcing/index.html#nas_voborayut">Нас выбирают</a></li>
+              	  <li><a href="http://www.finval.biz/spb/index.html#kontakti">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-1">
+              <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm hidden-md hidden-lg open_link">
+              <a class="open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-10 col-lg-11">
+              <div class="head_tel">
+                <div class="tel_num"><img src="img/tel.jpg" alt="tel"></div>
+                <div class="numb">
+                  <a href="tel:(812) 389-53-74">(812) 389-53-74</a>
+                </div>
+                <div class="link">
+                  <a class="popup_link" href="#">Заказать обратный звонок</a>
+                </div>
+              </div>
+              <div class="nav">
+                <nav>
+                  <a href="http://www.finval.biz/spb/index.html#preimysheshtva">Преимущества</a>
+              	  <a href="http://www.finval.biz/spb/index.html#etapi">Схема работы</a>
+              	  <a href="#this_price_aut">Стоимость</a>
+              	  <a href="http://www.finval.biz/spb/index.html#pochemy_mi">Почему мы</a>
+              	  <a href="http://www.finval.biz/outsourcing/index.html#nas_voborayut">Нас выбирают</a>
+              	  <a href="http://www.finval.biz/spb/index.html#kontakti">Контакты</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="one_screen">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h1>АУТСТАФФИНГ</h1>
+                <h2>ЛЕГАЛИЗАЦИЯ И ВЫВОД ПЕРСОНАЛА ЗА ШТАТ</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row home_wrap">
+            <div class="col-md-3 about">
+              <img src="img/Layer-6.png" alt="">
+              <p>Снижение налоговой <br> нагрузки до 30%</p>
+            </div>
+            <div class="col-md-3 about">
+              <img src="img/Layer-7.png" alt="">
+              <p>Стоимость в месяц <br> от 950 руб/чел</p>
+            </div>
+            <div class="col-md-3 about">
+              <img src="img/Layer-8.png" alt="">
+              <p>Легализация входит в стоимость</p>
+            </div>
+            <div class="col-md-3 about">
+              <img src="img/Layer-9.png" alt="">
+              <p>Отсутствие <br> трудовых споров</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="home_white_block">
+                <h4>ТОЛЬКО В СЕНТЯБРЕ, ПРИ ЗАКЛЮЧЕНИИ ДОГОВОРА</h4>
+                <h3>МИГРАЦИОННЫЙ АУДИТ - БЕСПЛАТНО</h3>
+                <a class="popup_link gradi_butt" href="#">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="benefit">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>КОМУ</h2>
+                <h3>выгоден аутстаффинг</h3>
+              </div>
+            </div>
+            <div class="col-md-4 benefit_items ben_one">
+              <div><img src="img/Layer-12.png" alt=""></div>
+             <div class="descr_ben">
+                <p>У вас работают <br> иностранные граждане?</p>
+             </div>
+            </div>
+            <div class="col-md-4 benefit_items ben_two">
+              <img src="img/Layer-13.png" alt="">
+              <p>К вам зачастила <br> миграционная служба? </p>
+            </div>
+            <div class="col-md-4 benefit_items ben_three">
+             <div> <img src="img/Layer-14.png" alt=""></div>
+              <div class="descr_ben"><p>Не хотите тратить <br> время на трудовые споры?</p></div>
+            </div>
+          </div>
+          <div class="row">
+             <div class="col-md-6 benefit_items ben_four">
+              <div><img src="img/Layer-16.png" alt=""></div>
+              <div class="descr_ben">
+                <p>Много времени приходится <br> тратить на кадровую <br> документацию?</p>
+              </div>
+            </div>
+            <div class="col-md-6 benefit_items ben_five">
+              <div><img src="img/Layer-17.png" alt=""></div>
+              <div class="descr_ben">
+                <p>Недовольны своим <br> провайдером <br> по аутстаффингу?</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="home_info_block">
+                <div class="head_info">
+                  <h2>Тогда наши услуги <br> <span>идеально подходят <br> для вас!</span></h2>
+                  <a href="#" class="popup_link gradi_butt">Узнать подробнее</a>
+                </div>
+                <div class="write_gen_dir">
+                  <p>Олег Романенко</p>
+                  <span>генеральный директор</span>
+                </div>
+                <div class="photo_dir">
+                  <img src="img/Background-copy.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="adwantages">
+        <div class="container">
+           <h2>Преимущества <br> аутстаффинга:</h2>
+          <div class="hex">
+            <div class="circle_photo">
+              <span>Преимущества <br> аутстаффинга</span>
+            </div>
+  <div class="hex__cell">
+    <div class="hex__text one" contenteditable>
+      Отсутствие необходимости <br>
+      оформления документов <br>
+      при несчастном случае на <br>
+      производстве
+    </div>
+  </div>
+  <div class="hex__cell">
+    <div class="hex__text two">
+      Снижение налоговой и <br> юридической ответственности
+    </div>
+  </div>
+  <div class="hex__cell">
+    <div class="hex__text three">
+      Уменьшение нагрузки <br>
+      на бухгалтерию и <br>
+      отдел кадров
+    </div>
+  </div>
+  <div class="hex__cell">
+    <div class="hex__text four" contenteditable>
+     Отсутствие необходимости <br>
+     оформления временных <br>
+     работников
+    </div>
+  </div>
+  <div class="hex__cell">
+    <div class="hex__text five">
+      Снижение издержек <br>
+      на 10-50%
+    </div>
+  </div>
+  <div class="hex__cell">
+    <div class="hex__text six">
+      Отсутствие трудовых споров
+    </div>
+  </div>
+</div>
+        </div>
+      </section>
+      <section id="prices">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>что</h2>
+                <h3>входит в стоимость</h3>
+              </div>
+            </div>
+            <div class="prices_list_wrap">
+              <div class="price">
+              <div class="head_items one_itm"><h3>Кадровое <br> сопровождение</h3></div>
+              <img src="img/photo.jpg" alt="">
+              <div class="list_info_price">
+                <ul>
+                  <li>Приём на работу/увольнение <br> работников</li>
+                  <li>Ведение кадрового учёта</li>
+                  <li>Ведение табеля учёта рабочего <br> времени</li>
+                  <li>Проведение инструктажей по <br> охране труда</li>
+                  <li>Решение трудовых споров</li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">
+              <div class="head_items two_itm"><h3>Бухгалтерское <br>сопровождение</h3></div>
+              <img src="img/price2.jpg" alt="">
+              <div class="list_info_price">
+                <ul>
+                  <li>Расчет и выплата заработной <br> платы, больничных, отпускных, <br> декретных</li>
+                  <li>Расчет и оплата налогов за <br> работников</li>
+                  <li>Подготовка и сдача налоговой <br> отчетности</li>
+                  <li>Выдача справок работникам</li>
+                </ul>
+              </div>
+            </div>
+            <div class="price">
+              <div class="head_items three_itm"><h3>Миграционное <br> сопровождение</h3></div>
+              <img src="img/price3.jpg" alt="">
+              <div class="list_info_price">
+                <ul>
+                  <li>Ставим на миграционный учет</li>
+                  <li>Следим за сроками продления <br> регистрации, патента</li>
+                  <li>Следим за сроками оплаты <br> фиксированного платежа по <br> патенту</li>
+                  <li>Помогаем оформить/продлить <br> патент</li>
+                  <li>Готовим документы для <br> привлечения иностранных <br>работников из Дальнего <br> Зарубежья</li>
+                  <li>Отправляем уведомления о <br> заключении/расторжении <br> трудового договора с <br> иностранным работником</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            </div>
+          <div class="check_inf_item">
+            <div><img src="img/check.png" alt=""></div>
+            <div>
+              <p>При  аутстаффинге персонала ответственность за сотрудников, работающих у вас и <br> оформленных в штат компании «Финвал», перед государственными проверяющими органами <br> (ГИТ, ФМС, ИФНС и др.) несем мы!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="this_price_aut">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>СКОЛЬКО СТОИТ</h2>
+                <h3>АУТСТАФФИНГ</h3>
+              </div>
+            </div>
+          </div>
+            <div class="price_big_info">
+              <div class="list_info">
+                <h3>Стоимость аутстаффинга <br>  зависит:</h3>
+                <ul>
+                  <li>Количество выводимого персонала</li>
+                  <li>Гражданство работников</li>
+                  <li>Система налогообложения</li>
+                </ul>
+              </div>
+              <div class="two_info_price_block">
+                <div class="circle_item">
+                  <div class="circle_price">
+                  <p>от <br> <span>950 рублей</span> <br> за человека <br> в месяц</p>
+                </div>
+                </div>
+                <div class="info_buhg">
+                  <div class="write_buh">
+                    <p>Варя Утюгова</p>
+                  <span>главный бухгалтер</span>
+                  </div>
+                  <div class="photo_girl">
+                  <img src="img/girl.png" alt="">
+                </div>
+                  <a class="popup_link gradi_butt" href="#">Хотите дешевле?</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section id="stages">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>ЭТАПЫ</h2>
+                <h3>СОТРУДНИЧЕСТВА</h3>
+              </div>
+            </div>
+          </div>
+          <div class="stages_item">
+            <div class="stages_items"><img src="img/Layer-45.png" alt="">
+                <p>Оформление заявки на <br> вывод персонала</p>
+            </div>
+            <div class="stages_items"><img src="img/Layer-43.png" alt="">
+                <p>Подписание договора</p>
+            </div>
+            <div class="stages_items"><img src="img/Layer-46.png" alt="">
+                <p>Согласование регламента <br> по дальнейшим действиям</p>
+            </div>
+            <div class="stages_items"><img src="img/Layer-49.png" alt="">
+                <p>Контроль <br> рабочего процесса</p>
+            </div>
+            <div class="stages_items"><img src="img/Layer-48.png" alt="">
+                <p>Заключение <br>трудовых договоров</p>
+            </div>
+            <div class="stages_items"><img src="img/Layer-47.png" alt="">
+                <p>Легализация персонала <br>(при необходимости)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="guarantees">
+        <div class="container">
+          <div class="guarantees_cont">
+            <div class="head">
+              <h2>НАШИ</h2>
+              <h3>ГАРАНТИИ</h3>
+            </div>
+            <div class="gar_wrap_item">
+              <div class="guarent_buh">
+                <img src="img/Background-copy1.png" alt="">
+                <div class="good"><p><span>100%</span><br>уверенности</p></div>
+                <div class="buh_name">
+                  <p>Нелли Куприянова</p>
+                  <span>главный бухгалтер</span>
+                </div>
+              </div>
+              <div class="guarent_items">
+                <div class="guarent">
+                  <img src="img/Layer-571.png" alt="">
+                  <p>У вас будет работать <br>только легальный <br>иностранный персонал</p>
+              </div>
+                <div class="guarent">
+                  <img src="img/Layer-570.png" alt="">
+                  <p>Вы будете избавлены <br>от любых трудовых споров <br>с персоналом</p>
+              </div>
+                <div class="guarent">
+                  <img src="img/Layer-62.png" alt="">
+                  <p>Оплату зарплатных <br>налогов и сдачу налоговой <br>отчетности в срок</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why_we">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>ПОЧЕМУ</h2>
+                <h3>МЫ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>С 1993 года на <br>рынке бизнес-услуг</p>
+            </div>
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>Более 300 <br>заказчиков</p>
+            </div>
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>Аккредитованное Рострудом частное агентство занятости</p>
+            </div>
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>На аутстаффинге <br>оформлено более <br>3500 сотрудников</p>
+            </div>
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>Подбор индивидуальных <br>решений для   <br>каждого заказчика </p>
+            </div>
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>Простой и понятный <br> расчет стоимости</p>
+            </div>
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>Юридическая <br>поддержка 24/7 </p>
+            </div>
+            <div class="col-xs-12 col-md-3 why">
+              <img src="img/check2.png" alt="">
+              <p>Участие в <br> судопроизводстве <br>при необходимости</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="partners">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>С НАМИ</h2>
+                <h3>УЖЕ РАБОТАЮТ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="list_partners">
+            <div class="partners_items"><img src="img/1.png" alt=""></div>
+            <div class="partners_items"><img src="img/2.png" alt=""></div>
+            <div class="partners_items"><img src="img/3.png" alt=""></div>
+            <div class="partners_items"><img src="img/4.png" alt=""></div>
+            <div class="partners_items"><img src="img/5.png" alt=""></div>
+            <div class="partners_items"><img src="img/6.png" alt=""></div>
+            <div class="partners_items"><img src="img/7.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <!--<section id="recommendations">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>НАС</h2>
+                <h3>РЕКОМЕНДУЮТ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="recommendations_wrap">
+            <div class="recommendations_items"><img src="img/11.jpg" alt=""></div>
+            <div class="recommendations_items"><img src="img/21.jpg" alt=""></div>
+            <div class="recommendations_items"><img src="img/31.jpg" alt=""></div>
+            <div class="recommendations_items"><img src="img/41.jpg" alt=""></div>
+            <div class="recommendations_items"><img src="img/51.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>-->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="head">
+                <h2>О КОМПАНИИ</h2>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="description">
+                <p>Компания «Финвал»  с 1993 г. работает на рынке бизнес-услуг, В Санкт-Петербургском Союзе предпринимателей – с момента <br> его основания. Мы - одни из первых в России стали оказывать услуги по аутстаффингу персонала. Накопив внушительный <br> опыт работы  в области кадрового и бухгалтерского администрирования, компания «Финвал» предлагает  продукт, <br> соответствующий западным стандартам качества,  и при этом учитывающий реалии российского рынка. <br>Мы давно и успешно работаем на рынке аутстаффинга и лизинга персонала, также мы  оказываем такие услуги как <br> миграционный аудит, подбор персонала, легализация персонала, охрана труда, оформление рабочих визы для граждан <br> дальнего зарубежья, регистрация иностранных граждан.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-631.png" alt="">
+              <p>Заместитель директора</p>
+              <span>Куприянова Нелли Геннадьевна</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-633.png" alt="">
+              <p>Генеральный директор</p>
+              <span>Романенко Олег Николаевич</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-634.png" alt="">
+              <p>Заместитель генерального <br> директора, юрисконсульт</p>
+              <span>Шевелев Семен Владимирович</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-635.png" alt="">
+              <p>Руководитель отдела кадров</p>
+              <span>Бабий Надежда Романовна</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-636.png" alt="">
+              <p>Главный бухгалтер</p>
+              <span>Хромина Анна</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-637.png" alt="">
+              <p>Руководитель <br>миграционного отдела </p>
+              <span>Корнеева Эльнара</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-638.png" alt="">
+              <p>Менеджер по продажам</p>
+              <span>Костеля Екатерина</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-639.png" alt="">
+              <p>Менеджер по развитию</p>
+              <span>Шаранда Никита</span>
+            </div>
+            <div class="col-xs-12 col-md-4 about_items">
+              <img src="img/Layer-6310.png" alt="">
+              <p>Менеджер по продажам </p>
+              <span>Васякина Марина</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="appl">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 appl_head">
+              <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
+            </div>
+          </div>
+          <div class="appl_form">
+            <form id="form2" action="javascript:void(null);" method="POST">
+              <div class="inp">
+                <input id="name" name="name" type="text" placeholder="Ваше имя" required="">
+              
+              </div>
+              <div class="inp">
+                <input id="tel"  name="tel" type="text" placeholder="Ваш телефон" required="">
+             
+              </div>
+              <button type="submit">Отправить</button>
+            </form>
+            <div class="succes">Спасибо!Ваше сообщение отправленно</div>
+          <div class="error">Сообщение не было отправлено!Попробуйте ещё раз</div>
+          </div>
+          <p>Мы перезвоним вам в течении нескольких минут</p>
+        </div>
+      </section>
+      <section id="contact_info">
+        <div class="container">
+          <div class="contact_info_wrap">
+            <div class="contact_info_items">
+              <div class="icon"><img src="img/Layer-79.png" alt=""></div>
+              <div class="info">
+                <h4>Адрес</h4>
+                <span>г.Санкт-Петербург, пр.Шаумяна, 18</span>
+              </div>
+            </div>
+             <div class="contact_info_items">
+              <div class="icon"><img src="img/Layer-80.png" alt=""></div>
+              <div class="info">
+                <h4>Телефон:</h4>
+                <span>+7 812 2445828</span>
+              </div>
+            </div>
+             <div class="contact_info_items">
+              <div class="icon"><img src="img/Layer-81.png" alt=""></div>
+              <div class="info">
+                <h4>E-mail</h4>
+                <span>info@finval.biz</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="map">
+         <div id="Map" style="width: 100%; height: 380px"></div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 copy_one">
+              <p>Copyright © 2017 ООО "Финвал" <br>Все права защищены</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="tel_inf">
+                <span>8 (812) 244-58-28</span>
+                <a class="popup_link" href="#">перезвонить мне</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="copy_two">
+                <p>Аутстаффинг <br>Легализация и вывод персонала за штат</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="popup_window mfp-hide">
+      
+        <div class="row">
+          <h2>Оставить заявку</h2>
+          <form id="form1" action="javascript:void(null);" method="POST">
+            <input class="form_inp" type="text" name="name" required="required" placeholder="Имя">
+            <input class="form_inp" type="tel" name="phone" required="required" placeholder="Телефон">
+            <button class="gradi_butt" type="submit">Отправить</button>
+          </form>
+          <div class="succes">Спасибо! Ваше сообщение отправленно<br>Мы перезвоним вам в течении нескольких минут</div>
+          <div class="error">Сообщение не было отправлено!Попробуйте ещё раз</div>
+        </div>
+    
+    </div>
+
+       <script src="js/jquery-3.2.1.min.js"></script>
+       <script src="libs/bootstrap/bootstrap.min.js"></script>
+       <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+       <script src="libs/magnific_popup/jquery.magnific-popup.min.js"></script>
+       <script src="js/main.js"></script>
+
+        <script>
+      $(document).ready(function(){
+    $("#form1").submit(function() {
+            var data = $(this).serialize(); 
+            $.ajax({
+            type: "POST",
+            url: "send.php", 
+            data: data,
+              success: function(data){
+                $(".succes").show();
+                $("#form1").hide();
+                $(".appl_form .succes").hide();
+             },
+             error: function() {
+               $(".error").show();
+             }
+          });
+        });
+     $("#form2").submit(function() {
+            var datatwo = $(this).serialize(); 
+            $.ajax({
+            type: "POST",
+            url: "send.php", 
+            data: datatwo,
+              success: function(data){
+                $(".appl_form .succes").show();
+                $('.popup_window h2').hide();
+                $("#form2").hide();
+             },
+             error: function() {
+               $(".appl_form .error").show();
+             }
+          });
+        });
+      });
+ 
+    </script>
+  </body>
+</html>

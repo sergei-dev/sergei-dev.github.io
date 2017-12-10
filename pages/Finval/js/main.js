@@ -22,26 +22,7 @@ $(document).ready(function() {
         myMap.geoObjects.add(myPlacemark);
     }
 
-	 $('.nav nav a').on('click', function(e) {
-	 	e.preventDefault();
-    var selector = $(this).attr('href');
-    var h = $(selector);
-    $('html, body').animate({
-      scrollTop: h.offset().top
-    }, 600);
-
-  });
-
-	  $('.mobile_menu a').on('click', function(e) {
-	  	e.preventDefault();
-    var selector = $(this).attr('href');
-    var h = $(selector);
-    $('html, body').animate({
-      scrollTop: h.offset().top
-    }, 600);
-    $('.mobile_menu').removeClass('mobile_menu_active');
-
-  });
+	 
 
 	 $(window).scroll(function() {
       if ($(this).scrollTop() > 80) {
