@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.link_portfolio').click(function(e) {
     e.preventDefault();
   });
-  $('.owl-carousel').owlCarousel({
+  /*$('.owl-carousel').owlCarousel({
     loop: false,
     margin: 0,
     nav: false,
@@ -22,6 +22,8 @@ $(document).ready(function() {
       }
     }
   })
+
+  */
 
   $('.js-counter').counterUp({
     delay: 30,

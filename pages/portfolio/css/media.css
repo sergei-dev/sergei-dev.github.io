@@ -66,6 +66,18 @@
 }
 
 @media only screen and (max-width: 991px) {
+  #home {
+    background-position: right;
+  }
+  .header_mob_nav .container .logo {
+    width: 35%;
+  }
+  .slider_text_middle h2 {
+    font-size: 30px;
+  }
+  .slider_text_middle h3 {
+    font-size: 25px;
+  }
   .sidebar_nav {
     display: none;
   }

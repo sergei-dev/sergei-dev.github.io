@@ -360,7 +360,7 @@
 }
 .contact_form form .button_send {
     display: block;
-    width: 25%;
+    width: 100%;
     border: 2px solid transparent;
     color: #fff;
     padding: 10px;
@@ -370,6 +370,7 @@
     -webkit-transition: background 0.3s;
     -o-transition: background 0.3s;
     transition: background 0.3s;
+    text-transform: uppercase;
 }
 .contact_form form .button_send:hover {
     border: 2px solid #000;
@@ -401,6 +402,9 @@
       -ms-user-select: none;
           user-select: none;
 
+}
+#contact {
+  padding-bottom: 100px;
 }
 .contact_form form .selectric .button {
   display: block;
@@ -533,8 +537,6 @@ footer {
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
