@@ -36,7 +36,6 @@ $(function() {
     	$('.btn-toggle-menu').toggleClass('btn-toggle-menu-active');
     });
 
-    $('ф').on('click', fuc);
 
     $('.link-progects').click(function(event) {
     	event.preventDefault();
