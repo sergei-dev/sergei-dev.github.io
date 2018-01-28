@@ -25,6 +25,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 </head>
 
@@ -93,7 +94,7 @@
 				<h4>сегодня <span>17450</span> просмотров</h4>
 				 <span class="advertising-link">Реклама</span>
 			</div>
-			<div class="container">
+			<div class="container" id="exchange-rates-scroll">
 				<div class="exchange-rates-wrap">
 					<div class="exchange-rates-content">
 						<div class="exchange-item">
@@ -277,11 +278,55 @@
 					</tr>
 				</table>
 			</div>
+			<div class="advertising-box">
+				<span class="advertising-link">Реклама</span>
+			</div>
 		</div>
+
+		<section id="exchange-rates-table-info">
+			<div class="container">
+				<h2>Таблица курсов валют</h2>
+				<div class="filter-city">
+					<button class="filter-btn filter-active-btn">Ереван</button>
+					<button class="filter-btn">Гюмри</button>
+					<button class="filter-btn">Ванадзор</button>
+					<button class="filter-btn">Ванадзор</button>
+					<button class="filter-btn">Ванадзор</button>
+					<button class="filter-btn">Ванадзор</button>
+					<button class="filter-btn">Ванадзор</button>
+					<button class="filter-btn">Ванадзор</button>
+				</div>
+				<div class="filter-money">
+					<div class="select-wrap clearfix">
+						<span class="select-icon"><img class="img-responsive" src="img/ic_settings_24px (2).svg" alt=""></span>
+						<select class="filter-select">
+							<option value="">Банки</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+						</select>
+						<select class="filter-select">
+							<option value="">Наличные</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+						</select>
+					</div>
+				</div>
+				<div class="filter-lang">
+					<button class="filter-btn filter-active-btn">Usd</button>
+					<button class="filter-btn">Rub</button>
+					<button class="filter-btn">Eur</button>
+					<button class="filter-btn">Gel</button>
+				</div>
+			</div>
+		</section>
 
 	</main>
 
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.min.js"></script> 
+	<script src="js/scroll.js"></script> 
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 </body>
 </html>

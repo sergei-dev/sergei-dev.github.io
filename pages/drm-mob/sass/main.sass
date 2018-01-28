@@ -29,6 +29,11 @@
 	color: #666
 	opacity: 1
 
+.clearfix
+	&:after
+		content: ''
+		display: table-cell
+		clear: both
 a, a:hover, a:active
 	text-decoration: none
 body input:focus:required:invalid,
@@ -82,6 +87,13 @@ body button
 .header-top-one-box, .header-top-two-box
 	display: flex
 	align-items: center
+.notification
+	margin-right: 24px
+	img
+		height: 20.95px
+.settings
+	img
+		height: 18.94px
 .hamburger
 	padding: 0
 	margin-top: 7px
@@ -129,7 +141,6 @@ html body ul .tabs-navigation-active
 	border-bottom: 1px solid #ededed
 	ul
 		width: 600px
-		overflow-x: scroll
 		li
 			text-align: center
 			display: inline-block
@@ -168,16 +179,16 @@ html body ul .tabs-navigation-active
 		color: rgba(0,0,0,0.3)
 		font-weight: 400
 		font-size: 12px
-	.advertising-link
-		position: absolute
-		right: 0
-		top: 0
-		color: #34495e
-		font-weight: 700
-		text-align: center
-		@include border(#ececec)
-		background-color: $white
-		font-size: 8px
+.advertising-link
+	position: absolute
+	right: 0
+	top: 0
+	color: #34495e
+	font-weight: 700
+	text-align: center
+	@include border(#ececec)
+	background-color: $white
+	font-size: 8px
 .exchange-rates-content, .exchange-item
 	@extend .flex-full
 .exchange-rates-wrap
@@ -229,12 +240,13 @@ html body .wrapper .table-exchange .light-bg
 
 .table-exchange
 	width: 100%
-	max-width: 340px
+	max-width: 350px
 	border-radius: 4px
 	background-color: #2e3e4e
 	text-align: center
 	color: $white
 	border-collapse: collapse
+	margin-bottom: 19px
 	.bottom-col
 		padding: 10px 0
 		font-size: 12px
@@ -270,12 +282,71 @@ html body .wrapper .table-exchange .light-bg
 		 	.more-info
 		 		color: #38A69B
 		 		font-size: 11px
-#categories-scroll .mCSB_scrollTools
+#categories-scroll .mCSB_scrollTools, #exchange-rates-scroll .mCSB_scrollTools
 	background-color: transparent 
 	width: 0px
 	height: 0px
 .mCSB_horizontal.mCSB_inside > .mCSB_container
 	margin-right: 0
   margin-bottom: 0px !important
-
+.advertising-box
+	min-height: 68px
+	position: relative
+	background-color: #ececec
+#exchange-rates-table-info
+	padding-top: 24px
+	padding-bottom: 17px
+	h2
+		text-align: center
+		font-weight: 400
+		margin-bottom: 26px
+html body .filter-active-btn
+	@include border(#FF7700)
+	border-width: 2px
+	position: relative
+	&::after
+		content: ''
+		width: 16px
+		height: 13px
+		display: block
+		position: absolute
+		right: 0
+		bottom: 0
+		@include bgi('../img/Group-755_2.svg', cover, bottom)
+.filter-city
+	margin-bottom: 26px
+	width: 900px
+.filter-btn
+	font-size: 14px
+	text-align: center
+	@include border(#D4D5D6)
+	border-radius: 4px
+	background-color: $white
+	padding: 13px
+	margin-right: 7px
+	&:hover
+		@extend .filter-active-btn
+.filter-select
+	width: 100%
+	max-width: 149px
+.select-wrap
+	border-radius: 3px
+	@include border(#dcdcdc)
+.selectric
+	width: 149px
+	background-color: $white
+	float: left
+	@extend .clearfix
+.select-icon
+	img
+		max-width: 18px
+		float: left
+.selectric .button
+	background-color: $white
+.selectric .button:after
+	content: '\f107'
+	border: none
+	width: 12px
+	height: 12px
+	font: normal normal normal 14px/1 FontAwesome
 @import "media" // Всегда в конце
