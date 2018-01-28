@@ -180,14 +180,23 @@ html body ul .tabs-navigation-active
 		font-size: 8px
 .exchange-rates-content, .exchange-item
 	@extend .flex-full
+.exchange-rates-wrap
+	@extend .flex-full
+	width: 1300px
+	justify-content: flex-start
+	margin-bottom: 12px
 .exchange-rates-content
 	flex-wrap: wrap
 	padding: 20px 13px
 	@include border(#e1e1e1)
 	border-radius: 10px
 	background-color: $white
+	max-width: 332px
 .exchange-item
 	width: calc(100% / 2)
+	margin-bottom: 21px
+	&:nth-child(3), &:last-child
+		margin-bottom: 0
 .currency-name
 	display: flex
 	align-items: center
@@ -199,4 +208,74 @@ html body ul .tabs-navigation-active
 		font-size: 14px
 		font-weight: 400
 		color: #000
+.exchange-item
+	max-width: 130px
+.green-carrency
+	color: #16702E
+.red-carrency
+	color: #BC1D1D
+.dollar-value
+	color: #8B8B8B
+.currency-digits
+	p
+		font-size: 14px
+html body .wrapper .table-exchange .light-bg
+	background-color: #34495e
+	td
+		border-right: 1px solid #2e3e4e
+		height: 64px
+		&:last-child
+			border: none
+
+.table-exchange
+	width: 100%
+	max-width: 340px
+	border-radius: 4px
+	background-color: #2e3e4e
+	text-align: center
+	color: $white
+	border-collapse: collapse
+	.bottom-col
+		padding: 10px 0
+		font-size: 12px
+	.head-table-exchange
+		border-bottom: 1px solid #34495e
+		th
+			padding: 20px 0
+		p
+			font-size: 15px
+			font-weight: 400
+		span
+			color: #1ABC9B
+	tbody
+		tr
+		 td
+		 	width: calc(100% / 3)
+		 	border-right: 1px solid #34495e
+		 	line-height: 1
+		 	&:not(.bottom-col)
+		 		height: 74px
+		 	&:last-child
+		 		border: none
+		 	.currency-title
+		 		font-size: 20px
+		 		color: #38A69B
+		 		text-transform: uppercase
+		 		font-weight: 700
+		 	h2
+		 		font-weight: 700
+		 		font-size: 20px
+		 	.bank-name
+		 		font-size: 10px
+		 	.more-info
+		 		color: #38A69B
+		 		font-size: 11px
+#categories-scroll .mCSB_scrollTools
+	background-color: transparent 
+	width: 0px
+	height: 0px
+.mCSB_horizontal.mCSB_inside > .mCSB_container
+	margin-right: 0
+  margin-bottom: 0px !important
+
 @import "media" // Всегда в конце
