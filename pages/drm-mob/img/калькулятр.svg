@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="208 602 36 33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+    </style>
+  </defs>
+  <rect id="калькулятр" class="cls-1" width="36" height="33" transform="translate(208 602)"/>
+</svg>

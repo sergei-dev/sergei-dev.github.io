@@ -77,26 +77,132 @@ body button
 
 .header-top
 	background-color: $dark
-	margin-bottom: 25px
+	margin-bottom: 22px
+	position: relative
 	.container
 		padding: 0 20px
+.site-navigation-fixed
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	background-color: $white
+	padding: 11px 25px
+	z-index: 50
+	ul
+		@extend .flex-full
+		li
+			a
+				display: flex 
+				align-items: center
+				position: relative
+				span
+					color: #bcbcbc
+				.site-navigation-fixed-active
+					color: #333333
+			.link-open-active
+				&::after
+					content: ''
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 0 7.5px 8px 7.5px
+					position: absolute
+					top: -118%
+					left: 3px
+					border-color: transparent transparent #ffffff transparent
+.mob-navigation
+	background-color: $white
+	position: absolute
+	top: 100%
+	left: 0
+	width: 100%
+	z-index: 50
+	display: none
+	.nav-list
+		margin-bottom: 50px
+		> li
+			border-bottom: 1px solid silver
+			display: block
+			a
+				display: block
+				width: 100%
+				color: #000
+				padding: 15px 20px
+				font-weight: bold
+				position: relative
+				.fa
+					position: absolute
+					right: 15px
+					top: 50%
+					transform: translateY(-50%)
+					color: gray
+					@include trs(0.5s)
+	.nav-list-submenu
+		padding-left: 30px
+		display: none
+		padding-top: 3px
+		padding-bottom: 20px
+		li
+			display: block
+			a
+				font-weight: 400
+.two-nav-list
+	@extend .flex-full
+	padding: 15px
+	li
+		a
+			color: gray
+html body .wrapper .submenu-active-fa
+	.fa
+		transform: translateY(-50%) rotate(-90deg)
+		color: #3cbf9a
 .header-top-line
 	padding-top: 3px
-	padding-bottom: 7px
+	padding-bottom: 4px
 	@extend .flex-full
 .header-top-one-box, .header-top-two-box
 	display: flex
 	align-items: center
+.settings img
+	padding-right: 3px
 .notification
-	margin-right: 24px
+	margin-right: 27px
+	.notif-btn
+		border: none
+		background-color: transparent
+		position: relative
+		display: block
 	img
 		height: 20.95px
+.note-Icon
+	border-radius: 50%
+	position: absolute
+	right: -2px
+	top: -3px
+	min-width: 14px
+	min-height: 14px
+	text-align: center
+	font-size: 0
+	line-height: 0
+	padding: 2px 0
+	background-color: #e81621
+	border: 1px solid #333333
+	display: none
+	span
+		font-size: 7px
+		line-height: 7px
+		color: $white
+		font-weight: 700
+.notif-btn-active
+	.note-Icon
+		display: block
 .settings
 	img
 		height: 18.94px
 .hamburger
 	padding: 0
-	margin-top: 7px
+	margin-top: 4px
 .header-top-line_logo
 	h2
 		text-transform: lowercase
@@ -193,19 +299,19 @@ html body ul .tabs-navigation-active
 	@extend .flex-full
 .exchange-rates-wrap
 	@extend .flex-full
-	width: 1300px
+	width: 1010px
 	justify-content: flex-start
 	margin-bottom: 12px
 .exchange-rates-content
 	flex-wrap: wrap
-	padding: 20px 13px
+	padding: 15px 13px
 	@include border(#e1e1e1)
 	border-radius: 10px
 	background-color: $white
 	max-width: 332px
 .exchange-item
 	width: calc(100% / 2)
-	margin-bottom: 21px
+	margin-bottom: 11px
 	&:nth-child(3), &:last-child
 		margin-bottom: 0
 .currency-name
@@ -214,13 +320,13 @@ html body ul .tabs-navigation-active
 	img
 		@extend .img-responsive
 		width: 14px
-		margin-right: 11px
+		margin-right: 8px
 	h3
 		font-size: 14px
 		font-weight: 400
 		color: #000
 .exchange-item
-	max-width: 130px
+	max-width: 134px
 .green-carrency
 	color: #16702E
 .red-carrency
@@ -230,11 +336,12 @@ html body ul .tabs-navigation-active
 .currency-digits
 	p
 		font-size: 14px
+		padding-right: 1px
 html body .wrapper .table-exchange .light-bg
 	background-color: #34495e
 	td
 		border-right: 1px solid #2e3e4e
-		height: 64px
+		height: 65px
 		&:last-child
 			border: none
 
@@ -248,12 +355,12 @@ html body .wrapper .table-exchange .light-bg
 	border-collapse: collapse
 	margin-bottom: 19px
 	.bottom-col
-		padding: 10px 0
+		padding: 8px 0
 		font-size: 12px
 	.head-table-exchange
 		border-bottom: 1px solid #34495e
 		th
-			padding: 20px 0
+			padding: 16px 0
 		p
 			font-size: 15px
 			font-weight: 400
@@ -277,29 +384,37 @@ html body .wrapper .table-exchange .light-bg
 		 	h2
 		 		font-weight: 700
 		 		font-size: 20px
+		 		margin-bottom: 2px
 		 	.bank-name
 		 		font-size: 10px
 		 	.more-info
 		 		color: #38A69B
 		 		font-size: 11px
-#categories-scroll .mCSB_scrollTools, #exchange-rates-scroll .mCSB_scrollTools
-	background-color: transparent 
+#categories-scroll1 .mCSB_scrollTools,
+#categories-scroll2 .mCSB_scrollTools,
+#categories-scroll-city .mCSB_scrollTools,
+#categories-scroll-weather-btn .mCSB_scrollTools,
+#categories-scroll-weather-cards .mCSB_scrollTools, 
+	background-color: transparent
 	width: 0px
 	height: 0px
-.mCSB_horizontal.mCSB_inside > .mCSB_container
+html body .wrapper .mCSB_horizontal.mCSB_inside > .mCSB_container
 	margin-right: 0
-  margin-bottom: 0px !important
+	margin-bottom: 0px!important
 .advertising-box
-	min-height: 68px
+	min-height: 71px
 	position: relative
 	background-color: #ececec
 #exchange-rates-table-info
-	padding-top: 24px
+	padding-top: 19px
 	padding-bottom: 17px
 	h2
 		text-align: center
 		font-weight: 400
-		margin-bottom: 26px
+		margin-bottom: 19px
+		font-size: 16px
+	.container
+		padding: 0 5px
 html body .filter-active-btn
 	@include border(#FF7700)
 	border-width: 2px
@@ -316,14 +431,19 @@ html body .filter-active-btn
 .filter-city
 	margin-bottom: 26px
 	width: 900px
+	display: flex
+	margin-left: 5px
+.filter-money
+	margin-bottom: 15px
+	margin-left: 3px
 .filter-btn
 	font-size: 14px
 	text-align: center
 	@include border(#D4D5D6)
 	border-radius: 4px
 	background-color: $white
-	padding: 13px
-	margin-right: 7px
+	padding: 10px 13px
+	margin-right: 5px
 	&:hover
 		@extend .filter-active-btn
 .filter-select
@@ -332,15 +452,29 @@ html body .filter-active-btn
 .select-wrap
 	border-radius: 3px
 	@include border(#dcdcdc)
+	display: inline-flex
+.selectric-wrapper, .selectric-filter-select
+	display: flex
 .selectric
 	width: 149px
 	background-color: $white
-	float: left
-	@extend .clearfix
+	border: none
+	border-left: 1px solid #dcdcdc
+	.label
+		font-size: 14px
+		color: #000
+		margin: 0 38px 0 7px
 .select-icon
+	width: 39px
 	img
 		max-width: 18px
-		float: left
+		margin: auto
+		margin-top: 9px
+.selectric-wrapper:nth-child(3)
+	.selectric
+		width: 155px
+		.label
+			margin: 0 38px 0 9px
 .selectric .button
 	background-color: $white
 .selectric .button:after
@@ -348,5 +482,357 @@ html body .filter-active-btn
 	border: none
 	width: 12px
 	height: 12px
+	top: -3px
+	right: -16px
 	font: normal normal normal 14px/1 FontAwesome
+.filter-lang
+	display: flex
+	align-items: center
+	margin-bottom: 25px
+	margin-left: 5px
+	.filter-btn
+		margin-right: 10px
+		padding-left: 12px
+		&:last-child
+			margin-right: 0
+	span
+		text-transform: uppercase
+		display: inline-block
+	p
+		display: inline-block
+		vertical-align: middle
+		margin-right: 4px
+		width: 16px
+.calc-table-wrap
+	background-color: transparent
+.head-calc
+	background-color: #2e3e4f
+	display: flex
+	padding: 7px
+	color: $white
+	border-top-right-radius: 7px
+	border-top-left-radius: 7px
+	min-height: 56px
+	align-items: center
+	padding-top: 5px
+	p
+		line-height: 16px
+		text-align: right
+		margin-right: 11px
+		font-size: 14px
+		margin-top: 3px
+.table-currency-calculation
+	border-collapse: collapse
+	width: 100%
+	max-width: 350px
+	border-radius: 20px
+	.active
+		background-color: #34495e
+		span
+			color: #38a69b
+			font-weight: bold
+	.top-active
+		background-color: #34495e
+		border-left: 1px solid #34495e
+		border-right: 1px solid #34495e
+		border: none
+		td
+			border-right: 1px solid #2e3e4e
+			color: $white
+			border-bottom: 1px solid transparent
+			.fa
+				font-size: 12px
+				color: #3cbf9a
+				padding-left: 4px
+			.icon-not-active
+				color: #273747
+	.top-head-active-td
+		td
+			&:last-child
+				background-color: #2e3e4e
+				border-top: 1px solid #314356
+	tbody
+		tr
+			@include border(#c4c4c4)
+			border-top: none
+			height: 29.10px
+			td
+				border-right: 1px solid #c4c4c4
+				border-bottom: 1px solid #c4c4c4
+				text-align: center
+				position: relative
+				.note-Icon
+					display: block
+					top: 2px
+					right: 3px
+					@include border($white)
+					min-width: 12px
+					min-height: 12px
+				.icons
+					color: #c2c2c2
+					display: inline-block
+					vertical-align: middle
+				.icon-not-active
+					color: #34495e
+				p
+					display: inline-block
+					font-size: 12px
+				.fa
+					display: inline-block
+				&:first-child
+					width: 29px
+					img
+						margin-right: 0
+						max-width: 15px
+						margin: auto
+				&:nth-child(2)
+					width: 158px
+				&:nth-child(3)
+					width: 75px
+				&:nth-child(4)
+					width: 80px
+				&:last-child
+					border-right: none
+				div
+					display: flex
+					align-items: center
+					padding: 0 9px
+					a
+						font-size: 12px
+						color: #204b85
+				img
+					@extend .img-responsive
+					max-width: 26px
+					margin-right: 10px
+					text-align: center
+.calculat-btn
+	display: flex
+	align-items: center
+	min-height: 37px
+	max-width: 221px
+	input, .calc-btn
+		width: calc(100% / 2)
+		min-height: 37px
+	input
+		border: none
+		text-align: right
+		padding: 8px
+		border-top-left-radius: 5px
+		border-bottom-left-radius: 5px
+	.calc-btn
+		border: none
+		background-color: #e3e3e3
+		border-top-right-radius: 5px
+		border-bottom-right-radius: 5px
+		img
+			max-width: 16px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 5px
+		span
+			display: inline-block
+			text-transform: uppercase
+		.fa
+			color: #a6a6a6
+			font-size: 9px
+#weather-sect
+	padding-top: 17px
+	.container
+		max-width: none
+		padding: 0 16px
+.add-city
+	background-color: #f8f8f8
+	border: none
+	padding: 0 9px
+	img
+		max-width: 11px
+		height: 11px
+.head-weather
+	background-color: #dbdbdb
+	text-align: center
+	h2
+		color: $white
+		font-weight: 500
+		line-height: 42px
+		text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.16)
+		font-size: 17px
+.filter-weather-city
+	padding-top: 14px	
+	padding-bottom: 16px
+	display: flex
+	justify-content: flex-start
+	width: 900px
+	button
+		margin-right: 13px
+	.list-cityes
+		width: 900px
+	.weather-btn
+		border: none
+		background-color: #F8F8F8
+		width: auto
+		line-height: 31px
+		border-radius: 3px
+		font-size: 15px
+		padding: 0 16px
+		margin-right: 6px
+	.green-btn-active
+		background-color: #1ABC9B
+		color: $white
+.weather-card-wrap
+	width: 900px
+	display: flex
+	margin-bottom: 18px
+.weather-card
+	background-color: #f8f8f8
+	text-align: center
+	min-height: 167px
+	padding: 7px 12px
+	display: flex
+	flex-direction: column
+	margin-right: 10px
+	width: 100%
+	max-width: 91px
+	img
+		max-width: 38px
+		height: 38px
+	.number-day
+		color: #5B5B5B
+		font-size: 14px
+		font-weight: 700
+		margin-bottom: 3px
+	.weather-text
+		max-width: 58px
+		text-align: center
+		font-size: 13px
+		line-height: 18px
+	.weather-img
+		margin-bottom: 8px
+	.degrees-info
+		margin-bottom: 16px
+		text-align: center
+		span
+			&:first-child
+				color: #A4A4A4
+			&:last-child
+				color: #000000
+.active-weather-card
+	.number-day
+		color: #FF507A
+.more-info-weather
+	background-color: #f8f8f8
+	text-align: center
+	margin-bottom: 25px
+	p
+		line-height: 30px
+		color: #000
+		font-weight: 500
+		font-size: 12px
+.list-categories
+	background-color: $white
+	border-radius: 9px
+	width: 100%
+	max-width: 332px
+	border: 1px solid #95989A
+	margin: auto
+	text-align: center
+	min-height: 458px
+	position: absolute
+	z-index: 50
+	left: 50%
+	top: -528px
+	transform: translateX(-50%)
+	display: none
+	.close-slider
+		position: absolute
+		bottom: -51px
+		left: 50%
+		transform: translateX(-50%)
+		border-radius: 50%
+		width: 36px
+		height: 37px
+		border: none
+		background-color: rgba(255,255,255,0.4)
+		span
+			width: 2px
+			height: 20px
+			position: absolute
+			top: 30%
+			left: 48%
+			background-color: transparent
+			transform: translate(-50%)
+			&::before, &::after
+				position: absolute
+				content: ''
+				width: 2px
+				height: 17px
+				background-color: $white
+			&::before
+				transform: rotate(-45deg)
+			&::after
+				transform: rotate(45deg)
+	h3
+		line-height: 15px
+		padding: 20px
+		font-size: 15px
+		font-weight: 400
+	.list-categories-slides
+		@extend .flex-full
+		flex-wrap: wrap
+		padding: 37px 2px
+		border-bottom: 1px solid #F2F2F2
+		border-top: 1px solid #F2F2F2
+		height: 348px
+	.categories-item
+		width: calc(100% / 3)
+		margin-bottom: 39px
+		max-height: 67px
+		img
+			@extend .flex-full
+			max-width: 40px
+			height: 35px
+			margin: auto
+			margin-bottom: 10px
+		p
+			color: #000
+			font-size: 12px
+.page-overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: #000000
+	opacity: 0.6
+	display: none
+.owl-theme .owl-nav [class*=owl-]
+		color: #bcbcbc
+		background-color: transparent
+.owl-theme .owl-prev, .owl-next
+	background-color: transparent
+	position: absolute
+	top: -2px
+	.fa
+		color: #bcbcbc
+		font-size: 23px
+.owl-theme .owl-nav [class*=owl-]:hover
+	background-color: transparent
+	.fa
+		color: #8d8d8d
+.owl-nav
+	position: relative
+.owl-theme .owl-nav
+	margin-top: 6px
+.owl-theme
+	.owl-prev
+		left: 10px
+	.owl-next
+		right: 10px
+.owl-theme .owl-dots .owl-dot
+	margin-top: 10px
+.owl-theme .owl-dots .owl-dot span
+	background-color: #fff
+	@include border(#9c9c9c)
+	margin: 5px 4px
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+	background-color: #9c9c9c
 @import "media" // Всегда в конце

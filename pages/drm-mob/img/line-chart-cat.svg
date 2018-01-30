@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-552 269.177 39.124 39.124">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd05b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ff7058;
+      }
+
+      .cls-4 {
+        fill: #4cdbc4;
+      }
+
+      .cls-5 {
+        fill: #324a5e;
+      }
+    </style>
+  </defs>
+  <g id="line-chart" transform="translate(-552 269.177)">
+    <circle id="Ellipse_48" data-name="Ellipse 48" class="cls-1" cx="19.562" cy="19.562" r="19.562"/>
+    <path id="Path_177" data-name="Path 177" class="cls-2" d="M112.649,63.177v-.739h-5.268V56.8h-.739v5.637h-4.929V56.8h-.739v5.637h-4.9V56.8h-.739v5.637H90.407V56.8h-.739v5.637H84.4v.739h5.3v4.9H84.4v.739h5.3v4.9H84.4v.739h5.3v4.929H84.4v.739h5.3v4.929h.739V80.12h4.9v4.929h.739V80.12h4.9v4.929h.739V80.12h4.9v4.929h.739V80.12h5.3v-.739h-5.268v-4.9h5.3v-.739h-5.3v-4.9h5.3v-.739h-5.3V63.177Zm-11.675,0v4.9h-4.9v-4.9Zm0,5.668v4.9h-4.9v-4.9ZM90.407,63.177h4.9v4.9h-4.9Zm0,5.668h4.9v4.9h-4.9Zm0,10.536v-4.9h4.9v4.9Zm5.668,0v-4.9h4.9v4.9Zm10.536,0h-4.9v-4.9h4.9v4.9Zm0-5.638h-4.9v-4.9h4.9v4.9Zm0-5.638h-4.9V63.177h4.9v4.929Z" transform="translate(-77.9 -52.426)"/>
+    <path id="Path_178" data-name="Path 178" class="cls-3" d="M105.965,145.14l1.54,1.54-9.827,9.8-5.021-5.021L84,160.112v2.095l8.656-8.657,5.021,5.021,10.875-10.844,1.571,1.571,1.54-5.7Z" transform="translate(-77.531 -132.541)"/>
+    <path id="Path_179" data-name="Path 179" class="cls-4" d="M112.28,123.715l-1.54-5.7-1.571,1.571L93.889,104.4,84,114.289v2.095l9.889-9.889,14.232,14.14-1.54,1.54Z" transform="translate(-77.531 -96.36)"/>
+    <path id="Path_180" data-name="Path 180" class="cls-5" d="M58.926,85.049V56.8H56.8V87.175H87.175V85.049Z" transform="translate(-52.426 -52.426)"/>
+  </g>
+</svg>
