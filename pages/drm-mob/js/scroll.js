@@ -1,36 +1,39 @@
 $(document).ready(function() {
-    $(".nav-tabs .content").mCustomScrollbar({
-        axis: 'x',
-        keyboard:{scrollType:"stepped"},
-        mouseWheel:{scrollAmount:188,normalizeDelta:true},
-        autoExpandScrollbar:true,
-        snapAmount:188,
-        snapOffset:65
-    });
+    function scrolls(element) { 
+    const slider = document.querySelector(element); 
+    let isDown = false; 
+    let startX; 
+    let scrollLeft; 
 
-     $(".financial-news-agency-content .content").mCustomScrollbar({
-        axis: 'x',
-        mouseWheel:{scrollAmount:188,normalizeDelta:false},
-        snapAmount:400,
-        snapOffset:20
-    });
+    slider.addEventListener('mousedown', (e) => { 
+    isDown = true; 
+    slider.classList.add('active'); 
+    startX = e.pageX - slider.offsetLeft; 
+    scrollLeft = slider.scrollLeft; 
+    }); 
 
-     $("#exchange-rates-table-info .content").mCustomScrollbar({
-        axis: 'x',
-        mouseWheel:{scrollAmount:188,normalizeDelta:false},
-        snapAmount:400,
-        snapOffset:20
-    });
-     $("#weather-sect .content").mCustomScrollbar({
-        axis: 'x',
-        mouseWheel:{scrollAmount:188,normalizeDelta:false},
-        snapAmount:400,
-        snapOffset:20
-    });
-     $("#weather-sect .content:last-child").mCustomScrollbar({
-        axis: 'x',
-        mouseWheel:{scrollAmount:188,normalizeDelta:false},
-        snapAmount:400,
-        snapOffset:20
-    });
+    slider.addEventListener('mouseleave', () => { 
+    isDown = false; 
+    slider.classList.remove('active'); 
+    }); 
+
+    slider.addEventListener('mouseup', () => { 
+    isDown = false; 
+    slider.classList.remove('active'); 
+    }); 
+
+    slider.addEventListener('mousemove', (e) => { 
+    if (!isDown) return; 
+    e.preventDefault(); 
+    const x = e.pageX - slider.offsetLeft; 
+    const walk = (x - startX) * 3; 
+    slider.scrollLeft = scrollLeft - walk; 
+    }); 
+    } 
+
+    scrolls('#categories-scroll1');
+    scrolls('#categories-scroll2');
+    scrolls('#categories-scroll-city');
+    scrolls('#categories-scroll-weather-btn');
+    scrolls('#weather-scroll');
 });

@@ -62,6 +62,7 @@ body
 
 body button
 	outline: none
+	box-shadow: none
 .text-center
 	text-align: center
 
@@ -100,7 +101,8 @@ body button
 				padding-top: 11px
 				span
 					color: #bcbcbc
-				.site-navigation-fixed-active
+			.site-navigation-fixed-active
+				span
 					color: #333333
 			.link-open-active
 				&::after
@@ -232,6 +234,8 @@ html body .hamburger-inner::after
 .nav-tabs
 	.container
 		max-width: none
+.content
+	overflow-x: scroll
 html body ul .tabs-navigation-active
 	p
 		color: #000000
@@ -392,17 +396,6 @@ html body .wrapper .table-exchange .light-bg
 		 	.more-info
 		 		color: #38A69B
 		 		font-size: 11px
-#categories-scroll1 .mCSB_scrollTools,
-#categories-scroll2 .mCSB_scrollTools,
-#categories-scroll-city .mCSB_scrollTools,
-#categories-scroll-weather-btn .mCSB_scrollTools,
-#categories-scroll-weather-cards .mCSB_scrollTools, 
-	background-color: transparent
-html body .wrapper .mCSB_horizontal.mCSB_inside > .mCSB_container
-	margin-right: 0
-	margin-bottom: 0px!important
-html body .wrapper .mCSB_scrollTools .mCSB_draggerRail
-	background-color: #fff
 .advertising-box
 	min-height: 71px
 	position: relative
@@ -418,8 +411,7 @@ html body .wrapper .mCSB_scrollTools .mCSB_draggerRail
 	.container
 		padding: 0 5px
 html body .filter-active-btn
-	@include border(#FF7700)
-	border-width: 2px
+	box-shadow: 0px 0px 0px 2px rgba(255, 119, 0, 1)
 	position: relative
 	&::after
 		content: ''
@@ -441,11 +433,13 @@ html body .filter-active-btn
 .filter-btn
 	font-size: 14px
 	text-align: center
-	@include border(#D4D5D6)
+	border: none
+	box-shadow: 0px 0px 0px 1px rgba(212, 213, 214, 1)
 	border-radius: 4px
 	background-color: $white
 	padding: 10px 13px
-	margin-right: 5px
+	/*margin-right: 5px */
+	margin: 2px 5px 2px 2px
 	&:hover
 		@extend .filter-active-btn
 .filter-select
@@ -553,6 +547,7 @@ html body .filter-active-btn
 			&:last-child
 				background-color: #2e3e4e
 				border-top: 1px solid #314356
+				border-bottom: none
 	tbody
 		tr
 			@include border(#c4c4c4)
@@ -839,4 +834,33 @@ html body .filter-active-btn
 	margin: 5px 4px
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
 	background-color: #9c9c9c
+#categories-scroll1
+	overflow-x:scroll
+#categories-scroll1::-webkit-scrollbar
+	background: transparent 
+	height: 0px
+#categories-scroll2
+	overflow-x:scroll
+#categories-scroll2::-webkit-scrollbar 
+	background: transparent
+	height: 0px
+#categories-scroll-city 
+	overflow-x:scroll
+	width: 360px !important
+#categories-scroll-city::-webkit-scrollbar 
+	background: transparent
+	height: 0px
+#categories-scroll-weather-btn 
+	overflow-x: scroll
+	width: 360px !important
+#categories-scroll-weather-btn::-webkit-scrollbar 
+	background: transparent
+	height: 0px
+#weather-scroll 
+	overflow-x: scroll
+	width: 360px !important
+#weather-scroll::-webkit-scrollbar
+	background: transparent
+	height: 0px
+
 @import "media" // Всегда в конце

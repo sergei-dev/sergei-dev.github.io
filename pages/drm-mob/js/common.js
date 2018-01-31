@@ -32,8 +32,8 @@ $(function() {
 
 	$('.site-navigation-fixed ul li a').click(function(e) {
 		e.preventDefault();
-		$(this).removeClass('site-navigation-fixed-active');
-		$('.site-navigation-fixed ul li a').addClass('site-navigation-fixed-active');
+		$('.site-navigation-fixed ul li a').removeClass('site-navigation-fixed-active');
+		$(this).addClass('site-navigation-fixed-active');
 	});
 
 	$('.owl-carousel').owlCarousel({
