@@ -29,28 +29,27 @@
 }
 .icon-place .path1:before {
   content: "\e905";
-  color: rgb(0, 0, 0);
+  color: #bcbcbc;
 }
 .icon-place .path2:before {
   content: "\e906";
   margin-left: -0.7177734375em;
-  color: rgb(6, 6, 6);
+  color: #bcbcbc;
 }
 .icon-acc .path1:before {
-  content: "\e900";
-  color: rgb(0, 0, 0);
+  content: "\e901";
+  color: #bcbcbc;
 }
 .icon-acc .path2:before {
   content: "\e901";
-  margin-left: -1em;
-  color: rgb(154, 154, 154);
+  color: #bcbcbc;
 }
 .icon-calculator:before {
   content: "\e902";
 }
 .icon-menu:before {
   content: "\e904";
-  color: #9a9a9a;
+  color: #bcbcbc;
 }
 .icon-home:before {
   content: "\e903";
