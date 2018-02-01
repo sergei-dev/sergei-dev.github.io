@@ -70,15 +70,15 @@ body button
 	background-color: darkred
 	color: #fff
 
-.container
+html body .wrapper .container
 	width: 100%
 	max-width: 360px
 	margin: auto
 	padding: 0 7px
 
-.header-top
+html body .wrapper .header-top
 	background-color: $dark
-	margin-bottom: 22px
+	margin-bottom: 23px
 	position: relative
 	.container
 		padding: 0 20px
@@ -104,6 +104,8 @@ body button
 			.site-navigation-fixed-active
 				span
 					color: #333333
+					&::before
+						color: #333333
 			.link-open-active
 				&::after
 					content: ''
@@ -123,8 +125,12 @@ body button
 	width: 100%
 	z-index: 50
 	display: none
+	ul
+		width: 100%
+		max-width: 360px
+		margin: auto
 	.nav-list
-		margin-bottom: 50px
+		margin-bottom: 32px
 		> li
 			border-bottom: 1px solid silver
 			display: block
@@ -132,18 +138,20 @@ body button
 				display: block
 				width: 100%
 				color: #000
-				padding: 15px 20px
+				padding: 13px 22px
 				font-weight: bold
 				position: relative
+				font-size: 14px
 				.fa
 					position: absolute
-					right: 15px
+					right: 20px
 					top: 50%
 					transform: translateY(-50%)
 					color: gray
 					@include trs(0.5s)
+					font-size: 20px
 	.nav-list-submenu
-		padding-left: 30px
+		padding-left: 50px
 		display: none
 		padding-top: 3px
 		padding-bottom: 20px
@@ -151,12 +159,18 @@ body button
 			display: block
 			a
 				font-weight: 400
+				font-size: 14px
+				padding: 11px 0
 .two-nav-list
 	@extend .flex-full
-	padding: 15px
+	padding: 15px 22px
 	li
 		a
-			color: gray
+			color: #818181
+			font-size: 12px
+		&:last-child
+			a
+				margin-right: 6px
 html body .wrapper .submenu-active-fa
 	.fa
 		transform: translateY(-50%) rotate(-90deg)
@@ -262,7 +276,7 @@ html body ul .tabs-navigation-active
 			padding-bottom: 20px
 			@include trs(0.3s)
 			position: relative
-			margin-right: 7px
+			margin-right: 5px
 			cursor: pointer
 			&:hover
 				@extend .tabs-navigation-active
@@ -271,24 +285,26 @@ html body ul .tabs-navigation-active
 				margin: auto
 				margin-bottom: 6px
 				width: 36px
+				margin-left: 31px
 			p
 				font-size: 12px
 				color: rgba(0,0,0,0.3)
 .financial-news-agency-content
 	background: #F9FAFA
-	padding-top: 12px
+	padding-top: 11px
 .financial-news-agency-head
 	text-align: center
 	padding: 12px 15px
 	position: relative
 	background-color: $white
-	margin-bottom: 12px
+	margin-bottom: 10px
 	padding-top: 7px
 	h3
 		color: #000000
 		font-weight: 200
 		font-size: 17px
 		padding-right: 7px
+		margin-bottom: 1px
 	h4
 		color: rgba(0,0,0,0.3)
 		font-weight: 400
@@ -303,25 +319,33 @@ html body ul .tabs-navigation-active
 	@include border(#ececec)
 	background-color: $white
 	font-size: 8px
-.exchange-rates-content, .exchange-item
+.exchange-item
 	@extend .flex-full
 .exchange-rates-wrap
 	@extend .flex-full
-	width: 1010px
+	width: 1022px
 	justify-content: flex-start
 	margin-bottom: 12px
 .exchange-rates-content
+	display: flex
 	flex-wrap: wrap
 	padding: 15px 13px
 	@include border(#e1e1e1)
 	border-radius: 10px
 	background-color: $white
-	max-width: 332px
+	max-width: 336px
+	justify-content: flex-start
 .exchange-item
-	width: calc(100% / 2)
 	margin-bottom: 11px
+	margin-right: 36px
+	width: 100%
+	max-width: 134px
+	&:nth-child(2)
+		margin-right: 0
 	&:nth-child(3), &:last-child
 		margin-bottom: 0
+	&:last-child
+		margin-right: 0
 .currency-name
 	display: flex
 	align-items: center
@@ -333,8 +357,6 @@ html body ul .tabs-navigation-active
 		font-size: 14px
 		font-weight: 400
 		color: #000
-.exchange-item
-	max-width: 134px
 .green-carrency
 	color: #16702E
 .red-carrency
@@ -349,13 +371,13 @@ html body .wrapper .table-exchange .light-bg
 	background-color: #34495e
 	td
 		border-right: 1px solid #2e3e4e
-		height: 65px
+		height: 66px
 		&:last-child
 			border: none
 
 .table-exchange
 	width: 100%
-	max-width: 350px
+	max-width: 343px
 	border-radius: 4px
 	background-color: #2e3e4e
 	text-align: center
@@ -408,7 +430,7 @@ html body .wrapper .table-exchange .light-bg
 	h2
 		text-align: center
 		font-weight: 400
-		margin-bottom: 19px
+		margin-bottom: 17px
 		font-size: 16px
 	.container
 		padding: 0 5px
@@ -430,7 +452,7 @@ html body .filter-active-btn
 	display: flex
 	margin-left: 5px
 .filter-money
-	margin-bottom: 15px
+	margin-bottom: 16px
 	margin-left: 3px
 .filter-btn
 	font-size: 14px
@@ -442,6 +464,7 @@ html body .filter-active-btn
 	padding: 10px 13px
 	/*margin-right: 5px */
 	margin: 2px 5px 2px 2px
+	margin-right: 11px
 	&:hover
 		@extend .filter-active-btn
 .filter-select
@@ -534,6 +557,7 @@ html body .filter-active-btn
 		border-left: 1px solid #34495e
 		border-right: 1px solid #34495e
 		border: none
+		height: 18px
 		td
 			border-right: 1px solid #2e3e4e
 			color: $white
@@ -563,14 +587,21 @@ html body .filter-active-btn
 				.note-Icon
 					display: block
 					top: 2px
-					right: 3px
+					right: 4px
 					@include border($white)
-					min-width: 12px
-					min-height: 12px
+					min-width: 11px
+					min-height: 2px
+					span
+						font-size: 7px
+						line-height: 6px
 				.icons
 					color: #c2c2c2
 					display: inline-block
 					vertical-align: middle
+					margin-top: -3px
+				span
+					&:not(.note-Icon > span)
+						font-size: 15px
 				.icon-not-active
 					color: #34495e
 				p
@@ -597,12 +628,14 @@ html body .filter-active-btn
 					align-items: center
 					padding: 0 9px
 					a
-						font-size: 12px
+						font-size: 14px
 						color: #204b85
+						text-overflow: ellipsis
+						white-space: nowrap
 				img
 					@extend .img-responsive
 					max-width: 26px
-					margin-right: 10px
+					margin-right: 8px
 					text-align: center
 .calculat-btn
 	display: flex
@@ -635,10 +668,9 @@ html body .filter-active-btn
 			color: #a6a6a6
 			font-size: 9px
 #weather-sect
-	padding-top: 17px
+	padding-top: 18px
 	padding-bottom: 40px
 	.container
-		max-width: none
 		padding: 0 16px
 .add-city
 	background-color: #f8f8f8
@@ -657,7 +689,7 @@ html body .filter-active-btn
 		text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.16)
 		font-size: 17px
 .filter-weather-city
-	padding-top: 14px	
+	padding-top: 15px	
 	padding-bottom: 16px
 	display: flex
 	justify-content: flex-start
@@ -877,13 +909,6 @@ html body .filter-active-btn
   padding-top: 0
   z-index: 50
 
-.container 
-  width: 360px
-  max-width: 360px
-  overflow: hidden
-  margin: auto
-  padding: 0 7px
-
 .list-cityes.content
 	overflow: hidden
 
@@ -896,14 +921,13 @@ html body .filter-active-btn
 .more-info-weather
 	border-radius: 3px
 
-.containe
-	width: 360px
+html body .wrapper .containe
+	width: 100%
 	max-width: 360px
 	margin: auto
 	padding: 0 7px
-	position: relative
 
-.containe.fix
+html body .wrapper .containe.fix
 	padding: 0px 33px
 
 @import "media" // Всегда в конце
