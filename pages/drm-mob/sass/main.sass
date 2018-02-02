@@ -83,12 +83,14 @@ html body .wrapper .header-top
 	.container
 		padding: 0 20px
 .site-navigation-fixed
+	width: 100%
 	position: fixed
 	bottom: 0
+	right: 0
 	left: 0
-	width: 100%
-	background-color: $white
-	padding: 11px 25px
+	margin: 0 auto
+	background-color: #fff
+	padding: 11px 0px
 	padding-top: 0
 	z-index: 50
 	ul
@@ -115,7 +117,7 @@ html body .wrapper .header-top
 					border-width: 0 7.5px 8px 7.5px
 					position: absolute
 					top: -8px
-					left: 3px
+					left: 1px
 					border-color: transparent transparent #ffffff transparent
 .mob-navigation
 	background-color: $white
@@ -351,7 +353,7 @@ html body ul .tabs-navigation-active
 	align-items: center
 	img
 		@extend .img-responsive
-		width: 14px
+		width: 15px
 		margin-right: 8px
 	h3
 		font-size: 14px
@@ -676,6 +678,7 @@ html body .filter-active-btn
 	background-color: #f8f8f8
 	border: none
 	padding: 0 9px
+	border-radius: 3px 
 	img
 		max-width: 11px
 		height: 11px
@@ -723,7 +726,8 @@ html body .filter-active-btn
 	flex-direction: column
 	margin-right: 10px
 	width: 100%
-	max-width: 91px
+	max-width: 89px
+	border-radius: 3px
 	img
 		max-width: 38px
 		height: 38px
@@ -754,7 +758,8 @@ html body .filter-active-btn
 	background-color: #f8f8f8
 	text-align: center
 	margin-bottom: 25px
-	p
+	border-radius: 3px
+	a
 		line-height: 30px
 		color: #000
 		font-weight: 500
@@ -880,34 +885,23 @@ html body .filter-active-btn
 	height: 0px
 #categories-scroll-city 
 	overflow-x:scroll
-	width: 360px !important
-#categories-scroll-city::-webkit-scrollbar 
+	width: 360px
+#categories-scroll-city::-webkit-scrollbar
 	background: transparent
 	height: 0px
 #categories-scroll-weather-btn 
 	overflow-x: scroll
-	width: 360px !important
+	width: 360px
 #categories-scroll-weather-btn::-webkit-scrollbar 
 	background: transparent
 	height: 0px
 #weather-scroll 
 	overflow-x: scroll
-	width: 360px !important
+	width: 360px
+	margin-bottom: 6px
 #weather-scroll::-webkit-scrollbar
 	background: transparent
 	height: 0px
-
-
-.site-navigation-fixed 
-  position: fixed
-  bottom: 0
-  right: 0
-  left: 0 !important
-  margin: 0 auto !important
-  background-color: #fff
-  padding: 11px 0px
-  padding-top: 0
-  z-index: 50
 
 .list-cityes.content
 	overflow: hidden
@@ -915,11 +909,6 @@ html body .filter-active-btn
 .weather-card-wrap.content
 	overflow: hidden
 
-.weather-card
-	border-radius: 3px
-
-.more-info-weather
-	border-radius: 3px
 
 html body .wrapper .containe
 	width: 100%
