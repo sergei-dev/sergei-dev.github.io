@@ -31,7 +31,7 @@ $(document).ready(function() {
     }); 
     } 
 
-    scrolls('#categories-scroll1');
+    scrolls('.tabs-navigation ul');
     scrolls('#categories-scroll2');
     scrolls('#categories-scroll-city');
     scrolls('#categories-scroll-weather-btn');
