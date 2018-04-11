@@ -2,6 +2,9 @@ $(document).ready(function() {
   $('.link_portfolio').click(function(e) {
     e.preventDefault();
   });
+
+  $("nav").prognroll();
+
   /*$('.owl-carousel').owlCarousel({
     loop: false,
     margin: 0,

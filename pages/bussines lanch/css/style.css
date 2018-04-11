@@ -34,6 +34,9 @@ html, body {
   width: 100%;
   position: relative;
 }
+.wow {
+  will-change: transform, opacity;
+}
 
 .home_head::before {
   content: '';
@@ -315,19 +318,10 @@ html, body {
     margin-bottom: 60px;
     padding: 0 15px;
 }
-.img_avtor {
-
-
-
-
-}
-
 .img_avtor img {
-  max-width: 100%;
-    margin-top: 200px;
-
+    max-width: 100%;
+    margin-top: 100px;
 }
-
 .description_avtor {
   background: rgba(0, 0, 0, 0.7);
   padding-bottom: 25px;

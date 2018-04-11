@@ -1,0 +1,90 @@
+Remember that you can report errors and get help in https://github.com/NicoSantangelo/sublime-gulp
+
+04-04-2018 21:42:
+C:\Users\Сергей\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: ENOENT: no such file or directory, scandir 'D:\gulp\optimizedhtml-start-template\node_modules\node-sass\vendor'
+    at Object.fs.readdirSync (fs.js:904:18)
+    at Object.getInstalledBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\extensions.js:129:13)
+    at foundBinariesList (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:20:15)
+    at foundBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:15:5)
+    at Object.module.exports.missingBinary (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:45:5)
+    at module.exports (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\binding.js:15:30)
+    at Object.<anonymous> (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+
+04-04-2018 21:42:
+C:\Users\Сергей\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: ENOENT: no such file or directory, scandir 'D:\gulp\optimizedhtml-start-template\node_modules\node-sass\vendor'
+    at Object.fs.readdirSync (fs.js:904:18)
+    at Object.getInstalledBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\extensions.js:129:13)
+    at foundBinariesList (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:20:15)
+    at foundBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:15:5)
+    at Object.module.exports.missingBinary (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:45:5)
+    at module.exports (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\binding.js:15:30)
+    at Object.<anonymous> (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+
+04-04-2018 21:43:
+C:\Users\Сергей\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: ENOENT: no such file or directory, scandir 'D:\gulp\optimizedhtml-start-template\node_modules\node-sass\vendor'
+    at Object.fs.readdirSync (fs.js:904:18)
+    at Object.getInstalledBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\extensions.js:129:13)
+    at foundBinariesList (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:20:15)
+    at foundBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:15:5)
+    at Object.module.exports.missingBinary (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:45:5)
+    at module.exports (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\binding.js:15:30)
+    at Object.<anonymous> (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+
+04-04-2018 22:04:
+C:\Users\Сергей\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: ENOENT: no such file or directory, scandir 'D:\gulp\optimizedhtml-start-template\node_modules\node-sass\vendor'
+    at Object.fs.readdirSync (fs.js:904:18)
+    at Object.getInstalledBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\extensions.js:129:13)
+    at foundBinariesList (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:20:15)
+    at foundBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:15:5)
+    at Object.module.exports.missingBinary (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:45:5)
+    at module.exports (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\binding.js:15:30)
+    at Object.<anonymous> (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+
+
+04-05-2018 13:19:
+C:\Users\Сергей\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: ENOENT: no such file or directory, scandir 'D:\gulp\optimizedhtml-start-template\node_modules\node-sass\vendor'
+    at Object.fs.readdirSync (fs.js:904:18)
+    at Object.getInstalledBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\extensions.js:129:13)
+    at foundBinariesList (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:20:15)
+    at foundBinaries (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:15:5)
+    at Object.module.exports.missingBinary (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\errors.js:45:5)
+    at module.exports (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\binding.js:15:30)
+    at Object.<anonymous> (D:\gulp\optimizedhtml-start-template\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
