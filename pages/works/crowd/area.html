@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Личный кабинет</title>
+	
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__wrapper  container">
+			<div class="header__logo">
+				<img src="img/logo.png" alt="transparent logo" class="header__logo-transparent-img">
+				<div class="header__logo-link">
+					<img src="img/logo.png" alt="logo" class="header__logo-img">
+				</div>
+			</div>
+
+			<div class="header__info">
+				<div class="header__actions">
+					<div class="header__actions">
+						<a href="#" class="header__actions-link">Создать проект</a>
+						<a href="#" class="header__actions-link">Вход</a>
+
+						<form action="" class="header__actions-form  js-search-form">
+							<label class="header__actions-form-label">
+								<input type="text" class="header__actions-form-input  js-search-input" name="s">
+							</label>
+							<button class="header__actions-form-btn">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="header__menu">
+					<div class="menu-toggle" onclick="toggleMainMenu('.menu-toggle')">
+						<div class="menu-toggle__element"></div>
+						<div class="menu-toggle__element"></div>
+						<div class="menu-toggle__element"></div>
+					</div>
+					<div class="header__menu-wrapper  js-menu">
+						<i class="header__menu-icon">&equiv;</i>
+						<ul class="header__menu-container">
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Проекты</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Фонды</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Проекты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</header> <!-- /.header -->
+	
+	<main class="main-content personal-area">
+		<div class="container">
+			<section class="personal-area__info">
+				<h2 class="visually-hidden">Информация о пользователе</h2>
+				<div class="personal-wrap-top">
+					<div class="personal-area__info-user">
+					<button class="personal-area__info-user-btn-settings"><span class="visually-hidden">Настройки</span></button>
+					<div class="personal-area__info-user-avatar">
+						<img src="img/personalArea/avatar.svg" alt="avatar" title="avatar">
+					</div>
+					<!-- /.personal-area__info-user-avatar -->
+					<div class="personal-area__info-user-wrap-text">
+						<p class="personal-area__info-user-wrap-text-nickname">Nickname</p>
+						<!-- /.personal-area__info-user-wrap-text-nickname -->
+						<p class="personal-area__info-user-wrap-text-status">
+							<span class="personal-area__info-user-wrap-text-status_city">Москва</span>
+							<span class="personal-area__info-user-wrap-text-status_circle"></span>
+							<span class="personal-area__info-user-wrap-text-status_text">Online</span>
+						</p>
+						<!-- /.personal-area__info-user-wrap-text-status -->
+					</div>
+					<!-- /.personal-area__info-user-wrap-text -->
+				</div>
+				<!-- /.personal-area__info-user -->
+				<section class="main-content-profile">
+				<h2 class="visually-hidden">Профиль пользователя</h2>
+				<div class="main-content-tabs__wrap">
+					<button class="main-content-tabs__wrap-btn">Проекты</button>
+					<!-- /.main-content-tabs__wrap-btn -->
+					<button class="main-content-tabs__wrap-btn">Новости</button>
+					<!-- /.main-content-tabs__wrap-btn -->
+				</div>
+				<!-- /.main-content-tabs__wrap -->
+				<div class="tab-wrap">
+					<section class="tab-content progects-user">
+						<h2 class="progects-user__title">Созданные проекты</h2>
+						<!-- /.progects-user__title -->
+						<div class="progects-user__item-progect">
+							<div class="progects-user__item-photo-wrap">
+								<div class="progects-user__item-photo">
+									<p>Черновик</p>
+									<img src="img/personalArea/technology.svg" alt="photo">
+								</div>
+								<!-- /.progects-user__item-photo -->
+								<button class="progects-user__item-photo__delete-btn">
+									<img src="img/personalArea/delete.svg" alt="Удалить">
+									удалить
+								</button>
+							</div>
+							<!-- /.progects-user__item-photo-wrap -->
+							<div class="progects-user__item-finance-info">
+								<ul class="progects-user__item-finance-list">
+									<li class="collection">
+										<p>Собрано</p>
+										<span>0 руб</span>
+									</li>
+									<li class="target">
+										<p>Цель</p>
+										<span>0 руб</span>
+									</li>
+								</ul>
+								<!-- /.progects-user__item-finance-list -->
+							</div>
+							<!-- /.progects-user__item-finance-info -->
+						</div>
+						<!-- /.progects-user__item-progect -->
+
+						<section class="support-progects">
+							<h2 class="support-progects__title">Поддержите один из сотни проектов</h2>
+							<ul class="support-progects__list">
+								<li class="li support-progects__list-item">
+									<a href="#">
+										<img src="img/awards/4.jpg" alt="фото проекта">
+									<h3>Съемки фильма «Один в городе</h3>
+									<p>
+										Учебный фильм для всей семьи расскажет ребятам, как безопасно жить в городе, а родителям — как отпускать детей в большой мир. При поддержке ведущих российских тренеров и психологов
+									</p>
+									</a>
+								</li>
+								<!-- /.li support-progects__list-item -->
+								<li class="li support-progects__list-item">
+									<a href="#">
+										<img src="img/awards/4.jpg" alt="фото проекта">
+									<h3>Мастерская красоты</h3>
+									<p>
+										Мастерская красоты - это уютный косметический кабинет, где можно порадовать себя различными приятными и полезными процедурами.
+									</p>
+									</a>
+								</li>
+								<!-- /.li support-progects__list-item -->
+								<li class="li support-progects__list-item">
+									<a href="#">
+										<img src="img/awards/4.jpg" alt="фото проекта">
+									<h3>Teatr.Pro. Зрители - зрителям. Сайт о театр</h3>
+									<p>
+										Новые подходы к старым вопросам - старты продаж, лайфхаки, общение с театрами, cовместные походы и поездки, рецензии, обсуждения, советы, биржа лишних билетов и многое 
+									</p>
+									</a>
+								</li>
+								<!-- /.li support-progects__list-item -->
+							</ul>
+							<!-- /.support-progects__list -->
+						</section>
+						<!-- /.support-progects -->
+					</section>
+					<!-- /.progects-user -->
+					<section class="tab-content news-user">
+						<article class="news-user__item">
+							<h3 class="news-user__title">Подарки для книголюбов от Bookmate</h3>
+							<!-- /.news-user__title -->
+							<time class="news-user__date">10 апреля 2018 в 23:32</time>
+							<p class="news-user__subtitle">
+								Сервис для чтения электронных книг Bookmate и Planeta.ru запустили совместную акцию в категории «Литература». Теперь за поддержку литературных проектов вы можете получить бесплатную премиум-подписку на Букмейт!
+							</p>
+							<!-- /.news-user__descr -->
+							<img src="img/personalArea/huge (1).jpg" alt="Фото статьи" class="news-user__picture">
+							<!--  .news-user__picture-->
+							<p class="news-user__descr">
+								Чтобы получить бесплатную подписку, с 11 апреля по 16 июля 2018 года поддержите понравившийся проект из категории от 100 рублей. При этом вы можете выбрать понравившееся вознаграждение или…
+							</p>
+							<div class="news-user__links">
+								<a class="news-user__more" href="#">Читать далее</a>
+								<!-- /.news-user__descr -->
+								<a class="news-user__share" href="#">Поделиться</a>
+							</div>
+							<!-- /.news-user__links -->
+							<div class="news-user__comments">
+								<p>Чтобы оставлять комментарии, Вам необходимо <a href="#">зарегистрироваться</a> или <a href="#">авторизоваться</a></p>
+							</div>
+							<!-- /.news-user__comments -->
+						</article>
+						<!-- /.news-user__item -->
+						<article class="news-user__item">
+							<h3 class="news-user__title">Подарки для книголюбов от Bookmate</h3>
+							<!-- /.news-user__title -->
+							<time class="news-user__date">10 апреля 2018 в 23:32</time>
+							<p class="news-user__subtitle">
+								Сервис для чтения электронных книг Bookmate и Planeta.ru запустили совместную акцию в категории «Литература». Теперь за поддержку литературных проектов вы можете получить бесплатную премиум-подписку на Букмейт!
+							</p>
+							<!-- /.news-user__descr -->
+							<img src="img/personalArea/huge (1).jpg" alt="Фото статьи" class="news-user__picture">
+							<!--  .news-user__picture-->
+							<p class="news-user__descr">
+								Чтобы получить бесплатную подписку, с 11 апреля по 16 июля 2018 года поддержите понравившийся проект из категории от 100 рублей. При этом вы можете выбрать понравившееся вознаграждение или…
+							</p>
+							<div class="news-user__links">
+								<a class="news-user__more" href="#">Читать далее</a>
+								<!-- /.news-user__descr -->
+								<a class="news-user__share" href="#">Поделиться</a>
+							</div>
+							<!-- /.news-user__links -->
+							<div class="news-user__comments">
+								<p>Чтобы оставлять комментарии, Вам необходимо <a href="#">зарегистрироваться</a> или <a href="#">авторизоваться</a></p>
+							</div>
+							<!-- /.news-user__comments -->
+						</article>
+						<!-- /.news-user__item -->
+					</section>
+					<!-- /.news-user -->
+				</div>
+				<!-- /.tab-wrap -->
+			</section>
+			<!-- /.main-content-profile -->
+				</div>
+				<!-- /.personal-wrap-top -->
+				<div class="personal-area__info-score">
+					<form action="" class="personal-area__info-score-form">
+						<input type="text" class="personal-area__info-score-form__input" placeholder="0 р">
+						<button type="submit" class="personal-area__info-score-form__btn">Пополнить счет</button>
+					</form>
+					<!-- /.personal-area__info-score_form -->
+					<ul class="personal-area__info-score-subscription">
+						<li class="personal-area__info-score-subscription_info-item">
+							<span>0</span>
+							<p>Подписчиков</p>
+						</li>
+						<!-- /.personal-area__info-score-subscription_info-item -->
+						<li class="personal-area__info-score-subscription_info-item">
+							<span>1</span>
+							<p>Подписка</p>
+						</li>
+						<!-- /.personal-area__info-score-subscription_info-item -->
+					</ul>
+					<!-- /.personal-area__info-score-subscription -->
+				</div>
+				<!-- /.personal-area__info-score -->
+			</section>
+			<!-- /.personal-area-info -->
+			
+		</div>
+		<!-- /.container -->
+	</main>
+	<!-- /.main-content -->
+
+	<footer class="footer">
+		<div class="footer__wrapper  container">
+			<div class="footer__about">
+				<a href="#" class="footer__about-logo">
+					<span class="footer__about-logo--big">Cd</span>crowd
+				</a>
+
+				<a href="tel:+74951810505" class="footer__about-number">+7 (495) 181-05-05</a>
+
+				<div class="footer__about-info">
+					<p>
+						129090, Россия, г. Москва, <br \>
+						проспект Мира, дом 19, строение 3, этаж 3
+					</p>
+					 <br \>
+					<p>
+						Время работы: <br \>
+						пн-пт с 11:00 до 20:00 / сб с 11:00 до 18:00 <br \>
+						воскресенье выходной
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__list">
+				<ul class="footer__list-container">
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							Наши проекты
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Школа</a>
+							<a href="#" class="footer__list-links-item">Магазин</a>
+							<a href="#" class="footer__list-links-item">VIP клуб</a>
+							<a href="#" class="footer__list-links-item">Благотворительность</a>
+						</div>
+					</li>
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							о нас
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Что такое Cd-crowd?</a>
+							<a href="#" class="footer__list-links-item">Спецпроекты</a>
+							<a href="#" class="footer__list-links-item">Партнеры и кураторы</a>
+							<a href="#" class="footer__list-links-item">Кто такие кураторы?</a>
+							<a href="#" class="footer__list-links-item">Отдел PR и маркетинга</a>
+						</div>
+					</li>
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							Помощь
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Частые вопросы</a>
+							<a href="#" class="footer__list-links-item">Правила сервиса</a>
+							<a href="#" class="footer__list-links-item">Способы оплаты</a>
+							<a href="#" class="footer__list-links-item">Возврат средств</a>
+							<a href="#" class="footer__list-links-item">Задать вопрос</a>
+						</div>
+					</li>
+				</ul>
+				<div class="footer__list-socials">
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--vk">
+						<i class="fa fa-vk"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--facebook">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--twitter">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--odnoklassniki">
+						<i class="fa fa-odnoklassniki"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- /.footer -->
+	
+	<!-- Подключние скриптов -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+		<script src="js/jquery.datetimepicker.full.min.js"></script>
+	<script src="js/jquery.datetimepicker.js"></script>
+	<script src="js/jquery.selectric.min.js"></script>
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="js/scripts.js"></script>
+</body>
+</html>	

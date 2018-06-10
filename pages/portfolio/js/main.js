@@ -3,9 +3,51 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
-  $("nav").prognroll();
+  $('.open-image').magnificPopup({
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title');
+            }
+        }
+    });
 
-  /*$('.owl-carousel').owlCarousel({
+  $('.popup-youtube, .popup-vimeo').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    patterns: {
+      youtube: {
+        index: 'youtube.com',
+        id: 'v=',
+        src: '//www.youtube.com/embed/%id%?autoplay=1'
+      }
+    },
+    fixedContentPos: false
+  });
+
+
+
+  /* $(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+      $('body').addClass('header-fixed');
+    }
+    if ($(this).scrollTop() < 50 && $('body').hasClass('header-fixed')) {
+      $('body').removeClass('header-fixed');
+    }
+  });
+  
+ $('.owl-carousel').owlCarousel({
     loop: false,
     margin: 0,
     nav: false,
@@ -26,18 +68,13 @@ $(document).ready(function() {
     }
   })
 
-  */
-
+  
+*/
   $('.js-counter').counterUp({
     delay: 30,
     time: 5000
   });
-  $('.nav_menu li a').hover(function() {
-    $(this).toggleClass('nav_line_one');
-    $(this).toggleClass('nav_line_two');
-
-
-  });
+  
 
   var selector = $(this).attr('data-filter');
   $('.grid').isotope({
@@ -79,7 +116,7 @@ $(document).ready(function() {
 
   $('.menu_link_button').on('click', function(e) {
     e.preventDefault();
-    $('.modal_menu').slideToggle();
+    $('.navbar').slideToggle();
   });
 
 

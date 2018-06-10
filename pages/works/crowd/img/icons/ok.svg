@@ -1,0 +1,17 @@
+<svg id="Одноклассники" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.094" height="30" viewBox="0 0 29.094 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7a6b67;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="29.094" height="30" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ff9c43"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Прямоугольник_1_копия_4" data-name="Прямоугольник 1 копия 4" class="cls-1" width="29.094" height="30"/>
+  <image id="Слой_5" data-name="Слой 5" x="9.156" y="7" width="10" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQsNHyvhh3zVAAAA0klEQVQY01XOsUoVAABG4aPiJEQhZIPSG7QEkbfRwFqEtiaJloaQBIX7CPUEoVz3nqDFzQIdBDEaQtoiB9GgSWjpc7gNecYz/OdP8sDINydGBlKy4n+eK7f8BiPv/cUfC1kFQ8k6WJtsrqqjqvarupFF8MVTTxyApWT7WujDuJ4138EPm9KE5Z6108/uNtV5C73q84SzblefOq7u96gqGy6ubZ56ncx66fKfemdKk9Wv7jXdmEHzlRkfwYEtcOlxhuCrm/IWHOehQ7vuGD9+Y8+LK1zWzIhxG4OdAAAAAElFTkSuQmCC"/>
+</svg>

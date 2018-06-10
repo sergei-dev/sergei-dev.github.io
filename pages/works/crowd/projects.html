@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>шаблончик сайта</title>
+	
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__wrapper  container">
+			<div class="header__logo">
+				<img src="img/logo.png" alt="transparent logo" class="header__logo-transparent-img">
+				<div class="header__logo-link">
+					<img src="img/logo.png" alt="logo" class="header__logo-img">
+				</div>
+			</div>
+
+			<div class="header__info">
+				<div class="header__actions">
+					<div class="header__actions">
+						<a href="#" class="header__actions-link">Создать проект</a>
+						<a href="#" class="header__actions-link">Вход</a>
+
+						<form action="" class="header__actions-form  js-search-form">
+							<label class="header__actions-form-label">
+								<input type="text" class="header__actions-form-input  js-search-input" name="s">
+							</label>
+							<button class="header__actions-form-btn">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="header__menu">
+					<div class="menu-toggle" onclick="toggleMainMenu('.menu-toggle')">
+						<div class="menu-toggle__element"></div>
+						<div class="menu-toggle__element"></div>
+						<div class="menu-toggle__element"></div>
+					</div>
+					<div class="header__menu-wrapper  js-menu">
+						<i class="header__menu-icon">&equiv;</i>
+						<ul class="header__menu-container">
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Проекты</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Фонды</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Проекты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</header> <!-- /.header -->
+
+	<section class="page-nav">
+		<div class="page-nav__wrapper  container">
+			<div class="page-nav__list">
+				<ul class="page-nav__list-container">
+					<li class="page-nav__list-item">
+						Главная
+					</li>
+					<li class="page-nav__list-item">
+						<a href="#" class="page-nav__list-link  hover-underline">Проекты</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section> <!-- /.page-nav -->
+
+
+	<section class="projects-single">
+		<div class="projects-single__wrapper  container">
+			<div class="projects-single__content-box">
+				<div class="projects  projects--bg-transparent">
+					<div class="head-more">
+						<div class="head-more__links">
+							<a href="#" class="head-more__links-item  link  hover-underline">
+								Все проекты <i class="fa fa-chevron-down  head-more__links-icon"></i>
+							</a>
+							<a href="#" class="head-more__links-item  link  hover-underline">
+								Выберите страну <i class="fa fa-chevron-down  head-more__links-icon"></i>
+							</a>
+						</div>
+						<div class="head-more__search">
+							<form action="" class="head-more__search-container">
+								<input type="text" class="head-more__search-field" name="s" placeholder="поиск проектов">
+								<button class="head-more__search-btn">
+									<i class="fa fa-search"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+
+					<div class="projects__list  projects__list-page">
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/1.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 100%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">100%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/2.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper 		">
+										<h3 class="cart-box__info-header">
+											Книга-головоломка "МЕЖЛОКАЛЬНАЯ КОНТРАБАНДА"
+										</h3>
+										<div class="cart-box__info-desc">
+											Книжка-головоломка «Межлокальная контрабанда» и интеллектуальная игра «Элементы». Опыт приведения к ощущению иной реальности посредством общедоступного.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/3.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+						
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/1.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 100%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">100%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/2.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper 		">
+										<h3 class="cart-box__info-header">
+											Книга-головоломка "МЕЖЛОКАЛЬНАЯ КОНТРАБАНДА"
+										</h3>
+										<div class="cart-box__info-desc">
+											Книжка-головоломка «Межлокальная контрабанда» и интеллектуальная игра «Элементы». Опыт приведения к ощущению иной реальности посредством общедоступного.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/3.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+						
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/1.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 100%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">100%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/2.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper 		">
+										<h3 class="cart-box__info-header">
+											Книга-головоломка "МЕЖЛОКАЛЬНАЯ КОНТРАБАНДА"
+										</h3>
+										<div class="cart-box__info-desc">
+											Книжка-головоломка «Межлокальная контрабанда» и интеллектуальная игра «Элементы». Опыт приведения к ощущению иной реальности посредством общедоступного.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/3.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+						
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/1.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 100%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">100%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/2.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper 		">
+										<h3 class="cart-box__info-header">
+											Книга-головоломка "МЕЖЛОКАЛЬНАЯ КОНТРАБАНДА"
+										</h3>
+										<div class="cart-box__info-desc">
+											Книжка-головоломка «Межлокальная контрабанда» и интеллектуальная игра «Элементы». Опыт приведения к ощущению иной реальности посредством общедоступного.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+						<div class="cart-box">
+							<div class="cart-box__wrapper">
+								<div class="cart-box__img-box">
+									<img src="img/projects/3.jpg" alt="projects image" class="cart-box__img">
+								</div>
+								<div class="cart-box__info">
+									<div class="cart-box__info-wrapper ">
+										<h3 class="cart-box__info-header">
+											Настольная игра 74
+										</h3>
+										<div class="cart-box__info-desc">
+											Игра по советской истории. Сюжет игры – судьба семьи в ХХ веке, с 1917 по 1991 год.
+										</div>
+										<div class="cart-box__info-process">
+											<div class="cart-box__info-process-bar">
+												<div class="cart-box__info-process-bar-percent" style="width: 28%;"></div>
+											</div>
+											<div class="cart-box__info-process-info">
+												<div class="cart-box__info-process-info-item">
+													<h4 class="cart-box__info-process-info-header">28%</h4>
+													<div class="cart-box__info-process-info-desc">идет сбор</div>
+												</div>
+												<div class="cart-box__info-process-info-item  cart-box__info-process-info-item--right">
+													<h4 class="cart-box__info-process-info-header">97 853 Р</h4>
+													<div class="cart-box__info-process-info-desc">собрано</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div> <!-- cart box  -->
+
+					</div>
+				</div> <!-- /.projects -->
+			</div>
+			<div class="projects-single__sidebar">
+				<div class="projects-single__sidebar-box">
+					<h3 class="projects-single__sidebar-header">
+						Спецпроекты
+					</h3>
+					<div class="projects-single__sidebar-list">
+						<a href="#" class="projects-single__sidebar-item  link hover-underline">Битва Технологий</a>
+						<a href="#" class="projects-single__sidebar-item  link hover-underline">МегаФон помогает</a>
+						<a href="#" class="projects-single__sidebar-item  link hover-underline">Онлайн-кампус</a>
+						<a href="#" class="projects-single__sidebar-item  link hover-underline">Лучшим проектам - поддержка Москвы</a>
+						<a href="#" class="projects-single__sidebar-item  link hover-underline">OMK - малым городам</a>
+					</div>
+				</div> <!-- box item -->
+				<div class="projects-single__sidebar-box">
+					<h3 class="projects-single__sidebar-header">
+						По категориям
+					</h3>
+					<div class="projects-single__sidebar-list">
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Все категории</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Анимация</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Бизнес</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Благотворительность</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Видео</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Дизайн</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Еда</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Журналистика</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Игры</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Искусство</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Кино</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Литература</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Мода</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Музыка</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Наука</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Общество</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Путешествия</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Социальное предпринимательство</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Спорт</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Танцы</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Театр</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Технологии</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Фотография</a>
+						<a href="#" class="projects-single__sidebar-item link hover-underline">Другое</a>
+					</div>
+				</div> <!-- box item -->
+			</div>
+		</div>
+	</section> <!-- /.projects-single -->
+
+	<footer class="footer">
+		<div class="footer__wrapper  container">
+			<div class="footer__about">
+				<a href="#" class="footer__about-logo">
+					<span class="footer__about-logo--big">Cd</span>crowd
+				</a>
+
+				<a href="tel:+74951810505" class="footer__about-number">+7 (495) 181-05-05</a>
+
+				<div class="footer__about-info">
+					<p>
+						129090, Россия, г. Москва, <br \>
+						проспект Мира, дом 19, строение 3, этаж 3
+					</p>
+					 <br \>
+					<p>
+						Время работы: <br \>
+						пн-пт с 11:00 до 20:00 / сб с 11:00 до 18:00 <br \>
+						воскресенье выходной
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__list">
+				<ul class="footer__list-container">
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							Наши проекты
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Школа</a>
+							<a href="#" class="footer__list-links-item">Магазин</a>
+							<a href="#" class="footer__list-links-item">VIP клуб</a>
+							<a href="#" class="footer__list-links-item">Благотворительность</a>
+						</div>
+					</li>
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							о нас
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Что такое Cd-crowd?</a>
+							<a href="#" class="footer__list-links-item">Спецпроекты</a>
+							<a href="#" class="footer__list-links-item">Партнеры и кураторы</a>
+							<a href="#" class="footer__list-links-item">Кто такие кураторы?</a>
+							<a href="#" class="footer__list-links-item">Отдел PR и маркетинга</a>
+						</div>
+					</li>
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							Помощь
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Частые вопросы</a>
+							<a href="#" class="footer__list-links-item">Правила сервиса</a>
+							<a href="#" class="footer__list-links-item">Способы оплаты</a>
+							<a href="#" class="footer__list-links-item">Возврат средств</a>
+							<a href="#" class="footer__list-links-item">Задать вопрос</a>
+						</div>
+					</li>
+				</ul>
+				<div class="footer__list-socials">
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--vk">
+						<i class="fa fa-vk"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--facebook">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--twitter">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--odnoklassniki">
+						<i class="fa fa-odnoklassniki"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- /.footer -->
+	
+	<!-- Подключние скриптов -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="js/scripts.js"></script>
+</body>
+</html>	
