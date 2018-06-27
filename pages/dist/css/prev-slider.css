@@ -238,7 +238,7 @@
     width: 0
   }
 
-  
+
   .btn-list {
     position: relative;
     text-align: center;
@@ -263,6 +263,8 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
   }
+
+  
   .btn-list__circle:hover > .fa:nth-child(1) {
     -webkit-transform: translateY(-75px);
     -moz-transform: translateY(-75px);
