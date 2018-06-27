@@ -241,12 +241,15 @@
     position: relative;
     text-align: center;
   }
+  .btn-list .active {
+    max-height: 100px;
+  }
   .btn-list__circle {
     width: 100%;
     max-width: 80px;
-    min-height: 80px;
+    height: 80px;
+    max-height: 80px;
     margin: 10px;
-    right: 2px;
     line-height: 94px;
     text-align: center;
     border: 3px solid #ccc;
