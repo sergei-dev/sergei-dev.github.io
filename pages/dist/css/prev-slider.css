@@ -237,13 +237,14 @@
   .phone .monitor .stand_bot {
     width: 0
   }
+
+  
   .btn-list {
     position: relative;
     text-align: center;
   }
-  .btn-list .active {
-    max-height: 100px;
-  }
+
+
   .btn-list__circle {
     width: 100%;
     max-width: 80px;
