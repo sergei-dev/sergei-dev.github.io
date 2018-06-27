@@ -240,6 +240,7 @@
   .btn-list {
     position: relative;
     text-align: center;
+    max-height: 100px;
   }
   .btn-list__circle {
     width: 80px;
