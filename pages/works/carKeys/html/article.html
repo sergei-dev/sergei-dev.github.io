@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>CarKeys</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.min.css">
+	<meta name="theme-color" content="#112852">
+	<meta name="msapplication-navbutton-color" content="#112852">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#112852">
+</head>
+<body>
+
+  <header class="header-page">
+    <div class="container-new header-page__container">
+      <div class="header-page__top">
+       <div class="header-page__right">
+        <div class="schedule header-page__schedule-wrap">
+          <i class="icon icon-schedule header-page__icon"></i>
+          <p class="schedule__item header-page__schedule">
+            <span class="schedule__days">Пн - Пт</span>
+            09:00 - 18:00
+          </p>
+          <!-- /.schedule__item -->
+          <p class="schedule__item header-page__schedule">
+            <span class="schedule__days">Сб</span>
+            09:00 - 15:00
+          </p>
+          <!-- /.schedule__item -->
+          <p class="schedule__item header-page__schedule">
+            <span class="schedule__days">Вс</span>
+            Выходной
+          </p>
+          <!-- /.schedule__item -->
+        </div>
+        <!-- /.schedule -->
+        <div class="email header-page__email">
+          <i class="icon icon-email header-page__icon"></i>
+          <a class="header-page__link" href="mailto:orders@carkeys.com.ua">orders@carkeys.com.ua</a>
+        </div>
+        <!-- /.header-page__email -->
+      </div>
+      <!-- /.header-page__right -->
+      <div class="header-page__left">
+        <div class="header-page__sign">
+          <i class="icon icon-welcome"></i>
+          <a class="header-page__sign-in" href="#">Личный кабинет</a>
+        </div>
+        <!-- /.header-page__sign -->
+        <ul class="header-page__langs">
+          <li class="header-page__lang header-page__lang--active">
+            <a href="#">Ru</a>
+          </li>
+          <!-- /.header-page__lang -->
+          <li class="header-page__lang">
+            <a href="#">Ua</a>
+          </li>
+          <!-- /.header-page__lang -->
+        </ul>
+        <!-- /.header-page__langs -->
+      </div>
+      <!-- /.header-page__left -->
+    </div>
+    <!-- /.header-top -->
+  
+    <div class="header-page__middle">
+     <div class="logo header-page__logo">
+      <h1 class="visually-hidden">CarKey</h1>
+      <!-- на страницах где есть заголовок основного контента ставить им h1 вместо логотипа -->
+      <a class="logo__link" href="#">
+        <img class="logo__pic" src="../images/pic/logo.png" title="CarKeys" alt="CarKey">
+      </a>
+      <!-- /.logo__link -->
+    </div>
+    <!-- /.header-page__logo -->
+    <form id="search" class="search header-page__search">
+      <p class="search__group">
+        <label for="search-page" class="visually-hidden">Поиск</label>
+        <input class="search__inp header-page__inp" type="text" id="search-page" placeholder="Что ищете?">
+        <button type="submit" class="search__btn">
+          <span class="visually-hidden">Начать поиск</span>
+          <i class="icon icon-search search__icon"></i>
+        </button>
+      </p>
+      <!-- /.search -->
+    </form>
+    <!-- /.search__form -->
+    <div class="header-page__common">
+      <div class="callback header-page__callback">
+        <i class="icon icon-phone-header header-page__callicon"></i>
+        <div class="callback__wrap header-page__callwrap">
+          <a href="tel:+38(093)4077070" class="callback__tel header-page__tel">+38(093) 407 70 70</a>
+          <!-- /.header-page__tel -->
+          <a href="#" class="callback__text header-page__calltext">
+            <span class="callback__border">Заказать обратный звонок</span>
+          </a>
+        </div>
+        <!-- /.header-page__callwrap -->
+      </div>
+      <!-- /.header-page__callback -->
+      <div class="cart" data-toggle="modal" data-target="#cartModal">
+        <button class="cart__btn">
+          <span class="visually-hidden">Корзина</span>
+          <i class="icon icon-basked"></i>
+          <span class="cart__counter">0</span>
+        </button>
+  
+        <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="false">
+          
+          <div class="modal-dialog"> 
+            <div class="modal-content"> 
+              <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+                <div class="modal-title" id="cartModalLabel">Корзина покупок</div> 
+              </div> 
+              <div class="modal-body"> 
+                <div class="table-responsive height-cart"> 
+                  <table class="table table-striped table-cart"> 
+                    <tbody>
+                     <tr> 
+                      <td class="text-center"> 
+                        <a href="http://carkeys.test-lemon.com/adapter-to-mc68hc05x32-secured.html"> 
+                          <img src="http://carkeys.test-lemon.com/image/cache/import_files/86/86e164c0afe711e69bd49c5c8e7840ea_a6632e79265f11e79be09c5c8e7840ea-47x47_0.jpg" alt="Adapter to MC68HC05x32 secured" title="Adapter to MC68HC05x32 secured" class="img-rounded"> </a> 
+                        </td> 
+                        <td class="text-left">
+                          <a href="http://carkeys.test-lemon.com/adapter-to-mc68hc05x32-secured.html">Adapter to MC68HC05x32 secured</a> 
+                          <div> 
+                          </div> 
+                        </td> 
+                        <td class="quantity" style="vertical-align:top;min-width:60px;"> 
+                          <a>
+                            <i class="fa fa-minus"></i>
+                          </a> 
+                          <span>x&nbsp;1</span> 
+                          <a><i class="fa fa-plus"></i></a>
+                        </td> 
+                        <td class="text-right">223 грн</td> 
+                        <td class="text-center">
+                          <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
+                          </a> 
+                        </td> 
+                      </tr> 
+                      <tr> 
+                        <td class="text-center"> </td>
+                        <td class="text-left">
+                          <a href="#">Интерфейс USB INTERFACE 7i</a> 
+                          <div> 
+                          </div> 
+                        </td> 
+                        <td class="quantity"> 
+                          <a><i class="fa fa-minus"></i>
+                          </a> 
+                          <span style="vertical-align:top;">x&nbsp;1</span> 
+                          <a><i class="fa fa-plus"></i>
+                          </a> 
+                        </td> 
+                        <td class="text-right">6 176 грн</td> 
+                        <td class="text-center">
+                          <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
+                          </a> 
+                        </td> 
+                      </tr> 
+                    </tbody>
+                  </table> 
+                </div> 
+                <div> 
+                  <table class="table table-bordered total"> 
+                    <tbody>
+                      <tr> 
+                        <td class="text-right">Сумма:</td> 
+                        <td class="text-left">6 399 грн</td> 
+                      </tr> 
+                      <tr> 
+                        <td class="text-right">Итого:</td>
+                        <td class="text-left">6 399 грн</td> 
+                      </tr> 
+                    </tbody>
+                  </table> 
+                  <div class="checkout clearfix"> 
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">
+                      <i class="fa fa-repeat"></i> 
+                      Продолжить покупки
+                    </button> 
+                    <a href="http://carkeys.test-lemon.com/index.php?route=checkout/checkout" class="btn btn-primary btn-sm pull-right">
+                      <i class="fa fa-share"></i> 
+                    Оформление заказа</a> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>
+  
+      </div>
+      <!-- /.header-page__cart -->
+    </div>
+    <!-- /.header-page__common -->
+  </div>
+  <!-- /.header-page__middle -->
+  
+  <div class="header-page__bottom">
+    <button type="button" class="header-page__btn">
+      <i class="icon icon-catalog header-page__catalog"></i>
+      Категории
+    </button>
+    <!-- /.header-page__btn -->
+    <input class="open-input" id="open-menu" type="checkbox" hidden>
+  
+    <div class="page-open-menu header-page__open-menu">
+      <label class="open-menu" for="open-menu">
+        <span class="open-menu__decor"></span>
+      </label>
+    </div>
+    <div class="header-page__menu">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="#">Главная</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Новости</a>
+          </li>
+  
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+  
+          <li class="nav__item  active">
+            <a class="nav__link" href="#">О компании</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+  
+           <li class="nav__item">
+            <a class="nav__link" href="#">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- /.header-page__bottom -->
+  
+  </div>
+  <!-- /.container -->
+  </header>
+
+  <main class="main-content">
+    <h2 class="visually-hidden">Контакты</h2>
+    <section class="head-section">
+      <div class="container-new section-align">
+       <aside class="categories">
+        <ul class="categories__list">
+          <li class="categories__item active-bg">
+
+            <a href="#" class="categories__link">АВТОМОБИЛЬНЫЕ КЛЮЧИ</a>
+
+            <ul class="collapse collapse-in">
+              <li class="categories__item">
+                <a class="categories__link categories__link-collapse active-color" href="#">
+
+                  <i class="fa fa-circle categories__icon"></i>
+                  ACURA
+                </a>
+                <!-- /.categories__link-collapse -->
+
+                <ul class="collapse collapse-in categories__collapse-child">
+                 <li class="categories__item">
+                  <a class="categories__link categories__link-collapse" href="#">
+
+                    <i class="fa fa-circle categories__icon"></i>
+                    Тhfh
+                  </a>
+                  <!-- /.categories__link-collapse -->
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link categories__link-collapse" href="#">
+
+                    <i class="fa fa-circle categories__icon"></i>
+                    alfhfh
+                  </a>
+                  <!-- /.categories__link-collapse -->
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link categories__link-collapse" href="#">
+
+                    <i class="fa fa-circle categories__icon"></i>
+                    alfhfh
+                  </a>
+                  <!-- /.categories__link-collapse -->
+                </li>
+              </ul>
+              <!-- /.categories__sollapse-child -->
+            </li>
+            <!-- /.categories__item -->
+            <li class="categories__item">
+              <a class="categories__link categories__link-collapse" href="#">
+
+                <i class="fa fa-circle categories__icon"></i>
+                ACURA
+              </a>
+              <!-- /.categories__link-collapse -->
+            </li>
+            <!-- /.categories__item -->
+            <li class="categories__item">
+              <a class="categories__link categories__link-collapse" href="#">
+
+                <i class="fa fa-circle categories__icon"></i>
+                ACURA
+              </a>
+              <!-- /.categories__link-collapse -->
+            </li>
+            <!-- /.categories__item -->
+          </ul>
+          <!-- /.categories__collapse-menu -->
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Бренды</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Декоры замков</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Снято с производства</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Станки для изготовления ключей</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Транспондеры (чипы)</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Электронное оборудование</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Эмуляторы</a>
+        </li>
+      </ul>
+      <!-- /.categories__list -->
+    </aside>
+    <!-- /.categories -->
+    <div class="content">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a class="breadcrumb-list__link" href="#" itemprop="url">
+            <span itemprop="title">
+              <i class="fa fa-home"></i> 
+              Автомобильные ключи в Киеве
+            </span>
+          </a>
+        </li>
+        <!-- /.breadcrumb-list__item -->
+        <li class="breadcrumb-list__item active" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <span itemprop="title">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            Новости
+          </span>
+        </li>
+
+        <li class="breadcrumb-list__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a class="breadcrumb-list__link" href="#" itemprop="url">
+            <span itemprop="title">
+              <i class="fa fa-angle-right"></i> 
+              Programator UPA-S PROG по специальной цене!
+            </span>
+          </a>
+        </li>
+        <!-- /.breadcrumb-list__item -->
+      </ul>
+      <article class="article">
+        <h2 class="content__title">Programator UPA-S PROG по специальной цене!</h2>
+        <!-- /.content__title -->
+        <div class="article__descr">
+          <p>
+            <img src="../images/bg/CASREADERProgramatorUPAPROG.jpg" alt="img-article">
+          </p>
+          <p>       
+           <strong style="font-size: 16px">Programator UPA-S PROG (UPA PROG- CAS - 9s12)</strong>      
+           <br>
+           ЦЕНА 
+           <strong>15 200 ГРН</strong><br>
+           &nbsp;<br>
+           Специализированный Programator UPA PROG для работы с процессорами Motorola.<br> <strong>Максимальная комплектация:</strong><br>
+           - программатор UPA PROG&nbsp;<br>
+           - адаптер UPA PROG<br>
+           - кабель UPA<br>
+           - кабель UPA CAS<br>
+           - адаптер SO8 ZIF<br>
+           - соединительный кабель для подключения модулей UPA - CAS - 9S12<br>
+           - клипса<br>
+           Совместим с USB 2.0 и 3.0. Не требует внешнего источника питания.<br> <strong>Поддержка процессоров:</strong><br> <strong>Renesas V850:</strong> uPD70F3237***, uPD70F3333, uPD70F3334, uPD70F3335, uPD70F3336, uPD70F3340, uPD70F3341, uPD70F3342, uPD70F3343, uPD70F3350, uPD70F3351, uPD70F3352, uPD70F3353, uPD70F3370A, uPD70F3371, uPD70F3372, uPD70F3373, uPD70F3374, uPD70F3375, uPD70F3376A, uPD70F3377A, uPD70F3378, uPD70F3379, uPD70F3380, uPD70F3381, uPD70F3382, uPD70F3383, uPD70F3384, uPD70F3385, uPD70F3421, uPD70F3422, uPD70F3423, uPD70F3424, uPD70F3425, uPD70F3426A, uPD70F3427, uPD70F3522, uPD70F3523, uPD70F3524, uPD70F3525, uPD70F3526, uPD70F3529, uPD70F3532, uPD70F3535, uPD70F3536, uPD70F3537, uPD70F3548, uPD70F3624, uPD70F3628, uPD70F3629, uPD70F3632, uPD70F3633, uPD70F3634, uPD70F3635, uPD70F3736<br>
+           Freescale HCS08: MC9S08DZ16, MC9S08DZ32, MC9S08DZ48, MC9S08DZ60, MC9S08AW16, MC9S08AW32, MC9S08AW48, MC9S08AW60, MC9S08GB60<br> <strong>Freescale MAC7200:</strong> MAC7241, MAC7242<br> <strong>Infineon XC2300:</strong> XC2060N-40F, XC2060M-104F, XC2336B-24F, XC2336B-40F, XC2361A-56F, XC2361A72F, XC2363A-56F, XC2363A-72F, XC2364A-56F,XC2364A-72F, XC2364A-104F, XC2365A-56F, XC2365A-72F, XC2365A-104F, XC2361B-24F, XC2361B-40F, XC2363B-24F, XC2363B-40F, XC2364B-24F,XC2364B-40F, XC2365B-24F, XC2365B-40F<br> <strong>Freescale MPC5600:</strong> MPC5604C, MPC5604P, MPC5606B<br> <strong>Freescale 9S12:</strong> MC9S12G48, MC9S12G64, MC9S12G96, MC9S12G128, MC9S12G192, MC9S12G240<br> <strong>STMicroelectronics SPC56P:</strong> SPC560P44, SPC560P50<br> <strong>STMicroelectronics ST62*:</strong>ST6240, ST6245, ST6249<br> <strong>NSC CR16*</strong>: CR16HCS5(9), CR16MCS5(9), CR16MES5(9), CR16MFS5(9), CR16MCT5/9, CR16HCT5/9&nbsp;<br> <strong>Motorola HC05*:</strong> MC68HC05B6, MC68HC05B8, MC68HC05B16, MC68HC705B16, MC68HC05B32, MC68HC05E6, MC68HC705E6, MC68HC05H12, MC68HC05L28, MC68HC05P3, MC68HC705P3*,MC68HC05X16, MC68HC05X32<br> <strong>Motorola HC08*</strong>: MC68HC08AS20, MC68HC08AS32, MC68HC08AS60, MC68HC08AZ32, MC68HC(9)08AZ32A, MC68HC908AZ60, MC68HC908AZ60A<br> <strong>Motorola HC11*:</strong> MC68HC11A1, MC68HC11A8, MC68HC11E9, MC68HC11EA9, MC68HC11E20, MC68HC11F1, MC68HC11K4, MC68HC11KA2, MC68HC11KA4, MC68HC11KG4, MC68HC11KS2, MC68HC11KS8, MC68HC11L6, MC68HC11P2, MC68HC11PA8, MC68HC11PH8<br> <strong>Motorola HC12*:</strong> MC68HC912B32, MC68HC912BE32, MC68HC912D60, MC68HC912D60A, MC68HC912DC128A, MC68HC912DG128, MC68HC912DG128A<br> <strong>Motorola/Freescale 9S12(X/E):</strong> MC9S12A128, MC9S12B128, MC9S12C128, MC9S12C16, MC9S12C32, MC9S12C64, MC9S12C96, MC9S12D64, MC9S12DG128, MC9S12DG256, MC9S12DP512, MC9S12H128, MC9S12H256, MC9S12HA32, MC9S12HA48, MC9S12HA64, MC9S12HY32, MC9S12HY48,MC9S12HY64, MC9S12HZ128, MC9S12HZ256, MC9S12HZ64, MC9S12P128, MC9S12P32, MC9S12P64, MC9S12P96, MC9S12XA128, MC9S12XA256,MC9S12XA512, MC9S12XB128, MC9S12XB256, MC9S12XD128, MC9S12XD256, MC9S12XD64, MC9S12XDG128, MC9S12XDP384, MC9S12XDP512, MC9S12XDQ256, MC9S12XDT256, MC9S12XDT384, MC9S12XDT512, MC9S12XEG128, MC9S12XEP100, MC9S12XEP768, MC9S12XEQ384, MC9S12XEQ512,MC9S12XET256, MC9S12XHY128, MC9S12XHY256, MC9S12XHZ256, MC9S12XHZ384, MC9S12XHZ512, MC9S12XS64, MC9S12XS128, MC9S12XS256<br> <strong>Atmel 8051 Architecture:</strong> AT89S51, AT89S52, AT89S53, AT89S8252, AT89S8253<br> <strong>Atmel AVR 8-Bit Risk: </strong>AT90S1200, AT90S2313, AT90S2323, AT90S2333, AT90S2343, AT90S4433, AT90S4434, AT90S8515, AT90S8535, ATmega8, ATmega16, ATmega161, ATmega162, &nbsp;ATmega163, ATmega323, ATmega64, ATmega103, &nbsp;ATmega128, ATtiny12, ATtiny15, ATtiny2313, ATmega8515, ATmega8535, ATmega48, ATmega88, ATmega168,ATmega169, ATmega328<br> <strong>Microchip PIC12:</strong> PIC12F508, PIC12F509, PIC12F629, PIC12F675<br> <strong>Microchip PIC16:</strong> PIC16F627(A), PIC16F628(A), PIC16F648A, PIC16F72, PIC16F73, &nbsp;PIC16F74, PIC16F76, PIC16F77, PIC16F818, PIC16F819, PIC16F83, PIC16F84(A), PIC16F870, PIC16F871, PIC16F872, PIC16F873(A), PIC16F874(A), PIC16F876(A), PIC16F877(A), PIC16F913, PIC16F914, PIC16F916, PIC16F917, PIC16F946<br> <strong>EEPROMs I2C: </strong>24C01, 24C02, 24C04, 24C08, 24C16, 24C32, 24C64, 24C65, 24C128, 24C256, 24C512, 85C72, 85C82, 85C92, BAW574252, GRM-003, GRM-004, GRM-005, KKZ-06F, MCM2814, PCA8581, PCF8581, PCF8582, PCF8594, PCF8598, PCF85102, PCF85116, SDA2516, SDA2526, SDA2546, X24C00, X24C01, 24C1024, 24C1025<br> <strong>EEPROMs Microwire: </strong>7002, 93C06, 93C14, 93C46, 93C56, 93C57, 93C66, 93C76, 93C86, 93S46, 93S56, 93S66, GRN-001, GRO-002, KKZ-01, S220, S2914, ST61907, XLS93C46<br> <strong>EEPROMs SPI:</strong> M35080, 25C010, 25C020, 25C040, 25C080, 25C128, 25C160, 25C256, 25C320, 25C640, ST95010, ST95020, ST95040, ST95080, ST95160, ST95320, ST95640, ST95P02, ST95P04, ST95P08, X5043, X5045, 25LC512, 25LC1024<br> <strong>EEPROMs Miscellaneous</strong>: CXK1011, CXK1012, CXK1013, M6M80011, M6M80021, M6M80041, SDE2506, TC89101, TC89102, 77005, 77007, BR9010, BR9020, BR9040, CAT64LC10, CAT64LC20, CAT64LC40, S-29190A, S-29290A ,S-29390A<br> <strong>Serial Flash SPI: </strong>M25P05, M25P10, M25P20, M25P40, M25P80, &nbsp;A25L512, A25L010, A25L020, A25L040, A25L080, A25L016, A25L032, SST25VF512A, SST25VF010A, SST25VF020B, SST25VF040B, SST25VF080B, SST25VF016B, SST25VF032B, S25FL004A, S25FL008A, S25FL016A, S25FL032A, S25FL064A.
+         </p>
+         <p>
+          <img src="../images/bg/CASREADERProgramatorUPAPROG_open.jpg" alt="product">
+        </p>
+      </div>
+      <!-- /.article__descr -->
+      <div class="article__descr-bottom">
+       <ul class="rating article__rating">
+        <li class="rating__item no-active">
+          <i class="fa fa-star"></i>
+        </li>
+        <!-- /.rating__item -->
+        <li class="rating__item no-active">
+          <i class="fa fa-star"></i>
+        </li>
+        <!-- /.rating__item -->
+        <li class="rating__item no-active">
+          <i class="fa fa-star"></i>
+        </li>
+        <!-- /.rating__item -->
+        <li class="rating__item no-active">
+          <i class="fa fa-star"></i>
+        </li>
+        <!-- /.rating__item -->
+        <li class="rating__item no-active">
+          <i class="fa fa-star"></i>
+        </li>
+        <!-- /.rating__item -->
+      </ul>
+      <div class="product-vote">
+        <p class="product-vote__text">Отзывов: 0</p>
+        <!-- /.product__vote-text -->
+      </div>
+    </div>
+    <!-- /.article__descr-bottom -->
+    <ul class="social-list article__social">
+     <li class="social-list__item">
+      <img src="../images/pic/fb.png" alt="fb">
+    </li>
+    <!-- /.product__social-item -->
+    <li class="social-list__item">
+      <img src="../images/pic/google.png" alt="google">
+    </li>
+    <!-- /.product__social-item -->
+    <li class="social-list__item">
+      <img src="../images/pic/uptolike.png" alt="uptolike">
+    </li>
+    <!-- /.product__social-item -->
+  </ul>
+  <div class="reviews">
+    Нет отзывов на статью
+  </div>
+  <button class="button button__primary article__btn show-reviews-btn">Написать отзыв</button>
+  <div class="article__add-reviews">
+    <form class="page-form">
+     
+        <p class="page-form__group article__group">
+          <label for="review-name" class="page-form__label">Ваше имя:</label>
+          <input id="review-name" class="page-form__input form-control" type="text">
+        </p>
+        <!-- /.page-form__group -->
+        <p class="page-form__group">
+          <label for="review-text" class="page-form__label">Ваш отзыв:</label>
+          <textarea id="review-text" class="page-form__input page-form__text article__textarea form-control"></textarea>
+        </p>
+        <!-- /.page-form__group -->
+        <div class="page-form__group">
+          <div class="page-form__accent">
+            <span class="page-form__accent-red">Внимание</span>
+            HTML не поддерживается! Используйте обычный текст.
+          </div>
+        </div>
+        <!-- /.page-form__group -->
+
+        <p class="page-form__group article__votes-wrap">
+          <span class="article__vote-title">Оценка:</span>
+          <!-- /.article__vote-title -->
+          <label for="vote-1" class="article__label">Плохо
+           <input name="rating-check" id="vote-1" class="page-form__input article__radiobuttons" type="radio" value="1">
+         </label>
+
+         <label for="vote-2" class="article__label" value="2">
+          <input name="rating-check" id="vote-2" class="page-form__input article__radiobuttons" type="radio">
+          <span class="visually-hidden">2</span>
+        </label>
+
+        <label for="vote-3" class="article__label" value="3">
+          <input name="rating-check" id="vote-3" class="page-form__input article__radiobuttons" type="radio">
+          <span class="visually-hidden">3</span>
+        </label>
+
+        <label for="vote-4" class="article__label" value="4">
+          <input name="rating-check" id="vote-4" class="page-form__input article__radiobuttons" type="radio">
+          <span class="visually-hidden">4</span>
+        </label>
+
+        <label for="vote-5" class="article__label" value="5">
+          <input id="vote-5" class="page-form__input" type="radio">
+          Хорошо
+        </label>
+      </p>
+      <!-- /.page-form__group -->
+
+      <div class="page-form__captcha">
+        <label for="input-captcha" class="page-form__captcha-lbl">Введите код, указанный на картинке:</label>
+        <p class="page-form__captcha-wrap">
+          <input type="text" id="input-captcha" class="form-control page-form__captcha-inp">
+          <img class="page-form__captcha-img" src="../images/pic/index.jpg" alt="captcha">
+        </p>
+        <!-- /.page-form__captcha-wrap -->
+      </div>
+      <!-- /.page-form__captcha -->
+      <button type="submit" class="button article__btn article__btn--form">Продолжить</button>
+    </form>
+  </div>
+  <!-- /.article__add-reviews -->
+</article>
+<!-- /.article -->
+</div>
+<!-- /.content -->
+</div>
+<!-- /.container --> 
+</section>
+<!-- /.head-section -->
+</main>
+<!-- /.main-content -->
+
+<footer class="page-footer">
+	<div class="container-new">
+		<div class="page-footer__top">
+			<div class="logo page-footer__logo">
+				<h2 class="visually-hidden">CarKey</h2>
+
+				<a class="logo__link" href="#">
+					<img class="logo__pic" src="../images/pic/logo.png" alt="CarKey">
+				</a>
+				<!-- /.logo__link -->
+			</div>
+			<!-- /.header-page__logo -->
+			<div class="page-footer__right-info">
+				<address class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-address page-footer__icon"></i>
+						
+					</div>
+					<!-- /.page-footer__wrap -->
+				<div class="page-footer__end">
+					<p class="page-footer__title">Адрес:</p>
+						<!-- /.page-footer__title -->
+						<p class="page-footer__text">
+						г.Киев, ул. Оболонская, 47
+					</p>
+					<!-- /.page-footer__text -->
+				</div>
+				<!-- /.page-footer__end -->
+				</address>
+				<!-- /.page-footer__item -->
+				<div class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-schedule-footer page-footer__icon"></i>
+					</div>
+					<!-- /.page-footer__wrap -->
+					<div class="page-footer__end">
+							<h3 class="page-footer__title">График работы:</h3>
+						<!-- /.page-footer__title -->
+						<div class="schedule">
+						<p class="schedule__item">
+							<span class="schedule__days">Пн - Пт</span>
+							09:00 - 18:00
+						</p>
+						<!-- /.schedule__item -->
+						<p class="schedule__item">
+							<span class="schedule__days">Сб</span>
+							09:00 - 15:00
+						</p>
+						<!-- /.schedule__item -->
+						<p class="schedule__item">
+							<span class="schedule__days">Вс</span>
+							Выходной
+						</p>
+						<!-- /.schedule__item -->
+					</div>
+					<!-- /.schedule -->
+					</div>
+					<!-- /.page-footer__end -->
+				</div>
+				<!-- /.page-footer__item -->
+				<div class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-phone-footer page-footer__icon"></i>
+					</div>
+					<!-- /.page-footer__wrap -->
+					<div class="page-footer__end">
+							<h3 class="page-footer__title">Телефоны:</h3>
+							<!-- /.page-footer__title -->
+							<div class="callback page-footer__callback">
+								<div class="callback__wrap page-footer__callwrap">
+									<a href="tel:+38(093)4077070" class="callback__tel page-footer__tel">+38(093) 407 70 70</a>
+									<!-- /.header-page__tel -->
+									<a href="#" class="callback__text page-footer__calltext">
+										<span class="callback__border">Заказать обратный звонок</span>
+									</a>
+								</div>
+								<!-- /.header-page__callwrap -->
+							</div>
+						</div>
+					<!-- /.page-footer__end -->
+				</div>
+				<!-- /.page-footer__item -->
+				<div class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-email-footer page-footer__icon"></i>
+					</div>
+					<!-- /.page-footer__wrap -->
+					<div class="page-footer__end">
+						<h3 class="page-footer__title">Почта:</h3>
+						<!-- /.page-footer__title -->
+						<div class="email page-footer__email">
+							<a class="email__link page-footer__email" href="mailto:orders@carkeys.com.ua">orders@carkeys.com.ua</a>
+						</div>
+						<!-- /.header-page__email -->
+					</div>
+					<!-- /.page-footer__end -->
+				</div>
+				<!-- /.page-footer__item -->
+			</div>
+			<!-- /.page-footer__right-info -->
+		</div>
+		<!-- /.page-footer__top -->
+	</div>
+	<!-- /.container -->
+	<div class="page-footer__menu">
+		<div class="container-new page-footer__container">
+			<div class="page-footer__menu-wrap">
+				<div class="page-footer__social">
+				<p class="page-footer__soc-link">
+					Следите за нами:
+					<a href="#">
+						<i class="icon icon-social-facebook page-footer__soc-icon"></i> 
+					</a>
+				</p>
+				<!-- /.page-footer__link -->
+			</div>
+			<!-- /.page-footer__social -->
+			<nav class="nav page-footer__nav">
+				<ul class="nav__list page-footer__list">
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Новости</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Доставка и оплата</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">О компании</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Контакты</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Карта сайта</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+			<!-- /.page-footer__menu-wrap -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.page-footer__menu -->
+	<div class="page-footer__bottom">
+		<div class="container-new">
+			<div class="page-footer__bottom-wrap">
+				<p class="page-footer__working">
+					Разработка сайта:
+					<a class="page-footer__work-link" href="https://webstars.com.ua/" target="_blank">WebStars</a>
+				</p>
+				<!-- /.page-footer__working -->
+				<small class="page-footer__copy">
+					@ <a href="#">CarKeys.</a> Все права защищены
+				</small>
+			</div>
+			<!-- /.page-footer__bottom-wrap -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.page-footer__bottom -->
+</footer>
+<!-- /.page-footer -->
+<script src="../js/build.js"></script>
+<script src="../libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

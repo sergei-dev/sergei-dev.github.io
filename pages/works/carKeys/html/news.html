@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>CarKeys</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.min.css">
+	<meta name="theme-color" content="#112852">
+	<meta name="msapplication-navbutton-color" content="#112852">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#112852">
+</head>
+<body>
+
+  <header class="header-page">
+    <div class="container-new header-page__container">
+      <div class="header-page__top">
+       <div class="header-page__right">
+        <div class="schedule header-page__schedule-wrap">
+          <i class="icon icon-schedule header-page__icon"></i>
+          <p class="schedule__item header-page__schedule">
+            <span class="schedule__days">Пн - Пт</span>
+            09:00 - 18:00
+          </p>
+          <!-- /.schedule__item -->
+          <p class="schedule__item header-page__schedule">
+            <span class="schedule__days">Сб</span>
+            09:00 - 15:00
+          </p>
+          <!-- /.schedule__item -->
+          <p class="schedule__item header-page__schedule">
+            <span class="schedule__days">Вс</span>
+            Выходной
+          </p>
+          <!-- /.schedule__item -->
+        </div>
+        <!-- /.schedule -->
+        <div class="email header-page__email">
+          <i class="icon icon-email header-page__icon"></i>
+          <a class="header-page__link" href="mailto:orders@carkeys.com.ua">orders@carkeys.com.ua</a>
+        </div>
+        <!-- /.header-page__email -->
+      </div>
+      <!-- /.header-page__right -->
+      <div class="header-page__left">
+        <div class="header-page__sign">
+          <i class="icon icon-welcome"></i>
+          <a class="header-page__sign-in" href="#">Личный кабинет</a>
+        </div>
+        <!-- /.header-page__sign -->
+        <ul class="header-page__langs">
+          <li class="header-page__lang header-page__lang--active">
+            <a href="#">Ru</a>
+          </li>
+          <!-- /.header-page__lang -->
+          <li class="header-page__lang">
+            <a href="#">Ua</a>
+          </li>
+          <!-- /.header-page__lang -->
+        </ul>
+        <!-- /.header-page__langs -->
+      </div>
+      <!-- /.header-page__left -->
+    </div>
+    <!-- /.header-top -->
+  
+    <div class="header-page__middle">
+     <div class="logo header-page__logo">
+      <h1 class="visually-hidden">CarKey</h1>
+      <!-- на страницах где есть заголовок основного контента ставить им h1 вместо логотипа -->
+      <a class="logo__link" href="#">
+        <img class="logo__pic" src="../images/pic/logo.png" title="CarKeys" alt="CarKey">
+      </a>
+      <!-- /.logo__link -->
+    </div>
+    <!-- /.header-page__logo -->
+    <form id="search" class="search header-page__search">
+      <p class="search__group">
+        <label for="search-page" class="visually-hidden">Поиск</label>
+        <input class="search__inp header-page__inp" type="text" id="search-page" placeholder="Что ищете?">
+        <button type="submit" class="search__btn">
+          <span class="visually-hidden">Начать поиск</span>
+          <i class="icon icon-search search__icon"></i>
+        </button>
+      </p>
+      <!-- /.search -->
+    </form>
+    <!-- /.search__form -->
+    <div class="header-page__common">
+      <div class="callback header-page__callback">
+        <i class="icon icon-phone-header header-page__callicon"></i>
+        <div class="callback__wrap header-page__callwrap">
+          <a href="tel:+38(093)4077070" class="callback__tel header-page__tel">+38(093) 407 70 70</a>
+          <!-- /.header-page__tel -->
+          <a href="#" class="callback__text header-page__calltext">
+            <span class="callback__border">Заказать обратный звонок</span>
+          </a>
+        </div>
+        <!-- /.header-page__callwrap -->
+      </div>
+      <!-- /.header-page__callback -->
+      <div class="cart" data-toggle="modal" data-target="#cartModal">
+        <button class="cart__btn">
+          <span class="visually-hidden">Корзина</span>
+          <i class="icon icon-basked"></i>
+          <span class="cart__counter">0</span>
+        </button>
+  
+        <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="false">
+          
+          <div class="modal-dialog"> 
+            <div class="modal-content"> 
+              <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+                <div class="modal-title" id="cartModalLabel">Корзина покупок</div> 
+              </div> 
+              <div class="modal-body"> 
+                <div class="table-responsive height-cart"> 
+                  <table class="table table-striped table-cart"> 
+                    <tbody>
+                     <tr> 
+                      <td class="text-center"> 
+                        <a href="http://carkeys.test-lemon.com/adapter-to-mc68hc05x32-secured.html"> 
+                          <img src="http://carkeys.test-lemon.com/image/cache/import_files/86/86e164c0afe711e69bd49c5c8e7840ea_a6632e79265f11e79be09c5c8e7840ea-47x47_0.jpg" alt="Adapter to MC68HC05x32 secured" title="Adapter to MC68HC05x32 secured" class="img-rounded"> </a> 
+                        </td> 
+                        <td class="text-left">
+                          <a href="http://carkeys.test-lemon.com/adapter-to-mc68hc05x32-secured.html">Adapter to MC68HC05x32 secured</a> 
+                          <div> 
+                          </div> 
+                        </td> 
+                        <td class="quantity" style="vertical-align:top;min-width:60px;"> 
+                          <a>
+                            <i class="fa fa-minus"></i>
+                          </a> 
+                          <span>x&nbsp;1</span> 
+                          <a><i class="fa fa-plus"></i></a>
+                        </td> 
+                        <td class="text-right">223 грн</td> 
+                        <td class="text-center">
+                          <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
+                          </a> 
+                        </td> 
+                      </tr> 
+                      <tr> 
+                        <td class="text-center"> </td>
+                        <td class="text-left">
+                          <a href="#">Интерфейс USB INTERFACE 7i</a> 
+                          <div> 
+                          </div> 
+                        </td> 
+                        <td class="quantity"> 
+                          <a><i class="fa fa-minus"></i>
+                          </a> 
+                          <span style="vertical-align:top;">x&nbsp;1</span> 
+                          <a><i class="fa fa-plus"></i>
+                          </a> 
+                        </td> 
+                        <td class="text-right">6 176 грн</td> 
+                        <td class="text-center">
+                          <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
+                          </a> 
+                        </td> 
+                      </tr> 
+                    </tbody>
+                  </table> 
+                </div> 
+                <div> 
+                  <table class="table table-bordered total"> 
+                    <tbody>
+                      <tr> 
+                        <td class="text-right">Сумма:</td> 
+                        <td class="text-left">6 399 грн</td> 
+                      </tr> 
+                      <tr> 
+                        <td class="text-right">Итого:</td>
+                        <td class="text-left">6 399 грн</td> 
+                      </tr> 
+                    </tbody>
+                  </table> 
+                  <div class="checkout clearfix"> 
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">
+                      <i class="fa fa-repeat"></i> 
+                      Продолжить покупки
+                    </button> 
+                    <a href="http://carkeys.test-lemon.com/index.php?route=checkout/checkout" class="btn btn-primary btn-sm pull-right">
+                      <i class="fa fa-share"></i> 
+                    Оформление заказа</a> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>
+  
+      </div>
+      <!-- /.header-page__cart -->
+    </div>
+    <!-- /.header-page__common -->
+  </div>
+  <!-- /.header-page__middle -->
+  
+  <div class="header-page__bottom">
+    <button type="button" class="header-page__btn">
+      <i class="icon icon-catalog header-page__catalog"></i>
+      Категории
+    </button>
+    <!-- /.header-page__btn -->
+    <input class="open-input" id="open-menu" type="checkbox" hidden>
+  
+    <div class="page-open-menu header-page__open-menu">
+      <label class="open-menu" for="open-menu">
+        <span class="open-menu__decor"></span>
+      </label>
+    </div>
+    <div class="header-page__menu">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="#">Главная</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Новости</a>
+          </li>
+  
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+  
+          <li class="nav__item  active">
+            <a class="nav__link" href="#">О компании</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+  
+           <li class="nav__item">
+            <a class="nav__link" href="#">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- /.header-page__bottom -->
+  
+  </div>
+  <!-- /.container -->
+  </header>
+
+  <main class="main-content">
+    <h2 class="visually-hidden">Новости</h2>
+    <section class="head-section">
+      <div class="container-new section-align">
+       <aside class="categories">
+        <ul class="categories__list">
+          <li class="categories__item active-bg">
+
+            <a href="#" class="categories__link">АВТОМОБИЛЬНЫЕ КЛЮЧИ</a>
+
+            <ul class="collapse collapse-in">
+              <li class="categories__item">
+                <a class="categories__link categories__link-collapse active-color" href="#">
+                  
+                  <i class="fa fa-circle categories__icon"></i>
+                  ACURA
+                </a>
+                <!-- /.categories__link-collapse -->
+
+                <ul class="collapse collapse-in categories__collapse-child">
+                 <li class="categories__item">
+                  <a class="categories__link categories__link-collapse" href="#">
+                    
+                    <i class="fa fa-circle categories__icon"></i>
+                    Тhfh
+                  </a>
+                  <!-- /.categories__link-collapse -->
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link categories__link-collapse" href="#">
+
+                    <i class="fa fa-circle categories__icon"></i>
+                    alfhfh
+                  </a>
+                  <!-- /.categories__link-collapse -->
+                </li>
+                <li class="categories__item">
+                  <a class="categories__link categories__link-collapse" href="#">
+
+                    <i class="fa fa-circle categories__icon"></i>
+                    alfhfh
+                  </a>
+                  <!-- /.categories__link-collapse -->
+                </li>
+              </ul>
+              <!-- /.categories__sollapse-child -->
+            </li>
+            <!-- /.categories__item -->
+            <li class="categories__item">
+              <a class="categories__link categories__link-collapse" href="#">
+
+                <i class="fa fa-circle categories__icon"></i>
+                ACURA
+              </a>
+              <!-- /.categories__link-collapse -->
+            </li>
+            <!-- /.categories__item -->
+            <li class="categories__item">
+              <a class="categories__link categories__link-collapse" href="#">
+
+                <i class="fa fa-circle categories__icon"></i>
+                ACURA
+              </a>
+              <!-- /.categories__link-collapse -->
+            </li>
+            <!-- /.categories__item -->
+          </ul>
+          <!-- /.categories__collapse-menu -->
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Бренды</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Декоры замков</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Снято с производства</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Станки для изготовления ключей</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Транспондеры (чипы)</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Электронное оборудование</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Эмуляторы</a>
+        </li>
+      </ul>
+      <!-- /.categories__list -->
+    </aside>
+    <!-- /.categories -->
+    <div class="content news-page" itemscope="" itemtype="http://schema.org/Product">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a class="breadcrumb-list__link" href="#" itemprop="url">
+            <span itemprop="title">
+              <i class="fa fa-home"></i> 
+              Автомобильные ключи в Киеве
+            </span>
+          </a>
+        </li>
+        <!-- /.breadcrumb-list__item -->
+        <li class="breadcrumb-list__item active" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <span itemprop="title">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            Новости
+          </span>
+        </li>
+      </ul>
+      <!-- .breadcrumb-list -->
+      <h2 class="content__title">Новости</h2>
+
+      <div class="filter-wrap">
+        <ul class="filter-wrap__list">
+           <li class="filter-wrap__item">
+            Сортировать по: 
+          </li>
+          <!-- /.filter-wrap__item -->
+          <li class="filter-wrap__item">
+            <span class="filter-wrap__text">
+              <a class="filter-wrap__link" href="#">названию</a>
+            </span>
+          </li>
+          <!-- /.filter-wrap__item -->
+           <li class="filter-wrap__item">
+            <span class="filter-wrap__text filter-wrap__text--active">
+              <a class="filter-wrap__link" href="#">дате</a>
+            </span>
+          </li>
+          <!-- /.filter-wrap__item -->
+           <li class="filter-wrap__item">
+            <span class="filter-wrap__text">
+              <a class="filter-wrap__link" href="#">рейтингу</a>
+            </span>
+          </li>
+          <!-- /.filter-wrap__item -->
+          <li class="filter-wrap__item">
+            <span class="filter-wrap__text">
+              <a class="filter-wrap__link" href="#">просмотрам</a>
+            </span>
+          </li>
+          <!-- /.filter-wrap__item -->
+        </ul>
+        <!-- /.filter-wrap__list -->
+        <ul class="filter-wrap__list filter-wrap__two-list">
+           <li class="filter-wrap__item">
+            На странице: 
+          </li>
+          <!-- /.filter-wrap__item -->
+          <li class="filter-wrap__item">
+            <span class="filter-wrap__text filter-wrap__text--active">
+              <a class="filter-wrap__link" href="#">8</a>
+            </span>
+          </li>
+          <!-- /.filter-wrap__item -->
+        </ul>
+        <!-- /.filter-wrap__list -->
+      </div>
+      <!-- /.filter-wrap -->
+      <div class="news">
+        <ul class="news__list">
+          <li class="news__item">
+            <article class="news__content">
+              <h2 class="visually-hidden">Новость</h2>
+              <!-- /.visually-hidden -->
+              <header class="news__header">
+                <div class="news__thumb">
+                  <img src="../images/bg/news_img2-260x227_0.jpg" alt="news-img">
+                </div>
+                <!-- /.news-card__thumb -->
+              </header>
+              <!-- /.news-card__header -->
+              <div class="news__info">
+                <div class="news__name">
+                  <a href="#" class="news__title">Programator UPA-S PROG по специальной цене!</a>
+                </div>
+                <!-- /.news__name -->
+                <p class="news__descr">
+                    Programator UPA-S PROG (UPA PROG- CAS - 9s12)
+                    ЦЕНА 15 200 ГРН
+
+                    Специализированный Programator UPA PROG для работы с процессорами Motorola.
+                    Максимальная комплектация:
+                    - программатор UPA PROG 
+                    - адаптер UPA PROG
+                    - кабель UPA
+                    - кабель UPA CAS
+                    - адаптер SO8 ZIF
+                    - соединительный кабель для подключения модулей UPA - CAS - 9S12
+                    - клипса
+                    Совместим с USB 2.0 и 3.0. Не требует внешнего источника питания.
+                    Поддержка процессоров:
+                    Renesas V850: uPD70F3237***, uPD70F3333, uPD70F333..
+                </p>
+                <!-- /.name__descr -->
+                <a href="#" class="button button__primary news__btn">подробнее</a>
+              </div>
+              <!-- /.news__info -->
+            </article>
+            <!-- /.news__content -->
+          </li>
+          <!-- /.news__item -->
+           <li class="news__item">
+            <article class="news__content">
+              <h2 class="visually-hidden">Новость</h2>
+              <!-- /.visually-hidden -->
+              <header class="news__header">
+                <div class="news__thumb">
+                  <img src="../images/bg/news_img1-260x227_0.jpg" alt="news-img">
+                </div>
+                <!-- /.news-card__thumb -->
+              </header>
+              <!-- /.news-card__header -->
+              <div class="news__info">
+                <div class="news__name">
+                  <a href="#" class="news__title">Адаптер диагностики VAS 5054A по специальной цене!</a>
+                </div>
+                <!-- /.news__name -->
+                <p class="news__descr">
+                 СПЕЦПРЕДЛОЖЕНИЕ!
+
+                 Профессиональный адаптер диагностики для VAG Group VAS 5054A!
+                 ЦЕНА 1700 ГРН.
+
+                 Основные возможности VAS5054A:
+                 считывание кодов неисправностей и их расшифровка;
+                 стирание ошибок;
+                 автоматическое распознавание режима связи с авто;
+                 активация устройств-исполнителей;
+                 адаптация исполнительных узлов и блоков;
+                 режим восстановления базовых установок;
+                 просмотр параметров, установленных в текущий момент, в цифровом или графическом виде;
+                 кодирование электронных блоков;
+                 диагности..
+               </p>
+               <!-- /.name__descr -->
+                <a href="#" class="button button__primary news__btn">подробнее</a>
+              </div>
+              <!-- /.news__info -->
+            </article>
+            <!-- /.news__content -->
+          </li>
+          <!-- /.news__item -->
+           <li class="news__item">
+            <article class="news__content">
+              <h2 class="visually-hidden">Новость</h2>
+              <!-- /.visually-hidden -->
+              <header class="news__header">
+                <div class="news__thumb">
+                  <img src="../images/bg/news_img3-260x227_0.jpg" alt="news-img">
+                </div>
+                <!-- /.news-card__thumb -->
+              </header>
+              <!-- /.news-card__header -->
+              <div class="news__info">
+                <div class="news__name">
+                  <a href="#" class="news__title">Abrites Christmas Promotion 2016</a>
+                </div>
+                <!-- /.news__name -->
+                <p class="news__descr">
+                  Уважаемые партнеры,
+
+                  Магазин CarKeys открывает сезон Новогодних и Рождественских праздников. А это пора подарков, сюрпризов и конечно, же АКЦИЙ!
+
+                  Акция от нашего партнера Abrites Ltd*. приятно удивит и порадует профессионалов рынка! Убедитесь сами:
+
+                  1. AVDI + ATC01 = 699 EURO
+                  Базовый комплект ABRITES Vehicle Diagnostic Interface (AVDI) в фирменном кейсе (ATC01) по цене всего 699 EURO* вместо 913 EURO.
+
+                  2. AVDI + ATC01 + ZN002 PROTAG = 1349 EURO
+
+                  Базовый комплект ABRITES Vehicle Diagno..
+                </p>
+                <!-- /.name__descr -->
+                <a href="#" class="button button__primary news__btn">подробнее</a>
+              </div>
+              <!-- /.news__info -->
+            </article>
+            <!-- /.news__content -->
+          </li>
+          <!-- /.news__item -->
+           <li class="news__item">
+            <article class="news__content">
+              <h2 class="visually-hidden">Новость</h2>
+              <!-- /.visually-hidden -->
+              <header class="news__header">
+                <div class="news__thumb">
+                  <img src="../images/bg/news_img3-260x227_0.jpg" alt="news-img">
+                </div>
+                <!-- /.news-card__thumb -->
+              </header>
+              <!-- /.news-card__header -->
+              <div class="news__info">
+                <div class="news__name">
+                  <a href="#" class="news__title">Abrites Christmas Promotion 2016</a>
+                </div>
+                <!-- /.news__name -->
+                <p class="news__descr">
+                  Уважаемые партнеры,
+
+                  Магазин CarKeys открывает сезон Новогодних и Рождественских праздников. А это пора подарков, сюрпризов и конечно, же АКЦИЙ!
+
+                  Акция от нашего партнера Abrites Ltd*. приятно удивит и порадует профессионалов рынка! Убедитесь сами:
+
+                  1. AVDI + ATC01 = 699 EURO
+                  Базовый комплект ABRITES Vehicle Diagnostic Interface (AVDI) в фирменном кейсе (ATC01) по цене всего 699 EURO* вместо 913 EURO.
+
+                  2. AVDI + ATC01 + ZN002 PROTAG = 1349 EURO
+
+                  Базовый комплект ABRITES Vehicle Diagno..
+                </p>
+                <!-- /.name__descr -->
+                <a href="#" class="button button__primary news__btn">подробнее</a>
+              </div>
+              <!-- /.news__info -->
+            </article>
+            <!-- /.news__content -->
+          </li>
+          <!-- /.news__item -->
+        </ul>
+        <!-- /.news__list -->
+      </div>
+      <!-- /.news -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.container --> 
+</section>
+<!-- /.head-section -->
+</main>
+<!-- /.main-content -->
+
+<footer class="page-footer">
+	<div class="container-new">
+		<div class="page-footer__top">
+			<div class="logo page-footer__logo">
+				<h2 class="visually-hidden">CarKey</h2>
+
+				<a class="logo__link" href="#">
+					<img class="logo__pic" src="../images/pic/logo.png" alt="CarKey">
+				</a>
+				<!-- /.logo__link -->
+			</div>
+			<!-- /.header-page__logo -->
+			<div class="page-footer__right-info">
+				<address class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-address page-footer__icon"></i>
+						
+					</div>
+					<!-- /.page-footer__wrap -->
+				<div class="page-footer__end">
+					<p class="page-footer__title">Адрес:</p>
+						<!-- /.page-footer__title -->
+						<p class="page-footer__text">
+						г.Киев, ул. Оболонская, 47
+					</p>
+					<!-- /.page-footer__text -->
+				</div>
+				<!-- /.page-footer__end -->
+				</address>
+				<!-- /.page-footer__item -->
+				<div class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-schedule-footer page-footer__icon"></i>
+					</div>
+					<!-- /.page-footer__wrap -->
+					<div class="page-footer__end">
+							<h3 class="page-footer__title">График работы:</h3>
+						<!-- /.page-footer__title -->
+						<div class="schedule">
+						<p class="schedule__item">
+							<span class="schedule__days">Пн - Пт</span>
+							09:00 - 18:00
+						</p>
+						<!-- /.schedule__item -->
+						<p class="schedule__item">
+							<span class="schedule__days">Сб</span>
+							09:00 - 15:00
+						</p>
+						<!-- /.schedule__item -->
+						<p class="schedule__item">
+							<span class="schedule__days">Вс</span>
+							Выходной
+						</p>
+						<!-- /.schedule__item -->
+					</div>
+					<!-- /.schedule -->
+					</div>
+					<!-- /.page-footer__end -->
+				</div>
+				<!-- /.page-footer__item -->
+				<div class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-phone-footer page-footer__icon"></i>
+					</div>
+					<!-- /.page-footer__wrap -->
+					<div class="page-footer__end">
+							<h3 class="page-footer__title">Телефоны:</h3>
+							<!-- /.page-footer__title -->
+							<div class="callback page-footer__callback">
+								<div class="callback__wrap page-footer__callwrap">
+									<a href="tel:+38(093)4077070" class="callback__tel page-footer__tel">+38(093) 407 70 70</a>
+									<!-- /.header-page__tel -->
+									<a href="#" class="callback__text page-footer__calltext">
+										<span class="callback__border">Заказать обратный звонок</span>
+									</a>
+								</div>
+								<!-- /.header-page__callwrap -->
+							</div>
+						</div>
+					<!-- /.page-footer__end -->
+				</div>
+				<!-- /.page-footer__item -->
+				<div class="page-footer__item">
+					<div class="page-footer__left">
+						<i class="icon icon-email-footer page-footer__icon"></i>
+					</div>
+					<!-- /.page-footer__wrap -->
+					<div class="page-footer__end">
+						<h3 class="page-footer__title">Почта:</h3>
+						<!-- /.page-footer__title -->
+						<div class="email page-footer__email">
+							<a class="email__link page-footer__email" href="mailto:orders@carkeys.com.ua">orders@carkeys.com.ua</a>
+						</div>
+						<!-- /.header-page__email -->
+					</div>
+					<!-- /.page-footer__end -->
+				</div>
+				<!-- /.page-footer__item -->
+			</div>
+			<!-- /.page-footer__right-info -->
+		</div>
+		<!-- /.page-footer__top -->
+	</div>
+	<!-- /.container -->
+	<div class="page-footer__menu">
+		<div class="container-new page-footer__container">
+			<div class="page-footer__menu-wrap">
+				<div class="page-footer__social">
+				<p class="page-footer__soc-link">
+					Следите за нами:
+					<a href="#">
+						<i class="icon icon-social-facebook page-footer__soc-icon"></i> 
+					</a>
+				</p>
+				<!-- /.page-footer__link -->
+			</div>
+			<!-- /.page-footer__social -->
+			<nav class="nav page-footer__nav">
+				<ul class="nav__list page-footer__list">
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Новости</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Доставка и оплата</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">О компании</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Контакты</a>
+					</li>
+
+					<li class="nav__item page-footer__nav-item">
+						<a class="nav__link page-footer__nav-link" href="#">Карта сайта</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+			<!-- /.page-footer__menu-wrap -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.page-footer__menu -->
+	<div class="page-footer__bottom">
+		<div class="container-new">
+			<div class="page-footer__bottom-wrap">
+				<p class="page-footer__working">
+					Разработка сайта:
+					<a class="page-footer__work-link" href="https://webstars.com.ua/" target="_blank">WebStars</a>
+				</p>
+				<!-- /.page-footer__working -->
+				<small class="page-footer__copy">
+					@ <a href="#">CarKeys.</a> Все права защищены
+				</small>
+			</div>
+			<!-- /.page-footer__bottom-wrap -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.page-footer__bottom -->
+</footer>
+<!-- /.page-footer -->
+<script src="../js/build.js"></script>
+<script src="../libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
