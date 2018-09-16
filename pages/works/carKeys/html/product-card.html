@@ -5,7 +5,7 @@
 	<title>CarKeys</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.min.css">
 	<meta name="theme-color" content="#112852">
 	<meta name="msapplication-navbutton-color" content="#112852">
@@ -93,29 +93,31 @@
         <div class="callback__wrap header-page__callwrap">
           <a href="tel:+38(093)4077070" class="callback__tel header-page__tel">+38(093) 407 70 70</a>
           <!-- /.header-page__tel -->
-          <a href="#" class="callback__text header-page__calltext">
+          <a href="#" class="call-me callback__text header-page__calltext">
             <span class="callback__border">Заказать обратный звонок</span>
           </a>
         </div>
         <!-- /.header-page__callwrap -->
       </div>
       <!-- /.header-page__callback -->
-      <div class="cart" data-toggle="modal" data-target="#cartModal">
-        <button class="cart__btn">
+      <div class="cart">
+        <button id="cart-btn" class="cart__btn" data-toggle="modal" data-target="#cartModal">
           <span class="visually-hidden">Корзина</span>
           <i class="icon icon-basked"></i>
           <span class="cart__counter">0</span>
         </button>
   
-        <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="false">
+        <div class="cart__modal-wrap">
+          <div class="modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
           
           <div class="modal-dialog"> 
             <div class="modal-content"> 
               <div class="modal-header"> 
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="false">×</button> 
                 <div class="modal-title" id="cartModalLabel">Корзина покупок</div> 
               </div> 
               <div class="modal-body"> 
+                <p class="text-center">Ничего не куплено!</p>
                 <div class="table-responsive height-cart"> 
                   <table class="table table-striped table-cart"> 
                     <tbody>
@@ -137,26 +139,6 @@
                           <a><i class="fa fa-plus"></i></a>
                         </td> 
                         <td class="text-right">223 грн</td> 
-                        <td class="text-center">
-                          <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
-                          </a> 
-                        </td> 
-                      </tr> 
-                      <tr> 
-                        <td class="text-center"> </td>
-                        <td class="text-left">
-                          <a href="#">Интерфейс USB INTERFACE 7i</a> 
-                          <div> 
-                          </div> 
-                        </td> 
-                        <td class="quantity"> 
-                          <a><i class="fa fa-minus"></i>
-                          </a> 
-                          <span style="vertical-align:top;">x&nbsp;1</span> 
-                          <a><i class="fa fa-plus"></i>
-                          </a> 
-                        </td> 
-                        <td class="text-right">6 176 грн</td> 
                         <td class="text-center">
                           <a alt="Удалить" data-dismiss="modal" title="Удалить"><i class="fa fa-minus-square"></i>
                           </a> 
@@ -193,6 +175,8 @@
           </div> 
         </div>
   
+        </div>
+        <!-- /.cart__modal-wrap -->
       </div>
       <!-- /.header-page__cart -->
     </div>
@@ -215,30 +199,30 @@
     </div>
     <div class="header-page__menu">
       <nav class="nav">
-        <ul class="nav__list">
+        <ul class="nav__list header-page__nav-list">
           <li class="nav__item nav__item--active">
-            <a class="nav__link" href="#">Главная</a>
+            <a class="nav__link header-page__nav-link" href="#">Главная</a>
           </li>
   
           <li class="nav__item">
-            <a class="nav__link" href="#">Новости</a>
+            <a class="nav__link header-page__nav-link" href="#">Новости</a>
           </li>
   
   
           <li class="nav__item">
-            <a class="nav__link" href="#">Доставка и оплата</a>
+            <a class="nav__link header-page__nav-link" href="#">Доставка и оплата</a>
           </li>
   
           <li class="nav__item  active">
-            <a class="nav__link" href="#">О компании</a>
+            <a class="nav__link header-page__nav-link" href="#">О компании</a>
           </li>
   
           <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
+            <a class="nav__link header-page__nav-link" href="#">Контакты</a>
           </li>
   
            <li class="nav__item">
-            <a class="nav__link" href="#">Бренды</a>
+            <a class="nav__link header-page__nav-link" href="#">Бренды</a>
           </li>
         </ul>
       </nav>
@@ -400,12 +384,12 @@
             <!-- /.product__top-item -->
             <li class="product__top-item">
              <span class="product__item-name">Наличие: </span>
-             <a href="#" class="product__item-val">В наличии</a>
+             <span class="product__item-val">В наличии</span>
            </li>
            <!-- /.product__top-item -->
            <li class="product__top-item">
             <span class="product__item-name">Артикул: </span>
-            <a href="#" class="product__item-val"> SMK-00007</a>
+            <span class="product__item-val"> SMK-00007</span>
           </li>
           <!-- /.product__top-item -->
         </ul>
@@ -413,7 +397,7 @@
         <div class="product__info">
           <div class="product__item product__gallery">
             <div class="product__img-slider">
-              <p class="product__special">
+              <p class="corner-0">
                 <img src="../images/bg/special.png" alt="product-special">
               </p>
               <!-- /.product__special -->
@@ -659,7 +643,7 @@
   								<div class="callback__wrap page-footer__callwrap">
   									<a href="tel:+38(093)4077070" class="callback__tel page-footer__tel">+38(093) 407 70 70</a>
   									<!-- /.header-page__tel -->
-  									<a href="#" class="callback__text page-footer__calltext">
+  									<a href="#" class="call-me callback__text page-footer__calltext">
   										<span class="callback__border">Заказать обратный звонок</span>
   									</a>
   								</div>
@@ -694,6 +678,37 @@
   	<div class="page-footer__menu">
   		<div class="container-new page-footer__container">
   			<div class="page-footer__menu-wrap">
+  				<nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="#">Главная</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Новости</a>
+          </li>
+  
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+  
+          <li class="nav__item  active">
+            <a class="nav__link" href="#">О компании</a>
+          </li>
+  
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+  
+           <li class="nav__item">
+            <a class="nav__link" href="#">Бренды</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Карта сайта</a>
+          </li>
+        </ul>
+      </nav>
   				<div class="page-footer__social">
   				<p class="page-footer__soc-link">
   					Следите за нами:
@@ -704,29 +719,7 @@
   				<!-- /.page-footer__link -->
   			</div>
   			<!-- /.page-footer__social -->
-  			<nav class="nav page-footer__nav">
-  				<ul class="nav__list page-footer__list">
-  					<li class="nav__item page-footer__nav-item">
-  						<a class="nav__link page-footer__nav-link" href="#">Новости</a>
-  					</li>
-  
-  					<li class="nav__item page-footer__nav-item">
-  						<a class="nav__link page-footer__nav-link" href="#">Доставка и оплата</a>
-  					</li>
-  
-  					<li class="nav__item page-footer__nav-item">
-  						<a class="nav__link page-footer__nav-link" href="#">О компании</a>
-  					</li>
-  
-  					<li class="nav__item page-footer__nav-item">
-  						<a class="nav__link page-footer__nav-link" href="#">Контакты</a>
-  					</li>
-  
-  					<li class="nav__item page-footer__nav-item">
-  						<a class="nav__link page-footer__nav-link" href="#">Карта сайта</a>
-  					</li>
-  				</ul>
-  			</nav>
+  			
   			</div>
   			<!-- /.page-footer__menu-wrap -->
   		</div>
@@ -736,14 +729,18 @@
   	<div class="page-footer__bottom">
   		<div class="container-new">
   			<div class="page-footer__bottom-wrap">
-  				<p class="page-footer__working">
+  				<!-- <p class="page-footer__working">
   					Разработка сайта:
   					<a class="page-footer__work-link" href="https://webstars.com.ua/" target="_blank">WebStars</a>
   				</p>
-  				<!-- /.page-footer__working -->
-  				<small class="page-footer__copy">
-  					@ <a href="#">CarKeys.</a> Все права защищены
-  				</small>
+  				/.page-footer__working -->
+  				<div class="page-footer__copy">
+  					Обращаем ваше внимание на то, что данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой и/или обязательством. Копирование любых материалов сайта, использование материалов сайта в любых СМИ (в т.ч. электронных) и Интернете допускаются только с письменного разрешения владельца. Владелец сайта carkeys.com.ua оставляет за
+  					собой право в любое время вносить изменения в перечень и спецификацию продукции. Мы будем
+  					прилагать все усилия, чтобы обеспечить точность и актуальность данных, содержащихся на сайте, однако владелец сайта не несет никакой ответственности в отношении любых претензий или убытков, понесенных в связи с использованием информации, размещенной на Сайте. Интернет-магазин carkeys.com.ua предлагает продукцию исключительно для профессионалов. Для работы на большинстве оборудования необходимы специальные знания и навыки. Ключи и чипы поставляются «чистыми» и требуют дополнительного программирования.
+  					Купленный товар возврату и обмену не подлежит.
+  					<div class="page-footer__copy-inner">© 2018 carkeys.com.ua Все права защищены.</div>
+  				</div>
   			</div>
   			<!-- /.page-footer__bottom-wrap -->
   		</div>
@@ -752,7 +749,45 @@
   	<!-- /.page-footer__bottom -->
   </footer>
   <!-- /.page-footer -->
-<script src="../js/build.js"></script>
+  
+  <div class="page-modal">
+  	<div class="page-modal__overlay"></div>
+  	<!-- /.page-modal__overlay -->
+  	<div class="page-modal__content">
+  		<button class="page-modal__close">
+  			<span class="visually-hidden">Закрыть</span>
+  		</button>
+  		<h3 class="page-modal__title">Обратный звонок</h3>
+  		<!-- /.page-modal__title -->
+  		<h4 class="page-modal__subtitle">
+  			Оставьте ваши контактные данные и наш менеджер с вами свяжется
+  		</h4>
+  		<!-- /.page-modal__subtitle -->
+  		<form class="page-modal__form">
+  			<p class="page-modal__group">
+  				<label for="modal-name" class="page-modal__label">Ваше имя:</label>
+  				<input id="modal-name" type="text" class="page-modal__inp"></p>
+  			<!-- /.page-modal__group -->
+  			<p class="page-modal__group">
+  				<label for="modal-tel" class="page-modal__label">Телефон:</label>
+  				<input id="modal-tel" type="text" class="page-modal__inp">
+  			</p>
+  			<!-- /.page-modal__group -->
+  			<button type="submit" class="button page-modal__btn">
+  				Перезвонить мне
+  				<span class="button__icon page-modal__icon">
+  					<i class="icon icon-read-more_arrow"></i>
+  				</span>
+  			</button>
+  		</form>
+  		<!-- /.page-modal__form -->
+  	</div>
+  	<!-- /.page-modal__content -->
+  </div>
+  <!-- /.page-modal -->
+<script src="../libs/jQuery/jquery-3.3.1.min.js"></script>
+<script src="../libs/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="../libs/bootstrap/bootstrap.min.js"></script>
+<script src="../js/build.js"></script>
 </body>
 </html>
