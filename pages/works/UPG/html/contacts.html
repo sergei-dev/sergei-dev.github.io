@@ -38,6 +38,11 @@
 
           <li class="contacts-list__item">
             <a class="contacts-item" href="tel:+380445555555">
+              <i class="contacts-item__ico">
+                <svg>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
+                </svg>
+              </i>
               <span class="contacts-item__text">
                 +38 (044) 555-55-55
               </span>
@@ -118,13 +123,6 @@
               </a>
             </li>
 
-            <li class="submenu__item">
-              <a class="submenu__link" href="#">
-                <span class="submenu__text">
-                  Переработка пвх отходов 3
-                </span>
-              </a>
-            </li>
           </ul>
         </li>
        
@@ -242,61 +240,69 @@
 
 		</div>
 
-		<div class="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.5217757756154!2d30.458741215733344!3d50.50585767948304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d278803f59a5%3A0x7b50eb2640eaa958!2z0LLRg9C70LjRhtGPINCd0L7QstC-0LfQsNCx0LDRgNGB0YzQutCwLCAyLzYsINCa0LjRl9Cy!5e0!3m2!1suk!2sua!4v1509374661814" class="map__frame"></iframe>
-		</div>
-		<!-- /.map -->
+	</section>
+	<!-- /.page-wrap -->
+</div>
 
+
+<div class="map">
+	<div class="container">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.5217757756154!2d30.458741215733344!3d50.50585767948304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d278803f59a5%3A0x7b50eb2640eaa958!2z0LLRg9C70LjRhtGPINCd0L7QstC-0LfQsNCx0LDRgNGB0YzQutCwLCAyLzYsINCa0LjRl9Cy!5e0!3m2!1suk!2sua!4v1509374661814" class="map__frame"></iframe>
+	</div>
+</div>
+<!-- /.map -->
+
+<section class="page-wrap">
+	<div class="container">
 		<div class="contact-form">
 			<form class="contact-form__wrap">
 				<fieldset>
 					<legend class="sect-title page-wrap__sect-title contact-form__title">Написать нам</legend>
-				
+					
 					<div class="contact-form__group">
-					<p class="contact-form__col contact-form__label-wrap">
-						<label for="contact-name" class="contact-form__label">Ваше имя</label>
-					</p>
-					<!-- /.contact-form__label-wrap -->
-					<p class="contact-form__col contact-form__inp-wrap">
-						<input type="text" class="contact-form__inp" id="contact-name" required>
-					</p>
-					<!-- /.contact-form__inp-wrap -->
-				</div>
-				<!-- /.contact-form__group -->
-				<div class="contact-form__group">
-					<p class="contact-form__col contact-form__label-wrap">
-						<label for="contact-email" class="contact-form__label">Ваш E-mail</label>
-					</p>
-					<!-- /.contact-form__label-wrap -->
-					<p class="contact-form__col contact-form__inp-wrap">
-						<input type="email" class="contact-form__inp" id="contact-email" required>
-					</p>
-					<!-- /.contact-form__inp-wrap -->
-				</div>
-				<!-- /.contact-form__group -->
-				<div class="contact-form__group">
-					<p class="contact-form__col contact-form__label-wrap">
-						<label for="contact-message" class="contact-form__label">Ваш вопрос или сообщение</label>
-					</p>
-					<!-- /.contact-form__label-wrap -->
-					<p class="contact-form__col contact-form__inp-wrap">
-						<textarea name="contact-message" id="contact-message" class="contact-form__inp contact-form__textarea" required></textarea>
-					</p>
-					<!-- /.contact-form__inp-wrap -->
-				</div>
-				<!-- /.contact-form__group -->
-				<div class="contact-form__btn-wrap">
-					<button type="submit" class="btn"><span>Отправить сообщение</span></button>
-				</div>
+						<p class="contact-form__col contact-form__label-wrap">
+							<label for="contact-name" class="contact-form__label">Ваше имя</label>
+						</p>
+						<!-- /.contact-form__label-wrap -->
+						<p class="contact-form__col contact-form__inp-wrap">
+							<input type="text" class="contact-form__inp" id="contact-name" required>
+						</p>
+						<!-- /.contact-form__inp-wrap -->
+					</div>
+					<!-- /.contact-form__group -->
+					<div class="contact-form__group">
+						<p class="contact-form__col contact-form__label-wrap">
+							<label for="contact-email" class="contact-form__label">Ваш E-mail</label>
+						</p>
+						<!-- /.contact-form__label-wrap -->
+						<p class="contact-form__col contact-form__inp-wrap">
+							<input type="email" class="contact-form__inp" id="contact-email" required>
+						</p>
+						<!-- /.contact-form__inp-wrap -->
+					</div>
+					<!-- /.contact-form__group -->
+					<div class="contact-form__group">
+						<p class="contact-form__col contact-form__label-wrap">
+							<label for="contact-message" class="contact-form__label">Ваш вопрос или сообщение</label>
+						</p>
+						<!-- /.contact-form__label-wrap -->
+						<p class="contact-form__col contact-form__inp-wrap">
+							<textarea name="contact-message" id="contact-message" class="contact-form__inp contact-form__textarea" required></textarea>
+						</p>
+						<!-- /.contact-form__inp-wrap -->
+					</div>
+					<!-- /.contact-form__group -->
+					<div class="contact-form__btn-wrap">
+						<button type="submit" class="btn"><span>Отправить сообщение</span></button>
+					</div>
 				</fieldset>
 				
 			</form>
 			<!-- /.contact-form__wrap -->
 		</div>
 		<!-- /.contact-form -->
-	</section>
-	<!-- /.page-wrap -->
-</div>
+	</div>
+</section>
 </main>
 
 <footer class="footer-page"  id="sect-6">
@@ -306,7 +312,7 @@
       <div class="footer-page__item">
         <div class="footer-page__logo">
           <a class="logo" href="#">
-            <img class="logo__pic  contain-img" src="../img/logo_white.svg" alt="Avtek">
+            <img class="logo__pic  contain-img footer-page__logo-pic" src="../img/logo_white.svg" alt="Avtek">
           </a>
         </div>
 
@@ -314,90 +320,108 @@
           <p>© 2012, www.upg.ua</p>
           <p>Украинская партнерская группа</p>
         </div>
+      </div>
+      <!-- /.footer-page__item -->
+
+      <div class="footer-page__item">
+
+        <div class="footer-page__nav">
+          <p class="footer-page__nav-title">Информация</p>
+          <!-- /.footer-page__nav-title -->
+          <ul class="footer-page__nav-list">
+            <li class="footer-page__nav-item">
+              <a href="#" class="footer-page__nav-link">О компании</a>
+            </li>
+            <!-- /.footer-page__nav-item -->
+            <li class="footer-page__nav-item">
+              <a href="#" class="footer-page__nav-link">Услуги</a>
+            </li>
+            <!-- /.footer-page__nav-item -->
+            <li class="footer-page__nav-item">
+              <a href="#" class="footer-page__nav-link">Статьи</a>
+            </li>
+            <!-- /.footer-page__nav-item -->
+            <li class="footer-page__nav-item">
+              <a href="#" class="footer-page__nav-link">Контакты</a>
+            </li>
+            <!-- /.footer-page__nav-item -->
+          </ul>
+          <!-- /.footer-page__nav-list -->
+        </div>
+        <!-- /.footer-page__nav -->
 
       </div>
 
       <div class="footer-page__item">
-        <ul class="contact-info-list">
-          <li class="contact-info-list__item">
-            <div class="contact-info-item">
-              <i class="contact-info-item__ico">
-                <svg>
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map"></use>
-                </svg>
-              </i>
 
-              <div class="contact-info-item__desc">
-                <a class="contact-info-item__text" href="tel:+380445555555">
-                  <p>г. Киев</p>
-                  <p>ул. Киевская 123, оф. 24</p>
-                </a>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div class="footer-page__nav">
+          <p class="footer-page__nav-title">Услуги</p>
+          <!-- /.footer-page__nav-title -->
+          <ul class="footer-page__nav-list">
+            <li class="footer-page__nav-item">
+              <a href="#" class="footer-page__nav-link">Переработка пвх отходов 1</a>
+            </li>
+            <!-- /.footer-page__nav-item -->
+            <li class="footer-page__nav-item">
+              <a href="#" class="footer-page__nav-link">Переработка пвх отходов 2</a>
+            </li>
+            <!-- /.footer-page__nav-item -->
+          </ul>
+          <!-- /.footer-page__nav-list -->
+        </div>
+        <!-- /.footer-page__nav -->
+
       </div>
 
-       <div class="footer-page__item">
-        <ul class="contact-info-list">
-          <li class="contact-info-list__item">
-            <div class="contact-info-item">
-              <i class="contact-info-item__ico">
+      <div class="footer-page__item">
+
+        <div class="footer-page__nav">
+          <p class="footer-page__nav-title">Контакты</p>
+          <!-- /.footer-page__nav-title -->
+          <ul class="contacts-list footer-page__contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-item" href="tel:+380445555555">
+              <i class="contacts-item__ico">
                 <svg>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
                 </svg>
               </i>
 
-              <div class="contact-info-item__desc">
-                <a class="contact-info-item__text" href="tel:+380445555555">
-                  +380 (44) 496-00-56
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <div class="contact-info-item__desc">
-                <a class="contact-info-item__text" href="tel:+380445555555">
-                  +380 (44) 496-00-56
-                </a>
-              </div>
-            </div>
+              <span class="contacts-item__text">
+                +38 (044) 555-55-55
+              </span>
+            </a>
           </li>
+
+          <li class="contacts-list__item">
+            <a class="contacts-item" href="tel:+380445555555">
+              <i class="contacts-item__ico">
+                <svg>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
+                </svg>
+              </i>
+              <span class="contacts-item__text">
+                +38 (044) 555-55-55
+              </span>
+            </a>
+          </li>
+
+           <li class="contacts-list__item">
+                     г. Киев
+ул. Киевская 123, оф. 24
+          </li>
+
         </ul>
+        </div>
+        <!-- /.footer-page__nav -->
+
       </div>
 
-    <div class="footer-page__item">
-      <div class="footer-page__btn">
-        <button class="btn  form-message-btn"><span>Отправить</span></button>
-      </div>
+    
+
     </div>
 
   </div>
-</div>
-
-<div class="footer-page__menu">
-  <div class="container">
-      <ul class="footer-page__list-menu  menu-footer">
-        <li class="menu-footer__list-item">
-          <a class="menu-footer__list-link" href="#">О компании</a>
-        </li>
-
-        <li class="menu-footer__list-item">
-          <a class="menu-footer__list-link" href="#">Услуги</a>
-        </li>
-
-        <li class="menu-footer__list-item">
-          <a class="menu-footer__list-link" href="#">Статтьи</a>
-        </li>
-
-        <li class="menu-footer__list-item">
-          <a class="menu-footer__list-link" href="#">Контакты</a>
-        </li>
-
-        
-      </ul>
-  </div>
-</div>
 
 </footer>
 
