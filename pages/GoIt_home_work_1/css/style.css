@@ -1,0 +1,144 @@
+@font-face {
+			font-family: "MyriadProRegular";
+			src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+			src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+			url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "MyriadProBold";
+			src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+			src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+			url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "MyriadProItalic";
+			src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+			src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+			url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "MyriadProSemiBold";
+			src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+			src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+			url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "MyriadProBoldItalic";
+			src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+			src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+			url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "MyriadProSemiBoldItalic";
+			src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+			src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+			url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	body {
+		font-family: Arial;
+		background: #f1f0f3;
+	}
+.about_me {
+	width: 100%;
+	
+	
+}
+.container {
+    max-width: 490px;
+    width: 100%;
+    margin: auto;
+}  
+.about_me_info {
+	max-width: 490px;
+	margin: auto;
+}
+hr {
+	background:#c3c4c5;
+	margin-bottom: 20px;
+	border: none;
+	height: 1px;
+}
+.one_block_info,
+.two_block_info,
+.three_block_info,
+.four_block_info {           
+	
+    margin-bottom: 20px;
+    max-width: 700px;
+    font-family: "Myriad Pro";
+}
+ul, a, span {
+	display: block;
+	margin-bottom: 20px;
+	font-family: "MyriadProRegular";
+	font-size: 14px;
+}
+.about_me_info b {
+	display: block;
+	margin-bottom: 25px;
+	font-size: 18px;
+}
+.one_block_info {
+    padding-top: 50px;
+    text-align: center;
+    font-family: Arial;
+}
+.one_block_info h2 {
+	color: #010101;
+	text-transform: uppercase;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+.one_block_info img {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 1px solid #8f8f8f;
+}
+.one_block_info p {
+	text-align: left;
+	margin-bottom: 20px;
+}
+.two_block_info ul {
+	list-style: inherit;
+	margin-left: 30px;
+}
+.three_block_info span {
+	display: block;
+	margin-left: 30px;
+}
+.four_block_info a {
+	color: #0056d3;
+	margin-left: 30px;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	text-decoration: underline;
+}
+
+.five_block_info {
+	font-family: "Myriad Pro";
+}
+.five_block_info span {
+	margin-left: 30px;
+}
+

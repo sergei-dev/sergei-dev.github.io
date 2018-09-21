@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Tahoma;
+}
+.card_lenovo {
+    width: 376px;
+    height: 530px;
+    margin: auto;
+    border: 2px solid #5a5a5a;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.card_lenovo h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #242424;
+    margin-bottom: 25px;
+}
+
+.card_lenovo img {
+    width: 250px;
+    height: 270px;
+}
+
+.card_lenovo span {
+    display: block;
+    background: #8bc144;
+    width: 190px;
+    height: 30px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    -webkit-box-shadow: -4px 3px #9c9c9c;
+    box-shadow: -4px 3px #9c9c9c;
+    -webkit-user-select: ;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    margin-bottom: 18px;
+}
+
+.card_lenovo p {
+    font-size: 31px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.button_shop {
+    width: 230px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: block;
+    color: #ffffff;
+    background: #ff0000;
+    text-decoration: none;
+    margin: auto;
+    font-size: 28px;
+    border-bottom: 5px solid #850000;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.button_shop:hover {
+    background: #e11818;
+}

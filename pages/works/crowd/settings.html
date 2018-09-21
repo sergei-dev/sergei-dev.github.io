@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Настройки профиля</title>
+	
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" href="css/jquery.datetimepicker.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__wrapper  container">
+			<div class="header__logo">
+				<img src="img/logo.png" alt="transparent logo" class="header__logo-transparent-img">
+				<div class="header__logo-link">
+					<img src="img/logo.png" alt="logo" class="header__logo-img">
+				</div>
+			</div>
+
+			<div class="header__info">
+				<div class="header__actions">
+					<div class="header__actions">
+						<a href="#" class="header__actions-link">Создать проект</a>
+						<a href="#" class="header__actions-link">Вход</a>
+
+						<form action="" class="header__actions-form  js-search-form">
+							<label class="header__actions-form-label">
+								<input type="text" class="header__actions-form-input  js-search-input" name="s">
+							</label>
+							<button class="header__actions-form-btn">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="header__menu">
+					<div class="menu-toggle" onclick="toggleMainMenu('.menu-toggle')">
+						<div class="menu-toggle__element"></div>
+						<div class="menu-toggle__element"></div>
+						<div class="menu-toggle__element"></div>
+					</div>
+					<div class="header__menu-wrapper  js-menu">
+						<i class="header__menu-icon">&equiv;</i>
+						<ul class="header__menu-container">
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Проекты</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Фонды</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Проекты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</header> <!-- /.header -->
+	
+	<main class="main-content settings-page">
+		<div class="settings-page__head">
+			<h2 class="settings-page__title">Настройки профиля</h2>
+			<!-- /.settings-page__title -->
+		</div>
+		<!-- /.settings-page__head -->
+		<div class="container">
+			<div class="main-content-tabs__wrap">
+					<button class="main-content-tabs__wrap-btn">Основные данные</button>
+					<!-- /.main-content-tabs__wrap-btn -->
+					<button class="main-content-tabs__wrap-btn">Контакты</button>
+					<!-- /.main-content-tabs__wrap-btn -->
+					<button class="main-content-tabs__wrap-btn">Изменение пароля</button>
+					<!-- /.main-content-tabs__wrap-btn -->
+				</div>
+				<!-- /.main-content-tabs__wrap -->
+				<div class="tab-wrap">
+					<section class="tab-content basic-data">
+						<h2 class="visually-hidden">Основные данные</h2>
+						<table class="settings-page__table-data">
+							<tr>
+								<td class="data-title">Имя</td>
+								<td class="data-inputs">
+									<p class="input-group input-name">
+										<label>
+											<span class="visually-hidden">Имя</span>
+											<input type="text" placeholder="Игнат">
+										</label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">Адрес страницы</td>
+								<td class="data-inputs">
+									<p class="input-group input-link">
+										<button class="input-link__question">
+											<span class="visually-hidden">Помощь</span>
+										</button>
+										<label>
+											<span class="visually-hidden">Ссылка на сайт</span>
+											<input type="text" placeholder="https://planeta.ru/">
+										</label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">Пол</td>
+								<td class="data-inputs">
+									<select name="select-sex" class="table-select">
+										<option value="1">-Не выбранно-</option>
+										<option value="2">Мужской</option>
+										<option value="3">Женский</option>
+										<option value="3">Другой</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title select-date">Дата рождения</td>
+								<td class="data-inputs">
+									<label>
+										<span class="visually-hidden">Дата рождения</span>
+										<input type="text" class="datetimepicker" placeholder="Дата рождения" readonly="">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">Страна</td>
+								<td class="data-inputs">
+									<select name="select-city" class="table-select">
+										<option value="1">-Не выбранно-</option>
+										<option value="2">Украина</option>
+										<option value="3">Россия</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">Город</td>
+								<td class="data-inputs"><input type="text" placeholder="Начните вводить"></td>
+							</tr>
+							<tr>
+								<td class="data-title">Контактный телефон</td>
+								<td class="data-inputs">
+									<p class="input-group">
+										<label>
+											<span class="visually-hidden">Контактный телефон</span>
+											<input type="tel" placeholder="Контактный телефон">
+										</label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="empty-td"></td>
+								<td>
+									<ul class="social-list">
+										<li class="social-list__item">
+											
+											<a href="#">
+												<img src="img/settings/picture.svg" alt="">
+											</a>
+										</li>
+										<li class="social-list__item">
+											
+											<a href="#">
+												<img src="img/settings/sound.svg" alt="">
+											</a>
+										</li>
+										<li class="social-list__item">
+											
+											<a href="#">
+												<img src="img/settings/youtube.svg" alt="">
+											</a>
+										</li>
+										<li class="social-list__item">
+										
+											<a href="#">
+												<img src="img/settings/youtube-logo.svg" alt="">
+											</a>
+										</li>
+										<li class="social-list__item">
+								
+											<a href="#">
+												<img src="img/settings/link-button.svg" alt="">
+											</a>
+										</li>
+									</ul>
+									<!-- /.social-list -->
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title about-data">О себе</td>
+								<td class="data-inputs about-data">
+									<textarea name="about-data"></textarea>
+								</td>
+							</tr>
+								<tr>
+									<td class="foot-info" colspan="5">
+										<p class="input-group">
+											<input id="check-notifi" type="checkbox" checked>
+											<label for="check-notifi">Получать письма с информацией из моих проектов</label>
+										</p>
+									</td>
+								</tr>
+						</table>
+						<!-- /.settings-page__table-data -->
+						<div class="mailing-lists">
+							<div class="mailing-lists_btn-wrap">
+								<button class="mailing-lists__btn">Получать рассылки</button>
+								<button class="mailing-lists__btn">Отказаться</button>
+							</div>
+							<!-- /.mailing-lists_btn-wrap -->
+							<button class="save-data">Сохранить</button>
+						</div>
+						<!-- /.mailing-lists -->
+					</section>
+					<!-- /.basic-data -->
+					<section class="tab-content contacts">
+						<h2 class="visually-hidden">Контакты</h2>
+							<table class="settings-page__table-data">
+							<tr>
+								<td class="data-title">
+									Сайт
+								</td>
+								<td class="data-inputs">
+									<p class="input-group">
+										<input class="inp-link" id="site-link" type="text">
+										<label class="inp-label-link" for="site-link">http://<span>example.com</span></label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">
+									<div class="data-social">
+										<p>Вконтакте</p>
+										<a class="data-social__icon vk" href="#"></a>
+									</div>
+									<!-- /.data-social -->
+								</td>
+								<td class="data-inputs">
+									<p class="input-group">
+										<input class="inp-link" id="vk-link" type="text">
+										<label class="inp-label-link" for="vk-link">https://vk.com/<span>yourname</span></label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">
+									<div class="data-social">
+										<p>Фейсбук</p>
+										<a class="data-social__icon fb" href="#"></a>
+									</div>
+									<!-- /.data-social -->
+								</td>
+								<td class="data-inputs">
+									<p class="input-group">
+										<input class="inp-link" id="fb-link" type="text">
+										<label class="inp-label-link" for="fb-link">https://vk.com/<span>yourname</span></label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">
+									<div class="data-social">
+										<p>Твиттер</p>
+										<a class="data-social__icon tw" href="#"></a>
+									</div>
+									<!-- /.data-social -->
+								</td>
+								<td class="data-inputs">
+									<p class="input-group">
+										<input class="inp-link" id="tw-link" type="text">
+										<label class="inp-label-link" for="tw-link">https://twitter.com//<span>yourname</span></label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">
+									<div class="data-social">
+										<p>Google+</p>
+										<a class="data-social__icon google" href="#"></a>
+									</div>
+									<!-- /.data-social -->
+								</td>
+								<td class="data-inputs">
+									<p class="input-group">
+										<input class="inp-link" value="idhpoih" id="google-link" type="text">
+										<label class="inp-label-link" for="google-link">https://plus.google.com/<span>yourname</span></label>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<!-- /.settings-page__table-data -->
+						<div class="mailing-lists">
+							<button class="save-data">Сохранить</button>
+						</div>
+						<!-- /.mailing-lists -->
+					</section>
+					<!-- /.contacts -->
+					<section class="tab-content change-password">
+						<h2 class="visually-hidden">Изменение пароля</h2>
+						<table class="settings-page__table-data">
+							<tr>
+								<td class="data-title">Старый пароль</td>
+								<td class="data-inputs">
+									<p class="input-group input-old-pass">
+										<label>
+											<span class="visually-hidden">Старый пароль</span>
+											<input name="input-old-pass" type="password">
+										</label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">Новый пароль</td>
+								<td class="data-inputs">
+									<p class="input-group input-new-pass">
+										<label>
+											<span class="visually-hidden">Новый  пароль</span>
+											<input name="input-new-pass" type="password">
+										</label>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="data-title">Повторите пароль</td>
+								<td class="data-inputs">
+									<p class="input-group input-repeat-pass">
+										<label>
+											<span class="visually-hidden">Повторите пароль</span>
+											<input name="input-repeat-pass" type="password">
+										</label>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<!-- /.settings-page__table-data -->
+						<div class="mailing-lists">
+							<button class="save-data">Сохранить</button>
+						</div>
+						<!-- /.mailing-lists -->
+					</section>
+					<!-- /.change-password -->
+				</div>
+				<!-- /.tab-wrap -->
+		</div>
+	</main>
+	<!-- /.main-content -->
+
+	<footer class="footer">
+		<div class="footer__wrapper  container">
+			<div class="footer__about">
+				<a href="#" class="footer__about-logo">
+					<span class="footer__about-logo--big">Cd</span>crowd
+				</a>
+
+				<a href="tel:+74951810505" class="footer__about-number">+7 (495) 181-05-05</a>
+
+				<div class="footer__about-info">
+					<p>
+						129090, Россия, г. Москва, <br \>
+						проспект Мира, дом 19, строение 3, этаж 3
+					</p>
+					 <br \>
+					<p>
+						Время работы: <br \>
+						пн-пт с 11:00 до 20:00 / сб с 11:00 до 18:00 <br \>
+						воскресенье выходной
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__list">
+				<ul class="footer__list-container">
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							Наши проекты
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Школа</a>
+							<a href="#" class="footer__list-links-item">Магазин</a>
+							<a href="#" class="footer__list-links-item">VIP клуб</a>
+							<a href="#" class="footer__list-links-item">Благотворительность</a>
+						</div>
+					</li>
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							о нас
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Что такое Cd-crowd?</a>
+							<a href="#" class="footer__list-links-item">Спецпроекты</a>
+							<a href="#" class="footer__list-links-item">Партнеры и кураторы</a>
+							<a href="#" class="footer__list-links-item">Кто такие кураторы?</a>
+							<a href="#" class="footer__list-links-item">Отдел PR и маркетинга</a>
+						</div>
+					</li>
+					<li class="footer__list-item">
+						<h3 class="footer__list-header">
+							Помощь
+						</h3>
+						<div class="footer__list-links">
+							<a href="#" class="footer__list-links-item">Частые вопросы</a>
+							<a href="#" class="footer__list-links-item">Правила сервиса</a>
+							<a href="#" class="footer__list-links-item">Способы оплаты</a>
+							<a href="#" class="footer__list-links-item">Возврат средств</a>
+							<a href="#" class="footer__list-links-item">Задать вопрос</a>
+						</div>
+					</li>
+				</ul>
+				<div class="footer__list-socials">
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--vk">
+						<i class="fa fa-vk"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--facebook">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--twitter">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#" class="footer__list-socials-item  footer__list-socials-item--odnoklassniki">
+						<i class="fa fa-odnoklassniki"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- /.footer -->
+	
+	<!-- Подключние скриптов -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.datetimepicker.full.min.js"></script>
+	<script src="js/jquery.datetimepicker.js"></script>
+	<script src="js/jquery.selectric.min.js"></script>
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="js/scripts.js"></script>
+</body>
+</html>	

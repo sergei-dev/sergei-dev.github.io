@@ -1,0 +1,115 @@
+@media only screen and (max-width: 950px) {
+
+         .product {
+         	float: none;
+         	max-width: 966px;
+         	width: 100%;
+         	margin-bottom: 40px;
+
+         }
+         .photo_product {
+         	float: none;
+         	margin: auto;
+         	margin-bottom: 30px;
+
+
+
+         }
+         .sidebar {
+         	
+         	
+         	float: none;
+         	margin: auto;
+         	text-align: center;
+         	max-width: 400px;
+
+
+         }
+         .li_sidebar {
+
+	       padding: 0;
+	       padding-top: 20px;
+	       padding-bottom: 20px;
+	       border: 1px solid #c8c8c8;
+	       border-bottom: 0;
+}
+    
+         .text_product {
+         	float: none;
+         	margin: auto;
+         	text-align: center;
+         }
+}
+@media only screen and (max-width: 849px) {
+         .footer_menu {
+         	max-width: 100%;
+         	float: none;
+         }
+          .footer_menu  ul {
+         	max-width: 100%;
+         	float: none;
+         	text-align: center;
+         }
+         .footer_info {
+         	max-width: 100%;
+         	text-align: center;
+         	padding-right: 0;
+         }
+}
+@media only screen and (max-width: 755px) {
+	 .product {
+	 	margin-right: 0;
+	 	margin-left: 0;
+	 }
+}
+@media only screen and (max-width: 539px) {
+	 .footer_menu li {
+	display: block;
+	padding: 0;
+	padding-top: 25px;
+}
+.footer_menu {
+	margin-bottom: 10px;
+
+}
+.footer_info {
+	margin-bottom: 10px;
+}
+}
+
+
+@media only screen and (max-width: 536px) {
+	  .navbar {
+	  	display: none;
+	  }
+	  .logo {
+	  	width: 50%;
+	  	margin-bottom: 5px;
+	  	margin-top: 4px;
+
+	  }
+	  .logo h1 {
+	  	color: #ffffff;
+	  }
+	  .header_top_line	{
+	  	background: linear-gradient(to top, #464545 20%, #5c5c5c 100%);
+        z-index: 5;
+        position: fixed;
+        padding-top: 0;
+        padding-bottom: 0;
+	  }
+	  .menu_link {
+		display: block;
+	}
+	.product {
+		margin-top: 80px;
+	}
+}
+@media only screen and (min-width: 536px) {
+	.menu_link {
+		display: none;
+	}
+	.modal_menu {
+		display: none;
+	}
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-545.395 923.379 38.71 28.032">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0c41b;
+      }
+
+      .cls-2 {
+        fill: #806f5e;
+      }
+
+      .cls-3 {
+        fill: #f9eab0;
+      }
+
+      .cls-4 {
+        fill: #db2215;
+      }
+
+      .cls-5 {
+        fill: #245ea9;
+      }
+    </style>
+  </defs>
+  <g id="credit-card" transform="translate(-545.395 915.379)">
+    <path id="XMLID_115_" class="cls-1" d="M36.563,36.032H2.147A2.147,2.147,0,0,1,0,33.885V10.147A2.147,2.147,0,0,1,2.147,8H36.563a2.147,2.147,0,0,1,2.147,2.147V33.885a2.147,2.147,0,0,1-2.147,2.147" transform="translate(0 0)"/>
+    <rect id="XMLID_114_" class="cls-2" width="38.71" height="5.339" transform="translate(0 11.337)"/>
+    <path id="XMLID_113_" class="cls-3" d="M11.674,27.335H5.667a.667.667,0,1,1,0-1.335h6.007a.667.667,0,1,1,0,1.335" transform="translate(-1.663 -5.986)"/>
+    <path id="XMLID_112_" class="cls-3" d="M24.674,27.335H18.667a.667.667,0,1,1,0-1.335h6.007a.667.667,0,1,1,0,1.335" transform="translate(-5.986 -5.986)"/>
+    <path id="XMLID_111_" class="cls-3" d="M6.335,32.335H5.667a.667.667,0,1,1,0-1.335h.667a.667.667,0,0,1,0,1.335" transform="translate(-1.663 -7.649)"/>
+    <path id="XMLID_110_" class="cls-3" d="M12,32.335H10.667a.667.667,0,1,1,0-1.335H12a.667.667,0,0,1,0,1.335" transform="translate(-3.326 -7.649)"/>
+    <path id="XMLID_109_" class="cls-3" d="M17.335,32.335h-.667a.667.667,0,1,1,0-1.335h.667a.667.667,0,0,1,0,1.335" transform="translate(-5.321 -7.649)"/>
+    <path id="XMLID_108_" class="cls-3" d="M23,32.335H21.667a.667.667,0,0,1,0-1.335H23a.667.667,0,1,1,0,1.335" transform="translate(-6.984 -7.649)"/>
+    <path id="XMLID_107_" class="cls-3" d="M27.667,32.339a.7.7,0,0,1-.474-.194A.689.689,0,0,1,27,31.672a.67.67,0,1,1,.667.667" transform="translate(-8.98 -7.654)"/>
+    <path id="XMLID_106_" class="cls-4" d="M42.009,37a4,4,0,1,1-4-4,4,4,0,0,1,4,4" transform="translate(-11.308 -8.315)"/>
+    <path id="XMLID_105_" class="cls-5" d="M49.009,37a4,4,0,1,1-4-4,4,4,0,0,1,4,4" transform="translate(-13.636 -8.315)"/>
+  </g>
+</svg>

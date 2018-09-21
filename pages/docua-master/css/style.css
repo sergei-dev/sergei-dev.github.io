@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+
+}
+body {
+	font-family: Arial,Tahoma;
+		background: silver;
+}
+.wrapper {
+	width: 640px;
+	margin:0 auto;
+	padding: 55px;
+	padding-top: 0;
+}
+.container {
+	padding: 0 60px;
+}
+.clearfix {
+	display: table-cell;
+	clear: both;
+}
+.header_top_line {
+	width: 100%;
+	
+	
+}
+.header_top_line img {
+	width: 100%;
+}
+.wrapper_content {
+	background: #fff;
+}
+.news_info {
+     padding-top: 60px;
+     
+     
+}
+.news_info p {
+	margin-bottom: 15px;
+
+}
+.news_info p:nth-child(3) {
+	margin-bottom: 30px;
+}
+.news_info p:last-child {
+	margin-bottom: 25px;
+}
+.head_news {
+     display: block;
+     margin-bottom: 10px;
+     font-weight: 400;
+     text-align: center;
+}
+.bold_span {
+	font-weight: bold;
+}
+.clinic_sentence_container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.clinic_sentence_item {
+	width: 45%;
+	margin-bottom: 35px;
+
+}
+
+
+.clinic_sentence_item img {
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.clinic_sentence_item p {
+	margin-bottom: 25px;
+	line-height: 1.5;
+}
+.enroll {
+	display: block;
+	background: rgb(207, 91, 78);
+	text-align: center;
+	width: 99%;
+	border: 1px solid transparent;
+	padding: 12px 5px;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 7px;
+	font-weight: bold;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	font-size: 15px;
+
+}
+.enroll:hover {
+	border: 1px solid rgb(207, 91, 78);
+	background: #fff;
+	color: rgb(207, 91, 78);
+
+}
+.two_row {
+	width: 30%;
+	
+}
+.info_block_two .enroll a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.info_block_two .enroll:hover a {
+	color: #E4595F;
+}
+.footer_line {
+	padding-top: 60px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+.footer_line a {
+	color: #fff;
+}

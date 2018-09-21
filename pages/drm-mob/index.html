@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Dram.am</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+
+</head>
+
+<body>
+
+	<main class="wrapper">
+		<header class="header-top">
+			<div class="container">
+				<div class="header-top-line">
+					<div class="header-top-one-box">
+						<button class="hamburger hamburger--collapse" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+						<div class="header-top-line_logo">
+							<a href="/">
+								<h2>Dram<span>.am</span></h2>
+							</a>
+						</div>
+					</div>
+					<div class="header-top-two-box">
+						<div class="notification">
+							<button class="notif-btn notif-btn-active">
+								<img src="img/ic_notifications_24px.svg" alt="" class="img-responsive">
+								<span class="note-Icon">
+									<span>1</span>
+								</span>
+							</button>
+						</div>
+						<div class="settings">
+							<img class="img-responsive" src="img/ic_settings_24px.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="mob-navigation">
+				
+					<ul class="nav-list">
+						<li><a href="#">Главная <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#">Новости <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#">Погода <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a class="link-submenu" href="#">Курсы валют <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							<ul class="nav-list-submenu">
+								<li><a href="#">Валюты</a></li>
+								<li><a href="#">Банки</a></li>
+								<li><a href="#">Обменные пункты</a></li>
+								<li><a href="#">Кредитные компании</a></li>
+								<li><a href="#">Инвестиционные компании</a></li>
+								<li><a href="#">Финансовые инструменты</a></li>
+								<li><a href="#">Конвертер</a></li>
+								<li><a href="#">Графики</a></li>
+								<li><a href="#">Финансовые новости</a></li>
+								<li><a href="#">Кредитный калькулятор</a></li>
+								<li><a href="#">Другие разделы</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Пункт 1 <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#">Пункт 2 <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#">Пункт 3 <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#">Пункт 4 <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#">Пункт 5 <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+						<li><a href="#">Пункт 6 <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+					</ul>
+					<ul class="two-nav-list">
+						<li><a href="#">О проекте</a></li>
+						<li><a href="#">Обратная связь</a></li>
+						<li><a href="#">Реклама</a></li>
+					</ul>
+				
+			</nav>
+		</header>
+
+		<div id="bottom-menu-links">
+			<section class="list-categories">
+					<div class="list-categories-head">
+						<h3>Категории</h3>
+					</div>
+					<div class="owl-carousel owl-theme categories-slider">
+						<div class="list-categories-slides">
+							<div class="categories-item">
+								<a href="#"><img src="img/record.svg" alt=""><p>Главная</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/text-lines.svg" alt=""><p>Новости</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/temperature.svg" alt=""><p>Погода</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/calculator-cat.svg" alt=""><p>Калькуляторы</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/exchange-cat.svg" alt=""><p>Валюта</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/line-chart-cat.svg" alt=""><p>Графики</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/map.svg" alt=""><p>Карта</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/bank.svg" alt=""><p>Банки</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/cash-machine (2).svg" alt=""><p>Банкоматы</p></a>
+							</div>
+						</div>
+						<div class="list-categories-slides">
+							<div class="categories-item">
+								<a href="#"><img src="img/payment.svg" alt=""><p>Кредиты</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/piggy-bank.svg" alt=""><p>Вклады</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/credit-card.svg" alt=""><p>Карты</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/safebox.svg" alt=""><p>Ломбарды</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/auction (1).svg" alt=""><p>Аукцион должников</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/diamond-ring.svg" alt=""><p>Lorem ipsum</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/sim-card.svg" alt=""><p>Связь</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/internet.svg" alt=""><p>Интернет</p></a>
+							</div>
+							<div class="categories-item">
+								<a href="#"><img src="img/protection.svg" alt=""><p>ОСАГО</p></a>
+							</div>
+						</div>
+					</div>
+					<button class="close-slider"><span></span></button>
+				</section>
+				
+			<div class="site-navigation-fixed">
+				<div class="containe fix">
+					<ul>
+						<li><a href="#"><span class="icon-home site-navigation-fixed-active"></span></a></li>
+						<li><a href="#"><span class="icon-place">
+							<span class="path2"></span>
+						</span></a></li>
+						<li><a class="link-catg" href="#"><span class="icon-menu"></span></a></li>
+						<li><a href="#"><span class="icon-calculator"></span></a></li>
+						<li><a href="#"><span class="icon-acc">
+							<span class="path1">
+							</span>
+						</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<section class="nav-tabs">
+			<div class="container content" id="categories-scroll1">
+				<div class="tabs-navigation">
+					<ul>
+						<li class="tabs-navigation-active">
+							<img src="img/exchange.svg" alt="">
+							<p>Валюта</p>
+						</li>
+						<li>
+							<img src="img/line-chart.svg" alt="">
+							<p>Графики</p>
+						</li>
+						<li>
+							<img src="img/calculator.svg" alt="">
+							<p>Калькулятор</p>
+						</li>
+						<li>
+							<img src="img/calculator.svg" alt="">
+							<p>Калькулятор</p>
+						</li>
+						<li>
+							<img src="img/calculator.svg" alt="">
+							<p>Калькулятор</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div class="financial-news-agency-content">
+			<div class="financial-news-agency-head">
+				<div class="containe">
+					<h3>Финансовое информагентство</h3>
+					<h4>сегодня <span>17450</span> просмотров</h4>
+					 <span class="advertising-link">Реклама</span>
+				</div>
+			</div>
+			<div class="container content" id="categories-scroll2">
+				<div class="exchange-rates-wrap" id="exchange-rates-scroll">
+					<div class="exchange-rates-content">
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/67R21dX.svg" alt="">
+								<h3>Bitcoin</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">14681.1<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/gold.svg" alt="">
+								<h3>Золото</h3>
+							</div>
+							<div class="currency-digits">
+								<p>40,1<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/file_75.svg" alt="">
+								<h3>Лари</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">178.8</p>
+							</div>
+						</div>
+					</div>
+					<div class="exchange-rates-content">
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="exchange-rates-content">
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+						<div class="exchange-item">
+							<div class="currency-name">
+								<img src="img/raindrop-close-up_318-77193.svg" alt="">
+								<h3>Нефть</h3>
+							</div>
+							<div class="currency-digits">
+								<p class="green-carrency">57.65<span class="dollar-value">$</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<table class="table-exchange">
+					<thead>
+						<tr class="head-table-exchange">
+							<th colspan="3"><p>Лучшие курсы валют в <span>Ереване</span></p></th>
+						</tr>
+					</thead>
+					<tr>
+						<td class="bottom-col">Валюта</td>
+						<td class="bottom-col">Пок.</td>
+						<td class="bottom-col">Прод.</td>
+					</tr>
+					<tr class="light-bg">
+						<td><span class="currency-title">Rub</span></td>
+						<td>
+							<h2>7.6</h2>
+							<span class="bank-name">Эвокабанк</span>
+						</td>
+						<td>
+							<h2>7.9</h2>
+							<span class="bank-name">BTA Bank</span>
+							<p class="more-info">ещё +7</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="currency-title">Usd</span>
+						</td>
+						<td>
+							<h2>477.65</h2>
+							<span class="bank-name">АраратБанк</span>
+							<p class="more-info">ещё +7</p>
+						</td>
+						<td>
+							<h2>485.1</h2>
+							<span class="bank-name">SAS Exchange</span>
+						</td>
+					</tr>
+					<tr class="light-bg">
+						<td>
+							<span class="currency-title">Eur</span>
+						</td>
+						<td>
+							<h2>562</h2>
+							<span class="bank-name">Էվոկաբանկ</span>
+						</td>
+						<td>
+							<h2>562</h2>
+							<span class="bank-name">Էվոկաբանկ</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="currency-title">Gbp</span>
+						</td>
+						<td>
+							<h2>477.65</h2>
+							<span class="bank-name">АраратБанк</span>
+							<p class="more-info">ещё +7</p>
+						</td>
+						<td>
+							<h2>485.65</h2>
+							<span class="bank-name">SAS Exchange</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="advertising-box">
+				<div class="containe">
+					<span class="advertising-link">Реклама</span>
+				</div>
+			</div>
+		</div>
+
+		<section id="exchange-rates-table-info">
+			<div class="container">
+				<h2>Таблица курсов валют</h2>
+				<div class="filter-city content" id="categories-scroll-city" draggable="false">
+					<button class="filter-btn filter-active-btn" draggable="false">Ереван</button>
+					<button class="filter-btn" draggable="false">Гюмри</button>
+					<button class="filter-btn" draggable="false">Ванадзор</button>
+					<button class="filter-btn" draggable="false">Ванадзор</button>
+					<button class="filter-btn" draggable="false">Ванадзор</button>
+					<button class="filter-btn" draggable="false">Ванадзор</button>
+					<button class="filter-btn" draggable="false">Ванадзор</button>
+					<button class="filter-btn" draggable="false">Ванадзор</button>
+				</div>
+				<div class="filter-money">
+					<div class="select-wrap">
+						<div class="select-icon"><img class="img-responsive" src="img/ic_settings_24px (2).svg" alt=""></div>
+						<select class="filter-select">
+							<option value="">Банки</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+						</select>
+						<select class="filter-select">
+							<option value="">Наличные</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+							<option value="">Lorem</option>
+						</select>
+					</div>
+				</div>
+				<div class="filter-lang">
+					<button class="filter-btn filter-active-btn"><p><img src="img/USD.svg" alt=""></p><span>Usd</span></button>
+					<button class="filter-btn"><p><img src="img/lang3.svg" alt=""></p><span>Rub</span></button>
+					<button class="filter-btn"><p><img src="img/EUR.svg" alt=""></p><span>Eur</span></button>
+					<button class="filter-btn"><p><img src="img/file_75 (2).svg" alt=""></p><span>Gel</span></button>
+				</div>
+				<div class="calc-table-wrap">
+					<div class="head-calc">
+							<p>Рассчитайте валюту прямо в таблице</p>
+							<div class="calculat-btn">
+								<input type="text" value="1">
+								<button class="calc-btn" type="button">
+									<img src="img/USD.svg" alt="calculator">
+									<span>Usd</span>
+									<i class="fa fa-angle-down" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					<table class="table-currency-calculation">
+						<tr class="top-active top-head-active-td">
+							<td>
+								<span class="icons icon-dzindzin icon-not-active"></span>
+							</td>
+							<td><p>Организация</p></td>
+							<td><p>Пок.</p></td>
+							<td><p>Прод.</p><i class="fa fa-caret-up" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin icon-not-active"></span>
+								<span class="note-Icon">
+									<span>1</span>
+								</span>
+							</td>
+							<td>
+								<div>
+									<img src="img/12.svg">
+								<a href="#">АШ-ЭС-БИ-СИ...</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td class="active">
+								<span>7.9</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+							<div>
+									<img src="img/Эвокабанк.svg">
+								<a href="#">Эвокабанк</a>
+							</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+							<div>
+									<img src="img/Армбизнесбанк.svg">
+								<a href="#">Армбизнесбанк</a>
+							</div>
+							</td>
+							<td>
+								<span>7.51</span>
+							</td>
+							<td>
+								<span>7.79</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+								<div>
+									<img src="img/конверсбанк.svg">
+								<a href="#">Конверс Банк</a>
+								</div>
+							</td>
+							<td>
+								<span>7.55</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+								<div>
+									<img src="img/ВТБ-армения.svg">
+								<a href="#">ВТБ-Армения</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+								<div>
+									<img src="img/Армэкономбанк.svg">
+								<a href="#">АрмЭконом банк</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+								<div>
+									<img src="img/Акбакредит.svg">
+								<a href="#">АКБА КРЕДИТ ...</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+								<div>
+									<img src="img/7d9ba737c27842de87bc5abe9e901525.svg">
+								<a href="#">АрдшинБанк</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+								<div>
+									<img src="img/Эвокабанк.svg">
+								<a href="#">Эвокабанк</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin"></span>
+							</td>
+							<td>
+								<div>
+									<img src="img/Армбизнесбанк.svg">
+								<a href="#">Армбизнесбанк</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="icons icon-dzindzin icon-not-active"></span>
+								<span class="note-Icon">
+									<span>1</span>
+								</span>
+							</td>
+							<td>
+								<div>
+									<img src="img/конверсбанк.svg">
+									<a href="#">КонверсБанк</a>
+								</div>
+							</td>
+							<td>
+								<span>7.86</span>
+							</td>
+							<td>
+								<span>7.80</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<div class="advertising-box">
+			<div class="containe">
+				<span class="advertising-link">Реклама</span>
+			</div>
+		</div>
+
+		<section id="weather-sect">
+			<div class="head-weather">
+				<h2>Погода в Армении</h2>
+			</div>
+			<div class="container">
+				<div class="filter-weather-city">
+				<button class="add-city"><img src="img/add.svg" alt=""></button>
+				<div id="categories-scroll-weather-btn">
+					<div class="list-cityes content">
+						<button class="weather-btn green-btn-active">Ереван</button>
+						<button class="weather-btn">Гюмри</button>
+						<button class="weather-btn">Ванадзор</button>
+						<button class="weather-btn">Ереван</button>
+						<button class="weather-btn">Ереван</button>
+					</div>
+				</div>
+			</div>
+			<div id="weather-scroll">
+				<div class="weather-card-wrap content">
+					<div class="weather-card active-weather-card">
+						<span class="number-day">7 января</span>
+						<div class="degrees-info">
+							<span>+4&deg</span>
+							<span>+11&deg</span>
+						</div>
+						<div class="weather-img">
+							<img src="img/Path_61.svg" alt="">
+						</div>
+						<p class="weather-text">Ясно</p>
+					</div>
+					<div class="weather-card">
+						<span class="number-day">6 января</span>
+						<div class="degrees-info">
+							<span>-4&deg</span>
+							<span>-1&deg</span>
+						</div>
+						<div class="weather-img">
+							<img src="img/snow.svg" alt="">
+						</div>
+						<p class="weather-text">Мокрый снег</p>
+					</div>
+					<div class="weather-card">
+						<span class="number-day">7 января</span>
+						<div class="degrees-info">
+							<span>+1&deg</span>
+							<span>+4&deg</span>
+						</div>
+						<div class="weather-img">
+							<img src="img/partlycloudy.svg" alt="">
+						</div>
+						<p class="weather-text">Пасмурно</p>
+					</div>
+					<div class="weather-card">
+						<span class="number-day">8 января</span>
+						<div class="degrees-info">
+							<span>+1&deg</span>
+							<span>+4&deg</span>
+						</div>
+						<div class="weather-img">
+							<img src="img/cloudy.svg" alt="">
+						</div>
+						<p class="weather-text">Облачно</p>
+					</div>
+					<div class="weather-card">
+						<span class="number-day">8 января</span>
+						<div class="degrees-info">
+							<span>+1&deg</span>
+							<span>+4&deg</span>
+						</div>
+						<div class="weather-img">
+							<img src="img/cloudy.svg" alt="">
+						</div>
+						<p class="weather-text">Облачно</p>
+					</div>
+					<div class="weather-card">
+						<span class="number-day">8 января</span>
+						<div class="degrees-info">
+							<span>+1&deg</span>
+							<span>+4&deg</span>
+						</div>
+						<div class="weather-img">
+							<img src="img/cloudy.svg" alt="">
+						</div>
+						<p class="weather-text">Облачно</p>
+					</div>
+				</div>
+			</div>
+			<div class="more-info-weather">
+				<a href="#">Подробнее</a>
+			</div>
+			</div>
+		</section>
+
+
+	<div class="page-overlay"></div>
+
+
+	</main>
+
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/scroll.js"></script> 
+	
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+header {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.clearfix:after {
+    content: '';
+    display: table-cell;
+    clear: both;
+}
+
+.wrap {
+    border: 1px solid black;
+    padding: 10px;
+    height: 240px;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 700px;
+    border: 1px solid black;
+    float: left;
+    height: 200px;
+}
+
+aside {
+    width: 400px;
+    border: 1px solid black;
+    float: right;
+    height: 200px;
+}
+
+footer {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    height: 60px;
+}
