@@ -1,0 +1,32 @@
+.contacts-info {
+	
+	&--row {
+		display: flex;
+		align-items: center;
+	}
+
+	&__ico {
+		width: 25px;
+		height: 25px;
+		display: block;
+		margin-right: 15px;
+
+		color: $brand-color;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		font-weight: 400;
+		color: $main-color;
+
+		transition: color $anim;
+
+		&:hover, &:focus, &:active {
+			color: $brand-color;
+
+			outline: none;
+		}
+	}
+}

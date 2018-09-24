@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сергей Антонюк - HTML-верстальщик</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="stylesheet" href="../css/style.min.css">
+
+	<meta name="theme-color" content="#112852">
+	<meta name="msapplication-navbutton-color" content="#112852">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#112852">
+</head>
+<body>
+
+<div class="preloader">
+  <div class="preloader__wrap">
+  	<div class="preloader__circle"></div>
+  	<div class="preloader__circle"></div>
+  	<div class="preloader__circle"></div>
+  	<div class="preloader__circle"></div>
+  	<div class="preloader__circle"></div>
+  	<div class="preloader__circle"></div>
+  </div>
+  <!-- /.preloader__wrap -->
+</div>
+<!-- /.preloader -->
+<section class="top-sect" data-parallax="scroll" data-image-src="../images/bg/home-bg-2.jpg">
+	<header class="header-page">
+	  <div class="container">
+	  <div class="header-page__row">
+	    <div class="header-page__item">
+	      <div class="open-menu header-page__open-menu">
+	      <button class="open-menu__btn">
+	        <span class="visually-hidden">Открыть меню</span>
+	        <svg class="svg-icon" viewBox="0 0 100 100">
+	          <path
+	          class="open-menu__line open-menu__top"
+	          d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+	          <path
+	          class="open-menu__line open-menu__middle"
+	          d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+	          <path
+	          class="open-menu__line open-menu__bottom"
+	          d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+	        </svg>
+	      </button>
+	    </div>
+	    <!-- /.open-menu -->
+	    </div>
+	    <!-- /.header-page__item -->
+	    <div class="header-page__item header-page__contacts-wrap">
+	      <div class="contacts-info contacts-info--row">
+	      <div class="contacts-info__item header-page__contacts-item">
+	        <a href="mailto:sergefrontend@gmail.com" class="contacts-info__link">
+	         <i class="contacts-info__ico">
+	          <svg class="svg-icon">
+	            <use xlink:href="#mail"></use>
+	          </svg>
+	        </i>
+	        <span class="header-page__contacts-text contacts-info__text">
+	          sergefrontend@gmail.com
+	        </span>
+	      </a>
+	    </div>
+	    <!-- /.contacts-info__item -->
+	    <div class="contacts-info__item">
+	      <a href="tel:+380961809607" class="contacts-info__link">
+	        <i class="contacts-info__ico">
+	          <svg class="svg-icon">
+	            <use xlink:href="#phone"></use>
+	          </svg>
+	        </i>
+	        <span class="header-page__contacts-text contacts-info__text">
+	          +380 961 809 607
+	        </span>
+	      </a>
+	    </div>
+	    <!-- /.contacts-info__item -->
+	  </div>
+	  <!-- /.contacts-info -->
+	    </div>
+	    <!-- /.header-page__item -->
+	  </div>
+	  <!-- /.header-page__row -->
+	</div>
+	<!-- /.container -->
+	
+	<nav class="nav">
+	  <ul class="nav__list">
+	    <li class="nav__item"><a href="#about" class="nav__link">Обо мне</a></li>
+	    <!-- /.nav__item -->
+	    <li class="nav__item"><a href="#portfolio" class="nav__link">Мои работы</a></li>
+	    <!-- /.nav__item -->
+	    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+	    <!-- /.nav__item -->
+	  </ul>
+	  <!-- /.nav__list -->
+	</nav>
+	<!-- /.nav -->
+	</header>
+	<div class="container top-sect__container">
+		<div class="top-sect__head">
+			<div class="top-sect__head-wrap">
+				<h1 class="top-sect__title">Сергей Антонюк</h1>
+			<!-- /.top-sect__title -->
+			</div>
+			<!-- /.top-sect__head-wrap -->
+			<h2 class="top-sect__subtitle">
+				<span class="visually-hidden">HTML-верстальщик</span>
+				<span class="typed"></span>
+			</h2>
+			<!-- /.top-sect__subtitle -->
+		</div>
+		<!-- /.top-sect__head -->
+		<div class="top-sect__social">
+			<ul class="social-list wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0.9s">
+				<li class="social-list__item">
+					<a href="https://vk.com/id258820752" target="_blank" class="social-list__link">
+						<i class="social-list__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#vk"></use>
+							</svg>
+							<!-- /.svg-icon -->
+						</i>
+						<span class="visually-hidden">ВК</span>
+					</a>
+				</li>
+				<!-- /.social-list__item -->
+				<li class="social-list__item">
+					<a href="https://www.facebook.com/profile.php?id=100023835741154" target="_blank" class="social-list__link">
+						<i class="social-list__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#facebook"></use>
+							</svg>
+							<!-- /.svg-icon -->
+						</i>
+						<span class="visually-hidden">Фейсбук</span>
+					</a>
+				</li>
+				<!-- /.social-list__item -->
+				<li class="social-list__item">
+					<a href="https://github.com/sergei-dev" target="_blank" class="social-list__link">
+						<i class="social-list__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#github"></use>
+							</svg>
+							<!-- /.svg-icon -->
+						</i>
+						<span class="visually-hidden">Гитхаб</span>
+					</a>
+				</li>
+				<!-- /.social-list__item -->
+				<li class="social-list__item">
+					<a href="tel:380961809607" class="social-list__link">
+						<i class="social-list__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#whatsap"></use>
+							</svg>
+							<!-- /.svg-icon -->
+						</i>
+						<span class="visually-hidden">Ватсап</span>
+					</a>
+				</li>
+				<!-- /.social-list__item -->
+			</ul>
+			<!-- /.social-list -->
+		</div>
+		<!-- /.top-sect__social -->
+	</div>
+	<!-- /.container top-sect__container -->
+</section>
+<!-- /.top-sect -->
+<section id="about" class="page-section">
+	<div class="container">
+		<div class="wow head-title zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+			<h2 class="head-title__text">Обо мне</h2>
+		</div>
+		<div class="about wow slideInLeft">
+			<h3 class="about__head-title">Привет! Меня зовут Сергей</h3>
+			<div class="about__info">
+				<p class="about__title">Профессия:</p>
+				<!-- /.about__title -->
+				<p class="about__text">HTML-верстальщик</p>
+				<!-- /.about__text -->
+			</div>
+			<!-- /.about__info -->
+			<div class="about__info">
+				<p class="about__title">Город:</p>
+				<!-- /.about__title -->
+				<p class="about__text">Киев</p>
+				<!-- /.about__text -->
+			</div>
+			<!-- /.about__info -->
+			<div class="about__info">
+				<p class="about__title">Курсы:</p>
+				<!-- /.about__title -->
+				<p class="about__text">GoFront-End, июнь 2017 - январь 2018</p>
+				<!-- /.about__text -->
+			</div>
+			<!-- /.about__info -->
+			<div class="about__info">
+				<p class="about__title">Опыт работы:</p>
+				<!-- /.about__title -->
+				<p class="about__text">Фриланс - 8 месяцев, компания <a href="https://webstars.com.ua/" class="about__link" target="_blank">WebStars</a> - 3 месяца</p>
+				<!-- /.about__text -->
+			</div>
+			<!-- /.about__info -->
+			<div class="about__info about__info--column">
+				<p class="about__title">Профессиональные навыки:</p>
+				<!-- /.about__title -->
+				<div class="skills">
+					<ul class="skills__list">
+					<li class="skills__item"> 
+						<i class="skills__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#code"></use>
+						</svg>
+					</i>
+					<p class="skills__text">HTML5</p>
+				</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#code"></use>
+						</svg>
+					</i>
+					<p class="skills__text">CSS 3(Flex-Box, CSS Grid, Анимации)</p>
+				</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#code"></use>
+						</svg>
+					</i>
+					<p class="skills__text">Блочная, табличная вёрстка</p>
+				</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#code"></use>
+						</svg>
+					</i>
+					<p class="skills__text">Резиновая , адаптивная вёрстка</p>
+				</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">SASS</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Pixel Perfect</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Bootstrap</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">GIT</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Gulp</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Хорошее понимание семантики</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Соответствие стандарту W3C валидатора</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">БЭМ</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Основы JS, jQuery</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Написание скриптов на JS , jQuery, подключение плагинов</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Умение разбираться в чужом коде</p>
+					</li>
+				</ul>
+			</div>
+			<!-- /.skills -->
+		</div>
+		<!-- /.about__info -->
+		<div class="about__info about__info--column">
+			<p class="about__title">Работа с программами:</p>
+			<!-- /.about__title -->
+			<div class="skills">
+				<ul class="skills__list">
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Adobe Photoshop</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Sublime Text</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Sourcetree</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Avocode</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">Filezilla</p>
+					</li>
+					<li class="skills__item"> 
+						<i class="skills__ico">
+							<svg class="svg-icon">
+								<use xlink:href="#code"></use>
+							</svg>
+						</i>
+						<p class="skills__text">VC code</p>
+				</li>
+				</ul>
+			</div>
+			<!-- /.skills -->
+		</div>
+		<!-- /.about__info -->
+	</div>
+	<!-- /.about -->
+	<a href="../documents/CV_SergeyAntonuik_html-coder.pdf" target="_blank" class="button">Скачать Резюме</a>
+</div>
+</section>
+<section id="portfolio" class="page-section page-section--dark">
+	<div class="container">
+		<div class="head-title">
+			<h2 class="head-title__text head-title__text--white wow zoomIn">Портфолио</h2>
+		</div>
+		<div class="portfolio">
+		<ul class="portfolio__list wow slideInRight" data-wow-duration="0.7s">
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/vidimost.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Интернет-магазин - Видимост</h4>
+							<ul class="portfolio-item__list-pages">
+								<li class="portfolio-item__item-page">
+									<a href="https://vidimost.com/" target="_blank"  class="portfolio-item__link-page">Продакшен</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/index.html" target="_blank"  class="portfolio-item__link-page">Главная страница</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/blog.html" target="_blank"  class="portfolio-item__link-page">Блог</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/categories.html" target="_blank"  class="portfolio-item__link-page">Категории</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/product-card.html" target="_blank"  class="portfolio-item__link-page">Страница товара</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/article.html" target="_blank"  class="portfolio-item__link-page">Страница статьи</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/registration.html" target="_blank"  class="portfolio-item__link-page">Регистрация</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/search-article.html" target="_blank"  class="portfolio-item__link-page">Поиск по статьям</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/vidimost/html/search-product.html" target="_blank"  class="portfolio-item__link-page">Поиск по товарам</a>
+								</li>
+							</ul>
+							<!-- /.portfolio-item__list-pages -->
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/carkeys.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Интернет магазин - КарКейс</h4>
+							<ul class="portfolio-item__list-pages">
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/carKeys/html/index.html" target="_blank"  class="portfolio-item__link-page">Главная страница</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/carKeys/html/news.html" target="_blank"  class="portfolio-item__link-page">Блог</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/carKeys/html/categories.html" target="_blank"  class="portfolio-item__link-page">Категории</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/carKeys/html/product-card.html" target="_blank"  class="portfolio-item__link-page">Страница товара</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/carKeys/html/article.html" target="_blank"  class="portfolio-item__link-page">Страница статьи</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/carKeys/html/brands.html" target="_blank"  class="portfolio-item__link-page">Бренды</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/carKeys/html/contacts.html" target="_blank"  class="portfolio-item__link-page">Контакты</a>
+								</li>
+					
+							</ul>
+							<!-- /.portfolio-item__list-pages -->
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/upg.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">UPG</h4>
+							<ul class="portfolio-item__list-pages">
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/UPG/html/index.html" target="_blank"  class="portfolio-item__link-page">Главная страница</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/UPG/html/services.html" target="_blank"  class="portfolio-item__link-page">Услуги</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/UPG/html/article-two.html" target="_blank"  class="portfolio-item__link-page">Статья</a>
+								</li>
+								<li class="portfolio-item__item-page">
+									<a href="https://sergei-dev.github.io/pages/works/UPG/html/contacts.html" target="_blank"  class="portfolio-item__link-page">Контакты</a>
+								</li>
+							</ul>
+							<!-- /.portfolio-item__list-pages -->
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/cayros.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Кайрос</h4>
+							<ul class="portfolio-item__list-pages">
+								<li class="portfolio-item__item-page">
+									<a href="https://asfalt-stroitelstvo-dorog.ru/" target="_blank"  class="portfolio-item__link-page">Главная страница</a>
+								</li>
+					
+							</ul>
+							<!-- /.portfolio-item__list-pages -->
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+				<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/crowd.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Crowd</h4>
+							<ul class="portfolio-item__list-pages">
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/crowd/home.html" class="portfolio-item__link-page">Главная страница</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/crowd/area.html" class="portfolio-item__link-page">Личный кабинет</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/crowd/create-project.html" class="portfolio-item__link-page">Создание проекта</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/crowd/project.html" class="portfolio-item__link-page">Страница проекта</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/crowd/projects.html" class="portfolio-item__link-page">Проекты</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/crowd/settings.html" class="portfolio-item__link-page">Настройки</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/crowd/rewards.html" class="portfolio-item__link-page">Вознаграждения</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+					</ul>
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/dram.jpg');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Dram - тестовое задание</h4>
+							<ul class="portfolio-item__list-pages">
+								<li class="portfolio-item__item-page">
+									<a href="https://asfalt-stroitelstvo-dorog.ru/" target="_blank"  class="portfolio-item__link-page">Страница 404</a>
+								</li>
+					
+							</ul>
+							<!-- /.portfolio-item__list-pages -->
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/aust.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Аутстаффинг</h4>
+							<ul class="portfolio-item__list-pages">
+								<li class="portfolio-item__item-page">
+									<a href="http://www.finval.biz/spb2/" target="_blank"  class="portfolio-item__link-page">Продакшен</a>
+								</li>
+					
+							</ul>
+							<!-- /.portfolio-item__list-pages -->
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/walltime.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Wall-Time</h4>
+							<ul class="portfolio-item__list-pages">
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://wall-time.ru/" class="portfolio-item__link-page">Главная страница</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://wall-time.ru/portfolio" class="portfolio-item__link-page">Портфолио</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://wall-time.ru/clients" class="portfolio-item__link-page">Клиенты</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://wall-time.ru/vacancies" class="portfolio-item__link-page">Вакансии</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://wall-time.ru/contacts" class="portfolio-item__link-page">Контакты</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+					</ul>
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/kavkazmetal.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Кавказметал</h4>
+							<ul class="portfolio-item__list-pages">
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://kavkazmet.ru/" class="portfolio-item__link-page">Главная страница</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://kavkazmet.ru/o-kompanii" class="portfolio-item__link-page">О компании</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="http://kavkazmet.ru/catalog/" class="portfolio-item__link-page">Каталог</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+					</ul>
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/derjava.png');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Держава</h4>
+							<ul class="portfolio-item__list-pages">
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/catalog/" class="portfolio-item__link-page">Страница Каталог</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+
+					</ul>
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/bus.jpg');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Бизнес завтрак</h4>
+							<ul class="portfolio-item__list-pages">
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/bussines%20lanch/" class="portfolio-item__link-page">Главная страница</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+
+					</ul>
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+			<li class="portfolio-item" tabindex="1">
+				<div class="portfolio-item__content">
+					<i class="portfolio-item__image" style="background-image: url('../images/bg/bag.jpg');"></i>
+					<div class="portfolio-item__info-wrap">
+						<div class="portfolio-item__info">
+							<h4 class="portfolio-item__title">Сумки</h4>
+							<ul class="portfolio-item__list-pages">
+						<li class="portfolio-item__item-page">
+							<a target="_blank" href="https://sergei-dev.github.io/pages/works/Bag/" class="portfolio-item__link-page">Главная страница</a>
+						</li>
+						<!-- /.portfolio-list__item-pages -->
+
+					</ul>
+						</div>
+						<!-- /.portfolio-item__info -->
+					</div>
+				</div>
+			</li>
+
+
+		</ul>
+		<!-- /.portfolio__list -->
+	</div>
+	<!-- /.portfolio -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.page-section -->
+<footer id="contacts" class="footer-page">
+	<div class="container">
+		<div class="footer-page__row wow slideInUp" data-wow-duration="0.7s">
+			<div class="footer-page__item">
+			<ul class="social-list">
+			<li class="social-list__item">
+				<a href="#" class="social-list__link footer-page__soc-link">
+					<i class="social-list__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#vk"></use>
+						</svg>
+						<!-- /.svg-icon -->
+					</i>
+					<span class="visually-hidden">ВК</span>
+				</a>
+			</li>
+			<!-- /.social-list__item -->
+			<li class="social-list__item">
+				<a href="#" class="social-list__link footer-page__soc-link">
+					<i class="social-list__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+						<!-- /.svg-icon -->
+					</i>
+					<span class="visually-hidden">Фейсбук</span>
+				</a>
+			</li>
+			<!-- /.social-list__item -->
+			<li class="social-list__item">
+				<a href="#" class="social-list__link footer-page__soc-link">
+					<i class="social-list__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#github"></use>
+						</svg>
+						<!-- /.svg-icon -->
+					</i>
+					<span class="visually-hidden">Гитхаб</span>
+				</a>
+			</li>
+			<!-- /.social-list__item -->
+			<li class="social-list__item">
+				<a href="#" class="social-list__link footer-page__soc-link">
+					<i class="social-list__ico">
+						<svg class="svg-icon">
+							<use xlink:href="#whatsap"></use>
+						</svg>
+						<!-- /.svg-icon -->
+					</i>
+					<span class="visually-hidden">Ватсап</span>
+				</a>
+			</li>
+			<!-- /.social-list__item -->
+		</ul>
+		</div>
+		<!-- /.footer-page__item -->
+	<div class="footer-page__item footer-page__contacts-info">
+			<div class="contacts-info">
+	      <div class="contacts-info__item">
+	        <a href="mailto:sergefrontend@gmail.com" class="contacts-info__link footer-page__contact-link">
+	         <i class="contacts-info__ico footer-page__contact-ico">
+	          <svg class="svg-icon">
+	            <use xlink:href="#mail"></use>
+	          </svg>
+	        </i>
+	        <span class="contacts-info__text">
+	          sergefrontend@gmail.com
+	        </span>
+	      </a>
+	    </div>
+	    <!-- /.contacts-info__item -->
+	    <div class="contacts-info__item">
+	      <a href="tel:+380961809607" class="contacts-info__link footer-page__contact-link">
+	        <i class="contacts-info__ico footer-page__contact-ico">
+	          <svg class="svg-icon">
+	            <use xlink:href="#phone"></use>
+	          </svg>
+	        </i>
+	        <span class="contacts-info__text">
+	          +380 961 809 607
+	        </span>
+	      </a>
+	    </div>
+	    <!-- /.contacts-info__item -->
+	  </div>
+	</div>
+	<!-- /.footer-page__item -->
+		</div>
+		<!-- /.footer-page__row -->
+	</div>
+	<!-- /.footer-page__container -->
+</footer>
+<div hidden>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+  	
+  		<symbol id="code" viewBox="0 0 64 64">
+  			<path d="M22.527 46.916L0 35.193v-5.129l22.527-11.771v6.636L6.773 32.707l15.754 7.568v6.641zM39.613 12l-9.559 42h-5.578l9.559-42h5.578zm17.616 20.707L41.473 24.93v-6.636L64 30.064v5.129L41.473 46.916v-6.641l15.756-7.568z"></path>
+  		</symbol>
+  	
+  		<symbol id="facebook" viewBox="0 0 56.693 56.693">
+  			<path d="M40.43 21.739h-7.645v-5.014c0-1.883 1.248-2.322 2.127-2.322h5.395V6.125l-7.43-.029c-8.248 0-10.125 6.174-10.125 10.125v5.518h-4.77v8.53h4.77v24.137h10.033V30.269h6.77l.875-8.53z"></path>
+  		</symbol>
+  	
+  		<symbol id="github" viewBox="0 0 512 512">
+  			<path clip-rule="evenodd" d="M296.133 354.174c49.885-5.891 102.942-24.029 102.942-110.192 0-24.49-8.624-44.448-22.67-59.869 2.266-5.89 9.515-28.114-2.734-58.947 0 0-18.139-5.898-60.759 22.669-18.139-4.983-38.09-8.163-56.682-8.163-19.053 0-39.011 3.18-56.697 8.163-43.082-28.567-61.22-22.669-61.22-22.669-12.241 30.833-4.983 53.057-2.718 58.947-14.061 15.42-22.677 35.379-22.677 59.869 0 86.163 53.057 104.301 102.942 110.192-6.344 5.452-12.241 15.873-14.507 30.387-12.702 5.438-45.808 15.873-65.758-18.592 0 0-11.795-21.31-34.012-22.669 0 0-22.224-.453-1.813 13.592 0 0 14.96 6.812 24.943 32.653 0 0 13.6 43.089 76.179 29.48v38.543c0 5.906-4.53 12.702-15.865 10.89C96.139 438.977 32.2 354.626 32.2 255.77c0-123.807 100.216-224.022 224.03-224.022 123.347 0 224.023 100.216 223.57 224.022 0 98.856-63.946 182.754-152.828 212.688-11.342 2.266-15.873-4.53-15.873-10.89V395.45c.001-20.873-6.811-34.465-14.966-41.276zM512 256.23C512 114.73 397.263 0 256.23 0 114.73 0 0 114.73 0 256.23 0 397.263 114.73 512 256.23 512 397.263 512 512 397.263 512 256.23z" fill-rule="evenodd"></path>
+  		</symbol>
+  	
+  		<symbol id="mail" viewBox="0 0 32 32">
+  			<path d="M28 5H4a4 4 0 0 0-4 4v13a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 0 0 3.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148a1.98 1.98 0 0 1-1.199.4 1.99 1.99 0 0 1-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"></path>
+  		</symbol>
+  	
+  		<symbol id="phone" viewBox="0 0 38 68">
+  			<path d="M34 0H4a4 4 0 0 0-4 4v60a4 4 0 0 0 4 4h30a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zM12 3h14a.5.5 0 0 1 0 1H12a.5.5 0 0 1 0-1zm7 62a2 2 0 1 1 .001-4.001A2 2 0 0 1 19 65zm16-6H3V6h32v53z"></path>
+  		</symbol>
+  	
+  		<symbol id="vk" viewBox="0 0 24 24">
+  			<path d="M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.734 3.23C14.734 12.813 14 12.126 14 11.11V7.604A1.104 1.104 0 0 0 12.896 6.5h-2.474a1.982 1.982 0 0 0-1.751.813s1.256-.204 1.256 1.49c0 .419.022 1.626.041 2.64a.73.73 0 0 1-1.273.503 21.54 21.54 0 0 1-2.498-4.543.693.693 0 0 0-.63-.403h-2.99a.508.508 0 0 0-.48.685C3.005 10.175 6.916 18 11.38 18h1.879a.742.742 0 0 0 .742-.742v-1.135a.73.73 0 0 1 1.229-.531l2.248 2.113a1.09 1.09 0 0 0 .746.295h2.953c1.424 0 1.424-.988.647-1.753-.546-.538-2.518-2.617-2.518-2.617a1.019 1.019 0 0 1-.078-1.323c.637-.839 1.68-2.212 2.122-2.8.604-.804 1.698-2.507.198-2.507z"></path>
+  		</symbol>
+  	
+  		<symbol id="whatsap" viewBox="0 0 56.693 56.693">
+  			<path d="M46.38 10.714c-4.65-4.657-10.836-7.222-17.426-7.225-13.579 0-24.63 11.05-24.636 24.633a24.589 24.589 0 0 0 3.289 12.316L4.112 53.204l13.06-3.426a24.614 24.614 0 0 0 11.772 2.999h.01c13.577 0 24.63-11.052 24.635-24.635.002-6.582-2.558-12.772-7.209-17.428zM28.954 48.616h-.009a20.445 20.445 0 0 1-10.421-2.854l-.748-.444-7.75 2.033 2.07-7.555-.488-.775a20.427 20.427 0 0 1-3.13-10.897c.004-11.29 9.19-20.474 20.484-20.474a20.336 20.336 0 0 1 14.476 6.005 20.352 20.352 0 0 1 5.991 14.485c-.004 11.29-9.19 20.476-20.475 20.476z"></path><path d="M40.185 33.281c-.615-.308-3.642-1.797-4.206-2.003-.564-.205-.975-.308-1.385.308-.41.617-1.59 2.003-1.949 2.414-.359.41-.718.462-1.334.154-.615-.308-2.599-.958-4.95-3.055-1.83-1.632-3.065-3.648-3.424-4.264-.36-.617-.038-.95.27-1.257.277-.276.615-.719.923-1.078.308-.36.41-.616.616-1.027.205-.41.102-.77-.052-1.078-.153-.308-1.384-3.338-1.897-4.57-.5-1.2-1.008-1.038-1.385-1.057-.359-.018-.77-.022-1.18-.022s-1.077.154-1.642.77c-.564.616-2.154 2.106-2.154 5.135 0 3.03 2.206 5.957 2.513 6.368.308.41 4.341 6.628 10.516 9.294a35.341 35.341 0 0 0 3.509 1.297c1.474.469 2.816.402 3.877.244 1.183-.177 3.642-1.49 4.155-2.927.513-1.438.513-2.67.359-2.927-.154-.257-.564-.41-1.18-.719z"></path>
+  		</symbol>
+  	
+  </svg>
+</div>
+
+<script src="../js/build.js"></script>
+<script src="../libs/wow/wow.min.js"></script>
+</body>
+</html>

@@ -353,6 +353,9 @@ body {
   padding: 0 15px;
   margin: 0 auto; }
 
+.wow {
+  will-change: transform, opacity; }
+
 .open-menu {
   position: relative;
   z-index: 5; }
@@ -393,6 +396,7 @@ body {
 
 .button {
   position: relative;
+  z-index: 0;
   display: inline-block;
   width: 100%;
   max-width: 280px;
@@ -407,28 +411,70 @@ body {
   color: #fe8708;
   font-size: 18px;
   border: 1px solid #fe8708;
+  background-color: transparent;
+  overflow: hidden;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
-  -webkit-perspective: 900;
-     -moz-perspective: 900;
-          perspective: 900; }
+  -webkit-transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
+  -o-transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
+  -moz-transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
+  transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s; }
   .button::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: -50%;
+    top: -50%;
     z-index: -1;
-    width: 0px;
-    height: 100%;
+    width: 600px;
+    height: 140px;
     background-color: #fe8708;
-    -webkit-transition: width .6s;
-    -o-transition: width .6s;
-    -moz-transition: width .6s;
-    transition: width .6s; }
+    -webkit-transform: translate3d(0, 100%, 0) rotate(10deg);
+       -moz-transform: translate3d(0, 100%, 0) rotate(10deg);
+            transform: translate3d(0, 100%, 0) rotate(10deg); }
   .button:hover, .button:active, .button:focus {
     color: #fff;
-    outline: none; }
+    background-color: #fe8708;
+    -webkit-transition: background .3s ease-out .3s;
+    -o-transition: background .3s ease-out .3s;
+    -moz-transition: background .3s ease-out .3s;
+    transition: background .3s ease-out .3s; }
     .button:hover::before, .button:active::before, .button:focus::before {
-      width: 100%; }
+      -webkit-animation: buttonInnerShadow .5s forwards ease-in;
+         -moz-animation: buttonInnerShadow .5s forwards ease-in;
+           -o-animation: buttonInnerShadow .5s forwards ease-in;
+              animation: buttonInnerShadow .5s forwards ease-in; }
+
+@-webkit-keyframes buttonInnerShadow {
+  50% {
+    -webkit-transform: translate3d(0, 50%, 0) rotate(10deg);
+            transform: translate3d(0, 50%, 0) rotate(10deg); }
+  100% {
+    -webkit-transform: translateZ(0) rotate(0deg);
+            transform: translateZ(0) rotate(0deg); } }
+
+@-moz-keyframes buttonInnerShadow {
+  50% {
+    -moz-transform: translate3d(0, 50%, 0) rotate(10deg);
+         transform: translate3d(0, 50%, 0) rotate(10deg); }
+  100% {
+    -moz-transform: translateZ(0) rotate(0deg);
+         transform: translateZ(0) rotate(0deg); } }
+
+@-o-keyframes buttonInnerShadow {
+  50% {
+    transform: translate3d(0, 50%, 0) rotate(10deg); }
+  100% {
+    transform: translateZ(0) rotate(0deg); } }
+
+@keyframes buttonInnerShadow {
+  50% {
+    -webkit-transform: translate3d(0, 50%, 0) rotate(10deg);
+       -moz-transform: translate3d(0, 50%, 0) rotate(10deg);
+            transform: translate3d(0, 50%, 0) rotate(10deg); }
+  100% {
+    -webkit-transform: translateZ(0) rotate(0deg);
+       -moz-transform: translateZ(0) rotate(0deg);
+            transform: translateZ(0) rotate(0deg); } }
 
 .contacts-info--row {
   display: -webkit-box;

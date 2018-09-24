@@ -1,0 +1,44 @@
+.header-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+
+  color: $main-color;
+  text-transform: none;
+
+  background-color: $brand-two;
+  
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-right: -$gutter;
+    margin-left: -$gutter;
+  }
+
+  &__item {
+    width: 15%;
+    padding: 0 $gutter;
+  }
+
+  &__contacts-wrap {
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__contacts-item {
+    margin-right: 20px;
+  }
+
+  &__contacts-text {
+    display: none;
+
+    @include media-min(570px) {
+      display: block;
+    }
+  }
+
+}

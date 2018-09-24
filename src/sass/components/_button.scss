@@ -1,0 +1,62 @@
+.button {
+	position: relative;
+	z-index: 0;
+
+	display: inline-block;
+	width: 100%;
+	max-width: 280px;
+
+	user-select: none;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	line-height: 70px;
+	color: $brand-color;
+	font-size: 18px;
+
+	border: 1px solid $brand-color;
+	background-color: transparent;
+
+	overflow: hidden;
+
+	touch-action: manipulation;
+
+	transition: color .4s ease-out,border-color .5s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: -50%;
+		top: -50%;
+		z-index: -1;
+
+		width: 600px;
+		height: 140px;
+
+		background-color: $brand-color;
+
+		transform: translate3d(0,100%,0) rotate(10deg);
+	}
+
+	&:hover, &:active, &:focus {
+		color: $main-color;
+		background-color: $brand-color;
+
+		transition: background .5s ease-out .5s;
+
+		&::before {
+			animation: buttonInnerShadow .5s forwards ease-in;
+		}
+	}
+
+}
+
+@keyframes buttonInnerShadow {
+    50% {
+        transform: translate3d(0,50%,0) rotate(10deg);
+    }
+
+    100% {
+        transform: translateZ(0) rotate(0deg);
+    }
+}
