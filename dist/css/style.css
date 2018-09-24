@@ -354,7 +354,7 @@ body {
   margin: 0 auto; }
 
 .wow {
-  will-change: transform, opacity; }
+  will-change: transform, vidible, opacity; }
 
 .open-menu {
   position: relative;
@@ -415,10 +415,10 @@ body {
   overflow: hidden;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
-  -webkit-transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
-  -o-transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
-  -moz-transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
-  transition: color .2s ease-out,border-color .3s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s; }
+  -webkit-transition: color .4s ease-out,border-color .5s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
+  -o-transition: color .4s ease-out,border-color .5s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
+  -moz-transition: color .4s ease-out,border-color .5s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s;
+  transition: color .4s ease-out,border-color .5s ease-out,background .3s ease-out 0s,opacity .2s ease-out .2s; }
   .button::before {
     content: '';
     position: absolute;
@@ -434,10 +434,10 @@ body {
   .button:hover, .button:active, .button:focus {
     color: #fff;
     background-color: #fe8708;
-    -webkit-transition: background .3s ease-out .3s;
-    -o-transition: background .3s ease-out .3s;
-    -moz-transition: background .3s ease-out .3s;
-    transition: background .3s ease-out .3s; }
+    -webkit-transition: background .5s ease-out .5s;
+    -o-transition: background .5s ease-out .5s;
+    -moz-transition: background .5s ease-out .5s;
+    transition: background .5s ease-out .5s; }
     .button:hover::before, .button:active::before, .button:focus::before {
       -webkit-animation: buttonInnerShadow .5s forwards ease-in;
          -moz-animation: buttonInnerShadow .5s forwards ease-in;
