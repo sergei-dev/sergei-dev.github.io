@@ -52,6 +52,7 @@
   	justify-content: center;
 
   	color: $brand-two;
+    font-size: 14px;
 
   	@include media-min($screen-xs) {
   		justify-content: flex-start;
@@ -60,6 +61,13 @@
 
   &__contact-ico {
   	color: currentColor;
+    width: 22px;
+    height: 22px;
+  }
+
+  &__soc-ico {
+    width: 27px;
+    height: 27px;
   }
 
 }
