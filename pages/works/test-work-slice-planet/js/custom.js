@@ -93,7 +93,14 @@ $(function(){
 	$('.page-filter__content--open').on('click', function() {
 		$(this).next('.categories-list').slideToggle();
 		$(this).find('.page-filter__ico').toggleClass('page-filter__ico--down');
-	})
+	});
+
+
+	// $('.product-slider').on('init', function(event, slick){
+		
+	// });
+
+
 
 	if($('.product-slider').length) {
 		$('.product-slider').slick({
@@ -102,37 +109,45 @@ $(function(){
 			autoPlay: true,
 			speed: 500,
 			arrow: true,
-			slidesToShow: 3,
-			slidesToScroll: 3,
-			variableWidth: true,
+			mobileFirst: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
 			responsive: [
 			{
 				breakpoint: 1166,
 				settings: {
-					variableWidth: false
+					slidesToShow: 3,
+					slidesToScroll: 3
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					variableWidth: false,
-					slidesToShow: 2,
-					slidesToScroll: 2
+					slidesToShow: 3,
+					slidesToScroll: 3
 				}
 			},
 			{
 				breakpoint: 472,
 				settings: {
-					variableWidth: false,
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 320,
+				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}
 			}
 			]
-		});
+		})
 	};
 
-	if($('.slick-dots').length) {
+
+
+	if($('.slick-track').length) {
 		$('.product-slider').append('<div class="product-slider__wrap-dots"></div>'); 
 		if ($('.product-slider__wrap-dots').length) {
 			$('.product-slider__wrap-dots').prepend($('.slick-prev'));
@@ -140,6 +155,8 @@ $(function(){
 			$('.product-slider__wrap-dots').append($('.slick-next'));
 		}
 	}
+
+	
 	
 
 	
