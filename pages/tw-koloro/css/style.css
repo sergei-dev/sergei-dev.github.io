@@ -494,6 +494,10 @@ body {
   margin-bottom: 13px; }
   .input-group--last {
     margin-bottom: 30px; }
+  .input-group__notifi {
+    padding: 5px;
+    display: none;
+    font-size: 13px; }
 
 .form-page {
   max-width: 268px; }
@@ -531,6 +535,8 @@ body {
     .form-page__input:focus {
       outline: none;
       border-bottom-color: rgba(255, 255, 255, 0.5); }
+    .form-page__input--error {
+      border-bottom-color: #ff0202; }
 
 .button {
   position: relative;
