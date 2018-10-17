@@ -1,0 +1,28 @@
+@mixin row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+@mixin col($size) {
+	width: calc(100% / 5);
+	margin: 0 -15px;
+}
+
+@mixin col-md($size) {
+	@media screen and(max-width: 991px) {
+		width: calc(100% / 5);
+	}
+}
+
+@mixin col-sm($size) {
+	@media screen and(max-width: 776px) {
+		width: calc(100% / 5);
+	}
+}
+
+@mixin col-xs($size) {
+	@media screen and(max-width: 470px) {
+		width: calc(100% / 5);
+	}
+}
