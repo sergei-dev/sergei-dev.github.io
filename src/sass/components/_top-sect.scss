@@ -25,38 +25,6 @@
 		margin-bottom: 20px;
 		padding: 20px;
 
-		&::after {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			bottom: 0;
-			right: 0;
-
-			border-radius: 4px;
-			background-color: $main-color;
-
-			clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
-
-			@supports not (clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%)) {
-				background-color: transparent;
-				border: 3px solid $main-color;
-			}
-			
-			@media all and (-ms-high-contrast: none), (-ms-contrast: active)  {
-				background-color: transparent;
-				border: 3px solid $main-color;
-			}
-
-		}
-
-
-		&--anim {
-
-			&::after {
-				animation: frame-enter 1.5s forwards ease-in-out reverse;
-			}
-		}
 	}
 
 	&__title {
@@ -87,22 +55,90 @@
 		background-color: rgba(0, 0, 0, 0.4);
 	}
 
+	&__start-letter {
+		transform: rotate(-45deg) translateY(-1000px);
+		filter: blur(20px);
+		opacity: 0;
+		letter-spacing: 10px;
+
+		transition: all 3s linear;
+
+		&:nth-child(1) {
+			transition-delay: 0s;
+		}
+		&:nth-child(2) {
+			transition-delay: .4s;
+		}
+		&:nth-child(3) {
+			transition-delay: .8s;
+		}
+		&:nth-child(4) {
+			transition-delay: 1.2s;
+		}
+		&:nth-child(5) {
+			transition-delay: 1.6s;
+		}
+
+		&:nth-child(6) {
+			transition-delay: 2s;
+		}
+
+		
+	}
+
+	&__text-wrap {
+		position: relative;
+		min-height: 70px;
+
+		&--first {
+			margin-bottom: 40px;
+		}
+
+		&--name {
+
+			.top-sect__start-letter {
+				transform: none;
+			}
+		}
+
+	}
+
+	&__start-text {
+		position: absolute;
+
+		margin-bottom: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		text-align: center;
+		font-size: 65px;
+		font-weight: 700;
+	}
+
+
+
+
 }
 
-@keyframes frame-enter {
-  0% {
-    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  25% {
-    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  50% {
-    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
-  }
-  75% {
-    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
-  }
-  100% {
-    clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
-  }
+.rotate-in {
+	transform: rotate(0deg) translateY(0px);
+	filter: blur(0px);
+	opacity: 1;
+}
+
+.rotate-out {
+	transform: rotate(-45deg) translateY(-1000px);
+	filter: blur(20px);
+	opacity: 0;
+}
+
+.fade-in {
+	filter: blur(0px);
+	opacity: 1;
+}
+
+.fade-out {
+	filter: blur(20px);
+	opacity: 0;
 }

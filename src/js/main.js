@@ -36,25 +36,21 @@ $(document).ready(function() {
 		$(this).css('transition-delay', .3 + .1 * e + 's');
 	});
 
-    $(".typed").typed({
-        strings: ["HTML-верстальщик"],
-        typeSpeed: 100,
-        backDelay: 900,
-        loop: !0
-    });
-
     setTimeout(function() {
     	$(".preloader").hasClass("preloader--done") || $(".preloader").addClass("preloader--done");
-    }, 900);
-
-    
+   }, 900);
 
     setTimeout(function() {
-        $(".top-sect__head-wrap").addClass("top-sect__head-wrap--anim");
-    }, 900);
+     $('.top-sect__text-wrap--first .top-sect__start-letter').addClass('rotate-in');
+ }, 600);
 
+    setTimeout(function() {
+        $('.top-sect__text-wrap--first .top-sect__start-letter').removeClass('rotate-in');
+        $('.top-sect__text-wrap--first .top-sect__start-letter').addClass('rotate-out');
+    }, 7000);
 
-
-
+    setTimeout(function() {
+        $('.top-sect__text-wrap--name .top-sect__start-letter').addClass('fade-in');
+    }, 9000);
 
 });
