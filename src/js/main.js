@@ -42,14 +42,16 @@ $(document).ready(function() {
 
     setTimeout(function() {
      $('.top-sect__text-wrap--first .top-sect__start-letter').addClass('rotate-in');
- }, 600);
+ }, 500);
 
     setTimeout(function() {
-        $('.top-sect__text-wrap--first .top-sect__start-letter').removeClass('rotate-in');
-        $('.top-sect__text-wrap--first .top-sect__start-letter').addClass('rotate-out');
+        $('.top-sect__text-wrap--first .top-sect__start-letter').removeClass('rotate-in').addClass('rotate-out');
     }, 7000);
 
+
     setTimeout(function() {
+        $('.top-sect__text-wrap--first .top-sect__start-letter').hide();
+        $('.top-sect__text-wrap--name .top-sect__start-letter').show();
         $('.top-sect__text-wrap--name .top-sect__start-letter').addClass('fade-in');
     }, 9000);
 
