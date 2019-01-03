@@ -994,6 +994,8 @@ body {
   padding: 60px 0px; }
   .page-section--dark {
     background-color: #232a33; }
+  .page-section--lime {
+    background-color: lime; }
 
 .head-title {
   width: 100%;
