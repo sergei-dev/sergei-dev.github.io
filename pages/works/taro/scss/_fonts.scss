@@ -1,0 +1,15 @@
+@import "_mixins/font-face";
+
+@include font-face("Circe", "../fonts/Circe/Circe-Bold", bold);
+@include font-face("Circe", "../fonts/Circe/Circe-ExtraBold", 600);
+@include font-face("Circe", "../fonts/Circe/Circe-ExtraLight", 200);
+@include font-face("Circe", "../fonts/Circe/Circe-Light", 300);
+@include font-face("Circe", "../fonts/Circe/Circe-Regular", 400);
+@include font-face("Circe", "../fonts/Circe/Circe-ExtraBold", 800);
+
+@include font-face("BebasNeue", "../fonts/BebasNeue/BebasNeue-Bold", bold);
+@include font-face("BebasNeue", "../fonts/BebasNeue/BebasNeue-Book", 600);
+@include font-face("BebasNeue", "../fonts/BebasNeue/BebasNeue-Light", 300);
+@include font-face("BebasNeue", "../fonts/BebasNeue/BebasNeue-Regular", 400);
+@include font-face("BebasNeue", "../fonts/BebasNeue/BebasNeue-Thin", 100);
+
