@@ -117,6 +117,13 @@
 		margin-right: -15px;
 
 		&__item {
+
+			&:first-child {
+
+				&::after {
+					display: none;
+				}
+			}
 			
 
 			&:first-child, &:nth-child(2) {

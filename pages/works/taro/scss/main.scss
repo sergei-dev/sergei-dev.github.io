@@ -410,7 +410,26 @@ b, strong {
 		box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.35);
 
 		&:first-child {
+			position: relative;
 			margin-bottom: -200px;
+
+			&::after {
+				content: '';
+				position: absolute;
+				right: -178px;
+				bottom: 50%;
+
+				display: block;
+				width: 125px;
+				height: 90px;
+
+				background-image: url('../img/kubiki.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+
+				transform: translateY(124%);
+			}
 		}
 
 		&:nth-child(2) {
