@@ -3796,6 +3796,11 @@ strong {
   .programs-sect {
     padding-bottom: 60px;
   }
+  .totals-sect {
+    min-height: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .programs {
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
@@ -3852,6 +3857,20 @@ strong {
   }
   .home-screen__left {
     width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
   .home-screen__right {
     width: 100%;
@@ -3860,10 +3879,16 @@ strong {
         -ms-flex-order: -1;
             order: -1;
     margin-bottom: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
   }
   .home-screen__top-title {
     display: block;
+    margin-bottom: 10px;
+  }
+  .home-screen__head-text:first-child {
+    margin-bottom: 40px;
   }
   .home-screen__title {
     margin-bottom: 30px;
@@ -3871,6 +3896,7 @@ strong {
   .home-screen__title-block {
     display: inline-block;
     margin-right: 10px;
+    line-height: 65px;
   }
   .home-screen__title-block--last {
     margin-left: 0;
@@ -3894,6 +3920,13 @@ strong {
 }
 
 @media (max-width: 991.98px) {
+  .programs-sect__title {
+    margin-bottom: 75px;
+  }
+  .cource-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .programs {
     padding: 0 15px;
     -webkit-box-orient: vertical;
@@ -3912,6 +3945,10 @@ strong {
   .programs__item:first-child, .programs__item:nth-child(2) {
     margin-right: 0;
     margin-left: 0;
+  }
+  .adwantages-sect {
+    padding-top: 300px;
+    padding-bottom: 120px;
   }
   .adwantages {
     -webkit-flex-wrap: wrap;
@@ -4006,7 +4043,7 @@ strong {
   }
   .logo {
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 4px;
   }
   .home-screen__title-block {
     font-size: 50px;
@@ -4015,8 +4052,8 @@ strong {
     margin-right: 0;
   }
   .home-screen__right {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .programs__head-wrap {
     -webkit-flex-wrap: wrap;

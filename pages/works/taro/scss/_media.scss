@@ -111,6 +111,13 @@
 		padding-bottom: 60px;
 	}
 
+	.totals-sect {
+		min-height: 0;
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+	}
+
 	.programs {
 		align-items: stretch;
 		margin-left: -15px;
@@ -177,18 +184,31 @@
 
 		&__left {
 			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
 		}
 
 		&__right {
 			width: 100%;
 			order: -1;
 			margin-bottom: 60px;
+			padding-top: 15px;
+			padding-bottom: 15px;
 
 			text-align: center;
 		}
 
 		&__top-title {
 			display: block;
+			margin-bottom: 10px;
+		}
+
+		&__head-text {
+			&:first-child {
+				margin-bottom: 40px;
+			}
 		}
 
 		&__title {
@@ -198,6 +218,8 @@
 		&__title-block {
 			display: inline-block;
 			margin-right: 10px;
+
+			line-height: 65px;
 
 			&--last {
 				margin-left: 0;
@@ -231,6 +253,14 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+	.programs-sect__title {
+		margin-bottom: 75px;
+	}
+
+	.cource-info {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 
 	.programs {
 		padding: 0 15px;
@@ -250,6 +280,11 @@
 			}
 		}
 
+	}
+
+	.adwantages-sect {
+		padding-top: 300px;
+		padding-bottom: 120px;
 	}
 
 	.adwantages {
@@ -356,7 +391,7 @@
 
 	.logo {
 		margin-right: 0;
-		margin-bottom: 15px;
+		margin-bottom: 4px;
 	}
 
 	.home-screen {
@@ -370,8 +405,8 @@
 		}
 
 		&__right {
-			padding-right: 20px;
-			padding-left: 20px;
+			padding-right: 15px;
+			padding-left: 15px;
 		}
 	}
 
