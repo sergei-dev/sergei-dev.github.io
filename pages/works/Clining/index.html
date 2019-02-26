@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>Клининговая компания - Чистый Лис</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
 	
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="icon" href="img/favicon.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
 	
@@ -24,7 +24,7 @@
 
 	<link rel="stylesheet" href="css/et-line.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
@@ -52,7 +52,6 @@
 							<ul class="nav__list">
 								<li class="nav__item active"><a href="#vidy" class="nav__link">Где мы убираем?</a></li>
 								<li class="nav__item"><a href="#kinds" class="nav__link">Виды уборки</a></li>
-								<li class="nav__item"><a href="#life" class="nav__link">Наша жизнь</a></li>
 								<li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
 							</ul>
 
@@ -81,7 +80,7 @@
 
 			<div class="container">
 
-				<h1 class="home-sect__title">КЛИНИНГОВАЯ КОМПАНИЯ ЧИСТЫЙ ЛИС</h1>
+				<h1 class="home-sect__title">Клининговая компания <span class="home-sect__title-block">Абсолют-клининг</span></h1>
 
 				<div class="home-sect__bottom">
 
@@ -94,15 +93,11 @@
 
 						<div class="contacts__item">
 							<i class="icon-phone icon-small vertical-align-top xs-vertical-align-middle"></i>
-							<a href="tel:8(499)3913788" class="contacts__text">8 (499) 391-37-88</a>
+							<a href="tel:+7(495)2238794" class="contacts__text">+7 (495) 223-87-94</a>
+							<span class="contacts__text-bottom">Нажми на номер чтобы вызвать</span>
 						</div>
 
-						<div class="contacts__line">|</div>
-
-						<div class="contacts__item">
-							<i class="icon-envelope icon-small vertical-align-top"></i>
-							<a href="mailto:cleanfox.ru@yandex.ru" class="contacts__text">cleanfox.ru@yandex.ru</a>
-						</div>
+						
 
 					</div>
 
@@ -112,9 +107,27 @@
 
 		</section>
 
+		<section class="page-section">
+			<div class="container">
+				
+
+				<div class="row">
+
+					<div class="col-12 col-sm-6">
+						<h2 class="page-section__title">Посмотрите <br> видео как мы убираем</h2>
+					</div>
+
+					<div class="col-12 col-sm-6 page-section__video-wrap">
+						<iframe class="page-section__video" src="https://www.youtube.com/embed/m5hvX4eLNkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
 		<section id="vidy" class="page-section vidy-sect">
 			<div class="container">
-				<h2 class="page-section__title">КЛИНИНГОВАЯ КОМПАНИЯ, КОТОРАЯ ОСУЩЕСТВЛЯЕТ КЛИНИНГ (УБОРКУ) В ПОМЕЩЕНИЯХ:</h2>
+				<h2 class="page-section__title">Мы осуществляем клининг в разных типах помещений:</h2>
 				<div class="row premises">
 
 					<div class="col col-md-6 premises__col">
@@ -440,17 +453,7 @@
 								</div>
 							</div>
 
-							<div class="contacts-sect__item">
-								<div class="contacts-sect__icon">
-									<i class="icon-map-pin icon-medium margin-one-half sm-icon-small no-margin-lr"></i>
-								</div>
-								<div class="contacts-sect__right-block">
-									<h4 class="contacts-sect__title">Адреса</h4>
-									<p class="contacts-sect__text">Салтыковская улица 8,стр. 18 оф. 465</p>
-									<p class="contacts-sect__text">Просп. 60-летия Октября, 9, стр. 2 первый подьезд 1 оф. 916</p>
-									<p class="contacts-sect__text">Малая Юшуньская ул., 1, корп. 1 оф. 37</p>
-								</div>
-							</div>
+							
 
 						</div>
 
@@ -461,15 +464,13 @@
 						<form id="form-one" class="page-form">
 
 							<p class="page-form__group">
-								<input type="text" name="name" class="page-form__input" placeholder="* ВАШЕ ИМЯ">
+								<input type="text" name="name" class="page-form__input" placeholder="* ВАШЕ ИМЯ" required>
 							</p>
 
-							<p class="page-form__group">
-								<input type="email" name="email" class="page-form__input" placeholder="ВАШ E-MAIL">
-							</p>
+							
 
 							<p class="page-form__group">
-								<input type="tel" name="phone" class="page-form__input" placeholder="* ВАШ ТЕЛЕФОН">
+								<input type="tel" name="phone" class="page-form__input" placeholder="* ВАШ ТЕЛЕФОН" required>
 							</p>
 
 							<p class="page-form__group">
@@ -482,12 +483,14 @@
 							</p>
 
 							<p class="page-form__group">
-								<textarea class="page-form__input page-form__textarea" name="message" placeholder="Площадь, кол-во окон, нужна ли чистка духовки, холодильника или другого оборудования"></textarea>
+								<textarea class="page-form__input page-form__textarea" name="message" placeholder="Площадь, кол-во окон, нужна ли чистка духовки, холодильника или другого оборудования" required></textarea>
 							</p>
 
 							<button type="submit" class="button button--black page-form__btn btn-submit">Запросить стоимость</button>
 							
-							<div class="error-block">Наличие ошибок заполнения.</div>
+							<div class="error-message">Ошибка отправки</div>
+
+							<div class="empty-form">Наличие ошибок заполнения.</div>
 
 							<div class="succes-form">Ваше сообщение успешно отправлено.</div>
 
@@ -574,15 +577,15 @@
 				<form id="form-modal" class="page-form">
 
 					<p class="page-form__group">
-						<input type="text" name="name" class="page-form__input" placeholder="* ВАШЕ ИМЯ">
+						<input type="text" name="name" class="page-form__input" placeholder="* ВАШЕ ИМЯ" required>
 					</p>
 
-					<p class="page-form__group">
+					<!-- <p class="page-form__group">
 						<input type="email" name="email" class="page-form__input" placeholder="ВАШ E-MAIL">
-					</p>
+					</p> -->
 
 					<p class="page-form__group">
-						<input type="tel" name="phone" class="page-form__input" placeholder="* ВАШ ТЕЛЕФОН">
+						<input type="tel" name="phone" class="page-form__input" placeholder="* ВАШ ТЕЛЕФОН" required>
 					</p>
 
 					<p class="page-form__group">
@@ -595,12 +598,14 @@
 					</p>
 
 					<p class="page-form__group">
-						<textarea class="page-form__input page-form__textarea" name="message" placeholder="Площадь, кол-во окон, нужна ли чистка духовки, холодильника или другого оборудования"></textarea>
+						<textarea class="page-form__input page-form__textarea" name="message" placeholder="Площадь, кол-во окон, нужна ли чистка духовки, холодильника или другого оборудования" required></textarea>
 					</p>
 
 					<button type="submit" class="button button--black page-form__btn btn-submit-modal">Запросить стоимость</button>
 					
-					<div class="error-block">Наличие ошибок заполнения.</div>
+					<div class="error-message">Ошибка отправки</div>
+
+					<div class="empty-form">Наличие ошибок заполнения.</div>
 
 					<div class="succes-form">Ваше сообщение успешно отправлено.</div>
 					
