@@ -1,0 +1,9 @@
+@function vw($target, $from:1920)
+  $vw-context: ($from*.01) * 1px
+  $vw-value: ($target/$vw-context)
+  @return $vw-value * 1vw
+
+
+=r($screen)
+  @media all and (max-width: $screen+'px')
+    @content
