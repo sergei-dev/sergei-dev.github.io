@@ -63,9 +63,28 @@ $(function() {
         	animCircle(document.querySelector('.nav__item.active'));
         })
 
-	$('.open-menu').on('click', function() {
-			$('.nav').fadeToggle();
+        $('.open-menu').on('click', function() {
+        	$('.nav').fadeToggle();
+
+
+        	// $(window).on("load",function(){
+        	// 	$(".main").mCustomScrollbar({
+        	// 		axis: 'y'
+        	// 	});
+        	// });
+
+
+
 	});
+
+	window.onload = function() {
+
+			$('.preloader').fadeOut();
+
+		}
+
+	
+
 
 	// $(window).scroll(function() {
 	// 	if ( $(this).scrollTop() > 100 ) {
