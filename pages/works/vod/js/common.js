@@ -163,38 +163,69 @@ $(function() {
  //   });
 
 
-	// $('.page-form').submit(function(event) {
-	// 	event.preventDefault();
-	// });
+	$('.popup__form').submit(function(event) {
+		event.preventDefault();
+	});
 
-	// $('#form-one').find('button[type="submit"]').click(function() {
+	$('#form-call').find('button[type="submit"]').click(function() {
 
-	// 		if ( $('#form-one').find('.page-form__input').val() == '') {
-	// 			$('#form-one').find('.empty-form').show();
+			if ( $('#form-call').find('.popup__input').val() == '') {
+				$('#form-call').find('.empty-form').show();
 
-	// 		}	
+			}	
 
-	// 		else {
-	// 			$.ajax({
-	// 				url: '../mail.php',
-	// 				type: "POST",
-	// 				data: $('#form-one').serialize(),
- //                // Сеарилизуем объект
- //                success: function() {
- //                    //Данные отправлены успешно
- //                    $('#form-one').find('.succes-form').show();
- //                    $('#form-one').find('.empty-form').hide();
- //                    $('#form-one').find('.error-message').hide();
- //                    $('#form-one')[0].reset();
- //                  },
+			else {
+				$.ajax({
+					url: '../mail.php',
+					type: "POST",
+					data: $('#form-call').serialize(),
+                // Сеарилизуем объект
+                success: function() {
+                    //Данные отправлены успешно
+                    $('#form-call').find('.succes-form').show();
+                    $('#form-call').find('.empty-form').hide();
+                    $('#form-call').find('.error-message').hide();
+                    $('#form-call')[0].reset();
+                  },
 
- //                  error: function() {
- //                  	$('#form-one').find('.error-message').show();
- //                  }
- //                });
+                  error: function() {
+                  	$('#form-call').find('.error-message').show();
+                  }
+                });	
+			}
+
+	});
+
+
+	$('#form-services').find('button[type="submit"]').click(function() {
+
+
+			if ( $('#form-services').find('.popup__input').val() == '') {
+				$('#form-services').find('.empty-form').show();
+
+			}	
+
+			else {
+				$.ajax({
+					url: '../mail.php',
+					type: "POST",
+					data: $('#form-services').serialize(),
+                // Сеарилизуем объект
+                success: function() {
+                    //Данные отправлены успешно
+                    $('#form-services').find('.succes-form').show();
+                    $('#form-services').find('.empty-form').hide();
+                    $('#form-services').find('.error-message').hide();
+                    $('#form-services')[0].reset();
+                  },
+
+                  error: function() {
+                  	$('#form-services').find('.error-message').show();
+                  }
+                });
 
 				
-	// 		}
+			}
 
 		
 
@@ -202,38 +233,37 @@ $(function() {
 			
 		
 
-	// });
+	});
+
+	$('#form-price').find('button[type="submit"]').click(function() {
 
 
-	// $('#form-modal').find('button[type="submit"]').click(function() {
+			if ( $('#form-price').find('.popup__input').val() == '') {
+				$('#form-price').find('.empty-form').show();
 
+			}	
 
-	// 		if ( $('#form-modal').find('.page-form__input').val() == '') {
-	// 			$('#form-modal').find('.empty-form').show();
+			else {
+				$.ajax({
+					url: '../mail.php',
+					type: "POST",
+					data: $('#form-price').serialize(),
+                // Сеарилизуем объект
+                success: function() {
+                    //Данные отправлены успешно
+                    $('#form-price').find('.succes-form').show();
+                    $('#form-price').find('.empty-form').hide();
+                    $('#form-price').find('.error-message').hide();
+                    $('#form-price')[0].reset();
+                  },
 
-	// 		}	
-
-	// 		else {
-	// 			$.ajax({
-	// 				url: '../mail.php',
-	// 				type: "POST",
-	// 				data: $('#form-modal').serialize(),
- //                // Сеарилизуем объект
- //                success: function() {
- //                    //Данные отправлены успешно
- //                    $('#form-modal').find('.succes-form').show();
- //                    $('#form-modal').find('.empty-form').hide();
- //                    $('#form-modal').find('.error-message').hide();
- //                    $('#form-modal')[0].reset();
- //                  },
-
- //                  error: function() {
- //                  	$('#form-modal').find('.error-message').show();
- //                  }
- //                });
+                  error: function() {
+                  	$('#form-price').find('.error-message').show();
+                  }
+                });
 
 				
-	// 		}
+			}
 
 		
 
@@ -241,31 +271,7 @@ $(function() {
 			
 		
 
-	// });
-
- //    // $('.btn-submit-modal').click(function() {
-
- //    // 	if ( $('#form-modal .page-form__input').val() !== '' ) {
-
- //    // 			  $.ajax({
- //    //         url: '../mail.php',
- //    //         type: "POST",
- //    //         data: $('#form-modal').serialize(),
- //    //         // Сеарилизуем объект
- //    //         success: function() {
- //    //             //Данные отправлены успешно
- //    //             $('#form-modal').find('.succes-form').show();
- //    //             $('#form-modal')[0].reset();
- //    //         },
-
- //    //         error: function() {
- //    //             $('#form-modal').find('.error-block').show();
- //    //         }
- //    //     });
-
- //    // 	}
- 
- //    // });
+	});
 
 
 
