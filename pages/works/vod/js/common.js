@@ -1,5 +1,34 @@
 $(function() {
 
+	
+
+	$('.popup__close').click(function() {
+			$('.popup').fadeOut();
+
+	});
+
+	$('.popup__overlay').click(function() {
+			$('.popup').fadeOut();
+
+	});
+
+	$('.btn-call').click(function(e) {
+		e.preventDefault();
+			$('#popup-call').fadeIn();
+	});
+
+	$('.services__btn').click(function(e) {
+		e.preventDefault();
+			$('#popup-services').fadeIn();
+	});
+
+	$('.btn-price').click(function(e) {
+		e.preventDefault();
+			$('#popup-price').fadeIn();
+	});
+
+
+
 	 $(".anim-scroll").on("click", function(e) {
         e.preventDefault();
         var t = $(this).attr("href")
