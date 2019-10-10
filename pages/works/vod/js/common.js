@@ -200,7 +200,7 @@ $(function() {
 	$('#form-services').find('button[type="submit"]').click(function() {
 
 
-			if ( $('#form-services').find('.popup__input').val() == '') {
+			if ( $('#form-services').find('.popup__input').val() == '' && !$('#form-services').find('.popup__check').prop('checked') ) {
 				$('#form-services').find('.empty-form').show();
 
 			}	

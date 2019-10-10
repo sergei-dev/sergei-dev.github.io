@@ -558,7 +558,7 @@ b, strong {
 
   .nav__link { 
     font-size: 15px; 
-    color: #333; 
+    color: #333;
   } 
 
   .header-top { 
@@ -649,6 +649,7 @@ b, strong {
   display: block; 
   color: #fff; 
   font-size: 0.9375vw; 
+  font-weight: bold;
 } 
 
 @media screen and (max-width: 1493.33333px) { 
@@ -857,7 +858,7 @@ b, strong {
 
 
 .services__text { 
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 13px;
   letter-spacing: 0;
   font-weight: 500;
