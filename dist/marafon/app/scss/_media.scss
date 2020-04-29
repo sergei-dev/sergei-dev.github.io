@@ -38,7 +38,7 @@
   }
 
   .author__info-heading {
-    font-size: 24px;
+    font-size: 27px;
   }
 
   .reviews__list-item-inner {
@@ -63,7 +63,7 @@
 	}
 
 	body {
-		font-size: 24px;
+		font-size: 22px;
 	}
 
 	.header {
@@ -219,7 +219,8 @@
 
 @media screen and (max-width: 767px) {
 	body {
-		font-size: 18px;
+		font-size: 22px;
+		font-weight: 300;
 	}
 
 	.container {
@@ -349,11 +350,15 @@
 
 		&__item-title {
 			margin-bottom: 5px;
-			font-size: 18px;
+			font-size: 25px;
 		}
 
 		&__item-text {
-			font-size: 16px;
+			font-size: 22px;
+		}
+
+		&__text {
+			font-size: 22px;
 		}
 	}
 
@@ -361,11 +366,11 @@
 		padding: 40px 0;
 
 		&__title {
-			font-size: 24px;
+			font-size: 27px;
 		}
 
 		&__text {
-			font-size: 18px;
+			font-size: 22px;
 		}
 
 		&__icon {
@@ -377,7 +382,7 @@
 		padding: 40px 0;
 
 		&__title {
-			font-size: 24px;
+			font-size: 27px;
 		}
 
 		&__inner-content {
@@ -393,17 +398,21 @@
 		}
 
 		&__price {
-			font-size: 18px;
+			font-size: 22px;
 		}
 
 		&__item {
 			background-image: none !important;
 			background-color: #384c60;
 		}
+
+		&__text {
+			font-size: 22px;
+		}
 	}
 
 	.author__info-text {
-      font-size: 20px;
+      font-size: 22px;
     }
 
     .objections__list-info-heading, .objections__list-info-text {
@@ -421,7 +430,7 @@
 
     	&__title {
     		margin-bottom: 10px;
-    		font-size: 24px;
+    		font-size: 27px;
     	}
 
     	&__wrap {
@@ -452,7 +461,11 @@
 
     	&__subtitle {
     		margin-bottom: 5px;
-    		font-size: 20px;
+    		font-size: 26px;
+    	}
+
+    	&__text {
+    		font-size: 22px;
     	}
     }
 
@@ -487,6 +500,14 @@
     			box-shadow: 0 3px 20px 12px #319c90;
     		}
     	}
+
+    	&__service {
+    		font-weight: 300;
+    	}
+
+    	&__bottom-text {
+    		font-weight: 300;
+    	}
     }
 
     .bottom {
@@ -495,7 +516,8 @@
     	position: static;
 
     	&__text {
-    		font-size: 18px;
+    		font-size: 22px;
+    		font-weight: 300;
     	}
 
     	&__bg {
@@ -507,7 +529,7 @@
     	padding: 40px 0;
 
     	&__title {
-    		font-size: 24px;
+    		font-size: 27px;
     	}
     }
 
@@ -535,6 +557,7 @@
 		padding: 0;
 		padding-top: 30px;
 		font-size: 20px;
+		font-weight: 300;
 		text-align: center;
 	}
 }
@@ -610,6 +633,6 @@
 	}
 
 	.reviews__list-text {
-		font-size: 18px;
+		font-size: 22px;
 	}
 }
