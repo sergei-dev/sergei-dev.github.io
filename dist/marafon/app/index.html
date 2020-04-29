@@ -29,7 +29,7 @@
 
 <body>
 
-	<div class="wrapper" style="background: url(img/main-bg.jpg) no-repeat;">
+	<div class="wrapper">
 		<section class="hero">
 			<div class="container">
 				<header class="header">
@@ -52,7 +52,7 @@
 					</div>
 					<span class="hero__author">Ольга <br> Веремеева</span>
 					<h1 class="hero__title">Марафон <br> сновидений</h1>
-					<a href="#" class="button">
+					<a href="#" class="button js-popup-open">
 						<span class="button__inner">Регистрация</span>
 					</a>
 				</div>
@@ -146,7 +146,7 @@
 				<div class="programm__wrap">
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">18 мая</time>
+							<time datetime="18.05.2020" class="programm__date">18 мая</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Упражнения на развитие осознанности</h3>
@@ -157,7 +157,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">21 мая</time>
+							<time datetime="18.05.2020" class="programm__date">21 мая</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Упражнение на управление своим вниманием</h3>
@@ -166,7 +166,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">23 мая</time>
+							<time datetime="18.05.2020" class="programm__date">23 мая</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Усиление внимательности</h3>
@@ -175,7 +175,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">25 мая</time>
+							<time datetime="18.05.2020" class="programm__date">25 мая</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Техника безопасности во сне</h3>
@@ -187,7 +187,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">28 мая</time>
+							<time datetime="18.05.2020" class="programm__date">28 мая</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Внетелесный опыт (выход из тела и во сне, и наяву)</h3>
@@ -196,7 +196,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">30 мая</time>
+							<time datetime="18.05.2020" class="programm__date">30 мая</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Выход в астрал (и во сне, и наяву)</h3>
@@ -205,7 +205,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">1 июня</time>
+							<time datetime="18.05.2020" class="programm__date">1 июня</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Моделирование «тропы намерения»</h3>
@@ -214,7 +214,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">4 июня</time>
+							<time datetime="18.05.2020" class="programm__date">4 июня</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Создание контролируемого сна</h3>
@@ -225,7 +225,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">6 июня</time>
+							<time datetime="18.05.2020" class="programm__date">6 июня</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Взаимодействие с неорганиками</h3>
@@ -237,7 +237,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">8 июня</time>
+							<time datetime="18.05.2020" class="programm__date">8 июня</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Работа с эмиссарами</h3>
@@ -246,7 +246,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">11 июня</time>
+							<time datetime="18.05.2020" class="programm__date">11 июня</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Слои сновидений, поиск локаций, лабиринтов, взломщиков</h3>
@@ -255,7 +255,7 @@
 					</div>
 					<div class="programm__item">
 						<div class="programm__date-wrap">
-							<time datetime="18.05.2020">13 июня</time>
+							<time datetime="18.05.2020" class="programm__date">13 июня</time>
 						</div>
 						<div class="programm__info">
 							<h3 class="programm__subtitle">Совместное сновидение</h3>
@@ -322,7 +322,7 @@
 									<li class="tariffs__service">Домашние задания</li>
 								</ul>
 							</div>
-							<a href="#" class="button">
+							<a href="#" class="button js-popup-open">
 								<span class="button__inner">Регистрация</span>
 							</a>
 						</div>
@@ -344,7 +344,7 @@
 								</ul>
 							</div>
 							<p class="tariffs__bottom-text">Вы сможете задать и проработать любые вопросы в рамках марафона.</p>
-							<a href="#" class="button">
+							<a href="#" class="button js-popup-open">
 								<span class="button__inner">Регистрация</span>
 							</a>
 						</div>
@@ -422,6 +422,21 @@
 			</div>
 		</section>
 	</div>
+
+
+	<section class="popup popup--registr">
+		<div class="popup__wrap">
+			<div class="popup__content">
+				<button class="popup__close js-popup-close"></button>
+				<div class="popup__form-wrap">
+					Здесь форма
+				</div>
+				<div class="popup__footer">
+					Здесь соц. сети
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/scripts.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

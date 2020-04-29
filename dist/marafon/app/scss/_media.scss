@@ -21,9 +21,7 @@
 @media screen and (max-width: 1220px) {
   .author {
     padding: 0 20px 50px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
   }
 
   .author__media, .author__info {
@@ -40,8 +38,23 @@
   }
 
   .author__info-heading {
-    font-size: 30px;
+    font-size: 24px;
   }
+
+  .reviews__list-item-inner {
+		padding: 0 60px;
+	}
+
+	.reviews__list-media {
+		width: 200px;
+		min-width: 200px;
+		height: 200px;
+	}
+	
+	.reviews__list-text {
+		font-size: 22px;
+		padding-left: 30px;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -194,6 +207,12 @@
 
     .objections__list-info-text {
       font-size: 18px;
+    }
+
+    .reviews {
+    	&__title {
+    		font-size: 32px;
+    	}
     }
 }
 
@@ -376,6 +395,11 @@
 		&__price {
 			font-size: 18px;
 		}
+
+		&__item {
+			background-image: none !important;
+			background-color: #384c60;
+		}
 	}
 
 	.author__info-text {
@@ -478,6 +502,41 @@
     		padding-bottom: 80px;
     	}
     }
+
+    .reviews {
+    	padding: 40px 0;
+
+    	&__title {
+    		font-size: 24px;
+    	}
+    }
+
+    .simple-slider .slick-arrow {
+		width: 20px;
+		height: 20px;
+		border-width: 2px;
+
+	}
+
+	.simple-slider .slick-arrow.slick-prev,
+	.simple-slider .slick-arrow.slick-next {
+		border-radius: 0;
+	}
+
+	.simple-slider .slick-dots {
+		position: static;
+	}
+
+	.reviews__list-item-inner {
+		flex-direction: column;
+	}
+
+	.reviews__list-text {
+		padding: 0;
+		padding-top: 30px;
+		font-size: 20px;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 420px) {
@@ -530,14 +589,27 @@
 		}
 
 		.button {
-			height: 43px;
-			line-height: 43px;
-			font-size: 13px;
+			height: 55px;
+			line-height: 55px;
+			font-size: 17px;
 
 			&__inner {
-				padding: 0 26px;
+				padding: 0 36px;
 				box-shadow: 0 3px 40px 13px #319c90;
 			}
 		}
+	}
+
+	.simple-slider .slick-arrow {
+		display: none !important;
+		visibility: hidden;
+	}
+
+	.reviews__list-item-inner {
+		padding: 0;
+	}
+
+	.reviews__list-text {
+		font-size: 18px;
 	}
 }
