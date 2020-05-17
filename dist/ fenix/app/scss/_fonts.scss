@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("MartaDecorTwo", "../fonts/MartaDecorTwo/MartaDecorTwo", 400);
+@include font-face("Circe", "../fonts/Circe/Circe-Light", 300);
+@include font-face("Circe", "../fonts/Circe/Circe-Regular", 400);
+@include font-face("Circe", "../fonts/Circe/Circe-Bold", 700);
+@include font-face("Circe", "../fonts/Circe/Circe-ExtraBold", 800);
+@include font-face("Geomertia", "../fonts/Geometria/Geometria-Bold", 700);
