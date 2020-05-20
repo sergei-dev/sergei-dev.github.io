@@ -342,47 +342,26 @@
 	<section class="programm" style="background-image: url('img/programm.png')">
 		<div class="container">
 			<h2 class="programm__title">Программа онлайн-ретрита:</h2>
-			<div class="programm__head">
-				<div class="programm__items">
+			<div class="programm__content">
+				<div class="programm__col programm__col--left">
 					<div class="programm__item">
 						<h3 class="programm__item-title">Группа «Инволюция»</h3>
 						<div class="programm__head-list">
-							<button class="programm__head-item js-tab">
+							<button class="programm__head-item js-tab" data-group="0">
 								<span class="programm__icon"></span>
 								<span class="programm__head-item-text">Пятница</span>
 							</button>
-							<button class="programm__head-item js-tab">
+							<button class="programm__head-item js-tab" data-group="1">
 								<span class="programm__icon"></span>
 								<span class="programm__head-item-text">Суббота</span>
 							</button>
-							<button class="programm__head-item js-tab">
+							<button class="programm__head-item js-tab" data-group="2">
 								<span class="programm__icon"></span>
 								<span class="programm__head-item-text">Воскресенье</span>
 							</button>
 						</div>
 					</div>
-					<div class="programm__item">
-						<h3 class="programm__item-title">Группа «Эволюция»</h3>
-						<div class="programm__head-list">
-							<button class="programm__head-item js-tab">
-								<span class="programm__icon"></span>
-								<span class="programm__head-item-text">Пятница</span>
-							</button>
-							<button class="programm__head-item js-tab">
-								<span class="programm__icon"></span>
-								<span class="programm__head-item-text">Суббота</span>
-							</button>
-							<button class="programm__head-item js-tab">
-								<span class="programm__icon"></span>
-								<span class="programm__head-item-text">Воскресенье</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="programm__content">
-				<div class="programm__col">
-					<ul class="programm__list">
+					<ul class="programm__list" data-group="0">
 						<li class="programm__list-item">
 							<time class="programm__time">20:00-22:00</time>
 							<p class="programm__text">Структура процесса. Техника безопасности. <br>
@@ -394,7 +373,7 @@
 								Смещение в прошлое воплощение. </p>
 						</li>
 					</ul>
-					<ul class="programm__list">
+					<ul class="programm__list" data-group="1">
 						<li class="programm__list-item">
 							<time class="programm__time">00:00-03:00</time>
 							<p class="programm__text">Осознанные сновидения с запросом.  <br>
@@ -442,7 +421,7 @@
 							<p class="programm__text">Как продолжить работу во сне?</p>
 						</li>
 					</ul>
-					<ul class="programm__list">
+					<ul class="programm__list" data-group="2">
 						<li class="programm__list-item">
 							<time class="programm__time">00:00-03:00 </time>
 							<p class="programm__text">Сновидения. Осознанная коммуникация. </p>
@@ -479,8 +458,25 @@
 						</li>
 					</ul>
 				</div>
-				<div class="programm__col">
-					<ul class="programm__list">
+				<div class="programm__col programm__col--right">
+					<div class="programm__item">
+						<h3 class="programm__item-title">Группа «Эволюция»</h3>
+						<div class="programm__head-list">
+							<button class="programm__head-item js-tab" data-group="3">
+								<span class="programm__icon"></span>
+								<span class="programm__head-item-text">Пятница</span>
+							</button>
+							<button class="programm__head-item js-tab" data-group="4">
+								<span class="programm__icon"></span>
+								<span class="programm__head-item-text">Суббота</span>
+							</button>
+							<button class="programm__head-item js-tab" data-group="5">
+								<span class="programm__icon"></span>
+								<span class="programm__head-item-text">Воскресенье</span>
+							</button>
+						</div>
+					</div>
+					<ul class="programm__list" data-group="3">
 						<li class="programm__list-item">
 							<time class="programm__time">20:00-22:00</time>
 							<p class="programm__text">Структура процесса. Техника безопасности. <br>
@@ -492,7 +488,7 @@
 								Настройка на энергии Духа. </p>
 						</li>
 					</ul>
-					<ul class="programm__list">
+					<ul class="programm__list" data-group="4">
 						<li class="programm__list-item">
 							<time class="programm__time">00:00-03:00</time>
 							<p class="programm__text">Осознанные сновидения с запросом. <br>
@@ -541,7 +537,7 @@
 							<p class="programm__text">Как продолжить работу во сне?</p>
 						</li>
 					</ul>
-					<ul class="programm__list">
+					<ul class="programm__list" data-group="5">
 						<li class="programm__list-item">
 							<time class="programm__time">00:00-03:00 </time>
 							<p class="programm__text">Сновидения. Осознанная коммуникация. </p>
@@ -582,7 +578,9 @@
 		</div>
 	</section>
 
-	<section class="author" style="background-image: url(img/author.jpg);">
+	<section class="author">
+		<div class="author__bg author__bg--dekstop"></div>
+		<div class="author__bg author__bg--tablet"></div>
 		<div class="container">
 			<h2 class="author__title">ВИЛМА ГЕНРИХ</h2>
 			<div class="author__wrap">
@@ -605,9 +603,9 @@
 							Проводник системы БанТу.</li>
 					</ul>
 				</div>
+				<img src="img/author.png" alt="vilmagenrih" class="author__img">
 			</div>
 		</div>
-		<img src="img/author.png" alt="vilmagenrih" class="author__img">
 	</section>
 
 	<section id="plan" class="plan">
